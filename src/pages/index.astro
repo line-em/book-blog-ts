@@ -1,81 +1,71 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
+import { getStars, getAverageStars } from "../utils/rating";
+import { getDigits } from "../utils/digits";
+import { getMostReadGenres } from "../utils/genres";
+import "../styles/year.styles.css";
+import { getCollection } from "astro:content";
+
+// const getBooksByYear = async (year: number) => {
+// 	const result = await getCollection("books", ({ id }) => {
+// 		// console.log(`Checking book with ID ${id}`);
+// 		return id.startsWith(`${year}/`);
+// 	});
+// 	console.log(`Found ${result.length} books for year ${year}`);
+// 	return result;
+// };
+
+const getBooks = async (year?: number) => {
+	let result;
+	if (year) {
+		const getBooksByYear = await getCollection("books", ({ id }) => {
+			return id.startsWith(`${year}/`);
+		});
+		result = getBooksByYear;
+		console.log(`Found ${result.length} books for year ${year}`);
+	} else {
+		result = await getCollection("books");
+	}
+	return result;
+};
+let books = await getBooks();
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+	<main class="instructions">
+		<h1>Read <span class="text-gradient">Books</span></h1>
+		<nav>
+			<button class="get2021">2021</button>
+		</nav>
+		<section class="img-grid">
+			{
+				books.map((book) => {
+					const imagePath = `./books${getDigits(book.data.year, 2)}/${getDigits(
+						book.data.image,
+						3
+					)}`;
+					return (
+						<article class="book-grid-item">
+							<a href={book.slug}>
+								<Image
+									alt={book.data.title}
+									width={300}
+									height={400}
+									aspectRatio="4:3"
+									format="webp"
+									src={imagePath}
+								/>
+							</a>
+							<a href={book.slug}>{book.data.title}</a>
+							<div
+								set:html={getStars(book.data.score)}
+								class="book-grid-rating"
+							/>
+						</article>
+					);
+				})
+			}
+		</section>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>

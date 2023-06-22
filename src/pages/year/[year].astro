@@ -1,0 +1,84 @@
+---
+import { getStars, getAverageStars } from "../../utils/rating";
+import { getMostReadGenres } from "../../utils/genres";
+import "../../styles/year.styles.css";
+// const publishedBlogEntries = await getCollection('books', ({ data }) => {
+//   return data.year === 2021;
+// });
+
+// export function getStaticPaths() {
+//   return [
+//     {params: {year: '2021'}},
+//     {params: {year: '2022'}},
+//     {params: {year: '2023'}},
+//   ];
+// }
+
+// const { year } = Astro.params;
+// let books = []
+// let bookFolder: string = ""
+
+// if (year === "2022") {
+//     books = await Astro.glob("../books22/*.md");
+//     bookFolder = "books22"
+// } else if (year === "2021") {
+//     books = await Astro.glob("../books21/*.md");
+//     bookFolder = "books21"
+// } else {
+//   books = await Astro.glob("../books23/*.md");
+//   bookFolder = "books23"
+// }
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://unpkg.com/phosphor-icons"></script>
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width" />
+		<meta charset="UTF-8" />
+		<title>Read Books</title>
+		<!-- <title>{year} Books</title> -->
+	</head>
+	<body>
+		<h1 style="margin-block: 1rem">
+			All
+			<!-- <span class="text-gradient">{year}</span>  -->
+			Books
+		</h1>
+
+		<nav>
+			<a href="../2021">2021</a> / <a href="../2022">2022</a> / <a href="../2023">
+				2023
+			</a>
+		</nav>
+
+		<!-- <strong>Books read: 
+      <span class="text-gradient">{Object.keys(books).length}</span> / 
+      Most read {getMostReadGenres(books).length > 1 ? "genres:" : "genre:"}
+      <span class="text-gradient">{getMostReadGenres(books).join(", ")}</span> /
+      Average rating:
+      <span class="text-gradient">{getAverageStars(books)}</span>
+    </strong> -->
+
+		<main class="instructions">
+			<section class="img-grid">
+				<!-- {books.map((book) => {
+        const bookImage = book.frontmatter.image
+        const bookImageUrl = bookImage.substring(3)
+        return (
+          <article class="book-grid-item">
+            <a href={book.url}>
+              <img src={`../../${bookFolder}/${bookImageUrl}`} alt={book.frontmatter.title} />
+            </a>
+            <a href={book.url}>{book.frontmatter.title}</a>
+            <div set:html={getStars(book.frontmatter.score)} class="book-grid-rating"></div>
+          </article>
+        )}
+      )} -->
+			</section>
+		</main>
+	</body>
+</html>

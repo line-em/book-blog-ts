@@ -4,8 +4,8 @@
 }
 
 html {
-	background-color: #f1f5f9;
-	font-family: "Karla", sans-serif;
+	background-color: lavender;
+	font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -18,8 +18,8 @@ body {
 }
 
 p {
-	font-size: .9rem;
-	margin-top: .5rem;
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
 }
 
 * {
@@ -27,13 +27,15 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: rgba(var(--accent), 100%);
-  transition: all 0.2s ease-in-out;
+	text-decoration: underline 2px rgba(var(--accent), 25%);
+	color: teal;
+	padding-block: 0.5rem;
+	padding-inline: 0.2rem;
+	transition: all 0.2s ease-in-out;
 }
 
-a:hover{
-  color: rgba(var(--accent), 80%)
+a:hover {
+	color: rgba(var(--accent), 80%);
 }
 
 main {
@@ -41,9 +43,9 @@ main {
 	padding: 1.5rem;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width: 400px) {
 	main {
-		padding: 0
+		padding: 0;
 	}
 }
 
@@ -62,13 +64,13 @@ h3 {
 }
 
 blockquote {
- 	margin: .5rem;
-  	font-size: .8rem;
-  	border-inline-start: 2px rgba(var(--accent), 75%) solid;
+	margin: 0.5rem;
+	font-size: 0.8rem;
+	border-inline-start: 2px rgba(var(--accent), 75%) solid;
 	overflow: auto;
-	padding: .2rem .5rem;
+	padding: 0.2rem 0.5rem;
 	background-color: rgba(var(--accent), 10%);
-  	border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
 }
 
 blockquote + blockquote {
@@ -84,7 +86,10 @@ blockquote + blockquote {
 	background-position: 0%;
 }
 
-.instructions, input, button, .button_style {
+.instructions,
+input,
+button,
+.button_style {
 	margin: 1rem auto;
 	border: 1px solid rgba(var(--accent), 25%);
 	background-color: white;
@@ -96,18 +101,21 @@ blockquote + blockquote {
 	color: rgb(var(--accent));
 }
 
-button, .button_style {
+button,
+.button_style {
 	background-color: rgb(var(--accent), 50%);
-	color:white;
+	color: white;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 }
 
-button:hover, .button_style:hover{
+button:hover,
+.button_style:hover {
 	background-color: rgb(var(--accent), 75%);
 }
 
-button:active, .button_style:active {
+button:active,
+.button_style:active {
 	background-color: rgb(var(--accent), 85%);
 	transform: translateY(-2px);
 }
@@ -117,4 +125,10 @@ button:active, .button_style:active {
 	grid-template-columns: repeat(auto-fit, minmax(18ch, 1fr));
 	gap: 1rem;
 	padding: 0;
+}
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
 }

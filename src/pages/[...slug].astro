@@ -1,14 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import { getStars } from "../utils/rating";
-import Card from "../components/Card.astro";
 
 import "../styles/bookpage.styles.css";
-import "../styles/global.css";
-import "@fontsource/fraunces";
-import "@fontsource/fraunces/800.css";
-import "@fontsource/karla";
 import { getImagePath } from "../utils/digits";
+import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
 	const bookEntries = await getCollection("books");
@@ -35,74 +31,59 @@ const extraImages = entry.data.extraimages
 	: null;
 ---
 
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<script src="https://unpkg.com/phosphor-icons"></script>
-		<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-		<link rel="icon" type="image/png" href="/assets/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="viewport" content="width=device-width" />
-		<title>{title}</title>
-	</head>
-	<body>
-		<main class="instructions m-top">
-			<h1>
-				<span class="text-gradient">{title}</span>
-			</h1>
-			<h3>by {author}</h3>
-			<section class="book-review">
-				<article class="instructions">
-					<img src={image} alt={title} class="book-cover-big" />
-					<aside>
-						<span set:html={getStars(score)} />
-						<h3>Read on</h3>
-						<p>
-							{month}, {year}
-						</p>
-						<hr />
-						<h3>Tags</h3>
-						<p class="pill-flex">
-							{
-								genre.map((genre: [string]) => (
-									<span class="pill">{genre}</span>
-								))
+<Layout title={title}>
+	<main class="instructions m-top">
+		<a href={`../../`} rel="noopener noreferrer" class="center">Go Back</a>
+		<h1>
+			<span class="text-gradient">{title}</span>
+		</h1>
+		<h3>by {author}</h3>
+		<section class="book-review">
+			<article class="instructions">
+				<img src={image} alt={title} class="book-cover-big" />
+				<aside>
+					<span set:html={getStars(score)} />
+					<h3>Read on</h3>
+					<p>
+						{month}, {year}
+					</p>
+					<hr />
+					<h3>Tags</h3>
+					<p class="pill-flex">
+						{
+							genre.map((genre: [string]) => (
+								<span class="pill">{genre}</span>
+							))
+						}
+					</p>
+					<hr />
+				</aside>
+			</article>
+			<article class="instructions" style="flex-basis: 600px">
+				{
+					heroImage && (
+						<img
+							src={heroImage}
+							alt={title}
+							class={
+								entry.data.heroimage[1] === "full"
+									? "image"
+									: "image right"
 							}
-						</p>
-						<hr />
-						<Card href={`../../`} title={`Back`} body="Go back" />
-					</aside>
-				</article>
-				<article class="instructions" style="flex-basis: 600px">
-					{
-						heroImage && (
-							<img
-								src={heroImage}
-								alt={title}
-								class={
-									entry.data.heroimage[1] === "full"
-										? "image"
-										: "image right"
-								}
-							/>
-						)
-					}
-					<Content />
-					{
-						extraImage && (
-							<img src={extraImage} alt={title} class="image m-top" />
-						)
-					}
-					{
-						extraImages && (
-							<div class="extra-images">
-								<img src={extraImages[0]} alt={title} class="image" />
-								<img src={extraImages[1]} alt={title} class="image" />
-							</div>
-						)
-					}
-				</article>
-			</section>
-		</main>
-	</body>
-</html>
+						/>
+					)
+				}
+				<Content />
+				{extraImage && <img src={extraImage} alt={title} class="image m-top" />}
+				{
+					extraImages && (
+						<div class="extra-images">
+							<img src={extraImages[0]} alt={title} class="image" />
+							<img src={extraImages[1]} alt={title} class="image" />
+						</div>
+					)
+				}
+			</article>
+		</section>
+	</main>
+</Layout>

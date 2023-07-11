@@ -6,7 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 import "@fontsource/fraunces";
 import "@fontsource/fraunces/800.css";
-import "@fontsource/karla";
+import "@fontsource/rubik";
 import "../styles/global.css";
 ---
 
@@ -14,23 +14,17 @@ import "../styles/global.css";
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<script src="https://unpkg.com/phosphor-icons"></script>
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
 		<script src="https://unpkg.com/phosphor-icons"></script>
 		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width" />
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	html {
-		background-color: #f6f6f6;
-	}
-
-	/* main {
-		max-width: 60ch;
-	} */
-</style>

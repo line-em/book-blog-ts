@@ -1,0 +1,113 @@
+main {
+	max-width: 90ch;
+	text-align: justify;
+}
+
+h1,
+h3 {
+	text-align: center;
+}
+
+hr {
+	color: rgba(var(--accent), 20%);
+	width: 80%;
+}
+
+.pill-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.pill {
+	display: inline-block;
+	background-color: rgba(var(--accent), 20%);
+	padding: 0.3rem;
+	font-size: 0.8rem;
+	border-radius: 8px;
+}
+
+.book-cover-big {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	max-width: 200px;
+}
+
+.image {
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.image.right {
+	width: 45%;
+	float: right;
+	margin: 0 0 0.3rem 1rem;
+}
+
+@media screen and (max-width: 480px) {
+	.image.right {
+		width: 100%;
+		margin-block-end: 1rem;
+	}
+}
+
+.extra-images {
+	display: flex;
+	gap: 15px;
+	margin-top: 1rem;
+	flex-wrap: wrap;
+	place-items: center;
+	justify-content: space-around;
+}
+
+.extra-images * {
+	width: 45%;
+}
+
+.book-review {
+	display: flex;
+	gap: 15px;
+	margin-top: 1rem;
+}
+
+article:first-of-type {
+	width: 25%;
+	text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+	.book-review {
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+	}
+
+	article:first-of-type {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		width: 100%;
+	}
+}
+
+/* margin adjustments */
+.instructions {
+	margin: 0 auto;
+}
+
+.m-top {
+	margin-top: 1rem;
+}
+
+p,
+h3 {
+	margin: 0.5rem 0;
+}
+
+.m-top > h3 {
+	margin: 0;
+}

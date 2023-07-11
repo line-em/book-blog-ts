@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Persuasion"
 author: "Jane Austen"
 year: 2021

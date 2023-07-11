@@ -1,12 +1,11 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Sejamos Todos Feministas"
 author: "Chimamanda Ngozi Adichie"
 year: "2021"
 month: "March"
 score: 3
 image: ../weshouldallbefeminist.jpg
-genre: ["Non Fiction","Feminism"]
+genre: ["Non Fiction", "Feminism"]
 ---
 
 Short and Sweet.

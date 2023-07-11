@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "The Thief"
 author: "Megan Whalen Turner"
 year: 2021

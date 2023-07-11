@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "A Lady's Guide to Mischief and Mayhem"
 author: "Manda Collins"
 year: 2021

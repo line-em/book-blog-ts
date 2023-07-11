@@ -16,6 +16,14 @@ import { getCollection } from "astro:content";
 // 	return result;
 // };
 
+// export async function getStaticPaths() {
+// 	const bookEntries = await getCollection("books");
+// 	return bookEntries.map((entry: { slug: string }) => ({
+// 		params: { slug: entry.slug },
+// 		props: { entry }
+// 	}));
+// }
+
 const getBooks = async (year?: number) => {
 	let result;
 	if (year) {
@@ -64,6 +72,7 @@ let books = await getBooks();
 							/>
 						</article>
 					);
+					<x />;
 				})
 			}
 		</section>

@@ -38,52 +38,59 @@ const extraImages = entry.data.extraimages
 			<span class="text-gradient">{title}</span>
 		</h1>
 		<h3>by {author}</h3>
-		<section class="book-review">
-			<article class="instructions">
-				<img src={image} alt={title} class="book-cover-big" />
-				<aside>
-					<span set:html={getStars(score)} />
-					<h3>Read on</h3>
-					<p>
-						{month}, {year}
-					</p>
-					<hr />
-					<h3>Tags</h3>
-					<p class="pill-flex">
-						{
-							genre.map((genre: [string]) => (
-								<span class="pill">{genre}</span>
-							))
-						}
-					</p>
-					<hr />
-				</aside>
-			</article>
-			<article class="instructions" style="flex-basis: 600px">
-				{
-					heroImage && (
-						<img
-							src={heroImage}
-							alt={title}
-							class={
-								entry.data.heroimage[1] === "full"
-									? "image"
-									: "image right"
+		<div class="wrapper">
+			<section class="book-review">
+				<article class="book-info">
+					<img src={image} alt={title} class="book-cover-big" />
+					<aside class="star-info">
+						<span set:html={getStars(score)} />
+						<h3>Read on</h3>
+						<p>
+							{month}, {year}
+						</p>
+						<hr />
+					</aside>
+					<aside class="genre-info">
+						<h3>Genres</h3>
+						<p class="pill-flex">
+							{
+								genre.map((genre: [string]) => (
+									<span class="pill">{genre}</span>
+								))
 							}
-						/>
-					)
-				}
-				<Content />
-				{extraImage && <img src={extraImage} alt={title} class="image m-top" />}
-				{
-					extraImages && (
-						<div class="extra-images">
-							<img src={extraImages[0]} alt={title} class="image" />
-							<img src={extraImages[1]} alt={title} class="image" />
-						</div>
-					)
-				}
-			</article>
-		</section>
+						</p>
+					</aside>
+				</article>
+				<article class="instructions">
+					{
+						heroImage && (
+							<img
+								src={heroImage}
+								alt={title}
+								class={
+									entry.data.heroimage[1] === "full"
+										? "image"
+										: "image right"
+								}
+							/>
+						)
+					}
+					<Content />
+					{
+						extraImage && (
+							<img src={extraImage} alt={title} class="image m-top" />
+						)
+					}
+					{
+						extraImages && (
+							<div class="extra-images">
+								<img src={extraImages[0]} alt={title} class="image" />
+								<img src={extraImages[1]} alt={title} class="image" />
+							</div>
+						)
+					}
+				</article>
+			</section>
+		</div>
 	</main>
 </Layout>

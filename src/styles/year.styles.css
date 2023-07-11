@@ -29,19 +29,14 @@ img:hover {
 	}
 }
 
-.img-grid img {
-	height: 270px;
-	width: 100%;
-}
-
-.img-grid .grid-slug {
-	color: teal;
+.book-slug {
 	padding-block: 0.5rem;
 	padding-inline: 0.2rem;
 }
 
-.grid-slug:hover {
-	color: rgb(var(--accent));
+.img-grid img {
+	height: 270px;
+	width: 100%;
 }
 
 .book-grid-item {

@@ -1,5 +1,6 @@
 main {
 	max-width: 100ch;
+	min-height: calc(100vh - 2.5rem);
 	text-align: justify;
 }
 
@@ -19,6 +20,7 @@ hr {
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 5px;
+	margin-block-start: 1rem;
 }
 
 .pill {
@@ -67,43 +69,69 @@ hr {
 	width: 45%;
 }
 
+.wrapper {
+	container-type: inline-size;
+}
+
 .book-review {
-	display: flex;
-	gap: 15px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 1rem;
 	margin-top: 1rem;
 }
 
-article:first-of-type {
-	width: 25%;
+.book-info {
 	text-align: center;
 }
 
-@media screen and (max-width: 740px) {
+.book-info img {
+	order: 0;
+}
+
+@container (max-width: 520px) {
 	.book-review {
-		justify-content: center;
-		flex-wrap: wrap-reverse;
+		grid-template-columns: 1fr;
 	}
 
-	article:first-of-type {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		gap: 15px;
-		width: 100%;
+	.book-info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		place-items: center;
+		margin-block-start: 1rem;
+		gap: 1rem;
 	}
+
+	.genre-info {
+		order: 1;
+	}
+
+	.star-info {
+		order: 2;
+	}
+
+	.star-info > :is(p, h3) {
+		display: none;
+	}
+
+	/* .star-info > p,
+	.star-info > h3 {
+		display: none;
+	} */
+}
+
+article:last-of-type > p:first-of-type::first-letter {
+	font-family: "Fraunces", serif;
+	color: rgba(var(--accent), 100%);
+	font-size: clamp(1rem, 1.5vw + 1rem, 1.25rem);
+	font-weight: 800;
 }
 
 /* margin adjustments */
-.instructions {
-	margin: 0 auto;
-}
 
 .m-top {
 	margin-top: 1rem;
 }
 
-p,
 h3 {
 	margin: 0.5rem 0;
 }

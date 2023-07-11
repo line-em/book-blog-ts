@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Rogue Protocol"
 author: "Martha Wells"
 year: "2023"
@@ -8,11 +7,12 @@ score: 4.5
 image: ../rogueprotocol.jpg
 genre: ["Short Story", "Sci-Fi", "Fantasy", "Adult", "Robots", "Space"]
 ---
->“Who knew being a heartless killing machine would present so many moral dilemmas. (Yes, that was sarcasm.)” 
+
+> “Who knew being a heartless killing machine would present so many moral dilemmas. (Yes, that was sarcasm.)”
 
 This series has been so much fun. For real. They're short, lighthearted books, full of fun and adventure and so on and so forth, but also with some hidden depths and wonderful character growth. It's amazing to see how Murderbot develops, how it starts dealing with its emotions and freedom and how it questions the place it's in. For instance, this quote right here:
 
-> “Somewhere there had to be a happy medium between being treated as a terrifying murder machine and being infantilized.” 
+> “Somewhere there had to be a happy medium between being treated as a terrifying murder machine and being infantilized.”
 
 And this is so wonderfully complex. By now we know how SecUnits - specially rogue ones - are seen as too dangerous, as villains, as something you don't mess with. We have very few glimpses of the second case, but we see one of those in this book: the bot Miki, whom Murderbot dialogues throughout the entire book. Murderbot calls it a "pet bot", because it's treated with a lot of care, almost as being a friend, a human person. It feels weird for Murderbot because it goes beyond most of what it saw so far.
 
@@ -28,4 +28,4 @@ I loved the relationship between grumpy MurderBot posing as a SecUnit, and Miki,
 
 Those books are great and I will read the next one asap!
 
->“I was getting an idea. It was probably a bad idea. (When most of your training in tactical thinking comes from adventure shows, that does tend to happen.)” 
+> “I was getting an idea. It was probably a bad idea. (When most of your training in tactical thinking comes from adventure shows, that does tend to happen.)”

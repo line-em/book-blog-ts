@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Secret Identity"
 author: "Alex Segura"
 year: "2023"
@@ -9,7 +8,6 @@ image: ../secretidentity.jpg
 heroimage: ["../secretidentity2.jpg", "side"]
 extraimages: ["../secretidentity3.webp", "../secretidentity4.jpg"]
 genre: ["Mystery", "Unique", "Noir", "Comics", "Historical Books", "Queer"]
-
 ---
 
 > “The Lynx,” Carmen said, choosing her words carefully, “was complicated. I love her. In the way you love someone you gave your heart to, but who didn’t return the favor. She was important to me. She still is. But I’ve had to keep her at arm’s length. Because it hurt too much.”
@@ -20,7 +18,7 @@ This book is set during the 70s, featuring the dying comic book industry at the 
 
 > Miami was a city, too, Carmen knew—but New York was something else. A disease that bubbled and expanded and multiplied and morphed, like some kind of magical, mystical being that seemed from another world.
 
-Before talking about the story, I feel I have to talk about the art. I love the cover - and most of all, I **loved the comic book sequences.** They were great storytelling, they related to what was happening in the written book (a confrontation, a change of artist, etc), and they complimented it in the best possible way. I loved the artwork, and I added some to this review. Easily one of my favorite parts of this is how it wired it all together and gave it a spark! 
+Before talking about the story, I feel I have to talk about the art. I love the cover - and most of all, I **loved the comic book sequences.** They were great storytelling, they related to what was happening in the written book (a confrontation, a change of artist, etc), and they complimented it in the best possible way. I loved the artwork, and I added some to this review. Easily one of my favorite parts of this is how it wired it all together and gave it a spark!
 
 Now, about the story. One day, a colleague comes with a proposition - to write together a comic book story. Writing comics is her dream, but her boss doesn't listen to her and she feels like the door to opportunities for her is closing. So, despite the caveats, she jumps at the idea. The caveat? Her name would remain hidden until the time was right. The comic would be a success, and they couldn't deny her credits - but only with time. Until then, she'd be ghostwriting. **Thus, The Legendary Lynx is born.**
 

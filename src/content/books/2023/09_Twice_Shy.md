@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Twice Shy"
 author: "Sarah Hoggle"
 year: "2023"

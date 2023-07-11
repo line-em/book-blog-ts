@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Dawnshard"
 author: "Brandon Sanderson"
 year: "2023"
@@ -7,10 +6,9 @@ month: "January"
 score: 3.5
 image: ../dawnshard.jpg
 genre: ["Epic", "Fantasy", "Short Story", "Adult", "Disability", "Friendship"]
-
 ---
 
->“The problem with people was that everyone saw other nations from far away. Saw them as big mountainous blobs. Foreigners. Strange. Got it. Up close, it was hard to see people that way. Each was so distinctive.” 
+> “The problem with people was that everyone saw other nations from far away. Saw them as big mountainous blobs. Foreigners. Strange. Got it. Up close, it was hard to see people that way. Each was so distinctive.”
 
 This was pretty exciting and fun! Not that this is much of a mystery, as I tend to think this way about Brandon Sanderson's books... His mind just concocts the best ideas, what can I say?
 
@@ -20,17 +18,17 @@ I love the idea of these novellas. Both this one and Edgedancer, I feel like the
 
 This was an expansion on all of these accounts, and for people that are more in touch with the Cosmere (which I know very little, so I'm not the best judge), there are wider implications, or so it seems. For such a small novel, it was packed with a lot of punch.'
 
->“He took the teapot and poured two cups. She was grateful. And also frustrated. Not being able to walk was annoying, and that emotion people seemed to understand. But few understood the sense of embarrassment she felt—despite knowing she shouldn’t—at being a burden. While she appreciated the concern people showed for her, she worked so hard to be able to do things on her own. When people accidentally undercut that, it became more difficult to ignore the part of her that whispered lies. That told her that because she was less capable in a few areas, she was worthless in general.” 
+> “He took the teapot and poured two cups. She was grateful. And also frustrated. Not being able to walk was annoying, and that emotion people seemed to understand. But few understood the sense of embarrassment she felt—despite knowing she shouldn’t—at being a burden. While she appreciated the concern people showed for her, she worked so hard to be able to do things on her own. When people accidentally undercut that, it became more difficult to ignore the part of her that whispered lies. That told her that because she was less capable in a few areas, she was worthless in general.”
 
 Rysn is easily my favorite part of the book. How much she's grown, since the first time we saw her. Prejudiced, a little lazy, uninterested in so many things... She's grown so much, and this book makes it shine even more. I loved how she was portrayed too, how she deals with her disability, and how people treat her as well. Her challenges, her values, and so on. It was heartwarming. Real? Touching? I dunno how to explain, but gosh, she was so so good in this book. She was crafty and intelligent, and we sure need more protagonists with disabilities. I also loved her bond with Chiri-Chiri, apparently a guardian ❤️. I feel I also need to talk about Cord. The is Rock's daughter, and I feel like she and Rysn became kind of friends in this journey, protecting each other, and it was pretty sweet. I also loved that Rysn bonded with the Lopen regarding their disabilities. (I still find it weird that the Lopen has regrown his limb, but nothing I can do about it.)
 
 > “She inspected him lying on the deck, and he raised a fist in a gesture of solidarity.
->“Radiant the Lopen,” Rysn said, “. . . um, what do you call a Thaylen who can’t walk?”
->“Not sure, gancha.”
->“Names. From afar.”
->He grinned widely.
->“Of course,” Rysn added. “I’d never stand for that sort of thing.”
->The Lopen about died from laughing. He called to his cousin again, translating the jokes. This time Huio chuckled.” 
+> “Radiant the Lopen,” Rysn said, “. . . um, what do you call a Thaylen who can’t walk?”
+> “Not sure, gancha.”
+> “Names. From afar.”
+> He grinned widely.
+> “Of course,” Rysn added. “I’d never stand for that sort of thing.”
+> The Lopen about died from laughing. He called to his cousin again, translating the jokes. This time Huio chuckled.”
 
 The Sleepless are a kind of mythical being, being made of multiple houndlings that can create new shapes, disperse, and communicate like a hivemind. Makes me remember the Geth and their consensus, in Mass Effect. How they're hive-like beings, all connected, but all with their individualities too. Liked to see the one that appeared in Edgedancer mentioned too. I loved understanding more of their motivations, how they operate, how alien they are, and so on. It was very illuminating.
 
@@ -48,14 +46,14 @@ And it was supposed to be comedic, as the Lopen joked afterward of how reaching 
 
 I just feel like Brandon likes him too much, in a way? He has regrown his arm... was one of the first to get to the third ideal... It feels like a character he cherishes, so the Lopen gets some preferential treatment. I could be wrong though, but that's how it feels!
 
-I mean, I guess it's alright, it's not like they're the most important characters or anything. But it was a huge letdown. I was alright about them being windrunner, like, ok. But swearing the oaths like this? 
+I mean, I guess it's alright, it's not like they're the most important characters or anything. But it was a huge letdown. I was alright about them being windrunner, like, ok. But swearing the oaths like this?
 
 The negotiation with the Sleepless also left something to be desired. It was supposed to show how Rysn was a good trader, thinking about their needs and what she had to offer (the cosmere-breaking dawnshard she "stole" unknowingly). But it felt a little flat because it was so simple. So convenient. It didn't feel like a deal those god-like beings would accept (I keep the dawnshard and you let us leave, and in return, I keep your secret and train you on how to be human).
 
-Still, it was a good book. The slow built tension, the discovery, the journey, Rysn... There were a lot of good things. Were it not for these gripes, it could easily have been a favorite. But those things soured me a little, even though it was still enjoyable overall. 
+Still, it was a good book. The slow built tension, the discovery, the journey, Rysn... There were a lot of good things. Were it not for these gripes, it could easily have been a favorite. But those things soured me a little, even though it was still enjoyable overall.
 
->“Now,” the Lopen said to her, “you gotta have two hands to properly crawl. I came up with my own version, sure, when I had one hand. But it was more of a shuffle. See?” He moved to crawling with one hand, the other behind his back.
+> “Now,” the Lopen said to her, “you gotta have two hands to properly crawl. I came up with my own version, sure, when I had one hand. But it was more of a shuffle. See?” He moved to crawling with one hand, the other behind his back.
 > “That . . . looks very much like crawling to me, Radiant the Lopen,” Rysn said.
 > “It’s different though,” the Lopen said. “I tell you, I missed being able to do it.”
 > “You missed crawling?”
-> "Sure. I’d lay in bed and think, ‘Lopen, you used to be a majestic crawler. These louts don’t know how good they have it, being able to crawl whenever they want.” 
+> "Sure. I’d lay in bed and think, ‘Lopen, you used to be a majestic crawler. These louts don’t know how good they have it, being able to crawl whenever they want.”

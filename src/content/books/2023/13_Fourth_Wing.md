@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Fourth Wing"
 author: "Rebecca Yarros"
 year: "2023"

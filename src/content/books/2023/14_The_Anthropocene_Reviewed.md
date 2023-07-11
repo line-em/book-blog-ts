@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "The Anthropocene Reviewed"
 author: "John Green"
 year: "2023"

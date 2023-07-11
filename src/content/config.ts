@@ -3,7 +3,6 @@ import { z, defineCollection } from "astro:content";
 const bookCollection = defineCollection({
 	type: "content", // v2.5.0 and later
 	schema: z.object({
-		layout: z.string().optional(),
 		title: z.string(),
 		author: z.string(),
 		// year: z.number().optional(),
@@ -13,7 +12,8 @@ const bookCollection = defineCollection({
 		genre: z.array(z.string()),
 		image: z.string(),
 		heroimage: z.array(z.string()).optional(),
-		extraimage: z.string().optional()
+		extraimage: z.string().optional(),
+		extraimages: z.string().optional()
 	})
 });
 

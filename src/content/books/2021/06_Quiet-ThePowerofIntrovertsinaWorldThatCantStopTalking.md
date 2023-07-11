@@ -1,7 +1,7 @@
 ---
 title: "Quiet - The Power of Introverts in a World That Can't Stop Talking"
 author: "Susan Cain"
-year: "2021"
+year: 2021
 month: "March"
 score: 4
 image: ../quiet.jpg

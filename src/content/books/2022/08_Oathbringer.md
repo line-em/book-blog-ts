@@ -17,9 +17,9 @@ There was less focus on Kaladin, which is alright, to my book. He is still amazi
 
 Shallan is interesting too - and seeing her growth is also great. (Actually - all three main characters are completelt **suberb.** So I may be repeating myself saying _great this_, and _great that_. 😅) What I like the most is how broken and fragmented she is, and how it is represented. Her moment with Wit was one of my favorite parts of this book - as is every scene with Wit/Hoid, honestly. Talking about a story, finding messages in it, and that failures are ok. I love it.
 
-> “\_The most important step a man can take. It's not the first one, is it?
-
-    It's the next one. Always the next step, Dalinar._”
+> “The most important step a man can take. It's not the first one, is it?
+>
+> It's the next one. Always the next step, Dalinar.”
 
 Let's not mistake ourselves though: this is Dalinar's book. And how his backstory is intervowen in the narrative, from meeting Cultivation, the Thrill, Odium's involvement... Is nothing less than mindboggling. The culmination of it, in the fight with Odium, was nothing less than epic.
 
@@ -39,4 +39,5 @@ Nonetheless, I will take a little break from this universe, and venture to other
 > “Love wasn’t about being right or wrong, but about standing up and helping when your partner’s back was bowed.”
 
 > “Inappropriate?” Pattern said. “Such as … dividing by zero?”
-> Pattern is adorable. 😆
+
+Pattern is adorable. 😆

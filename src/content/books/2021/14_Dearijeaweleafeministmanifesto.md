@@ -1,7 +1,7 @@
 ---
 title: "Dear Ijeawele, a Feminist Manifesto"
 author: "Chimamanda Ngozi Adichie"
-year: "2021"
+year: 2021
 month: "August"
 score: 4
 image: ../dearijeawele.jpg

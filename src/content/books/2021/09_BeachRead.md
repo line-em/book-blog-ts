@@ -1,7 +1,7 @@
 ---
 title: "Beach Read"
 author: "Emily Henry"
-year: "2021"
+year: 2021
 month: "March"
 score: 4
 image: ../beacread.jpg

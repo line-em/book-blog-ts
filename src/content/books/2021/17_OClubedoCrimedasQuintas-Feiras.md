@@ -1,7 +1,7 @@
 ---
 title: "O Clube do Crime das Quintas-Feiras"
 author: "Richard Osman"
-year: "2021"
+year: 2021
 month: "September"
 score: 5
 image: ../thursdaymuder.jpg

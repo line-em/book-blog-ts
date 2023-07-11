@@ -1,7 +1,7 @@
 ---
 title: "The Queen of Attolia"
 author: "Megan Whalen Turner"
-year: "2021"
+year: 2021
 month: "June"
 score: 5
 image: ../queenofattolia.jpg

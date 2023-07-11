@@ -1,7 +1,7 @@
 ---
 title: "Sejamos Todos Feministas"
 author: "Chimamanda Ngozi Adichie"
-year: "2021"
+year: 2021
 month: "March"
 score: 3
 image: ../weshouldallbefeminist.jpg

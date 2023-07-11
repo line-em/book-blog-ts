@@ -1,7 +1,7 @@
 ---
 title: "Circe"
 author: "Madeline Miller"
-year: "2021"
+year: 2021
 month: "October"
 score: 5
 image: ../circe.jpg

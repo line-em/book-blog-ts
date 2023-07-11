@@ -1,7 +1,7 @@
 ---
 title: "A Maldição do Espelho"
 author: "Agatha Christie"
-year: "2021"
+year: 2021
 month: "August"
 score: 4
 image: ../themirrorcrackedfromsidetoside.jpg

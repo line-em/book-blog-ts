@@ -48,16 +48,20 @@ main {
 }
 
 h1 {
-	font-size: clamp(1.5rem, 2vw + 1.2rem, 2.25rem);
+	font-size: clamp(1.5rem, 2vw + 1.2rem, 2.5rem);
 	font-weight: 800;
-	margin: 0 auto;
+	margin-block: 0;
 }
 
 h3 {
 	font-size: clamp(0.8rem, 1vw + 0.8rem, 1.25rem);
 }
 
-:where(h1, h2, h3, h4, h5, h6) {
+h4 {
+	font-weight: 400;
+}
+
+:where(h1, h2, h3, h5, h6) {
 	font-family: "Fraunces", serif;
 }
 
@@ -87,16 +91,17 @@ blockquote + blockquote {
 .instructions,
 input,
 button,
-.button_style {
+.button-style {
 	margin: 0 auto;
 	background-color: white;
 	border-radius: 0.4rem;
+	display: block;
 }
 
-button {
-	padding: 0.5rem;
-	margin-block: 1rem;
-	border: 1px solid rgba(var(--accent), 25%);
+button,
+.button-style {
+	padding: 0.3rem 0.5rem;
+	border: 1px solid rgba(var(--accent), 55%);
 }
 
 .instructions strong {
@@ -104,22 +109,23 @@ button {
 }
 
 button,
-.button_style {
-	background-color: lavender;
+.button-style {
+	background-color: white;
 	color: rgb(var(--accent), 90%);
+	color: teal;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	font: inherit;
 }
 
 button:hover,
-.button_style:hover {
-	background-color: rgb(var(--accent), 35%);
+.button-style:hover {
+	background-color: lavender;
 }
 
 button:active,
-.button_style:active {
-	background-color: gainsboro;
+.button-style:active {
+	background-color: rgb(var(--accent), 35%);
 	transform: translateY(-2px);
 }
 
@@ -130,8 +136,22 @@ button:active,
 	padding: 0;
 }
 
-.center {
-	text-align: center;
+nav,
+.nav-buttons {
+	display: flex;
 	margin: 0 auto;
-	display: block;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.nav-buttons {
+	margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+	nav {
+		justify-content: center;
+	}
 }

@@ -1,7 +1,7 @@
 ---
 title: "Northanger Abbey"
 author: "Jane Austen"
-year: "2021"
+year: 2021
 month: "March"
 score: 5
 image: ../northangerabbey.jpg

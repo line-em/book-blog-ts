@@ -1,79 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from "@astrojs/image/components";
-import { getStars, getAverageStars } from "../utils/rating";
-import { getImagePath } from "../utils/digits";
+import { getAverageStars } from "../utils/rating";
 import { getMostReadGenres } from "../utils/genres";
 import "../styles/year.styles.css";
-import { getCollection } from "astro:content";
+import GridImage from "../components/GridImage.astro";
+import { getBooks } from "../utils/getBooks";
 
-// const getBooksByYear = async (year: number) => {
-// 	const result = await getCollection("books", ({ id }) => {
-// 		// console.log(`Checking book with ID ${id}`);
-// 		return id.startsWith(`${year}/`);
-// 	});
-// 	console.log(`Found ${result.length} books for year ${year}`);
-// 	return result;
-// };
-
-// export async function getStaticPaths() {
-// 	const bookEntries = await getCollection("books");
-// 	return bookEntries.map((entry: { slug: string }) => ({
-// 		params: { slug: entry.slug },
-// 		props: { entry }
-// 	}));
-// }
-
-const getBooks = async (year?: number) => {
-	let result;
-	if (year) {
-		const getBooksByYear = await getCollection("books", ({ id }) => {
-			return id.startsWith(`${year}/`);
-		});
-		result = getBooksByYear;
-		console.log(`Found ${result.length} books for year ${year}`);
-	} else {
-		result = await getCollection("books");
-	}
-	return result;
-};
 let books = await getBooks();
+
+const averageStars = getAverageStars(books.map((book) => book.data.score));
+const mostReadGenres = getMostReadGenres(books);
+
+const params = [...new Set(books.map((book) => book.data.year))];
 ---
 
-<Layout title="My Books">
+<Layout title="Read Books">
 	<main class="instructions">
-		<h1>Read <span class="text-gradient">Books</span></h1>
 		<nav>
-			<button class="get2021">2021</button>
+			<h1><span class="text-gradient">Book</span>{" "}List</h1>
+			<section class="nav-buttons">
+				{
+					params.map((year) => (
+						<a href={`/${year}`} class="button-style">
+							{year}
+						</a>
+					))
+				}
+			</section>
 		</nav>
-		<section class="img-grid">
-			{
-				books.map((book) => {
-					const imagePath = getImagePath(book.data.image, book.data.year);
-					return (
-						<article class="book-grid-item">
-							<a href={book.slug}>
-								<Image
-									alt={book.data.title}
-									width={300}
-									height={400}
-									aspectRatio="4:3"
-									format="webp"
-									src={imagePath}
-								/>
-							</a>
-							<a href={book.slug} class="book-slug">
-								{book.data.title}
-							</a>
-							<div
-								set:html={getStars(book.data.score)}
-								class="book-grid-rating"
-							/>
-						</article>
-					);
-					<x />;
-				})
+
+		<h4>
+			Books read:
+			<span class="text-gradient">{books.length}</span> / Most read {
+				mostReadGenres.length > 1 ? "genres:" : "genre:"
 			}
-		</section>
+			<span class="text-gradient">{mostReadGenres.join(", ")}</span> / Average rating:
+			<span class="text-gradient">{averageStars}</span>
+		</h4>
+
+		<GridImage books={books} />
 	</main>
 </Layout>

@@ -58,7 +58,7 @@ const extraImages = entry.data.extraimages
 						</p>
 					</aside>
 				</article>
-				<article class="instructions">
+				<article class="instructions book-content">
 					{
 						heroImage && (
 							<img
@@ -86,10 +86,14 @@ const extraImages = entry.data.extraimages
 							</div>
 						)
 					}
+					<nav>
+						<hr />
+						<a href={`../../`} rel="noopener noreferrer" class="center">
+							Go Back
+						</a>
+					</nav>
 				</article>
 			</section>
 		</div>
-		<hr />
-		<a href={`../../`} rel="noopener noreferrer" class="center">Go Back</a>
 	</main>
 </Layout>

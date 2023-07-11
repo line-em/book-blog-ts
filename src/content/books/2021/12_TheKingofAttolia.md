@@ -1,7 +1,7 @@
 ---
 title: "The King of Attolia"
 author: "Megan Whalen Turner"
-year: "2021"
+year: 2021
 month: "July"
 score: 5
 image: ../kingofattolia.jpg

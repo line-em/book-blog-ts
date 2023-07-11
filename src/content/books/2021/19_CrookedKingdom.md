@@ -1,7 +1,7 @@
 ---
 title: "Crooked Kingdom"
 author: "Leigh Bardugo"
-year: "2021"
+year: 2021
 month: "November"
 score: 3
 image: ../crookedkingdom.jpg

@@ -23,9 +23,9 @@ img:hover {
 	padding-block: 1.5rem;
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 680px) {
 	.img-grid {
-		grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+		gap: 1rem 0.5rem;
 	}
 }
 
@@ -38,6 +38,12 @@ img:hover {
 	height: 270px;
 	width: 100%;
 	object-fit: cover;
+}
+
+@media screen and (max-width: 420px) {
+	.img-grid img {
+		height: 300px;
+	}
 }
 
 .book-grid-item {

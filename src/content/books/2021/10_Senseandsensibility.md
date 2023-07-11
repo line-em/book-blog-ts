@@ -1,7 +1,7 @@
 ---
 title: "Sense and Sensibility"
 author: "Jane Austen"
-year: "2021"
+year: 2021
 month: "April"
 score: 4
 image: ../senseandsensibility.jpg

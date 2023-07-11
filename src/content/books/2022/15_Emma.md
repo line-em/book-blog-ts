@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Emma"
 author: "Jane Austen"
 year: "2022"
@@ -13,6 +12,6 @@ This book… took me a while. Maybe I wasn’t particularly in the mood for this
 
 But it didn’t enrapture me as her other books did. I won’t fault the book, however, as I’ve read many other books from Austen before, I believe the problem lied with me.
 
-I liked Emma as a protagonist, and Mr. Knightley confession will always be a favourite of mine (**“If I loved you less, I might be able to talk about it more.”**). But I didn’t feel the romance. The book tells us the journey and growth of Emma, and, albeit she did grow throughout the book, it still felt a little disconnected (or I was the one disconnected). It is fun and beautifully written as always, so I can’t give this book any less than 3⭐. There’s moments I enjoy, and Emma did grow, so I probably would rate it 3.5~4⭐. 
+I liked Emma as a protagonist, and Mr. Knightley confession will always be a favourite of mine (**“If I loved you less, I might be able to talk about it more.”**). But I didn’t feel the romance. The book tells us the journey and growth of Emma, and, albeit she did grow throughout the book, it still felt a little disconnected (or I was the one disconnected). It is fun and beautifully written as always, so I can’t give this book any less than 3⭐. There’s moments I enjoy, and Emma did grow, so I probably would rate it 3.5~4⭐.
 
 One day I hope to re-read this, and who knows? Maybe I will be more into it by then.

@@ -1,12 +1,11 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Book Lovers"
 author: "Emily Henry"
 year: "2022"
 month: "July"
 score: 4
 image: ../book-lovers-5.jpg
-genre: ["Romance", "ChickLit" , "ModernDay"]
+genre: ["Romance", "ChickLit", "ModernDay"]
 ---
 
 This was cute. I don't really have much to say I guess, but this was a fun light hearted reading. I could do without the family drama at the middle, but the ending was cute and sweet, so it more than made up for it.
@@ -27,9 +26,9 @@ Oh, I also enjoyed the literary references, from Jane Austen to a lot of others.
 
 Some other quotes:
 
-> “For anyone who wants it all,” she begins, “may you find something that is more than enough.” 
-> She wonders whether what comes next could ever live up to the expectations. 
-> She doesn’t know. You never can. 
+> “For anyone who wants it all,” she begins, “may you find something that is more than enough.”
+> She wonders whether what comes next could ever live up to the expectations.
+> She doesn’t know. You never can.
 > She turns the page anyway.
 
 and

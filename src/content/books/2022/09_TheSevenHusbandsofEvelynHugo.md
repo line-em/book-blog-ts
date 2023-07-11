@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "The Seven Husbands of Evelyn Hugo"
 author: "Taylor Jenkins Reid"
 year: "2022"

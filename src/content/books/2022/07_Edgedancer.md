@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Edgedancer"
 author: "Brandon Sanderson"
 year: "2022"

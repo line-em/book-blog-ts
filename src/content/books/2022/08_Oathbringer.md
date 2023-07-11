@@ -1,12 +1,11 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Oathbringer"
 author: "Brandon Sanderson"
 year: "2022"
 month: "May"
 score: 5
 image: "../oathbringer.jpg"
-genre: ["Fantasy" , "Epic", "Adult" , "Found Family"]
+genre: ["Fantasy", "Epic", "Adult", "Found Family"]
 ---
 
 Oathbringer was great! I actually enjoyed it even more than Words of Radiance, as this book focused more on Dalinar, and oh boy. His growth and his journey was so compelling and breathtaking. It takes a lot of strength to own up to your failures, to your misdeeds, and to the hurt you caused. It was inspiring and made me feel a lot of things inside.
@@ -16,10 +15,11 @@ I really love Dalinar Kholin.
 
 There was less focus on Kaladin, which is alright, to my book. He is still amazing, and it was nice to see other characters shine - like having chapters for some of the other Bridge Four characters. That was a great touch, to hear the thoughts of Rlain, the parshendi, Teft, and the others.
 
-Shallan is interesting too - and seeing her growth is also great. (Actually - all three main characters are completelt **suberb.** So I may be repeating myself saying *great this*, and *great that*. 😅) What I like the most is how broken and fragmented she is, and how it is represented. Her moment with Wit was one of my favorite parts of this book - as is every scene with Wit/Hoid, honestly. Talking about a story, finding messages in it, and that failures are ok. I love it.
+Shallan is interesting too - and seeing her growth is also great. (Actually - all three main characters are completelt **suberb.** So I may be repeating myself saying _great this_, and _great that_. 😅) What I like the most is how broken and fragmented she is, and how it is represented. Her moment with Wit was one of my favorite parts of this book - as is every scene with Wit/Hoid, honestly. Talking about a story, finding messages in it, and that failures are ok. I love it.
 
-> “_The most important step a man can take. It's not the first one, is it?  
-	It's the next one. Always the next step, Dalinar._”
+> “\_The most important step a man can take. It's not the first one, is it?
+
+    It's the next one. Always the next step, Dalinar._”
 
 Let's not mistake ourselves though: this is Dalinar's book. And how his backstory is intervowen in the narrative, from meeting Cultivation, the Thrill, Odium's involvement... Is nothing less than mindboggling. The culmination of it, in the fight with Odium, was nothing less than epic.
 

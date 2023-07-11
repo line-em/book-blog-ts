@@ -1,12 +1,12 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Vicious"
 author: "V.E. Schwab"
 year: "2022"
 month: "October"
 score: 5
 image: ../vicious.jpg
-genre: ["UrbanFantasy", "Superhero", "Urban Fantasy", "Fantasy", "Antihero", "Found Family"]
+genre:
+    ["UrbanFantasy", "Superhero", "Urban Fantasy", "Fantasy", "Antihero", "Found Family"]
 ---
 
 **"Plenty of humans were monstrous, and plenty of monsters knew how to play at being human."**
@@ -23,10 +23,10 @@ And it works. The tension, everything. The ending was also very satisfying, if l
 
 A very fun and engaging book for sure. I loved the dynamic between the characters, the weird found-family relationship between Victor, Sydney, and Mitch. So very good.
 
-Very, very solid five stars. I had a lot of fun, way more than I imagined, and I'm so happy with the read! 
+Very, very solid five stars. I had a lot of fun, way more than I imagined, and I'm so happy with the read!
 
 An excerpt of a review:
 It's all about the ambitions, the betrayals and the jealousies of people who are far too clever for their own good. People who work together to obtain power but whose friendship is torn apart by said power. The characters - including the protagonist - all have dark sides hiding beneath their calm, collected exteriors. Perhaps this will put some readers off, but I was absolutely fascinated by the exploration of the fine line between the good guys and the bad guys.
 
->"The paper called Eli a hero.
+> "The paper called Eli a hero.
 > The word made Victor laugh. Not just because it was absurd, but because it posed a question. If Eli really was a hero, and Victor meant to stop him, did that make him a villain?"

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Piranesi"
 author: "Susana Clarke"
 year: "2022"

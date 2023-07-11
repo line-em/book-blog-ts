@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "The Empress of Salt and Fortune"
 author: "Nghi Vo"
 year: "2022"
@@ -8,6 +7,7 @@ score: 4
 image: ../theempressofsaltandfortune.jpg
 genre: ["Fantasy", "Asian", "Short Stories", "LGBT", "Asian Author"]
 ---
+
 This was so nice a read, specially after my Emma blues! A short story was definitely a cure 🤣 and I’m super excited to read other books by Nghi Vo, this was pretty great, a very solid 4⭐ for me.
 
 The cleric, Chih, and her companion, a mystical talking bird called Almost Brilliant, get to know an elderly woman, Rabbit, a handmaiden who served the previous Empress of the Empire, and she tells them her story - and that of the Empress. Each chapter is like a new part of their narrative, and it’s delicate, clever, powerful, and poetic, specially towards the end and in the direst moments of the story. I dig it.

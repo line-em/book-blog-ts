@@ -1,12 +1,11 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "The Way of Kings"
 author: "Brandon Sanderson"
 year: "2022"
 month: "April"
 score: 5
 image: "../awayofkings.jpg"
-genre: ["Fantasy" , "Epic", "Adult" , "Found Family"]
+genre: ["Fantasy", "Epic", "Adult", "Found Family"]
 ---
 
 I loved this book.
@@ -27,16 +26,16 @@ When Kaladin decided to save Dalinar, reflecting on his fathers words, gave me c
 It was an amazing journey, one I will be glad to keep unraveling. Truly epic!
 
 _Journey before Destination._
-*Strength before Weakness.*
-*Life before Death.*
+_Strength before Weakness._
+_Life before Death._
 
 I will read Words of Radiance next, followed by a novella Edgedancer. Afterward it's time for Oathbringer, then the novella Dawnshard. Lastly, the book Rhythm of War. **From what I understand, the novellas are important, so it's best not to miss them!**
 
 > “The purpose of the Storyteller is not to tell you how to think. But to give you questions to think upon".
 
 From goodreads:
-I was _particularly_ fascinated by the Alethi dispersion of class & power being based on eye color. This is a concept I've discussed before in my circles of friends, how it is incredibly odd that humans tend to choose arbitrary characteristics to create & define social groupings.  
-  
-Sanderson highlights how foolish it is when we allow our perception of others to be guided by these **meaningless lines of division.**  
-  
+I was _particularly_ fascinated by the Alethi dispersion of class & power being based on eye color. This is a concept I've discussed before in my circles of friends, how it is incredibly odd that humans tend to choose arbitrary characteristics to create & define social groupings.
+
+Sanderson highlights how foolish it is when we allow our perception of others to be guided by these **meaningless lines of division.**
+
 Race, religion, sexuality, gender. Eye color, skin color, height, weight. **We are all people.** Individuals with an exponential range of capabilities, and no contrived societal category has the power to determine what we can or cannot achieve.

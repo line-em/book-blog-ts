@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Bringing Down the Duke"
 author: "Evie Dunmore"
 year: "2022"

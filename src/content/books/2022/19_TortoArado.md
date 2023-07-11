@@ -1,12 +1,20 @@
 ---
-layout: ../../layouts/BookPage.astro
 title: "Torto Arado"
 author: "Itamar Vieira Junior"
 year: "2022"
 month: "October"
 score: 5
 image: ../tortoarado.jpg
-genre: ["Brasil", "Literatura Brasileira", "Black Author" , "Slavery", "Drama", "Contemporary" , "Historical Fiction"]
+genre:
+    [
+        "Brasil",
+        "Literatura Brasileira",
+        "Black Author",
+        "Slavery",
+        "Drama",
+        "Contemporary",
+        "Historical Fiction"
+    ]
 ---
 
 > "Quando deram a liberdade aos negros, nosso abandono continuou. O povo vagou de terra em terra pedindo abrigo, passando fome, se sujeitando a trabalhar por nada. Se sujeitando a trabalhar por morada. A mesma escravidão de antes fantasiada de liberdade. Mas que liberdade?"
@@ -19,7 +27,7 @@ Um tema que acho que é muito presente é o de dar voz aos silenciados, literal 
 
 > "Em vídeo enviado ao Oceanos, Itamar declarou: “Torto arado é uma história de amor à terra que me foi narrada muitas vezes, por conta de meu trabalho como servidor (público), com camponeses, trabalhadores rurais, quilombolas, indígenas, assentados, acampados, ribeirinhos e comunidades tradicionais como um todo, ao longo de 15 anos. Cada comunidade elabora esse sentimento em relação à terra de forma diferente, mas que atravessa suas vidas de uma maneira comum. (...) Este livro é um retrato – o meu retrato – do Brasil deste tempo em que vivo, um Brasil que tem uma profunda conexão, ainda, com o seu passado mal resolvido.”
 
-Ler esse livro me fez pensar sobre as várias criticas que eu já li a respeito de feminismo branco, e como as prioridades são diferentes. Pra mim, esse livro representa bem isso. A resiliência de Belonísia e Bibiana, Maria Cabocla, Donana, Salu, Santa Rita Pescadeira, dentre outras mulheres que são potentes em suas vidas e narrativas, é algo que é difícil de descrever. 
+Ler esse livro me fez pensar sobre as várias criticas que eu já li a respeito de feminismo branco, e como as prioridades são diferentes. Pra mim, esse livro representa bem isso. A resiliência de Belonísia e Bibiana, Maria Cabocla, Donana, Salu, Santa Rita Pescadeira, dentre outras mulheres que são potentes em suas vidas e narrativas, é algo que é difícil de descrever.
 
 > "'Deixa ver se a senhora entendeu: esta terra mora em mim', bateu com força em seu peito, 'brotou em mim e enraizou.' 'Aqui', bateu novamente no peito, 'é a morada da terra. Mora aqui em meu peito porque dela se fez minha vida, com meu povo todinho. No meu peito mora Água Negra, não no documento da fazenda da senhora e de seu marido. Vocês podem até me arrancar dela como uma erva ruim, mas nunca irão arrancar a terra de mim.'"
 
@@ -31,6 +39,6 @@ Um trechinho de uma resenha:
 
 Um trecho de uma resenha do GoodReads:
 
-> Tudo no livro é bem pensado e tem um embasamento histórico em cada detalhe. A começar da religião: o jarê, religão de matriz africana, só existe na Chapada Diamantina, local que o autor visitou antes de escrever o livro. Na Chapada, o autor também tirou a inspiração para alguns personagens e seu jeito de falar. Da história, Itamar pegou momentos como a seca que assolou o sertão, a enchente que também destruiu plantações, a chegada da televisão antes mesmo da energia elétrica... Isso sem contar nas explicações das personagens para o melhor momento para colher, pescar e fazer outras atividades com base na fase da lua. A natureza é um elemento tão forte nessa obra quanto as próprias pessoas.  
+> Tudo no livro é bem pensado e tem um embasamento histórico em cada detalhe. A começar da religião: o jarê, religão de matriz africana, só existe na Chapada Diamantina, local que o autor visitou antes de escrever o livro. Na Chapada, o autor também tirou a inspiração para alguns personagens e seu jeito de falar. Da história, Itamar pegou momentos como a seca que assolou o sertão, a enchente que também destruiu plantações, a chegada da televisão antes mesmo da energia elétrica... Isso sem contar nas explicações das personagens para o melhor momento para colher, pescar e fazer outras atividades com base na fase da lua. A natureza é um elemento tão forte nessa obra quanto as próprias pessoas.
 
 Em suma, que livro fenomenal. 4.5, tiro um teco por conta do cansaço das figuras de linguagens, mas o livro continua fenomenal.

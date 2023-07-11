@@ -27,12 +27,19 @@ const mostReadGenres = getMostReadGenres(books);
 <Layout title="Book List">
 	<main class="instructions">
 		<nav>
-			<h1><span class="text-gradient">Book</span>{" "}List</h1>
+			<h1>
+				<span class="text-gradient">Book</span>{" "}List {year ? `: ${year}` : ""}
+			</h1>
 			<section class="nav-buttons">
 				{
-					yearList.map((year) => (
-						<a href={`/${Number(year)}`} class="button-style">
-							{year}
+					yearList.map((curr) => (
+						<a
+							href={`/${Number(curr)}`}
+							class={`button-style ${
+								curr === Number(year) ? "inactive" : ""
+							}`}
+						>
+							{curr}
 						</a>
 					))
 				}
@@ -41,11 +48,11 @@ const mostReadGenres = getMostReadGenres(books);
 
 		<h4>
 			Books read:
-			<span class="text-gradient">{books.length}</span> / Most read {
+			<strong class="text-gradient">{books.length}</strong> / Most read {
 				mostReadGenres.length > 1 ? "genres:" : "genre:"
 			}
-			<span class="text-gradient">{mostReadGenres.join(", ")}</span> / Average rating:
-			<span class="text-gradient">{averageStars}</span>
+			<strong class="text-gradient">{mostReadGenres.join(", ")}</strong> / Average rating:
+			<strong class="text-gradient">{averageStars}</strong>
 		</h4>
 		<slot />
 	</main>

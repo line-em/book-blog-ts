@@ -1,6 +1,8 @@
 :root {
 	--accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	--serif: "Spectral", "Georgia", serif;
+	--sans: "Rubik", "Arial", sans-serif;
 }
 
 html {
@@ -62,7 +64,7 @@ h4 {
 }
 
 :where(h1, h2, h3, h5, h6) {
-	font-family: "Fraunces", serif;
+	font-family: var(--serif);
 }
 
 blockquote {
@@ -111,7 +113,7 @@ button,
 button,
 .button-style {
 	background-color: white;
-	color: rgb(var(--accent), 90%);
+	color: rgba(var(--accent), 90%);
 	color: teal;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
@@ -119,12 +121,19 @@ button,
 }
 
 button:hover,
-.button-style:hover {
+.button-style:not(.inactive):hover {
 	background-color: lavender;
 }
 
-button:active,
-.button-style:active {
+.button-style.inactive {
+	color: rgba(var(--accent), 50%);
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: 0.5;
+	border: rgb(var(--accent), 0%);
+}
+
+button:active {
 	background-color: rgb(var(--accent), 35%);
 	transform: translateY(-2px);
 }

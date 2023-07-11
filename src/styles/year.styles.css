@@ -20,7 +20,7 @@ img:hover {
 	grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
 	text-align: center;
 	gap: 2rem 1.5rem;
-	padding: 1.5rem;
+	padding-block: 1.5rem;
 }
 
 @media screen and (max-width: 411px) {
@@ -37,6 +37,7 @@ img:hover {
 .img-grid img {
 	height: 270px;
 	width: 100%;
+	object-fit: cover;
 }
 
 .book-grid-item {

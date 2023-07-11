@@ -77,11 +77,16 @@ hr {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	gap: 1rem;
-	margin-top: 1rem;
+	margin-block-start: 1rem;
 }
 
 .book-info {
 	text-align: center;
+	background-color: lavender;
+	height: fit-content;
+	padding: 1rem;
+	border-radius: 0 8px 8px 0;
+	width: fit-content;
 }
 
 .book-info img {
@@ -91,6 +96,7 @@ hr {
 @container (max-width: 520px) {
 	.book-review {
 		grid-template-columns: 1fr;
+		margin-block-start: 0;
 	}
 
 	.book-info {
@@ -100,23 +106,12 @@ hr {
 		margin-block-start: 1rem;
 		gap: 1rem;
 	}
+}
 
-	.genre-info {
-		order: 1;
+@media screen and (max-width: 430px) {
+	.book-info {
+		grid-template-columns: 1fr;
 	}
-
-	.star-info {
-		order: 2;
-	}
-
-	.star-info > :is(p, h3) {
-		display: none;
-	}
-
-	/* .star-info > p,
-	.star-info > h3 {
-		display: none;
-	} */
 }
 
 article:last-of-type > p:first-of-type::first-letter {

@@ -48,7 +48,7 @@ main {
 }
 
 h1 {
-	font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+	font-size: clamp(1.5rem, 2vw + 1.2rem, 2.25rem);
 	font-weight: 800;
 	margin: 0 auto;
 }
@@ -62,7 +62,7 @@ h3 {
 }
 
 blockquote {
-	margin: 0.5rem;
+	margin: 0.5rem 0;
 	font-size: 0.8rem;
 	border-inline-start: 2px rgba(var(--accent), 75%) solid;
 	overflow: auto;
@@ -94,8 +94,8 @@ button,
 }
 
 button {
+	padding: 0.5rem;
 	margin-block: 1rem;
-	padding: 1rem;
 	border: 1px solid rgba(var(--accent), 25%);
 }
 
@@ -105,20 +105,21 @@ button {
 
 button,
 .button_style {
-	background-color: rgb(var(--accent), 50%);
-	color: white;
+	background-color: lavender;
+	color: rgb(var(--accent), 90%);
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
+	font: inherit;
 }
 
 button:hover,
 .button_style:hover {
-	background-color: rgb(var(--accent), 75%);
+	background-color: rgb(var(--accent), 35%);
 }
 
 button:active,
 .button_style:active {
-	background-color: rgb(var(--accent), 85%);
+	background-color: gainsboro;
 	transform: translateY(-2px);
 }
 

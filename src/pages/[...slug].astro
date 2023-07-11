@@ -33,7 +33,6 @@ const extraImages = entry.data.extraimages
 
 <Layout title={title}>
 	<main class="instructions m-top">
-		<a href={`../../`} rel="noopener noreferrer" class="center">Go Back</a>
 		<h1>
 			<span class="text-gradient">{title}</span>
 		</h1>
@@ -42,15 +41,13 @@ const extraImages = entry.data.extraimages
 			<section class="book-review">
 				<article class="book-info">
 					<img src={image} alt={title} class="book-cover-big" />
-					<aside class="star-info">
+					<aside>
 						<span set:html={getStars(score)} />
 						<h3>Read on</h3>
 						<p>
 							{month}, {year}
 						</p>
 						<hr />
-					</aside>
-					<aside class="genre-info">
 						<h3>Genres</h3>
 						<p class="pill-flex">
 							{
@@ -92,5 +89,7 @@ const extraImages = entry.data.extraimages
 				</article>
 			</section>
 		</div>
+		<hr />
+		<a href={`../../`} rel="noopener noreferrer" class="center">Go Back</a>
 	</main>
 </Layout>

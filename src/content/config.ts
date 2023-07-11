@@ -13,7 +13,7 @@ const bookCollection = defineCollection({
 		image: z.string(),
 		heroimage: z.array(z.string()).optional(),
 		extraimage: z.string().optional(),
-		extraimages: z.string().optional()
+		extraimages: z.array(z.string()).optional()
 	})
 });
 

@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "@astrojs/image/components";
 import { getStars, getAverageStars } from "../utils/rating";
-import { getDigits } from "../utils/digits";
+import { getImagePath } from "../utils/digits";
 import { getMostReadGenres } from "../utils/genres";
 import "../styles/year.styles.css";
 import { getCollection } from "astro:content";
@@ -40,7 +40,7 @@ const getBooks = async (year?: number) => {
 let books = await getBooks();
 ---
 
-<Layout title="My Books.">
+<Layout title="My Books">
 	<main class="instructions">
 		<h1>Read <span class="text-gradient">Books</span></h1>
 		<nav>
@@ -49,10 +49,7 @@ let books = await getBooks();
 		<section class="img-grid">
 			{
 				books.map((book) => {
-					const imagePath = `./books${getDigits(book.data.year, 2)}/${getDigits(
-						book.data.image,
-						3
-					)}`;
+					const imagePath = getImagePath(book.data.image, book.data.year);
 					return (
 						<article class="book-grid-item">
 							<a href={book.slug}>

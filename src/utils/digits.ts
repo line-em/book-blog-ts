@@ -5,3 +5,7 @@ export const getDigits = (original: number | string, digits: number) => {
 		return original.substring(digits);
 	}
 };
+
+export const getImagePath = (original: string, year: number | string) => {
+	return `./books${getDigits(year, 2)}/${getDigits(original, 3)}`;
+};

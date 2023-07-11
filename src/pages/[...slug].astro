@@ -8,6 +8,7 @@ import "../styles/global.css";
 import "@fontsource/fraunces";
 import "@fontsource/fraunces/800.css";
 import "@fontsource/karla";
+import { getImagePath } from "../utils/digits";
 
 export async function getStaticPaths() {
 	const bookEntries = await getCollection("books");
@@ -20,10 +21,18 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-const { title, author, month, score, image, year, genre } = entry.data;
-const heroImage = entry.data.heroimage ?? null;
-const extraImage = entry.data.extraimage ?? null;
-const extraImages = entry.data.extraimages ?? null;
+let { title, author, month, score, image, year, genre } = entry.data;
+image = `.${getImagePath(image, year)}`;
+
+const heroImage = entry.data.heroimage
+	? `.${getImagePath(entry.data.heroimage[0], year)}`
+	: null;
+const extraImage = entry.data.extraimage
+	? `.${getImagePath(entry.data.extraimage, year)}`
+	: null;
+const extraImages = entry.data.extraimages
+	? entry.data.extraimages.map((image: string) => `.${getImagePath(image, year)}`)
+	: null;
 ---
 
 <html>
@@ -68,9 +77,13 @@ const extraImages = entry.data.extraimages ?? null;
 					{
 						heroImage && (
 							<img
-								src={heroImage[0]}
+								src={heroImage}
 								alt={title}
-								class={heroImage[1] === "full" ? "image" : "image right"}
+								class={
+									entry.data.heroimage[1] === "full"
+										? "image"
+										: "image right"
+								}
 							/>
 						)
 					}

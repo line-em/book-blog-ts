@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import GridImage from "../components/GridImage.astro";
+import BookGrid from "../layouts/BookGrid.astro";
+import { getBooks } from "../utils/getBooks";
+import { yearList } from "../content/yearList";
+
+export async function getStaticPaths() {
+	const paths = yearList.map((year) => ({
+		params: { year: year }
+	}));
+	return paths;
+}
+
+const { year } = Astro.params;
+let books = await getBooks(Number(year));
+---
+
+<BookGrid year={Number(year)}>
+	<GridImage books={books} />
+</BookGrid>

@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getImagePath } from "../utils/digits";
+import { getStars } from "../utils/rating";
+import { Image } from "@astrojs/image/components";
+
+export interface Props {
+	books: CollectionEntry<"books">[];
+}
+
+const { books } = Astro.props;
+---
+
+<section class="img-grid">
+	{
+		books.map((book) => {
+			const imagePath = getImagePath(book.data.image, book.data.year);
+			return (
+				<article class="book-grid-item">
+					<a href={book.slug}>
+						<Image
+							alt={book.data.title}
+							width={350}
+							height={450}
+							aspectRatio="4:3"
+							format="webp"
+							src={imagePath}
+						/>
+					</a>
+					<a href={book.slug} class="book-slug">
+						{book.data.title}
+					</a>
+					<div set:html={getStars(book.data.score)} class="book-grid-rating" />
+				</article>
+			);
+		})
+	}
+</section>

@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getStars } from "../utils/rating";
+import { getMostReadGenres } from "../utils/genres";
+import "../styles/year.styles.css";
+import { yearList } from "../content/yearList";
+import { image } from "astro:content";
+
+export interface Props {
+	cover: string;
+	score: number;
+	year: number;
+	month: number;
+	genres: string[];
+	title: string;
+}
+
+const { cover, score, year, month, genres, title } = Astro.props;
+---
+
+<Layout title="Book List">
+	<main class="review-box">
+		<header>
+			<nav>
+				<h1>
+					<span class="text-gradient">Yearly</span>{" "}Books
+				</h1>
+				<section class="nav-buttons">
+					<a
+						href=`/index.html`
+						}
+						class={`button-style ${year ? "" : "inactive"}`}
+					>
+						All
+					</a>
+					{
+						yearList.map((curr) => (
+							<a href={`/${Number(curr)}`} class="button-style">
+								{curr}
+							</a>
+						))
+					}
+				</section>
+			</nav>
+		</header>
+		<slot />
+		<aside class="book-info">
+			<img src={cover} alt={title} class="book-cover-big" />
+			<span set:html={getStars(score)} />
+			<h3>Read on</h3>
+			<p>
+				{month}, {year}
+			</p>
+			<hr />
+			<h3>Genres</h3>
+			<p class="pill-flex">
+				{genres?.map((genre: string) => <span class="pill">{genre}</span>)}
+			</p>
+			<hr />
+			<a href={`../../`} rel="noopener noreferrer" class="button-style">Go Back</a>
+		</aside>
+	</main>
+</Layout>

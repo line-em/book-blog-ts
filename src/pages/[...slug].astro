@@ -5,6 +5,8 @@ import { getImagePath, removeYearFromPath } from "../utils/digits";
 
 import "../styles/bookpage.styles.css";
 import Layout from "../layouts/Layout.astro";
+import BookGrid from "../layouts/BookGrid.astro";
+import BookReview from "../layouts/BookReview.astro";
 
 export async function getStaticPaths() {
 	const bookEntries = await getCollection("books");
@@ -31,34 +33,23 @@ const extraImages = entry.data.extraimages
 	: null;
 ---
 
-<Layout title={title}>
-	<main class="instructions m-top">
+<BookReview
+	score={score}
+	year={year}
+	month={month}
+	genres={genre}
+	cover={image}
+	title={title}
+>
+	<!-- <Layout title={title}> -->
+	<main class="instructions center p-top-base">
 		<h1>
 			<span class="text-gradient">{title}</span>
 		</h1>
 		<h3>by {author}</h3>
 		<div class="wrapper">
 			<section class="book-review">
-				<article class="book-info">
-					<img src={image} alt={title} class="book-cover-big" />
-					<aside>
-						<span set:html={getStars(score)} />
-						<h3>Read on</h3>
-						<p>
-							{month}, {year}
-						</p>
-						<hr />
-						<h3>Genres</h3>
-						<p class="pill-flex">
-							{
-								genre.map((genre: [string]) => (
-									<span class="pill">{genre}</span>
-								))
-							}
-						</p>
-					</aside>
-				</article>
-				<article class="instructions book-content">
+				<article class="book-content">
 					{
 						heroImage && (
 							<img
@@ -86,14 +77,8 @@ const extraImages = entry.data.extraimages
 							</div>
 						)
 					}
-					<nav>
-						<hr />
-						<a href={`../../`} rel="noopener noreferrer" class="center">
-							Go Back
-						</a>
-					</nav>
 				</article>
 			</section>
 		</div>
 	</main>
-</Layout>
+</BookReview>

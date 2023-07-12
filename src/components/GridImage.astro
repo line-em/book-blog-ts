@@ -11,7 +11,7 @@ export interface Props {
 const { books, year } = Astro.props;
 ---
 
-<section class="img-grid">
+<section class="img-grid instructions">
 	{
 		books.map((book) => {
 			const imagePath = `${year ? `..` : `.`}/${getImagePath(

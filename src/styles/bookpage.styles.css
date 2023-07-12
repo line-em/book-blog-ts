@@ -133,6 +133,7 @@ article:last-of-type > p:first-of-type::first-letter {
 	}
 
 	.nav-buttons {
+		width: 100%;
 		grid-template-columns: repeat(3, minmax(54px, 1fr));
 	}
 }

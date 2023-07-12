@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getLocalImagePath, getUrlPath } from "../utils/digits";
+import { getImagePath, getUrlPath } from "../utils/digits";
 import { getStars } from "../utils/rating";
 import { Image } from "@astrojs/image/components";
 
@@ -16,10 +16,10 @@ console.log(getUrlPath(books[1].slug, false));
 <section class="img-grid">
 	{
 		books.map((book) => {
-			const imagePath = getLocalImagePath(book.data.image, book.data.year);
+			const imagePath = getImagePath(book.data.image, book.data.year);
 			return (
 				<article class="book-grid-item">
-					<a href={getUrlPath(book.slug, false)}>
+					<a href={getUrlPath(book.slug)}>
 						<Image
 							alt={book.data.title}
 							width={350}
@@ -29,10 +29,7 @@ console.log(getUrlPath(books[1].slug, false));
 							src={imagePath}
 						/>
 					</a>
-					<a
-						href={getUrlPath(book.slug, year ? true : false)}
-						class="book-slug"
-					>
+					<a href={getUrlPath(book.slug)} class="book-slug">
 						{book.data.title}
 					</a>
 					<div set:html={getStars(book.data.score)} class="book-grid-rating" />

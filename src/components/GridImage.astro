@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getImagePath, getUrlPath } from "../utils/digits";
+import { getLocalImagePath, getUrlPath } from "../utils/digits";
 import { getStars } from "../utils/rating";
 import { Image } from "@astrojs/image/components";
 
@@ -10,22 +10,21 @@ export interface Props {
 }
 
 const { books, year } = Astro.props;
-console.log(getUrlPath(books[1].slug, false));
 ---
 
 <section class="img-grid">
 	{
 		books.map((book) => {
-			const imagePath = getImagePath(book.data.image, book.data.year);
+			const imagePath = getLocalImagePath(book?.data.image, book?.data.year);
 
-			console.log(book.slug);
+			console.log(book?.slug);
 			console.log(imagePath);
 
 			return (
 				<article class="book-grid-item">
-					<a href={getUrlPath(book.slug)}>
+					<a href={getUrlPath(book?.slug)}>
 						<Image
-							alt={book.data.title}
+							alt={book?.data.title}
 							width={350}
 							height={450}
 							aspectRatio="4:3"
@@ -33,10 +32,10 @@ console.log(getUrlPath(books[1].slug, false));
 							src={imagePath}
 						/>
 					</a>
-					<a href={getUrlPath(book.slug)} class="book-slug">
-						{book.data.title}
+					<a href={getUrlPath(book?.slug)} class="book-slug">
+						{book?.data.title}
 					</a>
-					<div set:html={getStars(book.data.score)} class="book-grid-rating" />
+					<div set:html={getStars(book?.data.score)} class="book-grid-rating" />
 				</article>
 			);
 		})

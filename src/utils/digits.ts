@@ -9,3 +9,11 @@ export const getDigits = (original: number | string, digits: number) => {
 export const getImagePath = (original: string, year: number | string) => {
 	return `./books${getDigits(year, 2)}/${getDigits(original, 3)}`;
 };
+
+export const removeYearFromPath = (original: string) => {
+	return original.substring(0, 5);
+};
+
+export const getUrlPath = (original: string, hasYear: boolean) => {
+	return `/${hasYear ? removeYearFromPath(original) : original}/index.html`;
+};

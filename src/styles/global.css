@@ -44,9 +44,8 @@ a:hover {
 	color: rgba(var(--accent), 80%);
 }
 
-main {
-	margin: auto;
-	padding: 1.5rem;
+strong {
+	color: rgb(var(--accent));
 }
 
 h1 {
@@ -106,10 +105,6 @@ button,
 	border: 1px solid rgba(var(--accent), 55%);
 }
 
-.instructions strong {
-	color: rgb(var(--accent));
-}
-
 button,
 .button-style {
 	background-color: white;
@@ -163,4 +158,12 @@ nav,
 	nav {
 		justify-content: center;
 	}
+}
+
+.content-box {
+	background-color: whitesmoke;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	margin: 0 auto;
+	border-radius: 0.4rem;
 }

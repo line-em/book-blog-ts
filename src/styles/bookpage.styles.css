@@ -134,3 +134,8 @@ h3 {
 .m-top > h3 {
 	margin: 0;
 }
+
+.instructions.m-top {
+	padding: 1.5rem;
+	max-width: 100ch;
+}

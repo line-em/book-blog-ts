@@ -1,14 +1,15 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getImagePath } from "../utils/digits";
+import { getImagePath, getUrlPath } from "../utils/digits";
 import { getStars } from "../utils/rating";
 import { Image } from "@astrojs/image/components";
 
 export interface Props {
 	books: CollectionEntry<"books">[];
+	year?: number | "none";
 }
 
-const { books } = Astro.props;
+const { books, year = "none" } = Astro.props;
 ---
 
 <section class="img-grid">
@@ -17,7 +18,7 @@ const { books } = Astro.props;
 			const imagePath = getImagePath(book.data.image, book.data.year);
 			return (
 				<article class="book-grid-item">
-					<a href={book.slug}>
+					<a href={getUrlPath(book.slug, year ? true : false)}>
 						<Image
 							alt={book.data.title}
 							width={350}
@@ -27,7 +28,10 @@ const { books } = Astro.props;
 							src={imagePath}
 						/>
 					</a>
-					<a href={book.slug} class="book-slug">
+					<a
+						href={getUrlPath(book.slug, year ? true : false)}
+						class="book-slug"
+					>
 						{book.data.title}
 					</a>
 					<div set:html={getStars(book.data.score)} class="book-grid-rating" />

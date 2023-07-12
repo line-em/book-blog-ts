@@ -25,35 +25,47 @@ const mostReadGenres = getMostReadGenres(books);
 ---
 
 <Layout title="Book List">
-	<main class="instructions">
-		<nav>
-			<h1>
-				<span class="text-gradient">Book</span>{" "}List {year ? `: ${year}` : ""}
-			</h1>
-			<section class="nav-buttons">
-				{
-					yearList.map((curr) => (
-						<a
-							href={`/${Number(curr)}`}
-							class={`button-style ${
-								curr === Number(year) ? "inactive" : ""
-							}`}
-						>
-							{curr}
-						</a>
-					))
-				}
-			</section>
-		</nav>
+	<main class="content-box">
+		<header>
+			<nav>
+				<h1>
+					<span class="text-gradient">Book</span>{" "}List {
+						year ? `: ${year}` : ""
+					}
+				</h1>
+				<section class="nav-buttons">
+					<a
+						href=`/index.html`
+						}
+						class={`button-style ${year ? "" : "inactive"}`}
+					>
+						All
+					</a>
+					{
+						yearList.map((curr) => (
+							<a
+								href={`/${Number(curr)}`}
+								class={`button-style ${
+									curr === Number(year) ? "inactive" : ""
+								}`}
+							>
+								{curr}
+							</a>
+						))
+					}
+				</section>
+			</nav>
 
-		<h4>
-			Books read:
-			<strong class="text-gradient">{books.length}</strong> / Most read {
-				mostReadGenres.length > 1 ? "genres:" : "genre:"
-			}
-			<strong class="text-gradient">{mostReadGenres.join(", ")}</strong> / Average rating:
-			<strong class="text-gradient">{averageStars}</strong>
-		</h4>
+			<h4>
+				Books read:
+				<strong class="text-gradient">{books.length}</strong> / Most read {
+					mostReadGenres.length > 1 ? "genres:" : "genre:"
+				}
+				<strong class="text-gradient">{mostReadGenres.join(", ")}</strong> / Average
+				rating:
+				<strong class="text-gradient">{averageStars}</strong>
+			</h4>
+		</header>
 		<slot />
 	</main>
 </Layout>

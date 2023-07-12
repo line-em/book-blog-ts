@@ -1,8 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getLocalImagePath, getUrlPath, removeFileExtension } from "../utils/digits";
+import { getImagePath, getUrlPath } from "../utils/digits";
 import { getStars } from "../utils/rating";
-import { Image } from "@astrojs/image/components";
 
 export interface Props {
 	books: CollectionEntry<"books">[];
@@ -15,10 +14,7 @@ const { books, year } = Astro.props;
 <section class="img-grid">
 	{
 		books.map((book) => {
-			const imagePath = `${removeFileExtension(
-				getLocalImagePath(book?.data.image, book?.data.year)
-			)}`;
-
+			const imagePath = `./${getImagePath(book?.data.image, book?.data.year)}`;
 			return (
 				<article class="book-grid-item">
 					<a
@@ -28,14 +24,7 @@ const { books, year } = Astro.props;
 								: getUrlPath(book?.slug, false)
 						}
 					>
-						<Image
-							alt={book?.data.title}
-							width={350}
-							height={450}
-							aspectRatio="4:3"
-							format="webp"
-							src={import(`../${imagePath}.jpg`)}
-						/>
+						<img src={imagePath} alt={book?.data.title} />
 					</a>
 					<a
 						href={
@@ -53,3 +42,16 @@ const { books, year } = Astro.props;
 		})
 	}
 </section>
+
+<!-- FIXME: Couldn't make the dynamic assets to work. -->
+<!-- 	const imagePath = `${removeFileExtension(
+				getLocalImagePath(book?.data.image, book?.data.year)
+			)}`; -->
+<!-- 	<Image
+							alt={book?.data.title}
+							width={350}
+							height={450}
+							aspectRatio="4:3"
+							format="webp"
+							src={import(`../${imagePath}.jpg`)}
+						/> -->

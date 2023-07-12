@@ -113,7 +113,7 @@ article:last-of-type > p:first-of-type::first-letter {
 	font-family: var(--serif);
 	color: rgba(var(--accent), 100%);
 	font-size: clamp(1rem, 1.5vw + 1rem, 1.25rem);
-	font-weight: 800;
+	font-weight: var(--bold);
 }
 
 /* margin adjustments */

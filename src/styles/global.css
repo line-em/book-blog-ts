@@ -1,14 +1,14 @@
 :root {
 	--accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	--serif: "Spectral", "Georgia", serif;
+	--serif: "Libre Baskerville", "Georgia", serif;
 	--sans: "Rubik", "Arial", sans-serif;
+	--bold: 700;
 }
 
 html {
 	background-color: lavender;
 	font-family: "Rubik", sans-serif;
-	box-sizing: border-box;
 }
 
 body {
@@ -51,7 +51,7 @@ strong {
 
 h1 {
 	font-size: clamp(2rem, 2vw + 2rem, 3rem);
-	font-weight: 800;
+	font-weight: var(--bold);
 	margin-block: 0;
 	line-height: 1;
 }

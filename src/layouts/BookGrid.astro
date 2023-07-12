@@ -29,9 +29,7 @@ const mostReadGenres = getMostReadGenres(books);
 		<header>
 			<nav>
 				<h1>
-					<span class="text-gradient">Book</span>{" "}List {
-						year ? `: ${year}` : ""
-					}
+					<span class="text-gradient">{year ? `${year}` : ""}</span>{" "}Books
 				</h1>
 				<section class="nav-buttons">
 					<a
@@ -55,16 +53,24 @@ const mostReadGenres = getMostReadGenres(books);
 					}
 				</section>
 			</nav>
-
-			<h4>
-				Books read:
-				<strong class="text-gradient">{books.length}</strong> / Most read {
-					mostReadGenres.length > 1 ? "genres:" : "genre:"
-				}
-				<strong class="text-gradient">{mostReadGenres.join(", ")}</strong> / Average
-				rating:
-				<strong class="text-gradient">{averageStars}</strong>
-			</h4>
+			<aside>
+				<hr />
+				<h3>Reading Stats</h3>
+				<ul>
+					<li>
+						Books read:
+						<strong class="text-gradient">{books.length}</strong>
+					</li>
+					<li>
+						Most read {mostReadGenres.length > 1 ? "genres:" : "genre:"}
+						<strong class="text-gradient">{mostReadGenres.join(", ")}</strong>
+					</li>
+					<li>
+						Average rating:
+						<strong class="text-gradient">{averageStars}</strong>
+					</li>
+				</ul>
+			</aside>
 		</header>
 		<slot />
 	</main>

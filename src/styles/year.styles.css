@@ -17,10 +17,10 @@ img:hover {
 
 .img-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
 	text-align: center;
 	gap: 2rem 1.5rem;
-	padding-block: 1.5rem;
+	padding: 1.5rem 1rem;
 }
 
 @media screen and (max-width: 680px) {

@@ -15,5 +15,5 @@ export const removeYearFromPath = (original: string) => {
 };
 
 export const getUrlPath = (original: string, hasYear: boolean) => {
-	return `/${hasYear ? removeYearFromPath(original) : original}/index.html`;
+	return `./${hasYear ? removeYearFromPath(original) : original}/index.html`;
 };

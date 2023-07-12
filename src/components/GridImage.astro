@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getImagePath, getUrlPath, removeFileExtension } from "../utils/digits";
+import { getLocalImagePath, getUrlPath, removeFileExtension } from "../utils/digits";
 import { getStars } from "../utils/rating";
 import { Image } from "@astrojs/image/components";
 
@@ -16,7 +16,7 @@ const { books, year } = Astro.props;
 	{
 		books.map((book) => {
 			const imagePath = `${removeFileExtension(
-				getImagePath(book?.data.image, book?.data.year)
+				getLocalImagePath(book?.data.image, book?.data.year)
 			)}`;
 
 			return (
@@ -34,7 +34,7 @@ const { books, year } = Astro.props;
 							height={450}
 							aspectRatio="4:3"
 							format="webp"
-							src={"./" + imagePath + ".jpg"}
+							src={import(`../${imagePath}.jpg`)}
 						/>
 					</a>
 					<a

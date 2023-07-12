@@ -6,10 +6,10 @@ import { Image } from "@astrojs/image/components";
 
 export interface Props {
 	books: CollectionEntry<"books">[];
-	year?: number | "none";
+	year?: number;
 }
 
-const { books, year = "none" } = Astro.props;
+const { books, year } = Astro.props;
 ---
 
 <section class="img-grid">

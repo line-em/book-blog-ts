@@ -11,7 +11,7 @@ export const getImagePath = (original: string, year: number | string) => {
 };
 
 export const removeYearFromPath = (original: string) => {
-	return original.substring(0, 5);
+	return original.substring(5);
 };
 
 export const getUrlPath = (original: string, hasYear: boolean) => {

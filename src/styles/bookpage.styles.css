@@ -12,6 +12,7 @@ main {
 	margin: 0 auto;
 	border-radius: 0.4rem;
 	position: relative;
+	min-height: 100vh;
 }
 
 h1,
@@ -95,4 +96,43 @@ article:last-of-type > p:first-of-type::first-letter {
 	color: rgba(var(--accent), 100%);
 	font-size: clamp(1rem, 1.5vw + 1rem, 1.25rem);
 	font-weight: var(--bold);
+}
+
+@media screen and (max-width: 950px) {
+	.review-box {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.review-box > .instructions {
+		margin: 0;
+	}
+
+	.review-box > main {
+		grid-column: span 2;
+	}
+
+	.review-box > header {
+		order: 2;
+	}
+
+	.review-box > :is(header, aside) {
+		position: relative;
+		top: 0;
+		justify-content: start;
+		height: calc(100% + 2.5rem);
+		padding-block: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.review-box {
+		grid-template-columns: 1fr;
+	}
+	.review-box > main {
+		grid-column: span 1;
+	}
+
+	.nav-buttons {
+		grid-template-columns: repeat(3, minmax(54px, 1fr));
+	}
 }

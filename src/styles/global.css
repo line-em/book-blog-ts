@@ -104,7 +104,7 @@ button,
 }
 
 .instructions {
-	margin: 1rem;
+	margin: 0.7rem;
 }
 
 .instructions.center {
@@ -176,6 +176,7 @@ hr {
 	flex-direction: column;
 	gap: 1rem;
 	justify-content: space-between;
+	overflow: hidden scroll;
 }
 
 @media screen and (max-width: 440px) {
@@ -183,10 +184,10 @@ hr {
 		grid-template-columns: 1fr;
 	}
 
-	.content-box > header {
+	:where(.content-box, .review-box) > :where(header, aside) {
 		padding: 0 1.5rem;
 		position: relative;
-		height: 100%;
+		height: calc(100% + 2.5rem);
 	}
 }
 
@@ -221,5 +222,6 @@ li + li {
 }
 
 .p-top-base {
-	padding-block-start: 1rem;
+	padding-block-start: 0.7rem;
+	padding-inline: 0.7rem;
 }

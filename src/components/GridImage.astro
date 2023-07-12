@@ -17,7 +17,8 @@ const { books, year } = Astro.props;
 		books.map((book) => {
 			const imagePath = `${removeFileExtension(
 				getImagePath(book?.data.image, book?.data.year)
-			)}.jpg`;
+			)}`;
+			console.log("./" + imagePath + ".jpg");
 
 			return (
 				<article class="book-grid-item">
@@ -34,7 +35,7 @@ const { books, year } = Astro.props;
 							height={450}
 							aspectRatio="4:3"
 							format="webp"
-							src={imagePath}
+							src={"./" + imagePath + ".jpg"}
 						/>
 					</a>
 					<a

@@ -18,16 +18,16 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 let { title, author, month, score, image, year, genre } = entry.data;
-image = `.${removeYearFromPath(getImagePath(image, year))}`;
+image = "../../" + getImagePath(image, year);
 
 const heroImage = entry.data.heroimage
-	? `.${getImagePath(entry.data.heroimage[0], year)}`
+	? `../../${getImagePath(entry.data.heroimage[0], year)}`
 	: null;
 const extraImage = entry.data.extraimage
-	? `.${getImagePath(entry.data.extraimage, year)}`
+	? `../../${getImagePath(entry.data.extraimage, year)}`
 	: null;
 const extraImages = entry.data.extraimages
-	? entry.data.extraimages.map((image: string) => `.${getImagePath(image, year)}`)
+	? entry.data.extraimages.map((image: string) => `../../${getImagePath(image, year)}`)
 	: null;
 ---
 

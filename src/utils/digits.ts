@@ -7,7 +7,7 @@ export const getDigits = (original: number | string, digits: number) => {
 };
 
 export const getImagePath = (original: string, year: number | string) => {
-	return `./books${getDigits(year, 2)}/${getDigits(original, 3)}`;
+	return `books${getDigits(year, 2)}/${getDigits(original, 3)}`;
 };
 
 export const removeYearFromPath = (original: string) => {

@@ -14,7 +14,10 @@ const { books, year } = Astro.props;
 <section class="img-grid">
 	{
 		books.map((book) => {
-			const imagePath = `./${getImagePath(book?.data.image, book?.data.year)}`;
+			const imagePath = `${year ? `..` : `.`}/${getImagePath(
+				book?.data.image,
+				book?.data.year
+			)}`;
 			return (
 				<article class="book-grid-item">
 					<a

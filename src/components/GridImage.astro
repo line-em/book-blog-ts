@@ -17,6 +17,10 @@ console.log(getUrlPath(books[1].slug, false));
 	{
 		books.map((book) => {
 			const imagePath = getImagePath(book.data.image, book.data.year);
+
+			console.log(book.slug);
+			console.log(imagePath);
+
 			return (
 				<article class="book-grid-item">
 					<a href={getUrlPath(book.slug)}>

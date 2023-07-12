@@ -18,7 +18,6 @@ const { books, year } = Astro.props;
 			const imagePath = `${removeFileExtension(
 				getImagePath(book?.data.image, book?.data.year)
 			)}`;
-			console.log("./" + imagePath + ".jpg");
 
 			return (
 				<article class="book-grid-item">

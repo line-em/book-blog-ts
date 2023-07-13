@@ -203,6 +203,20 @@ nav,
 	/* grid-template-columns: repeat(auto-fit, minmax(54px, 1fr)); */
 }
 
+@media screen and (max-width: 450px) {
+	.review-box {
+		grid-template-columns: 1fr;
+	}
+	.review-box > main {
+		grid-column: span 1;
+	}
+
+	.nav-buttons {
+		width: 100%;
+		grid-template-columns: repeat(3, minmax(54px, 1fr));
+	}
+}
+
 ul {
 	list-style: none;
 	padding: 0;

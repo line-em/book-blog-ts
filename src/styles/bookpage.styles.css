@@ -123,17 +123,3 @@ article:last-of-type > p:first-of-type::first-letter {
 		padding-block: 1.5rem;
 	}
 }
-
-@media screen and (max-width: 450px) {
-	.review-box {
-		grid-template-columns: 1fr;
-	}
-	.review-box > main {
-		grid-column: span 1;
-	}
-
-	.nav-buttons {
-		width: 100%;
-		grid-template-columns: repeat(3, minmax(54px, 1fr));
-	}
-}

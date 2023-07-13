@@ -1,0 +1,19 @@
+---
+export interface Props {
+	extraImage?: string | null;
+	extraImages?: string[] | null;
+	title: string;
+}
+
+const { extraImage, extraImages, title } = Astro.props;
+---
+
+{extraImage && <img src={extraImage} alt={title} class="image m-top m-center" />}
+{
+	extraImages && (
+		<div class="extra-images">
+			<img src={extraImages[0]} alt={title} class="image" />
+			<img src={extraImages[1]} alt={title} class="image" />
+		</div>
+	)
+}

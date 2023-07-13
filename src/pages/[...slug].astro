@@ -2,9 +2,9 @@
 import { getCollection } from "astro:content";
 import { getImagePath } from "../utils/digits";
 import BookReview from "../layouts/BookReview.astro";
-import Card from "../components/BookNav.astro";
 import "../styles/bookpage.styles.css";
 import BookNav from "../components/BookNav.astro";
+import ExtraImages from "../components/ExtraImages.astro";
 
 export async function getStaticPaths() {
 	const bookEntries: { slug: string }[] = await getCollection("books");
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 	}));
 }
 
-const { entry, prev, next } = Astro.props;
+let { entry, prev, next } = Astro.props;
 const { Content } = await entry.render();
 
 let {
@@ -49,7 +49,7 @@ const heroImage: string | null = entry.data.heroimage
 const extraImage: string | null = entry.data.extraimage
 	? `../../${getImagePath(entry.data.extraimage, year)}`
 	: null;
-const extraImages: string | null = entry.data.extraimages
+const extraImages: [string] | null = entry.data.extraimages
 	? entry.data.extraimages.map((image: string) => `../../${getImagePath(image, year)}`)
 	: null;
 ---
@@ -85,15 +85,11 @@ const extraImages: string | null = entry.data.extraimages
 				)
 			}
 			<Content />
-			{extraImage && <img src={extraImage} alt={title} class="image m-top" />}
-			{
-				extraImages && (
-					<div class="extra-images">
-						<img src={extraImages[0]} alt={title} class="image" />
-						<img src={extraImages[1]} alt={title} class="image" />
-					</div>
-				)
-			}
+			<ExtraImages
+				extraImages={extraImages}
+				extraImage={extraImage}
+				title={title}
+			/>
 		</section>
 	</main>
 </BookReview>

@@ -5,6 +5,7 @@ import BookReview from "../layouts/BookReview.astro";
 import "../styles/bookpage.styles.css";
 import BookNav from "../components/BookNav.astro";
 import ExtraImages from "../components/ExtraImages.astro";
+import Lorem from "../components/Lorem.astro";
 
 export async function getStaticPaths() {
 	const bookEntries: { slug: string }[] = await getCollection("books");
@@ -52,6 +53,8 @@ const extraImage: string | null = entry.data.extraimage
 const extraImages: [string] | null = entry.data.extraimages
 	? entry.data.extraimages.map((image: string) => `../../${getImagePath(image, year)}`)
 	: null;
+
+let auth = false;
 ---
 
 <BookReview
@@ -84,7 +87,7 @@ const extraImages: [string] | null = entry.data.extraimages
 					/>
 				)
 			}
-			<Content />
+			{auth ? <Content /> : <Lorem />}
 			<ExtraImages
 				extraImages={extraImages}
 				extraImage={extraImage}

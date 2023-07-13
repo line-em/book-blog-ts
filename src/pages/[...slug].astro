@@ -54,7 +54,7 @@ const extraImages: [string] | null = entry.data.extraimages
 	? entry.data.extraimages.map((image: string) => `../../${getImagePath(image, year)}`)
 	: null;
 
-let auth = false;
+let auth = true;
 ---
 
 <BookReview

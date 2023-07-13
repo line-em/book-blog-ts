@@ -1,34 +1,55 @@
 ---
 import { getCollection } from "astro:content";
-import { getStars } from "../utils/rating";
-import { getImagePath, removeYearFromPath } from "../utils/digits";
-
-import "../styles/bookpage.styles.css";
-import Layout from "../layouts/Layout.astro";
-import BookGrid from "../layouts/BookGrid.astro";
+import { getImagePath } from "../utils/digits";
 import BookReview from "../layouts/BookReview.astro";
+import Card from "../components/BookNav.astro";
+import "../styles/bookpage.styles.css";
+import BookNav from "../components/BookNav.astro";
 
 export async function getStaticPaths() {
-	const bookEntries = await getCollection("books");
-	return bookEntries.map((entry: { slug: string }) => ({
+	const bookEntries: { slug: string }[] = await getCollection("books");
+	const bookNumber: number = bookEntries.length;
+
+	return bookEntries.map((entry: { slug: string }, i: number) => ({
 		params: { slug: entry.slug },
-		props: { entry }
+		props: {
+			entry,
+			next: i + 1 === bookNumber ? null : bookEntries[i + 1],
+			prev: i === 0 ? null : bookEntries[i - 1]
+		}
 	}));
 }
 
-const { entry } = Astro.props;
+const { entry, prev, next } = Astro.props;
 const { Content } = await entry.render();
 
-let { title, author, month, score, image, year, genre } = entry.data;
+let {
+	title,
+	author,
+	month,
+	score,
+	image,
+	year,
+	genre
+}: {
+	title: string;
+	author: string;
+	month: number;
+	score: number;
+	image: string;
+	year: number;
+	genre: [string];
+} = entry.data;
+
 image = "../../" + getImagePath(image, year);
 
-const heroImage = entry.data.heroimage
+const heroImage: string | null = entry.data.heroimage
 	? `../../${getImagePath(entry.data.heroimage[0], year)}`
 	: null;
-const extraImage = entry.data.extraimage
+const extraImage: string | null = entry.data.extraimage
 	? `../../${getImagePath(entry.data.extraimage, year)}`
 	: null;
-const extraImages = entry.data.extraimages
+const extraImages: string | null = entry.data.extraimages
 	? entry.data.extraimages.map((image: string) => `../../${getImagePath(image, year)}`)
 	: null;
 ---
@@ -41,44 +62,38 @@ const extraImages = entry.data.extraimages
 	cover={image}
 	title={title}
 >
-	<!-- <Layout title={title}> -->
 	<main class="instructions center p-top-base">
+		<nav class="m-center">
+			{prev && <BookNav slug={prev.slug} type="prev" />}
+			{prev && next && <span> | </span>}
+			{next && <BookNav slug={next.slug} type="next" />}
+		</nav>
 		<h1>
 			<span class="text-gradient">{title}</span>
 		</h1>
 		<h3>by {author}</h3>
-		<div class="wrapper">
-			<section class="book-review">
-				<article class="book-content">
-					{
-						heroImage && (
-							<img
-								src={heroImage}
-								alt={title}
-								class={
-									entry.data.heroimage[1] === "full"
-										? "image"
-										: "image right"
-								}
-							/>
-						)
-					}
-					<Content />
-					{
-						extraImage && (
-							<img src={extraImage} alt={title} class="image m-top" />
-						)
-					}
-					{
-						extraImages && (
-							<div class="extra-images">
-								<img src={extraImages[0]} alt={title} class="image" />
-								<img src={extraImages[1]} alt={title} class="image" />
-							</div>
-						)
-					}
-				</article>
-			</section>
-		</div>
+		<section class="book-review">
+			{
+				heroImage && (
+					<img
+						src={heroImage}
+						alt={title}
+						class={
+							entry.data.heroimage[1] === "full" ? "image" : "image right"
+						}
+					/>
+				)
+			}
+			<Content />
+			{extraImage && <img src={extraImage} alt={title} class="image m-top" />}
+			{
+				extraImages && (
+					<div class="extra-images">
+						<img src={extraImages[0]} alt={title} class="image" />
+						<img src={extraImages[1]} alt={title} class="image" />
+					</div>
+				)
+			}
+		</section>
 	</main>
 </BookReview>

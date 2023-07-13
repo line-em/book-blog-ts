@@ -179,3 +179,13 @@ li + li {
 	padding-block-start: 0.7rem;
 	padding-inline: 0.7rem;
 }
+
+.m-center {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	margin-block-end: 1rem;
+}

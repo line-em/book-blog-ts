@@ -179,7 +179,7 @@ hr {
 	overflow: hidden scroll;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 420px) {
 	.content-box {
 		grid-template-columns: 1fr;
 	}
@@ -187,7 +187,9 @@ hr {
 	:where(.content-box, .review-box) > :where(header, aside) {
 		padding: 0 1.5rem;
 		position: relative;
-		height: calc(100% + 2.5rem);
+		height: auto;
+		margin-block-end: 2rem;
+		justify-content: start;
 	}
 }
 

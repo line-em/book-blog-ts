@@ -5,16 +5,6 @@ main {
 	width: 100%;
 }
 
-.review-box {
-	background-color: whitesmoke;
-	display: grid;
-	grid-template-columns: minmax(250px, 300px) 1fr minmax(250px, 300px);
-	margin: 0 auto;
-	border-radius: 0.4rem;
-	position: relative;
-	min-height: 100vh;
-}
-
 h1,
 h3 {
 	text-align: center;
@@ -96,22 +86,4 @@ article:last-of-type > p:first-of-type::first-letter {
 	color: rgba(var(--accent), 100%);
 	font-size: clamp(1rem, 1.5vw + 1rem, 1.25rem);
 	font-weight: var(--bold);
-}
-
-@media screen and (max-width: 950px) {
-	.review-box {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.review-box > .instructions {
-		margin: 0;
-	}
-
-	.review-box > main {
-		grid-column: span 2;
-	}
-
-	.review-box > header {
-		order: 2;
-	}
 }

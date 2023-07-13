@@ -124,7 +124,7 @@ article:last-of-type > p:first-of-type::first-letter {
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 	.review-box {
 		grid-template-columns: 1fr;
 	}

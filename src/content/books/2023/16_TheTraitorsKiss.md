@@ -24,3 +24,5 @@ So yeah... plot-wise not the best, though the whole hiding identities was fun en
 > “We each play several roles in life – that doesn’t make them all lies.”
 
 So, all in a all. An entertaining read, as long as I can ignore some pet peeves and don't think too hard over it.
+
+[This review summarizes a bit about what I felt.](https://roulettereader.wordpress.com/2017/03/23/the-traitors-kiss-by-erin-beaty/)

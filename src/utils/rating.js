@@ -23,5 +23,7 @@ export const getStars = (rating) => {
 export const getAverageStars = (ratings) => {
 	const totalScore = ratings.reduce((acc, curr) => acc + curr, 0);
 	// const totalScore = ratings.reduce((acc, book) => acc + book.frontmatter.score, 0)
-	return Math.round(totalScore / ratings.length);
+	// return Math.round(totalScore / ratings.length);
+	const average = totalScore / ratings.length;
+	return parseFloat(average.toFixed(1));
 };

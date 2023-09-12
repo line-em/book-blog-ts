@@ -3,7 +3,7 @@ title: "Even Though I Knew the End"
 author: "C.L. Polk"
 year: "2023"
 month: "August"
-score: 4.5
+score: 3.5
 image: ../eventhough.jpg
 genre:
     [

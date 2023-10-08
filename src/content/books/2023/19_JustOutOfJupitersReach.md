@@ -5,7 +5,7 @@ year: "2023"
 month: "October"
 score: 2.5
 image: ../jupiter.jpg
-genre: ["Science Fiction", "Space", "Short Stories", "Novella, "Black Author"]
+genre: ["Science Fiction", "Space", "Short Stories", "Novella', "Black Author"]
 ---
 
 This was a short story I choose to read from **The Far Reaches** story collection, which has several stories from authors such as James S. A. Corey from The Expanse 😀. I picked up a few to sprinkle in between longer books, and this was the first one I choose!

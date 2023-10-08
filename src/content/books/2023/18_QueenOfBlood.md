@@ -3,7 +3,7 @@ title: "The Queen of Blood"
 author: "Sarah Beth Durst"
 year: "2023"
 month: "October"
-score: 4
+score: 4.5
 image: ../thequeenofblood.jpg
 genre: ["Fantasy", "Young Adult", "Adult Fantasy", "Adventure", "Magic", "Nature"]
 ---

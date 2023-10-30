@@ -15,9 +15,9 @@ export const removeYearFromPath = (original: string) => {
 };
 
 export const getUrlPath = (original: string, hasYear: boolean = false) => {
-	const pathWithoutYear = original;
+	// Needed for production
+	const pathWithoutYear = hasYear ? removeYearFromPath(original) : original;
 	const urlPath = `./${pathWithoutYear}/index.html`;
-	// Remove removeYearFromPath
 
 	return urlPath;
 };

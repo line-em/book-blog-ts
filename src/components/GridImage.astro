@@ -1,26 +1,23 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { getImagePath, getUrlPath } from "../utils/digits";
+import { getUrlPath } from "../utils/digits";
 import { getStars } from "../utils/rating";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 export interface Props {
-	books: CollectionEntry<"books">[];
 	year?: number;
 }
 
-const { books, year } = Astro.props;
-const allBooks = await getCollection("books");
+const { year } = Astro.props;
+
+let allBooks = await getCollection("books");
+if (year)
+	allBooks = await getCollection("books", ({ data }) => Number(data.year) === year);
 ---
 
 <section class="img-grid instructions">
 	{
 		allBooks.map((book) => {
-			// const imagePath = `${year ? `..` : `.`}/${getImagePath(
-			// 	book?.data.image.src,
-			// 	book?.data.year
-			// )}`;
 			return (
 				<article class="book-grid-item">
 					<a

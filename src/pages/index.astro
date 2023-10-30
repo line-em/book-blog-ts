@@ -1,11 +1,8 @@
 ---
 import GridImage from "../components/GridImage.astro";
 import BookGrid from "../layouts/BookGrid.astro";
-import { getBooks } from "../utils/getBooks";
-
-let books = await getBooks();
 ---
 
 <BookGrid>
-	<GridImage books={books} />
+	<GridImage />
 </BookGrid>

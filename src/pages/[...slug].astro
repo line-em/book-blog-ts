@@ -28,7 +28,6 @@ export async function getStaticPaths() {
 	}));
 }
 let { entry, prev, next } = Astro.props;
-console.log(prev);
 
 const { Content } = await entry.render();
 
@@ -44,12 +43,6 @@ let {
 	year,
 	genre
 } = entry.data;
-
-// const heroImage: string | null = entry.data.heroimage ? entry.data.heroimage[0] : null;
-// const extraImage: string | null = entry.data.extraimage ? entry.data.extraimage[0] : null;
-// const extraImages: [string] | null = entry.data.extraimages
-// 	? entry.data.extraimages.map((image: string) => image)
-// 	: null;
 
 let auth = true;
 ---

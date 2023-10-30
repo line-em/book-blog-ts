@@ -15,15 +15,9 @@ export const removeYearFromPath = (original: string) => {
 };
 
 export const getUrlPath = (original: string, hasYear: boolean = false) => {
-	const pathWithoutYear = hasYear ? removeYearFromPath(original) : original;
+	const pathWithoutYear = original;
 	const urlPath = `./${pathWithoutYear}/index.html`;
+	// Remove removeYearFromPath
+
 	return urlPath;
 };
-
-// Trying to make Dynamic Assets to work.
-// export const removeFileExtension = (original: string) => {
-// 	return original.substring(0, original.length - 4);
-// };
-// export const getLocalImagePath = (original: string, year: number | string) => {
-// 	return `images/books${getDigits(year, 2)}/${getDigits(original, 3)}`;
-// };

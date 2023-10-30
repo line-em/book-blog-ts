@@ -7,6 +7,7 @@ import BookNav from "../components/BookNav.astro";
 import ExtraImages from "../components/ExtraImages.astro";
 import Lorem from "../components/Lorem.astro";
 import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
 
 export interface Props {
 	entry: CollectionEntry<"books">;
@@ -47,43 +48,45 @@ let {
 let auth = true;
 ---
 
-<BookReview
-	score={score}
-	year={year}
-	month={month}
-	genres={genre}
-	cover={image}
-	title={title}
->
-	<main class="instructions center p-top-base">
-		<nav class="m-center">
-			{prev && <BookNav slug={prev.slug} type="prev" />}
-			{prev && next && <span> | </span>}
-			{next && <BookNav slug={next.slug} type="next" />}
-		</nav>
-		<h1>
-			<span class="text-gradient">{title}</span>
-		</h1>
-		<h3>by {author}</h3>
-		<section class="book-review">
-			{
-				heroimage && (
-					<Image
-						src={heroimage[0]}
-						alt={title}
-						width={1000}
-						height={300}
-						quality={"mid"}
-						class={heroimage[1] === "full" ? "image" : "image right"}
-					/>
-				)
-			}
-			{auth ? <Content /> : <Lorem />}
-			<ExtraImages
-				extraImages={extraimages}
-				extraImage={extraimage}
-				title={title}
-			/>
-		</section>
-	</main>
-</BookReview>
+<Layout title={title}>
+	<BookReview
+		score={score}
+		year={year}
+		month={month}
+		genres={genre}
+		cover={image}
+		title={title}
+	>
+		<main class="instructions center p-top-base">
+			<nav class="m-center">
+				{prev && <BookNav slug={prev.slug} type="prev" />}
+				{prev && next && <span> | </span>}
+				{next && <BookNav slug={next.slug} type="next" />}
+			</nav>
+			<h1>
+				<span class="text-gradient">{title}</span>
+			</h1>
+			<h3>by {author}</h3>
+			<section class="book-review">
+				{
+					heroimage && (
+						<Image
+							src={heroimage[0]}
+							alt={title}
+							width={1000}
+							height={300}
+							quality={"mid"}
+							class={heroimage[1] === "full" ? "image" : "image right"}
+						/>
+					)
+				}
+				{auth ? <Content /> : <Lorem />}
+				<ExtraImages
+					extraImages={extraimages}
+					extraImage={extraimage}
+					title={title}
+				/>
+			</section>
+		</main>
+	</BookReview>
+</Layout>

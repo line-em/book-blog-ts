@@ -4,7 +4,7 @@ author: "Megan Whalen Turner"
 year: 2021
 month: "July"
 score: 5
-image: "/images/books21/kingofattolia.jpg"
+image: "./images/books21/kingofattolia.jpg"
 genre: ["Young Adult", "Fantasy", "Adventure"]
 ---
 

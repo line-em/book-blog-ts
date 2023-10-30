@@ -4,7 +4,7 @@ author: "Jane Austen"
 year: 2021
 month: "March"
 score: 5
-image: "/images/books21/northangerabbey.jpg"
+image: "./images/books21/northangerabbey.jpg"
 genre: ["Romance", "HistoricalFiction", "Humor"]
 ---
 

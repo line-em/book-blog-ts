@@ -4,7 +4,7 @@ author: "Jane Austen"
 year: 2021
 month: "February"
 score: 5
-image: "/images/books21/persuasion.jpg"
+image: "./images/books21/persuasion.jpg"
 genre: ["Romance", "HistoricalFiction"]
 ---
 

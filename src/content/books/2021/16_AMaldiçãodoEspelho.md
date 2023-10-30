@@ -4,7 +4,7 @@ author: "Agatha Christie"
 year: 2021
 month: "August"
 score: 4
-image: "/images/books21/themirrorcrackedfromsidetoside.jpg"
+image: "./images/books21/themirrorcrackedfromsidetoside.jpg"
 genre: ["Detective", "Mystery"]
 ---
 

@@ -4,7 +4,7 @@ author: "Madeline Miller"
 year: 2021
 month: "October"
 score: 5
-image: "/images/books21/circe.jpg"
+image: "./images/books21/circe.jpg"
 genre: ["Mythology", "Greek", "Witches", "Retelling", "Fantasy", "Fiction"]
 ---
 

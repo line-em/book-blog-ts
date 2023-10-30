@@ -4,7 +4,7 @@ author: "Jane Austen"
 year: 2021
 month: "January"
 score: 5
-image: "/images/books21/prideandprejudice.jpg"
+image: "./images/books21/prideandprejudice.jpg"
 genre: ["Romance", "HistoricalFiction", "Humor"]
 ---
 

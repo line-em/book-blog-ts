@@ -4,7 +4,7 @@ author: "Naomi Novak"
 year: 2021
 month: "July"
 score: 1
-image: "/images/books21/uprooted.jpg"
+image: "./images/books21/uprooted.jpg"
 genre: ["Fantasy", "Young Adult"]
 ---
 

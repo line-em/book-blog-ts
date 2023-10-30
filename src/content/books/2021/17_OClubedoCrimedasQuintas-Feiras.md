@@ -4,7 +4,7 @@ author: "Richard Osman"
 year: 2021
 month: "September"
 score: 5
-image: "/images/books21/thursdaymuder.jpg"
+image: "./images/books21/thursdaymuder.jpg"
 genre: ["Thriller", "Mystery", "Detective", "Cozy Mystery", "Humor"]
 ---
 

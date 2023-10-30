@@ -4,7 +4,7 @@ author: "Leigh Bardugo"
 year: 2021
 month: "November"
 score: 3
-image: "/images/books21/crookedkingdom.jpg"
+image: "./images/books21/crookedkingdom.jpg"
 genre: ["Young Adult", "Found Family", "Heist", "Fantasy"]
 ---
 

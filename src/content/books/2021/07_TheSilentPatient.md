@@ -4,7 +4,7 @@ author: "Alex Michaelides"
 year: 2021
 month: "March"
 score: 2
-image: "/images/books21/thesilentpatient.jpg"
+image: "./images/books21/thesilentpatient.jpg"
 genre: ["Thriller", "Mystery"]
 ---
 

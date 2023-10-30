@@ -4,7 +4,7 @@ author: "Jane Austen"
 year: 2021
 month: "April"
 score: 4
-image: "/images/books21/senseandsensibility.jpg"
+image: "./images/books21/senseandsensibility.jpg"
 genre: ["Romance", "HistoricalFiction"]
 ---
 

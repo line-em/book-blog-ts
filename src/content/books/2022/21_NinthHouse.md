@@ -4,7 +4,7 @@ author: "Leigh Bardugo"
 year: "2022"
 month: "November"
 score: 4
-image: "/images/books22/ninthhouse.jpg"
+image: "./images/books22/ninthhouse.jpg"
 genre:
     [
         "Dark Academia",

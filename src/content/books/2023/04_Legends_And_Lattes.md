@@ -4,7 +4,7 @@ author: "Travis Baldree"
 year: "2023"
 month: "February"
 score: 3
-image: /images/books23/legendsandlattes.jpg
+image: ./images/books23/legendsandlattes.jpg
 genre: ["Romance", "Fantasy", "Queer", "Adult", "Cozy"]
 ---
 

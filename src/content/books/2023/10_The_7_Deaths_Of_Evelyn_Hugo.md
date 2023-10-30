@@ -4,7 +4,7 @@ author: "Stuart Turton"
 year: "2023"
 month: "May"
 score: 2.5
-image: "/images/books23/evelynhardcastle.jpg"
+image: "./images/books23/evelynhardcastle.jpg"
 genre:
     [
         "Mystery",

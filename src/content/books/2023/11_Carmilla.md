@@ -4,8 +4,8 @@ author: "J. Sheridan Le Fanu"
 year: "2023"
 month: "May"
 score: 3.5
-image: "/images/books23/carmilla.jpg"
-heroimage: ["/images/books23/carmilla2.jpg", "full"]
+image: "./images/books23/carmilla.jpg"
+heroimage: ["./images/books23/carmilla2.jpg", "full"]
 genre:
     [
         "Vampire",

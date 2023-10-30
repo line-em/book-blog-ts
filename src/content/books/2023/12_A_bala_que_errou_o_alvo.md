@@ -4,7 +4,7 @@ author: "Richard Osman"
 year: "2023"
 month: "June"
 score: 4.5
-image: "/images/books23/a-bala-que-errou-o-alvo.jpg"
+image: "./images/books23/a-bala-que-errou-o-alvo.jpg"
 genre:
     ["Thriller", "Mystery", "Detective", "Cozy Mystery", "Cozy", "Found Family", "Humor"]
 ---

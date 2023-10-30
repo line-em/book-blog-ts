@@ -4,7 +4,7 @@ author: "Olivie Blake"
 year: "2022"
 month: "June"
 score: 1.5
-image: "/images/books22/atlassix.jpg"
+image: "./images/books22/atlassix.jpg"
 genre: ["NewAdult", "Fantasy", "Urban Fantasy", "DarkAcademia"]
 ---
 

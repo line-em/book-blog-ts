@@ -4,10 +4,10 @@ author: "Alex Segura"
 year: "2023"
 month: "January"
 score: 4
-image: /images/books23/secretidentity.jpg
-heroimage: ["/images/books23/secretidentity2.jpg", "side"]
+image: ./images/books23/secretidentity.jpg
+heroimage: ["./images/books23/secretidentity2.jpg", "side"]
 extraimages:
-    ["/images/books23/secretidentity3.webp", "/images/books23/secretidentity4.jpg"]
+    ["./images/books23/secretidentity3.webp", "./images/books23/secretidentity4.jpg"]
 genre: ["Mystery", "Unique", "Noir", "Comics", "Historical Books", "Queer"]
 ---
 

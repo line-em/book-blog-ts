@@ -4,7 +4,7 @@ author: "C.L. Polk"
 year: "2023"
 month: "August"
 score: 3.5
-image: "/images/books23/eventhough.jpg"
+image: "./images/books23/eventhough.jpg"
 genre:
     [
         "Fantasy",

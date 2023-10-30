@@ -4,7 +4,7 @@ author: "Susana Clarke"
 year: "2022"
 month: "May"
 score: 4
-image: "/images/books22/piranesi.jpg"
+image: "./images/books22/piranesi.jpg"
 genre: ["Fantasy", "Unique"]
 ---
 

@@ -4,9 +4,9 @@ author: "Brandon Sanderson"
 year: "2022"
 month: "April"
 score: 5
-image: "/images/books22/wordsofradiance.jpg"
-heroimage: ["/images/books22/wordsofradiance3.jpg", "full"]
-extraimage: "/images/books22/wordsofradiance2.jpg"
+image: "./images/books22/wordsofradiance.jpg"
+heroimage: ["./images/books22/wordsofradiance3.jpg", "full"]
+extraimage: "./images/books22/wordsofradiance2.jpg"
 genre: ["Fantasy", "Epic", "Adult", "Found Family"]
 ---
 

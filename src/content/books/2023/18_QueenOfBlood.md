@@ -4,7 +4,7 @@ author: "Sarah Beth Durst"
 year: "2023"
 month: "October"
 score: 4.5
-image: "/images/books23/thequeenofblood.jpg"
+image: "./images/books23/thequeenofblood.jpg"
 genre: ["Fantasy", "Young Adult", "Adult Fantasy", "Adventure", "Magic", "Nature"]
 ---
 

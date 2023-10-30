@@ -4,7 +4,7 @@ author: "V.E. Schwab"
 year: "2022"
 month: "October"
 score: 5
-image: "/images/books22/vicious.jpg"
+image: "./images/books22/vicious.jpg"
 genre:
     ["UrbanFantasy", "Superhero", "Urban Fantasy", "Fantasy", "Antihero", "Found Family"]
 ---

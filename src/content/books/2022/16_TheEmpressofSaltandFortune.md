@@ -4,7 +4,7 @@ author: "Nghi Vo"
 year: "2022"
 month: "September"
 score: 4
-image: "/images/books22/theempressofsaltandfortune.jpg"
+image: "./images/books22/theempressofsaltandfortune.jpg"
 genre: ["Fantasy", "Asian", "Short Stories", "LGBT", "Asian Author"]
 ---
 

@@ -4,7 +4,7 @@ author: "Erin Beaty"
 year: "2023"
 month: "September"
 score: 3
-image: "/images/books23/traitorskiss.jpg"
+image: "./images/books23/traitorskiss.jpg"
 genre: ["Fantasy", "Young Adult", "Romance", "Adventure", "Spy? Sorta?"]
 ---
 

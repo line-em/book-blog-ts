@@ -4,7 +4,7 @@ author: "Yuval Noah Harari"
 year: "2022"
 month: "February"
 score: 5
-image: "/images/books22/21Lessons.jpg"
+image: "./images/books22/21Lessons.jpg"
 genre: ["Non-Fiction", "History"]
 ---
 

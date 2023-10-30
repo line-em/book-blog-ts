@@ -4,7 +4,7 @@ author: "Fredrik Backman"
 year: "2022"
 month: "March"
 score: 5
-image: "/images/books22/anxious.jpg"
+image: "./images/books22/anxious.jpg"
 genre: ["Humor", "Slice Of Life", "Adult", "Contemporary", "Cozy", "Found Family"]
 ---
 

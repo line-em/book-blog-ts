@@ -4,7 +4,7 @@ author: "Jen DeLuca"
 year: "2023"
 month: "January"
 score: 2.5
-image: /images/books23/wellmet.jpg
+image: ./images/books23/wellmet.jpg
 genre:
     [
         "Romance",

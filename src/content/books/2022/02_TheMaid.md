@@ -4,7 +4,7 @@ author: "Nita Prose"
 year: "2022"
 month: "January"
 score: 3
-image: "/images/books22/themaid.jpg"
+image: "./images/books22/themaid.jpg"
 genre: ["Cozy Mystery", "Coming of Age", "Cozy", "Found Family"]
 ---
 

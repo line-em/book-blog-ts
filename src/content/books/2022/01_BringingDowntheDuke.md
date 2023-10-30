@@ -4,7 +4,7 @@ author: "Evie Dunmore"
 year: "2022"
 month: "January"
 score: 2
-image: "/images/books22/bringingdowntheduke.jpg"
+image: "./images/books22/bringingdowntheduke.jpg"
 genre: ["Romance", "Historical Fiction"]
 ---
 

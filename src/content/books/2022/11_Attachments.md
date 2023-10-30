@@ -4,7 +4,7 @@ author: "Rainbow Rowell"
 year: "2022"
 month: "May"
 score: 3.5
-image: "/images/books22/attachments.jpg"
+image: "./images/books22/attachments.jpg"
 genre: ["Romance", "Humor"]
 ---
 

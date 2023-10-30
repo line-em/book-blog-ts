@@ -4,7 +4,7 @@ author: "Brandon Sanderson"
 year: "2022"
 month: "May"
 score: 5
-image: "../oathbringer.jpg"
+image: "/images/books22/oathbringer.jpg"
 genre: ["Fantasy", "Epic", "Adult", "Found Family"]
 ---
 

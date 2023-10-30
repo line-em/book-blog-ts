@@ -4,7 +4,7 @@ author: "Nnedi Okorafor"
 year: "2023"
 month: "October"
 score: 2.5
-image: ../jupiter.jpg
+image: "/images/books23/jupiter.jpg"
 genre: ["Science Fiction", "Space", "Short Stories", "Novella", "Black Author"]
 ---
 

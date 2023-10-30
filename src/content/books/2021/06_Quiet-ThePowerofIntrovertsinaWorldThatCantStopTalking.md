@@ -4,7 +4,7 @@ author: "Susan Cain"
 year: 2021
 month: "March"
 score: 4
-image: ../quiet.jpg
+image: "/images/books21/quiet.jpg"
 genre: ["Non Fiction", "Personality"]
 ---
 

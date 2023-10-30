@@ -4,7 +4,7 @@ author: "Megan Whalen Turner"
 year: 2021
 month: "February"
 score: 4
-image: ../thethief.jpg
+image: "/images/books21/thethief.jpg"
 genre: ["Young Adult", "Fantasy", "Adventure"]
 ---
 

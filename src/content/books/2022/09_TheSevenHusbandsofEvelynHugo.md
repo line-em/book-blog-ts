@@ -4,8 +4,8 @@ author: "Taylor Jenkins Reid"
 year: "2022"
 month: "May"
 score: 3.5
-image: "../sevenhusbands.jpg"
-heroimage: ["../sevenhusbands2.jpg", "side"]
+image: "/images/books22/sevenhusbands.jpg"
+heroimage: ["/images/books22/sevenhusbands2.jpg", "side"]
 genre: ["Drama", "Romance", "ChickLit", "LGBT", "Queer"]
 ---
 

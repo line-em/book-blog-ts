@@ -4,7 +4,7 @@ author: "Brandon Sanderson"
 year: "2023"
 month: "January"
 score: 3.5
-image: ../dawnshard.jpg
+image: /images/books23/dawnshard.jpg
 genre: ["Epic", "Fantasy", "Short Story", "Adult", "Disability", "Friendship"]
 ---
 

@@ -4,7 +4,7 @@ author: "Martha Wells"
 year: "2023"
 month: "February"
 score: 5
-image: ../allsystemsred.jpg
+image: /images/books23/allsystemsred.jpg
 genre: ["Short Story", "Sci-Fi", "Fantasy", "Adult", "Robots", "Space"]
 ---
 

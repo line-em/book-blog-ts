@@ -4,13 +4,13 @@ import { getStars } from "../utils/rating";
 import { getMostReadGenres } from "../utils/genres";
 import "../styles/year.styles.css";
 import { yearList } from "../content/yearList";
-import { image } from "astro:content";
+import { Image } from "astro:assets";
 
 export interface Props {
 	cover: string;
 	score: number;
 	year: number;
-	month: number;
+	month: string;
 	genres: string[];
 	title: string;
 }
@@ -45,7 +45,13 @@ const { cover, score, year, month, genres, title } = Astro.props;
 		</header>
 		<slot />
 		<aside class="book-info">
-			<img src={cover} alt={title} class="book-cover-big" />
+			<Image
+				src={cover}
+				alt={title}
+				class="book-cover-big"
+				width={250}
+				height={300}
+			/>
 			<span set:html={getStars(score)} />
 			<h3>Read on</h3>
 			<p>

@@ -4,7 +4,7 @@ author: "Sarah Hoggle"
 year: "2023"
 month: "March"
 score: 3
-image: ../twiceshy.jpg
+image: "/images/books23/twiceshy.jpg"
 genre: ["Romance", "Inheritance", "Slice of Life", "Contemporary", "Chick Lit"]
 ---
 

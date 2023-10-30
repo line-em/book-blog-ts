@@ -1,17 +1,24 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 import { getImagePath } from "../utils/digits";
 import BookReview from "../layouts/BookReview.astro";
 import "../styles/bookpage.styles.css";
 import BookNav from "../components/BookNav.astro";
 import ExtraImages from "../components/ExtraImages.astro";
 import Lorem from "../components/Lorem.astro";
+import { Image } from "astro:assets";
+
+export interface Props {
+	entry: CollectionEntry<"books">;
+	prev: CollectionEntry<"books"> | null;
+	next: CollectionEntry<"books"> | null;
+}
 
 export async function getStaticPaths() {
 	const bookEntries: { slug: string }[] = await getCollection("books");
 	const bookNumber: number = bookEntries.length;
 
-	return bookEntries.map((entry: { slug: string }, i: number) => ({
+	return bookEntries.map((entry, i: number) => ({
 		params: { slug: entry.slug },
 		props: {
 			entry,
@@ -20,8 +27,9 @@ export async function getStaticPaths() {
 		}
 	}));
 }
-
 let { entry, prev, next } = Astro.props;
+console.log(prev);
+
 const { Content } = await entry.render();
 
 let {
@@ -30,29 +38,18 @@ let {
 	month,
 	score,
 	image,
+	heroimage,
+	extraimage,
+	extraimages,
 	year,
 	genre
-}: {
-	title: string;
-	author: string;
-	month: number;
-	score: number;
-	image: string;
-	year: number;
-	genre: [string];
 } = entry.data;
 
-image = "../../" + getImagePath(image, year);
-
-const heroImage: string | null = entry.data.heroimage
-	? `../../${getImagePath(entry.data.heroimage[0], year)}`
-	: null;
-const extraImage: string | null = entry.data.extraimage
-	? `../../${getImagePath(entry.data.extraimage, year)}`
-	: null;
-const extraImages: [string] | null = entry.data.extraimages
-	? entry.data.extraimages.map((image: string) => `../../${getImagePath(image, year)}`)
-	: null;
+// const heroImage: string | null = entry.data.heroimage ? entry.data.heroimage[0] : null;
+// const extraImage: string | null = entry.data.extraimage ? entry.data.extraimage[0] : null;
+// const extraImages: [string] | null = entry.data.extraimages
+// 	? entry.data.extraimages.map((image: string) => image)
+// 	: null;
 
 let auth = true;
 ---
@@ -77,20 +74,21 @@ let auth = true;
 		<h3>by {author}</h3>
 		<section class="book-review">
 			{
-				heroImage && (
-					<img
-						src={heroImage}
+				heroimage && (
+					<Image
+						src={heroimage[0]}
 						alt={title}
-						class={
-							entry.data.heroimage[1] === "full" ? "image" : "image right"
-						}
+						width={1000}
+						height={300}
+						quality={"mid"}
+						class={heroimage[1] === "full" ? "image" : "image right"}
 					/>
 				)
 			}
 			{auth ? <Content /> : <Lorem />}
 			<ExtraImages
-				extraImages={extraImages}
-				extraImage={extraImage}
+				extraImages={extraimages}
+				extraImage={extraimage}
 				title={title}
 			/>
 		</section>

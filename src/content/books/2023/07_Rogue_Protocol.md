@@ -4,7 +4,7 @@ author: "Martha Wells"
 year: "2023"
 month: "March"
 score: 4.5
-image: ../rogueprotocol.jpg
+image: /images/books23/rogueprotocol.jpg
 genre: ["Short Story", "Sci-Fi", "Fantasy", "Adult", "Robots", "Space"]
 ---
 

@@ -4,7 +4,7 @@ author: "Rebecca Yarros"
 year: "2023"
 month: "June"
 score: 3
-image: ../fourthwing.jpg
+image: "/images/books23/fourthwing.jpg"
 genre: ["Dragons", "Young Adult", "New Adult", "Fantasy", "Romance"]
 ---
 

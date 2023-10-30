@@ -4,7 +4,7 @@ author: "Megan Whalen Turner"
 year: 2021
 month: "June"
 score: 5
-image: ../queenofattolia.jpg
+image: "/images/books21/queenofattolia.jpg"
 genre: ["Young Adult", "Fantasy", "Mystery"]
 ---
 

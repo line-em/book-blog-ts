@@ -4,7 +4,7 @@ author: "Ursula K. Le Guin"
 year: "2022"
 month: "November"
 score: 3
-image: ../theoneswhowalkaway.jpg
+image: "/images/books22/theoneswhowalkaway.jpg"
 genre:
     [
         "Science Fiction",

@@ -4,7 +4,7 @@ author: "Brandon Sanderson"
 year: "2022"
 month: "April"
 score: 3.5
-image: "../edgedancer.jpg"
+image: "/images/books22/edgedancer.jpg"
 genre: ["Fantasy", "Adult", "Short Stories"]
 ---
 

@@ -4,7 +4,7 @@ author: "Brandon Sanderson"
 year: "2022"
 month: "April"
 score: 5
-image: "../awayofkings.jpg"
+image: "/images/books22/awayofkings.jpg"
 genre: ["Fantasy", "Epic", "Adult", "Found Family"]
 ---
 

@@ -4,7 +4,7 @@ author: "John Green"
 year: "2023"
 month: "July"
 score: 4.5
-image: ../anthropocene.jpg
+image: "/images/books23/anthropocene.jpg"
 genre:
     ["Nonfiction", "Essays", "History", "Science", "Adult", "Contemporary", "Biography"]
 ---

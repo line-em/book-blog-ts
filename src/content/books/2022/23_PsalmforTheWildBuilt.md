@@ -4,7 +4,7 @@ author: "Becky Chambers"
 year: "2022"
 month: "December"
 score: 4
-image: ../psalmwildbuilt.jpg
+image: "/images/books22/psalmwildbuilt.jpg"
 genre: ["Cozy", "Sci-Fi", "Friendship", "Philosophical", "Short Story"]
 ---
 

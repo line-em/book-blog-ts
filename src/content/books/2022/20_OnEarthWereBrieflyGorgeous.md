@@ -4,7 +4,7 @@ author: "Ocean Vuong"
 year: "2022"
 month: "November"
 score: 3.5
-image: ../onearthgorgeous.jpg
+image: "/images/books22/onearthgorgeous.jpg"
 genre:
     ["Poetry", "LGBT", "War", "Drama", "Contemporary", "Queer", "Unique", "Asian Author"]
 ---

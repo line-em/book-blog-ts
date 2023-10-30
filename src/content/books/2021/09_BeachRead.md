@@ -4,7 +4,7 @@ author: "Emily Henry"
 year: 2021
 month: "March"
 score: 4
-image: ../beacread.jpg
+image: "/images/books21/beacread.jpg"
 genre: ["Romance", "Contemporary", "Slice Of Life", "Chick Lit"]
 ---
 

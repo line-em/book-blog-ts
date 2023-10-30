@@ -4,7 +4,7 @@ author: "Martha Wells"
 year: "2023"
 month: "February"
 score: 4
-image: ../artificialcondition.jpg
+image: /images/books23/artificialcondition.jpg
 genre: ["Short Story", "Sci-Fi", "Fantasy", "Adult", "Robots", "Space"]
 ---
 

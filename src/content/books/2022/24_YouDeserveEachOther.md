@@ -4,7 +4,7 @@ author: "Sarah Hogle"
 year: "2022"
 month: "December"
 score: 4
-image: ../youdeserveeachother.jpg
+image: "/images/books22/youdeserveeachother.jpg"
 genre:
     [
         "Romance",

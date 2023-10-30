@@ -4,7 +4,7 @@ author: "Jennifer Lynn Barnes"
 year: 2021
 month: "August"
 score: 4
-image: ../inheritancegames.jpg
+image: "/images/books21/inheritancegames.jpg"
 genre: ["Romance", "Young Adult", "Puzzles", "Mystery"]
 ---
 

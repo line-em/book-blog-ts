@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 export interface Props {
 	extraImage?: string | null;
 	extraImages?: string[] | null;
@@ -12,8 +13,22 @@ const { extraImage, extraImages, title } = Astro.props;
 {
 	extraImages && (
 		<div class="extra-images">
-			<img src={extraImages[0]} alt={title} class="image" />
-			<img src={extraImages[1]} alt={title} class="image" />
+			<Image
+				src={extraImages[0]}
+				alt={title}
+				class="image"
+				width={1000}
+				height={400}
+				quality={"low"}
+			/>
+			<Image
+				src={extraImages[1]}
+				alt={title}
+				class="image"
+				width={1000}
+				height={400}
+				quality={"low"}
+			/>
 		</div>
 	)
 }

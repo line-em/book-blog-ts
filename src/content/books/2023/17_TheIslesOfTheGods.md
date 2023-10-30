@@ -4,7 +4,7 @@ author: "Amie Kaufman"
 year: "2023"
 month: "September"
 score: 3
-image: ../theislesofthegods.jpg
+image: "/images/books23/theislesofthegods.jpg"
 genre: ["Fantasy", "Young Adult", "Romance", "Adventure", "Pirates"]
 ---
 

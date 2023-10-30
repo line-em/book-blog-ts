@@ -2,6 +2,8 @@
 import type { CollectionEntry } from "astro:content";
 import { getImagePath, getUrlPath } from "../utils/digits";
 import { getStars } from "../utils/rating";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 
 export interface Props {
 	books: CollectionEntry<"books">[];
@@ -9,15 +11,16 @@ export interface Props {
 }
 
 const { books, year } = Astro.props;
+const allBooks = await getCollection("books");
 ---
 
 <section class="img-grid instructions">
 	{
-		books.map((book) => {
-			const imagePath = `${year ? `..` : `.`}/${getImagePath(
-				book?.data.image,
-				book?.data.year
-			)}`;
+		allBooks.map((book) => {
+			// const imagePath = `${year ? `..` : `.`}/${getImagePath(
+			// 	book?.data.image.src,
+			// 	book?.data.year
+			// )}`;
 			return (
 				<article class="book-grid-item">
 					<a
@@ -27,7 +30,12 @@ const { books, year } = Astro.props;
 								: getUrlPath(book?.slug, false)
 						}
 					>
-						<img src={imagePath} alt={book?.data.title} />
+						<Image
+							src={book?.data.image}
+							alt={book?.data.title}
+							width={200}
+							height={250}
+						/>
 					</a>
 					<a
 						href={
@@ -45,16 +53,3 @@ const { books, year } = Astro.props;
 		})
 	}
 </section>
-
-<!-- FIXME: Couldn't make the dynamic assets to work. -->
-<!-- 	const imagePath = `${removeFileExtension(
-				getLocalImagePath(book?.data.image, book?.data.year)
-			)}`; -->
-<!-- 	<Image
-							alt={book?.data.title}
-							width={350}
-							height={450}
-							aspectRatio="4:3"
-							format="webp"
-							src={import(`../${imagePath}.jpg`)}
-						/> -->

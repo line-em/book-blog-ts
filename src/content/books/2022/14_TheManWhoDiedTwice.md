@@ -4,7 +4,7 @@ author: "Richard Osman"
 year: "2022"
 month: "July"
 score: 5
-image: ../themanwhodiedtwice.jpg
+image: "/images/books22/themanwhodiedtwice.jpg"
 genre:
     ["Thriller", "Mystery", "Detective", "Cozy Mystery", "Cozy", "Found Family", "Humor"]
 ---

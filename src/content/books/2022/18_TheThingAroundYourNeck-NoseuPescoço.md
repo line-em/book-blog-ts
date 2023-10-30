@@ -4,7 +4,7 @@ author: "Chimamanda Ngozi Adichie"
 year: "2022"
 month: "October"
 score: 4
-image: ../noseupescoco.jpg
+image: "/images/books22/noseupescoco.jpg"
 genre: ["Black Author", "Short Stories", "Pessimist", "Immigrants", "African"]
 ---
 

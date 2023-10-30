@@ -4,7 +4,7 @@ author: "Manda Collins"
 year: 2021
 month: "January"
 score: 3.5
-image: ../ladysguide.jpg
+image: "/images/books21/ladysguide.jpg"
 genre: ["Romance", "HistoricalFiction"]
 ---
 

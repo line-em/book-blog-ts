@@ -4,7 +4,7 @@ author: "Emily Henry"
 year: "2022"
 month: "July"
 score: 4
-image: ../book-lovers-5.jpg
+image: "/images/books22/book-lovers-5.jpg"
 genre: ["Romance", "ChickLit", "ModernDay"]
 ---
 

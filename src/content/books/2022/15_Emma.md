@@ -4,7 +4,7 @@ author: "Jane Austen"
 year: "2022"
 month: "September"
 score: 4
-image: ../emma.jpg
+image: "/images/books22/emma.jpg"
 genre: ["Romance", "Historical Fiction", "Humor"]
 ---
 

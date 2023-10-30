@@ -4,7 +4,7 @@ author: "Martha Wells"
 year: "2023"
 month: "March"
 score: 5
-image: ../exitstrategy.jpg
+image: "/images/books23/exitstrategy.jpg"
 genre: ["Short Story", "Sci-Fi", "Fantasy", "Adult", "Robots", "Space"]
 ---
 

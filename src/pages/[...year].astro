@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { year } = Astro.params;
 ---
 
-<Layout title="Books from {year}">
+<Layout title=`Books from ${Number(year)}`>
 	<BookGrid year={Number(year)}>
 		<GridImage year={Number(year)} />
 	</BookGrid>

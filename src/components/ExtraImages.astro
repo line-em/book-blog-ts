@@ -9,7 +9,17 @@ export interface Props {
 const { extraImage, extraImages, title } = Astro.props;
 ---
 
-{extraImage && <img src={extraImage} alt={title} class="image m-top m-center" />}
+{
+	extraImage && (
+		<Image
+			src={extraImage}
+			alt={title}
+			class="image m-top m-center"
+			width={1000}
+			height={400}
+		/>
+	)
+}
 {
 	extraImages && (
 		<div class="extra-images">
@@ -19,7 +29,7 @@ const { extraImage, extraImages, title } = Astro.props;
 				class="image"
 				width={1000}
 				height={400}
-				quality={"low"}
+				quality={"mid"}
 			/>
 			<Image
 				src={extraImages[1]}

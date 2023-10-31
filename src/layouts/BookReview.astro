@@ -1,10 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getStars } from "../utils/rating";
-import { getMostReadGenres } from "../utils/genres";
 import "../styles/year.styles.css";
-import { yearList } from "../content/yearList";
 import { Image } from "astro:assets";
+import YearButtons from "../components/YearButtons.astro";
 
 export interface Props {
 	cover: string;
@@ -25,22 +24,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
 				<h1>
 					<span class="text-gradient">Yearly</span>{" "}Books
 				</h1>
-				<section class="nav-buttons">
-					<a
-						href=`/index.html`
-						}
-						class={`button-style ${year ? "" : "inactive"}`}
-					>
-						All
-					</a>
-					{
-						yearList.map((curr) => (
-							<a href={`/${Number(curr)}`} class="button-style">
-								{curr}
-							</a>
-						))
-					}
-				</section>
+				<YearButtons year={year} />
 			</nav>
 		</header>
 		<slot />

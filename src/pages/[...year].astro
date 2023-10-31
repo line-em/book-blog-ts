@@ -1,7 +1,7 @@
 ---
 import GridImage from "../components/GridImage.astro";
 import BookGrid from "../layouts/BookGrid.astro";
-import { yearList } from "../content/yearList";
+import { yearList } from "../content/_yearList";
 import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -19,3 +19,4 @@ const { year } = Astro.params;
 		<GridImage year={Number(year)} />
 	</BookGrid>
 </Layout>
+../content/_yearList

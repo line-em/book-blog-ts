@@ -8,6 +8,12 @@ export const getGenres = (books) =>
 		return genreCounter;
 	}, []);
 
+export const listAllGenres = (books) => {
+	const genres = getGenres(books);
+	console.log(genres);
+	return Object.keys(genres);
+};
+
 export const getMostReadGenres = (books) => {
 	const genres = getGenres(books);
 	return Object.keys(genres).reduce((mostReadGenres, currentGenre) => {

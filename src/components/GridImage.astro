@@ -15,7 +15,7 @@ if (year)
 	allBooks = await getCollection("books", ({ data }) => Number(data.year) === year);
 ---
 
-<section class="img-grid instructions">
+<section class="instructions img-grid">
 	{
 		allBooks.map((book) => {
 			return (

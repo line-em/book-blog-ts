@@ -1,27 +1,22 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { getAverageStars } from "../utils/rating";
-import { getMostReadGenres } from "../utils/genres";
 import "../styles/year.styles.css";
 import { getBooks } from "../utils/getBooks";
-import { yearList } from "../content/yearList";
+import Layout from "./Layout.astro";
+import ReadingStats from "./ReadingStats.astro";
+import YearButtons from "../components/YearButtons.astro";
 
-export interface Props {
+export interface YearBookProps {
 	year?: number;
 }
 
-const { year } = Astro.props;
-
 let books;
+const { year } = Astro.props;
 
 if (year) {
 	books = await getBooks(year);
 } else {
 	books = await getBooks();
 }
-
-const averageStars = getAverageStars(books.map((book) => book.data.score));
-const mostReadGenres = getMostReadGenres(books);
 ---
 
 <Layout title="Book List">
@@ -31,46 +26,9 @@ const mostReadGenres = getMostReadGenres(books);
 				<h1>
 					<span class="text-gradient">{year ? `${year}` : ""}</span>{" "}Books
 				</h1>
-				<section class="nav-buttons">
-					<a
-						href=`/index.html`
-						}
-						class={`button-style ${year ? "" : "inactive"}`}
-					>
-						All
-					</a>
-					{
-						yearList.map((curr) => (
-							<a
-								href={`/${Number(curr)}`}
-								class={`button-style ${
-									curr === Number(year) ? "inactive" : ""
-								}`}
-							>
-								{curr}
-							</a>
-						))
-					}
-				</section>
+				<YearButtons year={year} />
 			</nav>
-			<aside>
-				<hr />
-				<h3>Reading Stats</h3>
-				<ul>
-					<li>
-						Books read:
-						<strong class="text-gradient">{books.length}</strong>
-					</li>
-					<li>
-						Most read {mostReadGenres.length > 1 ? "genres:" : "genre:"}
-						<strong class="text-gradient">{mostReadGenres.join(", ")}</strong>
-					</li>
-					<li>
-						Average rating:
-						<strong class="text-gradient">{averageStars}</strong>
-					</li>
-				</ul>
-			</aside>
+			<ReadingStats books={books} />
 		</header>
 		<slot />
 	</main>

@@ -1,6 +1,5 @@
 ---
-import { getCollection, getEntry, type CollectionEntry } from "astro:content";
-import { getImagePath } from "../utils/digits";
+import { getCollection, type CollectionEntry } from "astro:content";
 import BookReview from "../layouts/BookReview.astro";
 import "../styles/bookpage.styles.css";
 import BookNav from "../components/BookNav.astro";
@@ -63,8 +62,8 @@ let auth = true;
 				{prev && next && <span> | </span>}
 				{next && <BookNav slug={next.slug} type="next" />}
 			</nav>
-			<h1>
-				<span class="text-gradient">{title}</span>
+			<h1 class="text-gradient">
+				{title}
 			</h1>
 			<h3>by {author}</h3>
 			<section class="book-review">

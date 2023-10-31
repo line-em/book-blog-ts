@@ -1,0 +1,30 @@
+---
+import { getMostReadGenres } from "../utils/genres";
+import { getAverageStars } from "../utils/rating";
+
+const books = Astro.props.books;
+
+const mostReadGenres = getMostReadGenres(books);
+const averageStars = getAverageStars(books.map((book) => book.data.score));
+---
+
+<aside>
+	<hr />
+	<h3>Reading Stats</h3>
+	<ul>
+		<li>
+			Books read:
+			<strong class="text-gradient">{books.length}</strong>
+		</li>
+		<li>
+			Most read {mostReadGenres.length > 1 ? "genres:" : "genre:"}
+			<strong class="text-gradient">
+				{mostReadGenres.join(", ")}
+			</strong>
+		</li>
+		<li>
+			Average rating:
+			<strong class="text-gradient">{averageStars}</strong>
+		</li>
+	</ul>
+</aside>

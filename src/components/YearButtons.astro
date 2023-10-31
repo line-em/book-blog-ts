@@ -1,0 +1,16 @@
+---
+import { yearList } from "../content/_yearList";
+
+const year = Astro.props.year;
+---
+
+<section class="nav-buttons">
+	<a href=`/index.html` } class={`button-style ${year ? "" : "inactive"}`}>All</a>
+	{
+		yearList.map((curr) => (
+			<a href={`/${Number(curr)}`} class="button-style">
+				{curr}
+			</a>
+		))
+	}
+</section>

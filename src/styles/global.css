@@ -1,12 +1,11 @@
 :root {
 	--accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	--serif: "Literata Variable", "Georgia", serif;
+	--serif: "Libre Baskerville", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
 	--sans: "Manrope Variable", "Arial", sans-serif;
-	--regular: 500;
+	--regular: 400;
 	--bold: 700;
-	--bolder: 800;
 	--shadow-color: 286deg 36% 56%;
 	--shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
 		0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),
@@ -102,7 +101,7 @@ blockquote + blockquote {
 	background-clip: text;
 	background-size: 400%;
 	background-position: 0%;
-	font-weight: var(--bolder);
+	font-weight: var(--regular);
 }
 
 .instructions,

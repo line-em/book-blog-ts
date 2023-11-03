@@ -10,7 +10,7 @@ const bookCollection = defineCollection({
 			month: z.string(),
 			score: z.number(),
 			genre: z.array(z.string()),
-			image: image().or(z.string()),
+			image: image().or(z.string()).or(z.any()),
 			heroimage: z.array(image().or(z.string())).optional(),
 			extraimage: image().or(z.string()).optional(),
 			extraimages: z.array(image().or(z.string())).optional()

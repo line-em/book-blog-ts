@@ -5,7 +5,7 @@ import { getAverageStars } from "../utils/rating";
 const books = Astro.props.books;
 
 const mostReadGenres = getMostReadGenres(books);
-const averageStars = getAverageStars(books.map((book) => book.data.score));
+const averageStars = getAverageStars(books.map((book: { data: { score: number; }; }) => book.data.score));
 ---
 
 <aside>

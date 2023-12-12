@@ -3,7 +3,7 @@ title: "Twice Shy"
 author: "Sarah Hoggle"
 year: "2023"
 month: "March"
-score: 3
+score: 2.5
 image: "./images/books23/twiceshy.jpg"
 genre: ["Romance", "Inheritance", "Slice of Life", "Contemporary", "Chick Lit"]
 ---

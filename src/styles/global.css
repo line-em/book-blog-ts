@@ -2,12 +2,12 @@
 	--accent: 124, 58, 237;
 	--pink: #da62c4;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-	--serif: "IBM Plex Serif", "Fraunces Variable", "Georgia", serif;
+	--serif: "Domine Variable", "Fraunces Variable", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
 	--sans: "DM Sans Variable", "Arial", sans-serif;
 	--regular: 400;
-	--bold: 600;
-	--bolder: 700;
+	--bold: 700;
+	--bolder: 900;
 	--shadow-color: 286deg 36% 56%;
 	--shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
 		0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),

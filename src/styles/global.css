@@ -50,7 +50,7 @@ p {
 
 a {
 	text-decoration: underline 2px rgba(var(--accent), 25%);
-	color: var(--pink);
+	color: teal;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -128,7 +128,6 @@ button,
 	border: 1px solid rgba(var(--accent), 55%);
 	background-color: white;
 	color: rgba(var(--accent), 90%);
-	color: teal;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	font: inherit;
@@ -179,7 +178,7 @@ li {
 }
 
 li::before {
-	content: "🔅";
+	content: url("./assets/moon-duotone.svg");
 	color: rgb(var(--accent));
 	margin-inline: 5px;
 }

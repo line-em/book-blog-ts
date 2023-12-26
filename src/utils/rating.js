@@ -3,7 +3,7 @@ export const getStars = (rating) => {
 	let output = [];
 
 	for (let i = rating; i >= 0.5; i--) {
-		if (i == 0.5) {
+		if (i <= 0.80) {
 			output.push(
 				`<i class="ph-star-half-fill ph-lg text-gradient" aria-hidden="true"></i>`
 			);

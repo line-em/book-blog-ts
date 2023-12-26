@@ -1,7 +1,8 @@
 :root {
 	/*--accent: 124, 58, 237;*/
-	--accent: 0, 212, 255;
-	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	--accent: 76, 191, 226;
+	--pink: #da62c4;
+	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
 	--serif: "Fraunces Variable", "Libre Baskerville", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
 	--sans: "DM Sans Variable", "Arial", sans-serif;
@@ -50,7 +51,7 @@ p {
 
 a {
 	text-decoration: underline 2px rgba(var(--accent), 25%);
-	color: teal;
+	color: var(--pink);
 	transition: all 0.2s ease-in-out;
 }
 

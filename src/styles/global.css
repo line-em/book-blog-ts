@@ -177,7 +177,7 @@ li {
 
 li::before {
 	content: "🔅";
-	margin-inline: 10px;
+	margin-inline: 5px;
 }
 
 li + li {

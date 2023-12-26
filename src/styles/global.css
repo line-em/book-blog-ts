@@ -178,6 +178,7 @@ li {
 
 li::before {
 	content: "🔅";
+	left: 8%;
 }
 
 li + li {

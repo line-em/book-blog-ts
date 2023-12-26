@@ -5,7 +5,7 @@
 	margin: 0 auto;
 	border-radius: 0.4rem;
 	position: relative;
-	min-height: calc(100dvh - 6rem);
+	/*min-height: calc(100dvh - 6rem);*/
 	/*min-height: calc(100dvh - 4rem);*/
 	padding: 1.5rem;
 }

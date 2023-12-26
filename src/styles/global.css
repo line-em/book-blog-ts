@@ -6,8 +6,8 @@
 	/* --sans: "Rubik", "Arial", sans-serif; */
 	--sans: "DM Sans Variable", "Arial", sans-serif;
 	--regular: 400;
-	--bold: 700;
-	--bolder: 900;
+	--bold: 600;
+	--bolder: 700;
 	--shadow-color: 286deg 36% 56%;
 	--shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
 		0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),

@@ -1,9 +1,8 @@
 :root {
-	/*--accent: 124, 58, 237;*/
-	--accent: 76, 191, 226;
+	--accent: 124, 58, 237;
 	--pink: #da62c4;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-	--serif: "Fraunces Variable", "Libre Baskerville", "Georgia", serif;
+	--serif: "Vollkorn Variable", "Fraunces Variable", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
 	--sans: "DM Sans Variable", "Arial", sans-serif;
 	--regular: 400;

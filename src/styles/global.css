@@ -39,7 +39,6 @@ body {
 }
 
 p {
-	font-size: 0.9rem;
 	margin-top: 0.5rem;
 }
 
@@ -173,16 +172,15 @@ ul {
 
 li {
 	padding-left: 1rem;
-	text-indent: -0.7rem;
 }
 
 li::before {
 	content: "🔅";
-	left: 8%;
+	margin-inline: 10px;
 }
 
 li + li {
-	margin-block-start: 0.5rem;
+	margin-block-start: 0.6rem;
 }
 
 .p-top-base {

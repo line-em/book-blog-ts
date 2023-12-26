@@ -1,5 +1,6 @@
 :root {
-	--accent: 124, 58, 237;
+	/*--accent: 124, 58, 237;*/
+	--accent: 0, 212, 255;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	--serif: "Fraunces Variable", "Libre Baskerville", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
@@ -87,6 +88,8 @@ h4 {
 blockquote {
 	margin: 0.5rem 0;
 	font-size: 0.8rem;
+	font-family: var(--serif);
+	font-style: italic;
 	border-inline-start: 2px rgba(var(--accent), 75%) solid;
 	overflow: auto;
 	padding: 0.2rem 0.5rem;
@@ -177,6 +180,7 @@ li {
 
 li::before {
 	content: "🔅";
+	color: rgb(var(--accent));
 	margin-inline: 5px;
 }
 

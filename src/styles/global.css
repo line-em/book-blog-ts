@@ -127,7 +127,7 @@ button,
 	padding: 0.3rem 0.5rem;
 	border: 1px solid rgba(var(--accent), 55%);
 	background-color: white;
-	color: rgba(var(--accent), 90%);
+	color: teal;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	font: inherit;

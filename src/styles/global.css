@@ -22,12 +22,13 @@ html {
 	background-color: lavender;
 	font-family: var(--sans);
 	font-weight: var(--regular);
+	font-size: 16px;
 }
 
 body {
 	margin: 0 auto;
 	width: 100%;
-	font-size: 16px;
+	font-size: .9rem;
 	padding: 1rem;
 	line-height: 1.5;
 }
@@ -180,7 +181,7 @@ li::before {
 }
 
 li + li {
-	margin-block-start: 0.6rem;
+	margin-block-start: 1rem;
 }
 
 .p-top-base {

@@ -53,6 +53,11 @@ h3 {
 	}
 }
 
+.book-grid-rating img {
+	height: auto;
+	width: auto;
+}
+
 .extra-images {
 	display: flex;
 	gap: 15px;

@@ -87,7 +87,7 @@ h4 {
 
 blockquote {
 	margin: 0.5rem 0;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	font-family: var(--serif);
 	font-style: italic;
 	border-inline-start: 2px rgba(var(--accent), 75%) solid;
@@ -108,6 +108,11 @@ blockquote + blockquote {
 	background-clip: text;
 	background-size: 400%;
 	background-position: 0%;
+}
+
+.book-grid-rating img {
+	height: auto;
+	width: auto;
 }
 
 .instructions,

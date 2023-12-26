@@ -96,7 +96,7 @@ blockquote {
 	font-style: italic;
 	border-inline-start: 2px rgba(var(--accent), 75%) solid;
 	overflow: auto;
-	padding: 0.2rem 0.5rem;
+	padding: 0.3rem 0.5rem;
 	background-color: rgba(var(--accent), 10%);
 	border-radius: 0 8px 8px 0;
 }

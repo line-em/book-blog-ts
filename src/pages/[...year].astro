@@ -5,10 +5,9 @@ import { yearList } from "../content/_yearList";
 import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-	const paths = yearList.map((year) => ({
-		params: { year: year }
+	return yearList.map((year) => ({
+		params: {year: year}
 	}));
-	return paths;
 }
 
 const { year } = Astro.params;
@@ -19,4 +18,3 @@ const { year } = Astro.params;
 		<GridImage year={Number(year)} />
 	</BookGrid>
 </Layout>
-../content/_yearList

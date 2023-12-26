@@ -8,7 +8,7 @@ const year = Astro.props.year;
 	<a href=`/index.html` } class={`button-style ${year ? "" : "inactive"}`}>All</a>
 	{
 		yearList.map((curr) => (
-			<a href={`/${Number(curr)}`} class="button-style">
+			<a href={`/${Number(curr)}`} class={`button-style ${year != curr ? "" : "inactive"}`}>
 				{curr}
 			</a>
 		))

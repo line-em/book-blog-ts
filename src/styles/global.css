@@ -179,8 +179,9 @@ li {
 
 li::before {
 	content: url("/assets/moon-duotone.svg");
-	color: rgb(var(--accent));
 	margin-inline: 5px;
+	display: inline;
+	vertical-align: top;
 }
 
 li + li {

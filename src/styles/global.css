@@ -2,12 +2,12 @@
 	--accent: 124, 58, 237;
 	--pink: #da62c4;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-	--serif: "Domine Variable", "Fraunces Variable", "Georgia", serif;
+	--serif: "Crimson Pro Variable", "Fraunces Variable", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
 	--sans: "DM Sans Variable", "Arial", sans-serif;
 	--regular: 400;
 	--bold: 600;
-	--bolder: 700;
+	--bolder: 800;
 	--shadow-color: 286deg 36% 56%;
 	--shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
 		0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),
@@ -40,7 +40,7 @@ body {
 	}
 }
 
-p {
+p:not(>blockquote) {
 	margin-top: 0.5rem;
 }
 
@@ -96,7 +96,7 @@ blockquote {
 	font-style: italic;
 	border-inline-start: 2px rgba(var(--accent), 75%) solid;
 	overflow: auto;
-	padding: 0.3rem 0.5rem;
+	padding: .5rem 1.5rem;
 	background-color: rgba(var(--accent), 10%);
 	border-radius: 0 8px 8px 0;
 }

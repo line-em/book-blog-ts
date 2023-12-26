@@ -2,7 +2,7 @@
 	--accent: 124, 58, 237;
 	--pink: #da62c4;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-	--serif: "Vollkorn Variable", "Fraunces Variable", "Georgia", serif;
+	--serif: "Domine Variable", "Fraunces Variable", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
 	--sans: "DM Sans Variable", "Arial", sans-serif;
 	--regular: 400;
@@ -178,7 +178,7 @@ li {
 }
 
 li::before {
-	content: url("./assets/moon-duotone.svg");
+	content: url("/assets/moon-duotone.svg");
 	color: rgb(var(--accent));
 	margin-inline: 5px;
 }

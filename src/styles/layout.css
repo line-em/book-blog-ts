@@ -5,7 +5,8 @@
 	margin: 0 auto;
 	border-radius: 0.4rem;
 	position: relative;
-	min-height: calc(100dvh - 4rem);
+	min-height: calc(100dvh - 6rem);
+	/*min-height: calc(100dvh - 4rem);*/
 	padding: 1.5rem;
 }
 
@@ -22,7 +23,7 @@
 :where(.content-box, .review-box) > :where(header, aside) {
 	position: sticky;
 	top: 3.5rem;
-	height: calc(100dvh - 4rem);
+	height: calc(100dvh - 6rem);
 	width: 100%;
 	text-align: center;
 	display: flex;

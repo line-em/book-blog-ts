@@ -3,7 +3,7 @@
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	--serif: "Fraunces Variable", "Libre Baskerville", "Georgia", serif;
 	/* --sans: "Rubik", "Arial", sans-serif; */
-	--sans: "Manrope Variable", "Arial", sans-serif;
+	--sans: "DM Sans Variable", "Arial", sans-serif;
 	--regular: 400;
 	--bold: 700;
 	--bolder: 900;

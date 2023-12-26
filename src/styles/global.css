@@ -91,7 +91,6 @@ h4 {
 
 blockquote {
 	margin: 0.5rem 0;
-	font-size: 0.9rem;
 	font-family: var(--serif);
 	font-style: italic;
 	border-inline-start: 2px rgba(var(--accent), 75%) solid;

@@ -74,6 +74,7 @@ h1 {
 
 h1 > span.text-gradient {
     font-weight: var(--bolder);
+    display: block;
 }
 
 h3 {

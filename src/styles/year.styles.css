@@ -21,6 +21,7 @@ img:hover {
 	text-align: center;
 	gap: 2rem 1.5rem;
 	padding: 1rem;
+	align-content: start;
 }
 
 @media screen and (max-width: 680px) {

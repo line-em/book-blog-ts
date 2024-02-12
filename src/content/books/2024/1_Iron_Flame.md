@@ -4,7 +4,7 @@ author: "Rebecca Yarros"
 year: "2024"
 month: "February"
 score: 3
-image: "./images/divinerivals.jpg"
+image: "./images/ironflame.jpg"
 genre: [ "Dragons", "Young Adult", "New Adult", "Fantasy", "Romance" ]
 ---
 

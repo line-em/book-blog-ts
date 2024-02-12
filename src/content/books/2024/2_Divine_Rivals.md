@@ -1,7 +1,7 @@
 ---
 title: "Divine Rivals"
 author: "Rebecca Ross"
-year: "2023"
+year: "2024"
 month: "June"
 score: 3
 image: "./images/divinerivals.jpg"

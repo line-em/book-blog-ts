@@ -5,7 +5,7 @@ year: "2024"
 month: "February"
 score: 5
 image: "./images/divinerivals.jpg"
-genre: [  "Young Adult", "New Adult", "Fantasy", "Romance" ]
+genre: [  "Fantasy", "Romance", "War", "Young Adult" ]
 ---
 
 > “I don’t deserve this,” she whispered. She felt like she was betraying her brother. Lieutenant Lark. The Sycamore Platoon. “I don’t deserve to be this happy. Not when there’s so much pain and terror and loss in the world.” “Why would you say that?” Roman replied, his voice gentle but urgent. “Do you think we could live in a world made only of those things? Death and pain and horror? Loss and agony? It’s not a crime to feel joy, even when things seem hopeless. Iris, look at me. You deserve all the happiness in the world. And I intend to see that you have it.”

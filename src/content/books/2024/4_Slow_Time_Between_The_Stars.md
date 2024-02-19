@@ -12,7 +12,7 @@ genre: [ "Science Fiction", "Sci-Fi", "Short Story", "Novella", "AI", "Space" ]
 > and in the space between the stars, slow was ideal.”
 
 Now I've pushed past 50% of **The Far Reaches** collection! Two more short stories to
-go. [Void]('/2023/22_Void') is still my favorite, however.
+go. [Void](/2023/22_Void) is still my favorite, however.
 
 This one is pretty interesting, though. It all made sense, and it is very, very well-rounded.
 

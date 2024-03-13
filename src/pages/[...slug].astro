@@ -8,15 +8,6 @@ import Lorem from "../components/Lorem.astro";
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 
-export const prerender = false;
-import { PAGE_PASSWORD } from '../constants.js';
-
-const password = Astro.url.searchParams.get('password');
-const authenticated = password == PAGE_PASSWORD;
-
-if (!authenticated)
-	return Astro.redirect("/");
-
 export interface Props {
 	entry: CollectionEntry<"books">;
 	prev: CollectionEntry<"books"> | null;

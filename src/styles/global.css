@@ -2,12 +2,11 @@
     --accent: 124, 58, 237;
     --pink: #da62c4;
     --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-    --serif: "Crimson Pro Variable", "Fraunces Variable", "Georgia", serif;
-    /* --sans: "Rubik", "Arial", sans-serif; */
-    --sans: "Rubik Variable", "Arial", sans-serif;
+    --serif: "IBM Plex Serif", "Crimson Pro Variable", "Fraunces Variable", "Georgia", serif;
+    --sans: "Rubik Variable", "Helvetica", "Arial", sans-serif;
     --regular: 400;
     --bold: 600;
-    --bolder: 800;
+    --bolder: 700;
     --shadow-color: 286deg 36% 56%;
     --shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
     0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),
@@ -184,9 +183,11 @@ ul {
     padding: 0;
 }
 
-li {
+li:not(> aside) {
     padding-left: 1rem;
 }
+
+
 
 li::before {
     content: url("/assets/moon-duotone.svg");

@@ -5,8 +5,8 @@ year: "2024"
 month: "April"
 score: 5
 image: "./images/yuminightmare.jpg"
-heroimage: ["./images/books22/yuminightmare2.jpg", "full"]
-extraimage: "./images/books22/yuminightmare3.jpg"
+heroimage: ["./images/yuminightmare2.jpg", "full"]
+extraimage: "./images/yuminightmare3.jpg"
 genre: ["Epic Fantasy", "Adult", "Fantasy", "Romance"]
 ---
 

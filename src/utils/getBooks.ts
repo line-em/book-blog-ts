@@ -11,5 +11,6 @@ export const getBooks = async (year?: number) => {
 	} else {
 		result = await getCollection("books");
 	}
+	result.sort((a, b) => a.id.localeCompare(b.id));
 	return result;
 };

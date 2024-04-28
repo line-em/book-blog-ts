@@ -3,7 +3,7 @@ title: "Yumi and the Nightmare Painter"
 author: "Brandon Sanderson"
 year: "2024"
 month: "April"
-score: 3.5
+score: 5
 image: "./images/yuminightmare.jpg"
 heroimage: ["./images/books22/yuminightmare2.jpg", "full"]
 extraimage: "./images/books22/yuminightmare3.jpg"

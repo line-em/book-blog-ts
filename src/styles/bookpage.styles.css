@@ -80,7 +80,7 @@ aside.book-info {
 }
 
 article:last-of-type > p:first-of-type::first-letter {
-	font-family: var(--serif);
+	font-family: var(--serif), serif;
 	color: rgba(var(--accent), 100%);
 	font-size: clamp(1rem, 1.5vw + 1rem, 1.25rem);
 	font-weight: var(--bold);

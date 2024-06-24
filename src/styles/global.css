@@ -112,7 +112,7 @@ blockquote + blockquote {
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 400%;
-    background-position: 0%;
+    background-position: 0;
 }
 
 .book-grid-rating img {

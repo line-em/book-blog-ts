@@ -1,9 +1,9 @@
 ---
-title: "The Warm Hands Of Ghosts"
-author: "Katherine Arden"
+title: "DA: Tevinter Nights"
+author: "X"
 year: "2024"
 month: "June"
 score: 4
-image: "./images/warmhands.jpg"
+image: "./images/tevinternights.jpg"
 genre: ["Young Adult", "New Adult", "Fantasy", "Romance"]
 ---

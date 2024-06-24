@@ -5,10 +5,6 @@ import Layout from "./Layout.astro";
 import ReadingStats from "./ReadingStats.astro";
 import YearButtons from "../components/YearButtons.astro";
 
-export interface YearBookProps {
-	year?: number;
-}
-
 let books;
 const { year } = Astro.props;
 

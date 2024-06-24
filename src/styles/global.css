@@ -20,7 +20,7 @@
 
 html {
     background-color: lavender;
-    font-family: var(--sans);
+    font-family: var(--sans), sans-serif;
     font-weight: var(--regular);
     font-size: 16px;
 }
@@ -85,7 +85,7 @@ h4 {
     font-weight: var(--regular);
 }
 
-:where(h1, h2, h3, h5, h6) {
+h1, h2, h3, h5, h6 {
     font-family: var(--serif);
 }
 

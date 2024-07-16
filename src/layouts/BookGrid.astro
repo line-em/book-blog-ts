@@ -22,7 +22,7 @@ if (year) {
 				<h1>
 					<span class="text-gradient">{year ? `${year}` : ""}</span>{" "}Books
 				</h1>
-				<YearButtons year={year} showAll={false} />
+				<YearButtons year={year} showAll={year ? true : false} />
 			</nav>
 			<ReadingStats books={books} />
 		</header>

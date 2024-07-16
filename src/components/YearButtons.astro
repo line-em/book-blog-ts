@@ -6,7 +6,7 @@ console.log(Astro.props)
 ---
 
 <section class="nav-buttons">
-	<a href=`/index.html` } class={`button-style ${year && !showAll ? "" : "inactive"}`}>All</a>
+	<a href=`/index.html` } class={`button-style ${year ? "" : "inactive"}`}>All</a>
 	{
 		yearList.map((curr) => (
 			<a href={`/${Number(curr)}`} class={`button-style ${year != curr ? "" : "inactive"}`}>

@@ -2,11 +2,11 @@
 import { yearList } from "../content/_yearList";
 
 const year = Astro.props.year;
-console.log(Astro.props)
+const showAll = Astro.props.showAll;
 ---
 
 <section class="nav-buttons">
-	<a href=`/index.html` } class={`button-style ${year ? "" : "inactive"}`}>All</a>
+	<a href=`/index.html` } class={`button-style ${showAll ? "" : "inactive"}`}>All</a>
 	{
 		yearList.map((curr) => (
 			<a href={`/${Number(curr)}`} class={`button-style ${year != curr ? "" : "inactive"}`}>

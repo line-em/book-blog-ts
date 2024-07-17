@@ -27,6 +27,7 @@ export async function getStaticPaths() {
 		}
 	}));
 }
+
 let { entry, prev, next } = Astro.props;
 
 const { Content } = await entry.render();
@@ -75,13 +76,14 @@ let auth = true;
 							width={1000}
 							height={300}
 							quality={"mid"}
+							format="webp"
 							class={heroimage[1] === "full" ? "image" : "image right"}
 						/>
 					)
 				}
 				{auth ? <Content /> : <Lorem />}
 				<ExtraImages
-					extraImages={extraimages}
+					extraImages={extraimages?.map(image => image)}
 					extraImage={extraimage}
 					title={title}
 				/>

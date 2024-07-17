@@ -5,7 +5,7 @@ import Layout from "./Layout.astro";
 import ReadingStats from "./ReadingStats.astro";
 import YearButtons from "../components/YearButtons.astro";
 
-let books;
+let books: object[];
 const { year } = Astro.props;
 
 if (year) {

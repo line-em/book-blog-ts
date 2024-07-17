@@ -1,7 +1,7 @@
 import { getCollection } from "astro:content";
 
 export const getBooks = async (year?: number) => {
-	let result;
+	let result: object[];
 	if (year) {
 		const getBooksByYear = await getCollection("books", ({ id }) => {
 			return id.startsWith(`${year}/`);

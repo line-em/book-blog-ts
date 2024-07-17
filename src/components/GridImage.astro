@@ -20,7 +20,7 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 		allBooks.map((book) => {
 			return (
 				<article class="book-grid-item">
-					<a href=`{/${book?.slug}}`>
+					<a href={`/${book?.slug}`}>
 						<Image
 							src={book && book?.data.image}
 							alt={book?.data.title}

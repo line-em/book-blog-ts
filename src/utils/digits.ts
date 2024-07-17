@@ -1,23 +1,23 @@
 export const getDigits = (original: number | string, digits: number) => {
-	if (typeof original === "number" && typeof digits === "number") {
-		return original.toString().substring(digits);
-	} else if (typeof original === "string" && typeof digits === "number") {
-		return original.substring(digits);
+	if (typeof original === 'number' && typeof digits === 'number') {
+		return original.toString().substring(digits)
+	} else if (typeof original === 'string' && typeof digits === 'number') {
+		return original.substring(digits)
 	}
-};
+}
 
 export const getImagePath = (original: string, year: number | string) => {
-	return `books${getDigits(year, 2)}/${getDigits(original, 3)}`;
-};
+	return `books${getDigits(year, 2)}/${getDigits(original, 3)}`
+}
 
 export const removeYearFromPath = (original: string) => {
-	return original.substring(5);
-};
+	return original.substring(5)
+}
 
 export const getUrlPath = (original: string, hasYear: boolean = false) => {
 	// Needed for production
-	const pathWithoutYear = hasYear ? removeYearFromPath(original) : original;
-	const urlPath = `./${pathWithoutYear}/index.html`;
+	const pathWithoutYear = hasYear ? removeYearFromPath(original) : original
+	const urlPath = `./${pathWithoutYear}/index.html`
 
-	return urlPath;
-};
+	return urlPath
+}

@@ -1,11 +1,13 @@
 ---
-import { getMostReadGenres } from "../utils/genres";
-import { getAverageStars } from "../utils/rating";
+import { getMostReadGenres } from '../utils/genres'
+import { getAverageStars } from '../utils/rating'
 
-const books = Astro.props.books;
+const books = Astro.props.books
 
-const mostReadGenres = getMostReadGenres(books);
-const averageStars = getAverageStars(books.map((book: { data: { score: number; }; }) => book.data.score));
+const mostReadGenres = getMostReadGenres(books)
+const averageStars = getAverageStars(
+	books.map((book: { data: { score: number } }) => book.data.score)
+)
 ---
 
 <aside>
@@ -17,9 +19,9 @@ const averageStars = getAverageStars(books.map((book: { data: { score: number; }
 			<strong class="text-gradient">{books.length}</strong>
 		</li>
 		<li>
-			Most read {mostReadGenres.length > 1 ? "genres: " : "genre: "}
+			Most read {mostReadGenres.length > 1 ? 'genres: ' : 'genre: '}
 			<strong class="text-gradient">
-				{mostReadGenres.join(", ")}
+				{mostReadGenres.join(', ')}
 			</strong>
 		</li>
 		<li>

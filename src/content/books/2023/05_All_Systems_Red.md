@@ -1,11 +1,11 @@
 ---
-title: "All Systems Red"
-author: "Martha Wells"
-year: "2023"
-month: "February"
+title: 'All Systems Red'
+author: 'Martha Wells'
+year: '2023'
+month: 'February'
 score: 5
 image: ./images/books23/allsystemsred.jpg
-genre: ["Short Story", "Sci-Fi", "Fantasy", "Adult", "Robots", "Space"]
+genre: ['Short Story', 'Sci-Fi', 'Fantasy', 'Adult', 'Robots', 'Space']
 ---
 
 > “It had been well over 35,000 hours or so since then, with still not much murdering, but probably, I don’t know, a little under 35,000 hours of movies, serials, books, plays, and music consumed. As a heartless killing machine, I was a terrible failure.”

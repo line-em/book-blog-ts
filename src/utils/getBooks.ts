@@ -1,15 +1,12 @@
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from 'astro:content'
 
-export const getBooks = async (year?: number) => {
-	let result: object[];
+export const getBooks = async (year?: number): Promise<CollectionEntry<'books'>[]> => {
 	if (year) {
-		const getBooksByYear = await getCollection("books", ({ id }) => {
-			return id.startsWith(`${year}/`);
-		});
-		result = getBooksByYear;
-		console.log(`Found ${result.length} books for year ${year}`);
+		const getBooksByYear = await getCollection('books', ({ id }) => {
+			return id.startsWith(`${year}/`)
+		})
+		return getBooksByYear
 	} else {
-		result = await getCollection("books");
+		return await getCollection('books')
 	}
-	return result;
-};
+}

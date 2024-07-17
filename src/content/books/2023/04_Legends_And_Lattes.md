@@ -1,11 +1,11 @@
 ---
-title: "Legends & Lattes"
-author: "Travis Baldree"
-year: "2023"
-month: "February"
+title: 'Legends & Lattes'
+author: 'Travis Baldree'
+year: '2023'
+month: 'February'
 score: 3
 image: ./images/books23/legendsandlattes.jpg
-genre: ["Romance", "Fantasy", "Queer", "Adult", "Cozy"]
+genre: ['Romance', 'Fantasy', 'Queer', 'Adult', 'Cozy']
 ---
 
 > “She was smiling, and for the first time, the building, the city, this place… felt like hers. A place she’d still be tomorrow, the week after, next season, next year…. Home.”

@@ -1,11 +1,11 @@
 ---
-title: "Anxious People"
-author: "Fredrik Backman"
-year: "2022"
-month: "March"
+title: 'Anxious People'
+author: 'Fredrik Backman'
+year: '2022'
+month: 'March'
 score: 5
-image: "./images/books22/anxious.jpg"
-genre: ["Humor", "Slice Of Life", "Adult", "Contemporary", "Cozy", "Found Family"]
+image: './images/books22/anxious.jpg'
+genre: ['Humor', 'Slice Of Life', 'Adult', 'Contemporary', 'Cozy', 'Found Family']
 ---
 
 > “That's the power of literature, you know, it can act like little love letters between two people who can only explain their feelings by pointing at other people's.”

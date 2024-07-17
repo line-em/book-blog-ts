@@ -1,11 +1,11 @@
 ---
-title: "Persuasion"
-author: "Jane Austen"
+title: 'Persuasion'
+author: 'Jane Austen'
 year: 2021
-month: "February"
+month: 'February'
 score: 5
-image: "./images/books21/persuasion.jpg"
-genre: ["Romance", "HistoricalFiction"]
+image: './images/books21/persuasion.jpg'
+genre: ['Romance', 'HistoricalFiction']
 ---
 
 A beautiful book, for sure. Beautifully written. It's pretty sweet when they finally confess to each other, and it really shows more maturity from Austen. Lovely. Check the quotes below!

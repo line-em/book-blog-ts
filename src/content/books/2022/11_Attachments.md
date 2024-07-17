@@ -1,11 +1,11 @@
 ---
-title: "Attachments"
-author: "Rainbow Rowell"
-year: "2022"
-month: "May"
+title: 'Attachments'
+author: 'Rainbow Rowell'
+year: '2022'
+month: 'May'
 score: 3.5
-image: "./images/books22/attachments.jpg"
-genre: ["Romance", "Humor"]
+image: './images/books22/attachments.jpg'
+genre: ['Romance', 'Humor']
 ---
 
 A good example of a good book at a good time? This was cute and quirky.

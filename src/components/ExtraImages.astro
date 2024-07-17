@@ -1,13 +1,13 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets'
 
 export interface Props {
-	extraImage?: ImageMetadata | null;
-	extraImages?: ImageMetadata[] | null;
-	title: string;
+	extraImage?: ImageMetadata | null
+	extraImages?: ImageMetadata[] | null
+	title: string
 }
 
-const { extraImage, extraImages, title } = Astro.props;
+const { extraImage, extraImages, title } = Astro.props
 ---
 
 {
@@ -17,7 +17,7 @@ const { extraImage, extraImages, title } = Astro.props;
 			alt={title}
 			class="image m-top m-center"
 			format="webp"
-			quality={"mid"}
+			quality={'mid'}
 			width={1000}
 			height={400}
 		/>
@@ -32,7 +32,7 @@ const { extraImage, extraImages, title } = Astro.props;
 				class="image"
 				width={1000}
 				height={400}
-				quality={"mid"}
+				quality={'mid'}
 			/>
 			<Image
 				src={extraImages[1]}
@@ -40,7 +40,7 @@ const { extraImage, extraImages, title } = Astro.props;
 				class="image"
 				width={1000}
 				height={400}
-				quality={"low"}
+				quality={'low'}
 			/>
 		</div>
 	)

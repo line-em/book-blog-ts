@@ -1,20 +1,20 @@
 ---
-title: "Torto Arado"
-author: "Itamar Vieira Junior"
-year: "2022"
-month: "October"
+title: 'Torto Arado'
+author: 'Itamar Vieira Junior'
+year: '2022'
+month: 'October'
 score: 5
-image: "./images/books22/tortoarado.jpg"
+image: './images/books22/tortoarado.jpg'
 genre:
-    [
-        "Brasil",
-        "Literatura Brasileira",
-        "Black Author",
-        "Slavery",
-        "Drama",
-        "Contemporary",
-        "Historical Fiction"
-    ]
+  [
+    'Brasil',
+    'Literatura Brasileira',
+    'Black Author',
+    'Slavery',
+    'Drama',
+    'Contemporary',
+    'Historical Fiction'
+  ]
 ---
 
 > "Quando deram a liberdade aos negros, nosso abandono continuou. O povo vagou de terra em terra pedindo abrigo, passando fome, se sujeitando a trabalhar por nada. Se sujeitando a trabalhar por morada. A mesma escravidão de antes fantasiada de liberdade. Mas que liberdade?"

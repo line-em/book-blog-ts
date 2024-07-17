@@ -1,21 +1,21 @@
 ---
-title: "The Ones Who Walk Away From Omelas"
-author: "Ursula K. Le Guin"
-year: "2022"
-month: "November"
+title: 'The Ones Who Walk Away From Omelas'
+author: 'Ursula K. Le Guin'
+year: '2022'
+month: 'November'
 score: 3
-image: "./images/books22/theoneswhowalkaway.jpg"
+image: './images/books22/theoneswhowalkaway.jpg'
 genre:
-    [
-        "Science Fiction",
-        "Fantasy",
-        "Philosophical",
-        "Short Stories",
-        "Dark",
-        "Unique",
-        "Dystopia",
-        "Classic"
-    ]
+  [
+    'Science Fiction',
+    'Fantasy',
+    'Philosophical',
+    'Short Stories',
+    'Dark',
+    'Unique',
+    'Dystopia',
+    'Classic'
+  ]
 ---
 
 > ‘_The joy built upon successful slaughter is not the right kind of joy; it will not do; it is fearful and it is trivial._’
@@ -49,7 +49,7 @@ And then, if you say NO, NEVER, and leave… Then what next?
 The short few pages of the story not only serve to tell the tale of Omelas, but also to explain where the idea came from, and why. It’s as fascinating as the story, and I highly recommend reading both the introduction and the afterword. It’s also important to keep in mind what fired the sparkle of this novel:
 
 > Or if the hypothesis were offered us of a [utopian] world ... and millions kept permanently happy on the one simple condition that a certain lost soul on the far-off edge of things should lead a life of lonely torture, what except a specifical and independent sort of emotion can it be which would make us immediately feel, even though an impulse arose within us to clutch at the happiness so offered, how hideous a thing would be its enjoyment when deliberately accepted as the fruit of such a bargain?
-> --William James, [The Moral Philosopher and the Moral Life](https://goodreads.com/book/show/1524148.The_Moral_Philosopher_and_the_Moral_Life "The Moral Philosopher and the Moral Life by William James") (credited by Le Guin as an inspiration for this story)
+> --William James, [The Moral Philosopher and the Moral Life](https://goodreads.com/book/show/1524148.The_Moral_Philosopher_and_the_Moral_Life 'The Moral Philosopher and the Moral Life by William James') (credited by Le Guin as an inspiration for this story)
 
 Some interesting quotes, some I thought myself, some I saw in reviews. But they’re all related and are good food for thought. In the meanwhile, I will be brief and end my review here!
 

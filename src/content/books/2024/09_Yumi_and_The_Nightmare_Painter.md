@@ -1,13 +1,13 @@
 ---
-title: "Yumi and the Nightmare Painter"
-author: "Brandon Sanderson"
-year: "2024"
-month: "April"
+title: 'Yumi and the Nightmare Painter'
+author: 'Brandon Sanderson'
+year: '2024'
+month: 'April'
 score: 5
-image: "./images/yuminightmare.jpg"
-heroimage: ["./images/yuminightmare2.jpg", "full"]
-extraimage: "./images/yuminightmare3.jpg"
-genre: ["Epic Fantasy", "Adult", "Fantasy", "Romance"]
+image: './images/yuminightmare.jpg'
+heroimage: ['./images/yuminightmare2.jpg', 'full']
+extraimage: './images/yuminightmare3.jpg'
+genre: ['Epic Fantasy', 'Adult', 'Fantasy', 'Romance']
 ---
 
 > “Why do we tell stories?

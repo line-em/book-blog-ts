@@ -1,11 +1,11 @@
 ---
 title: "Howl's Moving Castle"
-author: "Diana Wynne Jones"
-year: "2024"
-month: "May"
+author: 'Diana Wynne Jones'
+year: '2024'
+month: 'May'
 score: 3.5
-image: "./images/howlmoving.png"
-genre: [ "Young Adult", "Middle Grade", "Fantasy", "Magic" ]
+image: './images/howlmoving.png'
+genre: ['Young Adult', 'Middle Grade', 'Fantasy', 'Magic']
 ---
 
 > “I think we ought to live happily ever after," and she thought he meant it. Sophie knew

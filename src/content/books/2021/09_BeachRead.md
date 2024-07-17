@@ -1,11 +1,11 @@
 ---
-title: "Beach Read"
-author: "Emily Henry"
+title: 'Beach Read'
+author: 'Emily Henry'
 year: 2021
-month: "March"
+month: 'March'
 score: 4
-image: "./images/books21/beacread.jpg"
-genre: ["Romance", "Contemporary", "Slice Of Life", "Chick Lit"]
+image: './images/books21/beacread.jpg'
+genre: ['Romance', 'Contemporary', 'Slice Of Life', 'Chick Lit']
 ---
 
 > I felt a little empty, a little light. Happy. Not giddy or overjoyed, but that low, steady level of happiness that, in the best periods of life, rides underneath everything else, a buffer between you and the world you are walking over.

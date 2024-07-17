@@ -1,11 +1,11 @@
 ---
-title: "The Queen of Blood"
-author: "Sarah Beth Durst"
-year: "2023"
-month: "October"
+title: 'The Queen of Blood'
+author: 'Sarah Beth Durst'
+year: '2023'
+month: 'October'
 score: 4.5
-image: "./images/books23/thequeenofblood.jpg"
-genre: ["Fantasy", "Young Adult", "Adult Fantasy", "Adventure", "Magic", "Nature"]
+image: './images/books23/thequeenofblood.jpg'
+genre: ['Fantasy', 'Young Adult', 'Adult Fantasy', 'Adventure', 'Magic', 'Nature']
 ---
 
 > Don't trust the fire, for it will burn you.

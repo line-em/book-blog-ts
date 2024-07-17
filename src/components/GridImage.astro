@@ -1,18 +1,17 @@
 ---
-import { getUrlPath } from "../utils/digits";
-import { getStars } from "../utils/rating";
-import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
+import { getUrlPath } from '../utils/digits'
+import { getStars } from '../utils/rating'
+import { Image } from 'astro:assets'
+import { getCollection } from 'astro:content'
 
 export interface Props {
-	year?: number;
+	year?: number
 }
 
-const { year } = Astro.props;
+const { year } = Astro.props
 
-let allBooks = await getCollection("books");
-if (year)
-	allBooks = await getCollection("books", ({ data }) => Number(data.year) === year);
+let allBooks = await getCollection('books')
+if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year) === year)
 ---
 
 <section class="instructions img-grid">
@@ -20,35 +19,25 @@ if (year)
 		allBooks.map((book) => {
 			return (
 				<article class="book-grid-item">
-					<a
-						href={
-							year
-								? getUrlPath(book?.slug, true)
-								: getUrlPath(book?.slug, false)
-						}
-					>
+					<a href={year ? getUrlPath(book?.slug, true) : getUrlPath(book?.slug, false)}>
 						<Image
 							src={book && book?.data.image}
 							alt={book?.data.title}
 							width={200}
 							height={250}
 							format="webp"
-							quality={"mid"}
+							quality={'mid'}
 						/>
 					</a>
 					<a
-						href={
-							year
-								? getUrlPath(book?.slug, true)
-								: getUrlPath(book?.slug, false)
-						}
+						href={year ? getUrlPath(book?.slug, true) : getUrlPath(book?.slug, false)}
 						class="book-slug"
 					>
 						{book?.data.title}
 					</a>
 					<div set:html={getStars(book?.data.score)} class="book-grid-rating" />
 				</article>
-			);
+			)
 		})
 	}
 </section>

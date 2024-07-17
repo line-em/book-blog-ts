@@ -1,11 +1,11 @@
 ---
-title: "The King of Attolia"
-author: "Megan Whalen Turner"
+title: 'The King of Attolia'
+author: 'Megan Whalen Turner'
 year: 2021
-month: "July"
+month: 'July'
 score: 5
-image: "./images/books21/kingofattolia.jpg"
-genre: ["Young Adult", "Fantasy", "Adventure"]
+image: './images/books21/kingofattolia.jpg'
+genre: ['Young Adult', 'Fantasy', 'Adventure']
 ---
 
 > “Sometimes, if you want to change a man's mind, you have to change the mind of the man next to him first.”

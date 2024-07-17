@@ -1,31 +1,14 @@
 ---
-import "../styles/year.styles.css";
-import { getBooks } from "../utils/getBooks";
-import Layout from "./Layout.astro";
-import ReadingStats from "./ReadingStats.astro";
-import YearButtons from "../components/YearButtons.astro";
+import '../styles/year.styles.css'
+import Layout from './Layout.astro'
+import Sidebar from '../components/Sidebar.astro'
 
-let books: object[];
-const { year } = Astro.props;
-
-if (year) {
-	books = await getBooks(year);
-} else {
-	books = await getBooks();
-}
+const { year } = Astro.props
 ---
 
 <Layout title="Book List">
 	<main class="content-box">
-		<header>
-			<nav>
-				<h1>
-					<span class="text-gradient">{year ? `${year}` : ""}</span>{" "}Books
-				</h1>
-				<YearButtons year={year} showAll={year ? true : false} />
-			</nav>
-			<ReadingStats books={books} />
-		</header>
+		<Sidebar year={year} />
 		<slot />
 	</main>
 </Layout>

@@ -1,21 +1,12 @@
 ---
-title: "Ninth House"
-author: "Leigh Bardugo"
-year: "2022"
-month: "November"
+title: 'Ninth House'
+author: 'Leigh Bardugo'
+year: '2022'
+month: 'November'
 score: 4
-image: "./images/books22/ninthhouse.jpg"
+image: './images/books22/ninthhouse.jpg'
 genre:
-    [
-        "Dark Academia",
-        "Supernatural",
-        "Occult",
-        "Ghosts",
-        "Urban Fantasy",
-        "Adult",
-        "Dark",
-        "Mystery"
-    ]
+  ['Dark Academia', 'Supernatural', 'Occult', 'Ghosts', 'Urban Fantasy', 'Adult', 'Dark', 'Mystery']
 ---
 
 That was fun! I wish I read it in Halloween, but honestly, it was only November, so, good enough in my book!

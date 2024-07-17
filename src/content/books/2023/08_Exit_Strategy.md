@@ -1,11 +1,11 @@
 ---
-title: "Exit Strategy"
-author: "Martha Wells"
-year: "2023"
-month: "March"
+title: 'Exit Strategy'
+author: 'Martha Wells'
+year: '2023'
+month: 'March'
 score: 5
-image: "./images/books23/exitstrategy.jpg"
-genre: ["Short Story", "Sci-Fi", "Fantasy", "Adult", "Robots", "Space"]
+image: './images/books23/exitstrategy.jpg'
+genre: ['Short Story', 'Sci-Fi', 'Fantasy', 'Adult', 'Robots', 'Space']
 ---
 
 > I “liked” these clothes. Maybe I actually liked them enough to remove the quotation marks around “liked.” I don’t like things in general that can’t be downloaded via the entertainment feed. Maybe because I’d picked them myself. Maybe.

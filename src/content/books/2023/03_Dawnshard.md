@@ -1,11 +1,11 @@
 ---
-title: "Dawnshard"
-author: "Brandon Sanderson"
-year: "2023"
-month: "January"
+title: 'Dawnshard'
+author: 'Brandon Sanderson'
+year: '2023'
+month: 'January'
 score: 3.5
 image: ./images/books23/dawnshard.jpg
-genre: ["Epic", "Fantasy", "Short Story", "Adult", "Disability", "Friendship"]
+genre: ['Epic', 'Fantasy', 'Short Story', 'Adult', 'Disability', 'Friendship']
 ---
 
 > “The problem with people was that everyone saw other nations from far away. Saw them as big mountainous blobs. Foreigners. Strange. Got it. Up close, it was hard to see people that way. Each was so distinctive.”

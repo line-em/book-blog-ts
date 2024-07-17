@@ -1,11 +1,11 @@
 ---
-title: "The Thing Around Your Neck"
-author: "Chimamanda Ngozi Adichie"
-year: "2022"
-month: "October"
+title: 'The Thing Around Your Neck'
+author: 'Chimamanda Ngozi Adichie'
+year: '2022'
+month: 'October'
 score: 4
-image: "./images/books22/noseupescoco.jpg"
-genre: ["Black Author", "Short Stories", "Pessimist", "Immigrants", "African"]
+image: './images/books22/noseupescoco.jpg'
+genre: ['Black Author', 'Short Stories', 'Pessimist', 'Immigrants', 'African']
 ---
 
 This one was a very good read - Chimamanda is indeed a great author, and I loved reading her short stories. This is a collection of 12 of them, all dealing with similar themes, loneliness, immigration and/or the disconnect between two different cultures (most of the time, between nigerians/africans and USA), and overall they’re more sad and pessimist in tone.
@@ -16,10 +16,10 @@ It’s a very humane writing, the characters are imperfect, but that’s ok. It 
 
 These were my favorites, and they will have a crown on it. However, I will talk about all of them. The description of each is on a review on GoodReads.
 
--   A Private Experience” 👑
--   The Thing Around Your Neck 👑
--   The American Embassy” 👑
--   The Headstrong Historian” 👑
+- A Private Experience” 👑
+- The Thing Around Your Neck 👑
+- The American Embassy” 👑
+- The Headstrong Historian” 👑
 
 > “The first story in The Thing Around Your Neck is called **“Cell One”** . It begins,
 >

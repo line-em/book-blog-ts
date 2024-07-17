@@ -1,22 +1,22 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
-import BookReview from "../layouts/BookReview.astro";
-import "../styles/bookpage.styles.css";
-import BookNav from "../components/BookNav.astro";
-import ExtraImages from "../components/ExtraImages.astro";
-import Lorem from "../components/Lorem.astro";
-import { Image } from "astro:assets";
-import Layout from "../layouts/Layout.astro";
+import { getCollection, type CollectionEntry } from 'astro:content'
+import BookReview from '../layouts/BookReview.astro'
+import '../styles/bookpage.styles.css'
+import BookNav from '../components/BookNav.astro'
+import ExtraImages from '../components/ExtraImages.astro'
+import Lorem from '../components/Lorem.astro'
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Layout.astro'
 
 export interface Props {
-	entry: CollectionEntry<"books">;
-	prev: CollectionEntry<"books"> | null;
-	next: CollectionEntry<"books"> | null;
+	entry: CollectionEntry<'books'>
+	prev: CollectionEntry<'books'> | null
+	next: CollectionEntry<'books'> | null
 }
 
 export async function getStaticPaths() {
-	const bookEntries: { slug: string }[] = await getCollection("books");
-	const bookNumber: number = bookEntries.length;
+	const bookEntries: { slug: string }[] = await getCollection('books')
+	const bookNumber: number = bookEntries.length
 
 	return bookEntries.map((entry, i: number) => ({
 		params: { slug: entry.slug },
@@ -25,38 +25,21 @@ export async function getStaticPaths() {
 			next: i + 1 === bookNumber ? null : bookEntries[i + 1],
 			prev: i === 0 ? null : bookEntries[i - 1]
 		}
-	}));
+	}))
 }
 
-let { entry, prev, next } = Astro.props;
+let { entry, prev, next } = Astro.props
 
-const { Content } = await entry.render();
+const { Content } = await entry.render()
 
-let {
-	title,
-	author,
-	month,
-	score,
-	image,
-	heroimage,
-	extraimage,
-	extraimages,
-	year,
-	genre
-} = entry.data;
+let { title, author, month, score, image, heroimage, extraimage, extraimages, year, genre } =
+	entry.data
 
-let auth = true;
+let auth = true
 ---
 
 <Layout title={title}>
-	<BookReview
-		score={score}
-		year={year}
-		month={month}
-		genres={genre}
-		cover={image}
-		title={title}
-	>
+	<BookReview score={score} year={year} month={month} genres={genre} cover={image} title={title}>
 		<main class="instructions center p-top-base">
 			<nav class="m-center">
 				{prev && <BookNav slug={prev.slug} type="prev" />}
@@ -75,15 +58,15 @@ let auth = true;
 							alt={title}
 							width={1000}
 							height={300}
-							quality={"mid"}
+							quality={'mid'}
 							format="webp"
-							class={heroimage[1] === "full" ? "image" : "image right"}
+							class={heroimage[1] === 'full' ? 'image' : 'image right'}
 						/>
 					)
 				}
 				{auth ? <Content /> : <Lorem />}
 				<ExtraImages
-					extraImages={extraimages?.map(image => image)}
+					extraImages={extraimages?.map((image) => image)}
 					extraImage={extraimage}
 					title={title}
 				/>

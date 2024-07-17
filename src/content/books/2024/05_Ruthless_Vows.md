@@ -1,11 +1,11 @@
 ---
-title: "Ruthless Vows"
-author: "Rebecca Ross"
-year: "2024"
-month: "February"
+title: 'Ruthless Vows'
+author: 'Rebecca Ross'
+year: '2024'
+month: 'February'
 score: 3.75
-image: "./images/ruthlessvows.jpg"
-genre: [  "Young Adult", "New Adult", "Fantasy", "Romance" ]
+image: './images/ruthlessvows.jpg'
+genre: ['Young Adult', 'New Adult', 'Fantasy', 'Romance']
 ---
 
 > “Write me a story where there is no ending, Kitt. Write to me and fill my empty spaces.”
@@ -16,9 +16,9 @@ I liked that it developed more about the world. There were pretty nice scenes (a
 
 > “Soon it would be night; the stars would pierce the sky like nails, and he would light the candles and write by fire because the words came easier in the darkness.”
 
-I didn't particularly like a character death at the end. Though the book ended on a happier, sweeter note, for sure. But I would've liked that this character - *spoilers* her brother - stayed alive.
+I didn't particularly like a character death at the end. Though the book ended on a happier, sweeter note, for sure. But I would've liked that this character - _spoilers_ her brother - stayed alive.
 
-> “The magic still gathers, and the past is gilded; I see the beauty in what has been but only because I have tasted both sorrow and joy in equal measures.” 
+> “The magic still gathers, and the past is gilded; I see the beauty in what has been but only because I have tasted both sorrow and joy in equal measures.”
 
 Still, I love the main characters. Iris is so strong. I couldn't help but root for her and Kitt every step of the way. The minor characters are sweet, and overall, I like how their bond feels real and wholesome.
 

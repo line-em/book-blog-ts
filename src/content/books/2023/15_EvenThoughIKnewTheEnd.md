@@ -1,20 +1,11 @@
 ---
-title: "Even Though I Knew the End"
-author: "C.L. Polk"
-year: "2023"
-month: "August"
+title: 'Even Though I Knew the End'
+author: 'C.L. Polk'
+year: '2023'
+month: 'August'
 score: 3.5
-image: "./images/books23/eventhough.jpg"
-genre:
-    [
-        "Fantasy",
-        "Historical Fiction",
-        "Queer",
-        "LGBT",
-        "Mystery",
-        "Novella",
-        "Short Story"
-    ]
+image: './images/books23/eventhough.jpg'
+genre: ['Fantasy', 'Historical Fiction', 'Queer', 'LGBT', 'Mystery', 'Novella', 'Short Story']
 ---
 
 Cute, well-rounded, all the pieces fit together nicely. It does not overstay its welcome, and the worldbuilding is simple but believable. I enjoyed this!

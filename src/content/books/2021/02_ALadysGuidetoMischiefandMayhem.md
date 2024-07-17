@@ -1,11 +1,11 @@
 ---
 title: "A Lady's Guide to Mischief and Mayhem"
-author: "Manda Collins"
+author: 'Manda Collins'
 year: 2021
-month: "January"
+month: 'January'
 score: 3.5
-image: "./images/books21/ladysguide.jpg"
-genre: ["Romance", "HistoricalFiction"]
+image: './images/books21/ladysguide.jpg'
+genre: ['Romance', 'HistoricalFiction']
 ---
 
 Light and sweet novel with murder, investigation, and a romance. An entertaining and popcorn-like book!

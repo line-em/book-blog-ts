@@ -1,11 +1,11 @@
 ---
-title: "The Reluctant Queen"
-author: "Sarah Beth Durst"
-year: "2023"
-month: "November"
+title: 'The Reluctant Queen'
+author: 'Sarah Beth Durst'
+year: '2023'
+month: 'November'
 score: 4.5
-image: "./images/books23/reluctantqueen.jpg"
-genre: ["Fantasy", "Young Adult", "Adult Fantasy", "Adventure", "Magic", "Nature"]
+image: './images/books23/reluctantqueen.jpg'
+genre: ['Fantasy', 'Young Adult', 'Adult Fantasy', 'Adventure', 'Magic', 'Nature']
 ---
 
 > “Don't confuse mercy for forgiveness.”
@@ -34,8 +34,8 @@ There's also a new mystery by the end of the book - one I'm eager to know more o
 
 I loved this. There were some inconsistencies however, which made me lower the score a bit.
 
--   Doesn't the royal guards get background checks? This wasn't explained and seems like a security risk lol
--   Aren't the heirs the only ones who can Choose! the spirits and make them stop?
+- Doesn't the royal guards get background checks? This wasn't explained and seems like a security risk lol
+- Aren't the heirs the only ones who can Choose! the spirits and make them stop?
 
 But despite some nitpicks and the slow start... I loved this a lot.
 

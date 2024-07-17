@@ -1,11 +1,11 @@
 ---
-title: "The Isles of the Gods"
-author: "Amie Kaufman"
-year: "2023"
-month: "September"
+title: 'The Isles of the Gods'
+author: 'Amie Kaufman'
+year: '2023'
+month: 'September'
 score: 3
-image: "./images/books23/theislesofthegods.jpg"
-genre: ["Fantasy", "Young Adult", "Romance", "Adventure", "Pirates"]
+image: './images/books23/theislesofthegods.jpg'
+genre: ['Fantasy', 'Young Adult', 'Romance', 'Adventure', 'Pirates']
 ---
 
 > “There." I lean across to tuck it behind his ear. "Everything useless around here is beautifully decorated. I wouldn't want you to feel left out.”

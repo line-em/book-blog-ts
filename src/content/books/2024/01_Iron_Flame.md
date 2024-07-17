@@ -1,11 +1,11 @@
 ---
-title: "Iron Flame"
-author: "Rebecca Yarros"
-year: "2024"
-month: "February"
+title: 'Iron Flame'
+author: 'Rebecca Yarros'
+year: '2024'
+month: 'February'
 score: 3
-image: "./images/ironflame.jpg"
-genre: [ "Dragons", "Young Adult", "New Adult", "Fantasy", "Romance" ]
+image: './images/ironflame.jpg'
+genre: ['Dragons', 'Young Adult', 'New Adult', 'Fantasy', 'Romance']
 ---
 
 So...... disappointing. I honestly believe that this one could be shorter. It's hard to justify it being 600 pages long.
@@ -16,9 +16,9 @@ My main issue with this book was, unfortunately, its main characters and their r
 
 I buddy read this - and one thing we agree on is that this author is... not great with characters. I think the previous book was better in this regard - in most regards, really. But they felt specially flat here, and acted in ways that doesn't make a whole lot of sense.
 
-One particular case is related to the main character former best friend. Yes, she felt betrayed because he read her memories. However, she screamed at him the whole book without even an explanation. It was an annoying development - because he didn't even know the whole picture. But talking to him would be a reasonable action - and this book was *filled* to the brim with unreasonable actions.
+One particular case is related to the main character former best friend. Yes, she felt betrayed because he read her memories. However, she screamed at him the whole book without even an explanation. It was an annoying development - because he didn't even know the whole picture. But talking to him would be a reasonable action - and this book was _filled_ to the brim with unreasonable actions.
 
-Xaden and Violet are deeply unhealthy, period. They fought the whole book, and had sex at every opportunity, and never properly *talked* until the end. It was awful - "Ohhh, you didnt tell me! You didnt ask! But look at that hot ass...". This sums it up almost all interactions with them in the book, **ad infinitum**. So cringe-worthy. Such a lack of everything.
+Xaden and Violet are deeply unhealthy, period. They fought the whole book, and had sex at every opportunity, and never properly _talked_ until the end. It was awful - "Ohhh, you didnt tell me! You didnt ask! But look at that hot ass...". This sums it up almost all interactions with them in the book, **ad infinitum**. So cringe-worthy. Such a lack of everything.
 
 A lot of characters had missed potential. Brenan, her brother, Aaric, a prince or something?, and Sloane, the sister of Violet's deceased friend, are some examples. They could be so much more, but they were all forgettable. Instead, we got a lot of focus on Cat, Xaden's ex-girlfriend for extra drama, heightened emotions and jealousy.
 

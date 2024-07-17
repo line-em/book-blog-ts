@@ -1,15 +1,15 @@
 ---
-import { yearList } from "../content/_yearList";
+import { yearList } from '../content/_yearList'
 
-const year = Astro.props.year;
-const showAll = Astro.props.showAll;
+const year = Astro.props.year
+const showAll = Astro.props.showAll
 ---
 
 <section class="nav-buttons">
-	<a href=`/index.html` } class={`button-style ${showAll ? "" : "inactive"}`}>All</a>
+	<a href=`/index.html` } class={`button-style ${showAll ? '' : 'inactive'}`}>All</a>
 	{
 		yearList.map((curr) => (
-			<a href={`/${Number(curr)}`} class={`button-style ${year != curr ? "" : "inactive"}`}>
+			<a href={`/${Number(curr)}`} class={`button-style ${year != curr ? '' : 'inactive'}`}>
 				{curr}
 			</a>
 		))

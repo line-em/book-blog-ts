@@ -1,11 +1,11 @@
 ---
-title: "Twice Shy"
-author: "Sarah Hoggle"
-year: "2023"
-month: "March"
+title: 'Twice Shy'
+author: 'Sarah Hoggle'
+year: '2023'
+month: 'March'
 score: 2.5
-image: "./images/books23/twiceshy.jpg"
-genre: ["Romance", "Inheritance", "Slice of Life", "Contemporary", "Chick Lit"]
+image: './images/books23/twiceshy.jpg'
+genre: ['Romance', 'Inheritance', 'Slice of Life', 'Contemporary', 'Chick Lit']
 ---
 
 Soooo. It was cute. Very sweet and lovely. Very diabetes inducing at times, but cute.

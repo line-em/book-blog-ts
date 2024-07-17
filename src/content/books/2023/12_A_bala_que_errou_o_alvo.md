@@ -1,12 +1,11 @@
 ---
-title: "A Bala que errou o alvo"
-author: "Richard Osman"
-year: "2023"
-month: "June"
+title: 'A Bala que errou o alvo'
+author: 'Richard Osman'
+year: '2023'
+month: 'June'
 score: 4.5
-image: "./images/books23/a-bala-que-errou-o-alvo.jpg"
-genre:
-    ["Thriller", "Mystery", "Detective", "Cozy Mystery", "Cozy", "Found Family", "Humor"]
+image: './images/books23/a-bala-que-errou-o-alvo.jpg'
+genre: ['Thriller', 'Mystery', 'Detective', 'Cozy Mystery', 'Cozy', 'Found Family', 'Humor']
 ---
 
 > “People drift in and out of your life, and, when you are younger, you know you will see them again. But now every old friend is a miracle.”

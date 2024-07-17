@@ -1,41 +1,28 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { getStars } from "../utils/rating";
-import "../styles/year.styles.css";
-import { Image } from "astro:assets";
-import YearButtons from "../components/YearButtons.astro";
+import Layout from '../layouts/Layout.astro'
+import { getStars } from '../utils/rating'
+import '../styles/year.styles.css'
+import { Image } from 'astro:assets'
+import Sidebar from '../components/Sidebar.astro'
 
 export interface Props {
-	cover: ImageMetadata;
-	score: number;
-	year: number;
-	month: string;
-	genres: string[];
-	title: string;
+	cover: ImageMetadata
+	score: number
+	year: number
+	month: string
+	genres: string[]
+	title: string
 }
 
-const { cover, score, year, month, genres, title } = Astro.props;
+const { cover, score, year, month, genres, title } = Astro.props
 ---
 
 <Layout title="Book List">
 	<main class="review-box">
-		<header>
-			<nav>
-				<h1>
-					<span class="text-gradient">Yearly</span>{" "}Books
-				</h1>
-				<YearButtons showAll />
-			</nav>
-		</header>
+		<Sidebar />
 		<slot />
 		<aside class="book-info">
-			<Image
-				src={cover}
-				alt={title}
-				class="book-cover-big"
-				width={250}
-				height={300}
-			/>
+			<Image src={cover} alt={title} class="book-cover-big" width={250} height={300} />
 			<span set:html={getStars(score)} />
 			<h3>Read on</h3>
 			<p>

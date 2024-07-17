@@ -1,12 +1,11 @@
 ---
-title: "The Anthropocene Reviewed"
-author: "John Green"
-year: "2023"
-month: "July"
+title: 'The Anthropocene Reviewed'
+author: 'John Green'
+year: '2023'
+month: 'July'
 score: 4.5
-image: "./images/books23/anthropocene.jpg"
-genre:
-    ["Nonfiction", "Essays", "History", "Science", "Adult", "Contemporary", "Biography"]
+image: './images/books23/anthropocene.jpg'
+genre: ['Nonfiction', 'Essays', 'History', 'Science', 'Adult', 'Contemporary', 'Biography']
 ---
 
 > “To fall in love with the world isn’t to ignore or overlook suffering, both human or otherwise. For me anyway, to fall in love with the world is to look up at the night sky and feel your mind swim before the beauty and the distance of the stars. It is to hold your children while they cry and watch the sycamore trees leaf out in June. When my breastbone starts to hurt, and my throat tightens and tears well in my eyes, I want to look away from feeling. I want to deflect with irony or anything else that will keep me from feeling directly. We all know how loving ends. But I want to fall in love with the world anyway, to let it crack me open. I want to feel what there is to feel while I am here.”

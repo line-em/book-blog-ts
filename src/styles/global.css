@@ -2,7 +2,7 @@
 	--accent: 124, 58, 237;
 	--pink: #da62c4;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-	--serif: 'IBM Plex Serif', 'Crimson Pro Variable', 'Fraunces Variable', 'Georgia', serif;
+	--serif: 'Platypi Variable', 'Georgia', serif;
 	--sans: 'Rubik Variable', 'Helvetica', 'Arial', sans-serif;
 	--regular: 400;
 	--bold: 600;
@@ -23,6 +23,7 @@ html {
 	font-family: var(--sans), sans-serif;
 	font-weight: var(--regular);
 	font-size: 16px;
+	min-height: 100vh;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
 	font-size: 0.9rem;
 	padding: 1rem;
 	line-height: 1.5;
+	min-height: 100vh;
 }
 
 @media screen and (max-width: 400px) {
@@ -65,10 +67,14 @@ h1 {
 	font-size: clamp(2rem, 2vw + 2rem, 3rem);
 	font-weight: var(--bold);
 	margin: 0 auto;
-	line-height: 1.2;
+	line-height: 1.4;
 	max-width: 27ch;
 	text-wrap: balance;
 	white-space: unset;
+}
+
+nav > h1 {
+	line-height: 1.2;
 }
 
 h1 > span.text-gradient {
@@ -94,7 +100,6 @@ h6 {
 }
 
 blockquote {
-	font-size: 1.1rem;
 	margin: 0.5rem 0;
 	font-family: var(--serif);
 	font-style: italic;
@@ -124,7 +129,7 @@ blockquote + blockquote {
 	width: auto;
 }
 
-.instructions,
+.wrapper,
 input,
 button,
 .button-style {
@@ -132,7 +137,7 @@ button,
 	border-radius: 0.4rem;
 }
 
-.instructions.center {
+.wrapper.center {
 	margin-inline: auto;
 }
 

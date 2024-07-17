@@ -5,8 +5,8 @@
 	margin: 0 auto;
 	border-radius: 0.4rem;
 	position: relative;
-	/*min-height: calc(100dvh - 6rem);*/
-	/*min-height: calc(100dvh - 4rem);*/
+	min-height: calc(100dvh - 2rem);
+	height: 100%;
 	padding: 1.5rem;
 }
 
@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 950px) {
 	.review-box {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		padding-inline: 1.5rem;
 	}
 
@@ -56,6 +56,25 @@
 	}
 }
 
+@media screen and (max-width: 700px) {
+	.content-box {
+		grid-template-columns: 1fr;
+		padding-inline: 1.5rem;
+	}
+
+	:where(.content-box, .review-box) > :where(header, aside) {
+		position: relative;
+		height: auto;
+		top: 0;
+		justify-content: start;
+	}
+
+	.nav-buttons {
+		width: 100%;
+		grid-template-columns: repeat(3, minmax(54px, 1fr));
+	}
+}
+
 @media screen and (max-width: 500px) {
 	.review-box,
 	.content-box {
@@ -65,17 +84,5 @@
 
 	.review-box > main {
 		grid-column: span 1;
-	}
-
-	.nav-buttons {
-		width: 100%;
-		grid-template-columns: repeat(3, minmax(54px, 1fr));
-	}
-
-	:where(.content-box, .review-box) > :where(header, aside) {
-		position: relative;
-		height: auto;
-		top: 0;
-		justify-content: start;
 	}
 }

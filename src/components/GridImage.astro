@@ -14,7 +14,7 @@ let allBooks = await getCollection('books')
 if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year) === year)
 ---
 
-<section class="instructions img-grid">
+<section class="wrapper img-grid">
 	{
 		allBooks.map((book) => {
 			return (
@@ -23,10 +23,10 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 						<Image
 							src={book && book?.data.image}
 							alt={book?.data.title}
-							width={200}
-							height={250}
+							width={250}
+							height={300}
 							format="webp"
-							quality={'mid'}
+							quality={'high'}
 						/>
 					</a>
 					<a href={`/${book?.slug}`} class="book-slug">

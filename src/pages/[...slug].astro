@@ -15,7 +15,7 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-	const bookEntries: { slug: string }[] = await getCollection('books')
+	const bookEntries: CollectionEntry<'books'>[] = await getCollection('books')
 	const bookNumber: number = bookEntries.length
 
 	return bookEntries.map((entry, i: number) => ({

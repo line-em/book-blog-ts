@@ -1,5 +1,4 @@
 ---
-import { getUrlPath } from '../utils/digits'
 import { getStars } from '../utils/rating'
 import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
@@ -31,7 +30,7 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 						/>
 					</a>
 					<a
-						href={year ? getUrlPath(book?.slug, true) : getUrlPath(book?.slug, false)}
+						href={`/${book?.slug}`}}
 						class="book-slug"
 					>
 						{book?.data.title}

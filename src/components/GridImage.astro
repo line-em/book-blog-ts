@@ -11,6 +11,7 @@ export interface Props {
 const { year } = Astro.props
 
 let allBooks = await getCollection('books')
+
 if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year) === year)
 ---
 

@@ -22,7 +22,15 @@ const { cover, score, year, month, genres, title } = Astro.props
 		<Sidebar />
 		<slot />
 		<aside class="book-info">
-			<Image src={cover} alt={title} class="book-cover-big" width={250} height={300} />
+			<Image
+				src={cover}
+				alt={title}
+				class="book-cover-big"
+				width={250}
+				height={300}
+				format="webp"
+				quality={'mid'}
+			/>
 			<span set:html={getStars(score)} />
 			<h3>Read on</h3>
 			<p>

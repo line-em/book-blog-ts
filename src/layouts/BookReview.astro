@@ -19,7 +19,7 @@ const { cover, score, year, month, genres, title } = Astro.props
 
 <Layout title="Book List">
 	<main class="review-box">
-		<Sidebar year={undefined} />
+		<Sidebar isReview />
 		<slot />
 		<aside class="book-info">
 			<Image

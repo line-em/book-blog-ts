@@ -5,23 +5,26 @@ import YearButtons from './YearButtons.astro'
 import { getBooks } from '../utils/getBooks'
 
 export interface Props {
-	year?: number
+	currentYear?: number
+	isReview?: boolean
 }
 
-const { year } = Astro.props
+const { currentYear, isReview } = Astro.props
 
-const books: CollectionEntry<'books'>[] = year ? await getBooks(year) : await getBooks()
+const books: CollectionEntry<'books'>[] = currentYear
+	? await getBooks(currentYear)
+	: await getBooks()
 ---
 
 <header>
 	<nav>
 		<h1>
 			<span class="text-gradient">
-				{year ? `${year}` : ''}
+				{currentYear ? `${currentYear}` : 'Yearly'}
 			</span>{' '}
 			Books
 		</h1>
-		<YearButtons year={year} showAll={year ? true : false} />
+		<YearButtons currentYear={currentYear} isReview={isReview} />
 	</nav>
 	<ReadingStats books={books} />
 </header>

@@ -4,7 +4,7 @@
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
 		"target": "ESNext",
-		"allowJs": false,
+		"strictNullChecks": true,
 		"module": "ESNext",
 		"plugins": [
 			{

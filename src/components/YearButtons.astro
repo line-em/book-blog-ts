@@ -1,15 +1,16 @@
 ---
-import { yearList } from '../content/_yearList'
+import { validYears } from '../content/config'
 
-const year = Astro.props.year
-const showAll = Astro.props.showAll
+const { currentYear, isReview } = Astro.props
+
+const hasFilter = currentYear !== undefined || isReview
 ---
 
 <section class="nav-buttons">
-	<a href=`/index.html` } class={`button-style ${showAll ? '' : 'inactive'}`}>All</a>
+	<a href=`/index.html` } class={`button-style ${hasFilter ? '' : 'inactive'}`}>All</a>
 	{
-		yearList.map((curr) => (
-			<a href={`/${Number(curr)}`} class={`button-style ${year != curr ? '' : 'inactive'}`}>
+		validYears.map((curr) => (
+			<a href={`/${Number(curr)}`} class={`button-style ${currentYear != curr ? '' : 'inactive'}`}>
 				{curr}
 			</a>
 		))

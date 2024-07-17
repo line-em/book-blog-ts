@@ -4,9 +4,10 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "astro dev",
-		"start": "astro dev",
-		"f": "npx prettier --write **/*.astro .",
+		"check": "astro check",
+		"prettier": "npx prettier --write **/*.astro .",
 		"build": "astro build",
+		"sync": "astro sync",
 		"preview": "astro preview",
 		"astro": "astro"
 	},

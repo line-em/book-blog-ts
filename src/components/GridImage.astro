@@ -29,10 +29,7 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 							quality={'mid'}
 						/>
 					</a>
-					<a
-						href={`/${book?.slug}`}}
-						class="book-slug"
-					>
+					<a href={`/${book?.slug}`} class="book-slug">
 						{book?.data.title}
 					</a>
 					<div set:html={getStars(book?.data.score)} class="book-grid-rating" />

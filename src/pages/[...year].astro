@@ -1,11 +1,11 @@
 ---
 import GridImage from '../components/GridImage.astro'
 import BookGrid from '../layouts/BookGrid.astro'
-import { yearList } from '../content/_yearList.js'
+import { validYears } from '../content/config'
 import Layout from '../layouts/Layout.astro'
 
 export async function getStaticPaths() {
-	return yearList.map((year) => ({
+	return validYears.map((year) => ({
 		params: { year: year }
 	}))
 }

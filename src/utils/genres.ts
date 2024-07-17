@@ -1,6 +1,6 @@
 import { type CollectionEntry } from 'astro:content'
 
-export const getGenres = (books:CollectionEntry<'books'>[]): Record<string, number> =>
+export const getGenres = (books: CollectionEntry<'books'>[]): Record<string, number> =>
 	books.reduce((genreCounter: { [key: string]: number }, currentBook) => {
 		for (const genre of currentBook.data.genre) {
 			genreCounter.hasOwnProperty(genre) ? genreCounter[genre]++ : (genreCounter[genre] = 1)

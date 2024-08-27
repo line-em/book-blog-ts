@@ -1,9 +1,9 @@
 ---
-title: 'DA: Tevinter Nights'
-author: 'X'
+title: 'The Housemaid'
+author: 'Freida McFadden'
 year: '2024'
 month: 'July'
-score: 4
-image: './images/tevinternights.jpg'
+score: 3.5
+image: './images/thehousemaid.jpg'
 genre: ['Young Adult', 'New Adult', 'Fantasy', 'Romance']
 ---

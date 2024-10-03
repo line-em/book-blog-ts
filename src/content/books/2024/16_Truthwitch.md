@@ -2,7 +2,7 @@
 title: 'Truthwitch'
 author: 'Susan Dennard'
 year: '2024'
-month: 'July'
+month: 'September'
 score: 3
 image: './images/truthwitch.jpg'
 genre: ['Young Adult', 'New Adult', 'Fantasy', 'Romance']

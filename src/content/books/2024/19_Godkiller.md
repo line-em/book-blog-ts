@@ -1,6 +1,6 @@
 ---
-title: 'A Court Of Thorns and Roses'
-author: 'Sarah J Maas'
+title: 'God Killer'
+author: 'Hannah Kanner'
 year: '2024'
 month: 'October'
 score: 4

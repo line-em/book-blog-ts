@@ -2,7 +2,7 @@
 title: 'Better Than the Movies'
 author: 'Lynn Painter'
 year: '2024'
-month: 'October'
+month: 'November'
 score: 3.5
 image: './images/betterthanthemovies.jpg'
 genre: ['Young Adult', 'New Adult', 'Slice of Life', 'Romance']

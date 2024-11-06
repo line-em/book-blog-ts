@@ -7,7 +7,7 @@ score: 4.5
 image: './images/oprincipeeacostureira.jpg'
 genre: ['Young Adult', 'LGBT', 'Comic', 'Historical Fiction']
 heroimage: ['./images/oprincipeeacostureiraextra.webp', 'full']
-extraimage: './images/oprincipeeacostureiraextra2.jpg'
+extraimages: ['./images/oprincipeeacostureiraextra2.jpg', './images/oprincipeeacostureiraextra3.jpg']
 ---
 
 _En: The Prince and the Dressmaker_

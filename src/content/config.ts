@@ -1,6 +1,6 @@
 import { z, defineCollection } from 'astro:content'
 
-export const validYears = [2021, 2022, 2023, 2024]
+export const validYears = [2021, 2022, 2023, 2024, 2025]
 
 const bookCollection = defineCollection({
 	type: 'content', // v2.5.0 and later

@@ -13,6 +13,8 @@ Kissen shifted and rubbed her chin, clearly uncomfortable with being noted for v
 Elo resisted the temptation to reach out and touch her arm, to tell her that he was also lost, also alone. So alone it hurt.
 ‘I want to help her,’ Kissen shrugged and said. ‘I’m scared for her.’ Then she smiled crookedly. ‘Now, I’m a little scared of her.’
 
+This was plenty of fun - specially _after_ the second half!
+
 > To her, Skedi had been her companion, her friend. Others saw him as a god. Something to be frightened of. But Skedi didn’t want people to be frightened of him, he wanted to be loved. He wanted to survive, more than anything, and he had just put himself at risk for her. Because … he loved her, and despite it all, she loved him too.
 ‘I will try to forgive you‘, she said to him.
 

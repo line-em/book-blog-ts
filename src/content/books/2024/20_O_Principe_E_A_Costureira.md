@@ -18,5 +18,5 @@ I guess there are stories that comics make it all the more sweeter. The bond bet
 
 I wanted to read this for a _long_ time, and I got deeply in love with the brazilian version by Darkside. That's why I couldn't bring myself to read the english version, for some reason! I _had_ to read it in portuguese. It fit: it made it more light-hearted, in a way - reason I also enjoy reading Thursday's Murder Club in portuguese as well.
 
-It was all I had imagined! ❤️
+It was all I had imagined, very cutesy and magical! ❤️
 Although shorter than I thought. But the feelings and warmth are there 2455151%!

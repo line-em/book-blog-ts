@@ -46,11 +46,11 @@ let auth = true
 				{prev && next && <span> | </span>}
 				{next && <BookNav slug={next.slug} type="next" />}
 			</nav>
-			<h1 class="text-gradient">
+			<h1 class="text-gradient leading-none">
 				{title}
 			</h1>
 			<h3>by {author}</h3>
-			<section class="book-review">
+			<section class="book-review px-4 lg:px-2">
 				{
 					heroimage && (
 						<Image

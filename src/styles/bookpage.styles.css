@@ -17,14 +17,6 @@ h3 {
 	margin-block-start: 1rem;
 }
 
-.pill {
-	display: inline-block;
-	background-color: rgba(var(--accent), 20%);
-	padding: 0.3rem;
-	font-size: 0.8rem;
-	border-radius: 8px;
-}
-
 .book-cover-big {
 	width: 100%;
 	height: auto;
@@ -67,16 +59,8 @@ h3 {
 }
 
 .book-review {
-	max-width: 72ch;
+	max-width: 82ch;
 	margin: 1.5rem auto;
-}
-
-aside.book-info {
-	justify-content: start;
-}
-
-.book-info * {
-	margin: 0 auto;
 }
 
 article:last-of-type > p:first-of-type::first-letter {

@@ -1,9 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { getStars } from '../utils/rating'
 import '../styles/year.styles.css'
-import { Image } from 'astro:assets'
 import Sidebar from '../components/Sidebar.astro'
+import BookInfo from "../components/BookInfo.astro";
 
 export interface Props {
 	cover: ImageMetadata
@@ -15,33 +14,24 @@ export interface Props {
 }
 
 const { cover, score, year, month, genres, title } = Astro.props
+
+const bookInfo = {
+	cover: cover,
+	score: score,
+	year: year,
+	month: month,
+	genres: genres,
+	title: title
+}
+
 ---
 
 <Layout title="Book List">
-	<main class="review-box">
-		<Sidebar isReview />
+	<main class="review-box self-start lg:sticky">
+		<Sidebar isReview bookInfo={bookInfo} />
 		<slot />
-		<aside class="book-info">
-			<Image
-				src={cover}
-				alt={title}
-				class="book-cover-big"
-				width={250}
-				height={300}
-				format="webp"
-				quality={'mid'}
-			/>
-			<span set:html={getStars(score)} />
-			<h3>Read on</h3>
-			<p>
-				{month}, {year}
-			</p>
-			<hr />
-			<h3>Genres</h3>
-			<p class="pill-flex">
-				{genres?.map((genre: string) => <span class="pill">{genre}</span>)}
-			</p>
-			<hr />
+		<aside class="book-info ml-4 bg-slate-50 shadow-md rounded-xl flex gap-4 flex-col sm:hidden lg:flex lg:flex-col lg:gap-4 lg:!px-0 self-start lg:sticky top-10">
+			<BookInfo score={score} year={year} month={month} genres={genres} title={title} cover={cover} />
 		</aside>
 	</main>
 </Layout>

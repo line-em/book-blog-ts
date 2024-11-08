@@ -10,6 +10,12 @@
 			{
 				"name": "@astrojs/ts-plugin"
 			}
-		]
+		],
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		}
 	}
 }

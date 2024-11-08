@@ -1,0 +1,42 @@
+---
+import {getStars} from "../utils/rating";
+import {Image} from "astro:assets";
+
+const { cover, score, year, month, genres, title } = Astro.props
+---
+<Image
+        src={cover}
+        alt={title}
+        class="book-cover-big shadow-md"
+        width={250}
+        height={300}
+        format="webp"
+        quality={'mid'}
+/>
+<span set:html={getStars(score)} class="flex" />
+<div class="grid grid-cols-2 sm:hidden">
+    <div>
+        <h3 class="mb-2 font-bold">Genres</h3>
+        <div class="flex gap-2 flex-wrap items-start">
+            {genres?.map((genre: string) => <span class="bg-purple-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>)}
+        </div>
+    </div>
+    <div class="mx-auto">
+        <h3 class="mb-2 font-bold">Read on</h3>
+        <p>
+            {month}, {year}
+        </p>
+    </div>
+</div>
+
+<div class="hidden sm:flex sm:flex-col gap-2 items-center">
+    <h3 class="font-bold">Read on</h3>
+    <p>
+        {month}, {year}
+    </p>
+    <hr class="border border-b-zinc-400" />
+    <h3 class="font-bold">Genres</h3>
+    <div class="flex gap-2 flex-wrap items-start justify-center">
+        {genres?.map((genre: string) => <span class="bg-purple-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>)}
+    </div>
+</div>

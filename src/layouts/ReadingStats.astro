@@ -10,24 +10,23 @@ const averageStars = getAverageStars(
 )
 ---
 
-<aside class="antialiased mb-2 flex flex-col items-center w-full">
-	<hr class="mb-4 border border-b-zinc-400" />
-	<h3 class="font-bold mb-4">Reading Stats</h3>
-	<ul class="grid grid-cols-3 gap-2 sm:grid-cols-1 text-center items-start">
+<aside class="antialiased mb-2 flex flex-col items-center w-full bg-slate-50 shadow-md rounded-xl p-2 pb-4">
+	<h3 class="font-bold mb-2">Reading Stats</h3>
+	<ul class="grid grid-cols-3 gap-2 text-sm sm:grid-cols-1 text-center items-start">
 		<li class="flex flex-col sm:flex-row">
-			<Book color="var(--pink)" weight='duotone' size="20" />
+			<Book color="var(--pink)" weight='duotone' size="19" />
 			Books read:
 			<strong class="text-gradient">{books.length}</strong>
 		</li>
 		<li class="flex flex-col sm:flex-row">
-			<MagicWand color="var(--pink)" weight='duotone' size="20" />
+			<MagicWand color="var(--pink)" weight='duotone' size="19" />
 			Most read {mostReadGenres.length > 1 ? 'genres: ' : 'genre: '}
 			<strong class="text-gradient">
 				{mostReadGenres.join(', ')}
 			</strong>
 		</li>
 		<li class="flex flex-col sm:flex-row">
-			<Star color="var(--pink)" weight='duotone' size="20" />
+			<Star color="var(--pink)" weight='duotone' size="19" />
 			Average rating:
 			<strong class="text-gradient">{averageStars}</strong>
 		</li>

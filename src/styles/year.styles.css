@@ -16,7 +16,7 @@ body {
     padding-inline: 0.2rem;
 }
 
-.img-grid img {
+.img-grid > a > img {
     height: 270px;
     @apply w-auto mx-auto rounded-lg flex justify-start object-cover sm:w-full mt-4 sm:mt-0
 }

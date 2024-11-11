@@ -15,33 +15,40 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 ---
 
 <section class="wrapper img-grid">
-{allBooks.map((book) => {
-    return (
-    <a href={`/${book?.slug}`} class="flex flex-col bg-white border shadow-sm rounded-xl relative hover:shadow-lg hover:border-purple-300">
-        <Image
-        src={book && book?.data.image}
-        alt={book?.data.title}
-        width={250}
-        height={350}
-        format="webp"
-        quality={'high'}
-        class="w-full h-auto rounded-t-xl"
-        />
-        <aside class="absolute -right-3 top-1 z-20 flex gap-1">
-            <div class="bg-zinc-400 text-xs text-white px-2 py-1 rounded-md shadow-md">
-                {book?.data.year}
-            </div>
-            <div class="bg-purple-400 text-xs text-white px-2 py-1 rounded-md shadow-md">
-                {book?.data?.genre[0]}
-            </div>
-        </aside>
-        <div class="p-2 pb-4 flex flex-col gap-3 w-full flex-1 relative">
-            <h3 class="text- font-bold text-gray-800 line-clamp-2 flex-1">
-                {book?.data.title}
-            </h3>
-            <span set:html={getStars(book?.data.score)} class="flex flex-row w-full items-center justify-center book-grid-rating"/>
-        </div>
-    </a>
-    )
-})}
+	{
+		allBooks.map((book) => {
+			return (
+				<a
+					href={`/${book?.slug}`}
+					class="flex flex-col bg-white border shadow-sm rounded-xl relative hover:shadow-lg hover:border-purple-300"
+				>
+					<Image
+						src={book && book?.data.image}
+						alt={book?.data.title}
+						width={300}
+						height={350}
+						format="webp"
+						quality={'high'}
+						loading="lazy"
+						class="w-full h-auto rounded-t-xl"
+					/>
+					<aside class="absolute -right-3 top-1 z-20 flex gap-1">
+						<div class="bg-zinc-400 text-xs text-white px-2 py-1 rounded-md shadow-md">
+							{book?.data.year}
+						</div>
+						<div class="bg-purple-400 text-xs text-white px-2 py-1 rounded-md shadow-md">
+							{book?.data?.genre[0]}
+						</div>
+					</aside>
+					<div class="p-2 pb-4 flex flex-col gap-3 w-full flex-1 relative">
+						<h3 class="text- font-bold text-gray-800 line-clamp-2 flex-1">{book?.data.title}</h3>
+						<span
+							set:html={getStars(book?.data.score)}
+							class="flex flex-row w-full items-center justify-center book-grid-rating"
+						/>
+					</div>
+				</a>
+			)
+		})
+	}
 </section>

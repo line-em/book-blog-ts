@@ -22,7 +22,7 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-    .img-grid img {
+    .img-grid > a > img {
         height: 300px;
     }
 }

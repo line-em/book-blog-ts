@@ -45,7 +45,7 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 						<h3 class="font-bold text-gray-800 sm:line-clamp-2 flex-1">{book?.data.title}</h3>
 						<span
 							set:html={getStars(book?.data.score)}
-							class="flex justify-center book-grid-rating -mt-2 sm:mt-0"
+							class="flex justify-center items-center book-grid-rating -mt-2 sm:mt-0"
 						/>
 					</div>
 				</a>

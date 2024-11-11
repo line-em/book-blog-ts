@@ -1,9 +1,8 @@
 ---
 import type { CollectionEntry } from 'astro:content'
 import ReadingStats from '../layouts/ReadingStats.astro'
-import YearButtons from './YearButtons.astro'
+import YearButtons from './YearButtons'
 import { getBooks } from '../utils/getBooks'
-import { DateTime } from 'luxon'
 import BookInfo from './BookInfo.astro'
 
 export interface Props {
@@ -19,9 +18,8 @@ const books: CollectionEntry<'books'>[] = currentYear
 	: await getBooks()
 ---
 
-<!-- h-screen-->
 <aside
-	class="flex flex-col items-start self-start lg:sticky top-10 py-1 !px-0 sm:p-4 sm:!pr-4 overflow-y-auto h-[89vh]"
+	class="flex flex-col items-start self-start lg:sticky top-10 py-1 !px-0 sm:p-4 sm:!pr-4 overflow-y-auto sm:h-[89vh]"
 >
 	<h1 class="text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-8">
 		<span class="text-gradient !inline sm:!block">
@@ -43,7 +41,6 @@ const books: CollectionEntry<'books'>[] = currentYear
 		)
 	}
 </aside>
-
 <!--<header>-->
 <!--	<nav>-->
 <!--		<h1>-->
@@ -54,6 +51,6 @@ const books: CollectionEntry<'books'>[] = currentYear
 <!--		</h1>-->
 <!--		<YearButtons currentYear={currentYear} isReview={isReview} />-->
 <!--	</nav>-->
-<!--	&lt;!&ndash;{DateTime.now().toFormat('EEEE, MMMM dd, yyyy')}&ndash;&gt;-->
+<!--	{DateTime.now().toFormat('EEEE, MMMM dd, yyyy')}-->
 <!--	<ReadingStats books={books} />-->
 <!--</header>-->

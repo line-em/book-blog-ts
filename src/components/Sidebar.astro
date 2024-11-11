@@ -3,8 +3,8 @@ import type { CollectionEntry } from 'astro:content'
 import ReadingStats from '../layouts/ReadingStats.astro'
 import YearButtons from './YearButtons.astro'
 import { getBooks } from '../utils/getBooks'
-import {DateTime} from "luxon";
-import BookInfo from "./BookInfo.astro";
+import { DateTime } from 'luxon'
+import BookInfo from './BookInfo.astro'
 
 export interface Props {
 	currentYear?: number
@@ -18,25 +18,31 @@ const books: CollectionEntry<'books'>[] = currentYear
 	? await getBooks(currentYear)
 	: await getBooks()
 ---
+
 <!-- h-screen-->
-<aside class="flex flex-col items-start self-start lg:sticky top-10 py-1 !px-0 sm:p-4 sm:!pr-4 overflow-y-auto">
+<aside
+	class="flex flex-col items-start self-start lg:sticky top-10 py-1 !px-0 sm:p-4 sm:!pr-4 overflow-y-auto h-[89vh]"
+>
 	<h1 class="text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-8">
 		<span class="text-gradient !inline sm:!block">
 			{currentYear ? `${currentYear}` : 'Yearly'}
 		</span>{' '}
 		Books
 	</h1>
-	<nav class="flex sm:flex-col items-stretch justify-between w-full sm:gap-4 mb-4 sm:mb-8 flex-wrap" >
+	<nav
+		class="flex sm:flex-col items-stretch justify-between w-full sm:gap-4 mb-4 sm:mb-8 flex-wrap"
+	>
 		<YearButtons currentYear={currentYear} isReview={isReview} />
 	</nav>
 	<ReadingStats books={books} />
-	{bookInfo && (
-		<aside class="book-info hidden sm:flex sm:flex-col sm:gap-4 lg:hidden mt-4 p-4 bg-slate-50 shadow-md rounded-xl">
-			<BookInfo {...bookInfo} />
-		</aside>
-	)}
+	{
+		bookInfo && (
+			<aside class="book-info hidden sm:flex sm:flex-col sm:gap-4 lg:hidden mt-4 p-4 bg-slate-50 shadow-md rounded-xl">
+				<BookInfo {...bookInfo} />
+			</aside>
+		)
+	}
 </aside>
-
 
 <!--<header>-->
 <!--	<nav>-->

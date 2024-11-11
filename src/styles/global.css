@@ -3,96 +3,90 @@
 @tailwind utilities;
 
 :root {
-	--accent: 124, 58, 237;
-	--pink: #da62c4;
-	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-	--serif: 'Yrsa Variable', 'Georgia', serif;
-	--sans: 'Rubik Variable', 'Helvetica', 'Arial', sans-serif;
-	--regular: 400;
-	--bold: 600;
-	--bolder: 700;
-	--shadow-color: 286deg 36% 56%;
-	--shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
-		0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),
-		1.4px 1.7px 2.5px -2.5px hsl(var(--shadow-color) / 0.32);
+    --accent: 124, 58, 237;
+    --pink: #da62c4;
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
+    --serif: 'Yrsa Variable', 'Georgia', serif;
+    --sans: 'Rubik Variable', 'Helvetica', 'Arial', sans-serif;
+    --regular: 400;
+    --bold: 600;
+    --bolder: 700;
+    --shadow-color: 286deg 36% 56%;
+    --shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
+    0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),
+    1.4px 1.7px 2.5px -2.5px hsl(var(--shadow-color) / 0.32);
 }
 
 ::selection {
-	background-color: rgba(var(--accent), 70%);
-	color: white;
+    background-color: rgba(var(--accent), 70%);
+    color: white;
 }
 
 html {
-	@apply bg-white;
-	font-family: var(--sans), sans-serif;
-	font-weight: var(--regular);
-	font-size: 16px;
-	min-height: 100vh;
-	text-rendering: optimizeLegibility;
+    @apply bg-white;
+    font-family: var(--sans), sans-serif;
+    font-weight: var(--regular);
+    font-size: 16px;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
 }
 
 body {
-	margin: 0 auto;
-	width: 100%;
-	padding: 1rem;
-	line-height: 1.5;
-	min-height: 100vh;
-}
-
-@media screen and (max-width: 400px) {
-	body {
-		padding: 0.5rem;
-	}
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.5;
+    min-height: 100vh;
+    @apply sm:p-4
 }
 
 p:not(> blockquote) {
-	margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
-	text-decoration: underline 2px rgba(var(--accent), 25%);
-	color: teal;
-	transition: all 0.2s ease-in-out;
+    text-decoration: underline 2px rgba(var(--accent), 25%);
+    color: teal;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-	color: rgba(var(--accent), 80%);
+    color: rgba(var(--accent), 80%);
 }
 
 strong {
-	@apply text-purple-500
+    @apply text-purple-500
 }
 
 h1 {
-	font-size: clamp(2rem, 2vw + 2rem, 3rem);
-	font-weight: var(--bold);
-	margin: 0 auto;
-	line-height: 1.4;
-	max-width: 27ch;
-	text-wrap: balance;
-	white-space: unset;
+    font-size: clamp(2rem, 2vw + 2rem, 3rem);
+    font-weight: var(--bold);
+    margin: 0 auto;
+    line-height: 1.4;
+    max-width: 27ch;
+    text-wrap: balance;
+    white-space: unset;
 }
 
 nav > h1 {
-	line-height: 1.2;
+    line-height: 1.2;
 }
 
 h1 .text-gradient {
-	font-weight: var(--bolder);
-	display: block;
+    font-weight: var(--bolder);
+    display: block;
 }
 
 h3 {
-	font-size: clamp(0.8rem, 1vw + 0.8rem, 1.25rem);
-	margin-block-start: 0.2rem;
+    font-size: clamp(0.8rem, 1vw + 0.8rem, 1.25rem);
+    margin-block-start: 0.2rem;
 }
 
 h4 {
-	font-weight: var(--regular);
+    font-weight: var(--regular);
 }
 
 h1,
@@ -100,119 +94,120 @@ h2,
 h3,
 h5,
 h6 {
-	font-family: var(--serif);
+    font-family: var(--serif);
 }
 
 blockquote::before {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23bda8c8' viewBox='0 0 256 256'%3E%3Cpath d='M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z'/%3E%3C/svg%3E");
-	width: 1.5rem; /* Scales icon to desired size */
-	height: 1.5rem;
-	position: absolute;
-	left: 0;
-	top: 0.25rem; /* Adjust for vertical alignment */
-	display: inline-block;
-	transform: scaleX(-1); /* Flips the icon horizontally */
-	opacity: 0.8;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23bda8c8' viewBox='0 0 256 256'%3E%3Cpath d='M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z'/%3E%3C/svg%3E");
+    width: 1.5rem; /* Scales icon to desired size */
+    height: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0.25rem; /* Adjust for vertical alignment */
+    display: inline-block;
+    transform: scaleX(-1); /* Flips the icon horizontally */
+    opacity: 0.8;
 }
 
 blockquote {
-	position: relative;
-	font-family: var(--serif), serif;
-	font-size: 1.25rem;
-	font-style: italic;
-	overflow: auto;
-	padding: 1rem 0 0.5rem 1.5rem;
-	border-radius: 0 8px 8px 0;
-	@apply text-indigo-600;
-	margin-block: 1rem
+    position: relative;
+    font-family: var(--serif), serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    overflow: auto;
+    padding: 1rem 0 0.5rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    @apply text-indigo-600;
+    margin-block: 1rem
 }
 
 .book-review p + p {
-	margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-.book-review:last-child {
-	margin-bottom: 3rem;
-}
+/*.book-review:last-child {*/
+/*    @apply sm:mb-10*/
+/*}*/
 
 .text-gradient {
-	background-image: var(--accent-gradient);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-size: 400%;
-	background-position: 0;
+    background-image: var(--accent-gradient);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
+    background-position: 0;
 }
 
 .book-grid-rating img {
-	height: auto;
-	width: auto;
+    height: auto;
+    width: auto;
 }
 
 .wrapper,
 input,
 button,
 .button-style {
-	@apply bg-slate-50 shadow-md rounded-xl;
+    @apply bg-slate-50 shadow-md rounded-xl;
 }
 
 .wrapper.center {
-	margin-inline: auto;
+    margin-inline: auto;
+    overflow-x: hidden;
 }
 
 button,
 .button-style {
-	padding: 0.3rem 0.5rem;
-	border: 1px solid rgba(var(--accent), 55%);
-	background-color: white;
-	color: teal;
-	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-	font: inherit;
-	display: block;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid rgba(var(--accent), 55%);
+    background-color: white;
+    color: teal;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font: inherit;
+    display: block;
 }
 
 button:hover,
 .button-style:not(.inactive):hover {
-	background-color: lavender;
+    background-color: lavender;
 }
 
 .button-style.inactive {
-	color: rgba(var(--accent), 50%);
-	cursor: not-allowed;
-	pointer-events: none;
-	opacity: 0.5;
-	border: rgb(var(--accent), 0%);
+    color: rgba(var(--accent), 50%);
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.5;
+    border: rgb(var(--accent), 0%);
 }
 
 button:active {
-	background-color: rgb(var(--accent), 35%);
-	transform: translateY(-2px);
+    background-color: rgb(var(--accent), 35%);
+    transform: translateY(-2px);
 }
 
 hr {
-	color: rgba(var(--accent), 20%);
-	width: 80%;
+    color: rgba(var(--accent), 20%);
+    width: 80%;
 }
 
 nav,
 .nav-buttons {
-	margin: 0 auto;
-	display: grid;
-	gap: 1rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
 }
 
 .nav-buttons {
-	width: 10ch;
+    width: 10ch;
 }
 
 ul {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 li:not(> aside) {
-	padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 /*li::before {*/
@@ -223,28 +218,28 @@ li:not(> aside) {
 /*}*/
 
 li {
-	@apply flex gap-2 items-center
+    @apply flex gap-2 items-center
 }
 
 li + li:not( > aside) {
-	margin-block-start: 1rem;
+    margin-block-start: 1rem;
 }
 
 .p-top-base {
-	padding-block-start: 0.7rem;
-	padding-inline: 0.7rem;
+    padding-block-start: 0.7rem;
+    padding-inline: 0.7rem;
 }
 
 .m-center {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	width: 100%;
-	margin-block-end: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-block-end: 1rem;
 }
 
 .book-info {
-	@apply items-center
+    @apply items-center
 }

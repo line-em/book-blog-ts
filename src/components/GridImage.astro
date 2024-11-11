@@ -20,7 +20,7 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 			return (
 				<a
 					href={`/${book?.slug}`}
-					class="flex flex-col bg-white border shadow-sm rounded-xl relative hover:shadow-lg hover:border-purple-300"
+					class="flex flex-col bg-white border sm:shadow-sm rounded-xl relative hover:sm:shadow-lg hover:border-purple-300"
 				>
 					<Image
 						src={book && book?.data.image}
@@ -32,7 +32,7 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 						loading="lazy"
 						class="w-full h-auto rounded-t-xl"
 					/>
-					<aside class="absolute -right-3 top-1 z-20 flex gap-1">
+					<aside class="sm:absolute mt-2 sm:mt-0 justify-center sm:-right-3 top-1 z-20 flex gap-1">
 						<div class="bg-zinc-400 text-xs text-white px-2 py-1 rounded-md shadow-md">
 							{book?.data.year}
 						</div>
@@ -40,11 +40,11 @@ if (year) allBooks = await getCollection('books', ({ data }) => Number(data.year
 							{book?.data?.genre[0]}
 						</div>
 					</aside>
-					<div class="p-2 pb-4 flex flex-col gap-3 w-full flex-1 relative">
-						<h3 class="text- font-bold text-gray-800 line-clamp-2 flex-1">{book?.data.title}</h3>
+					<div class="p-2 sm:pb-4 flex flex-col sm:gap-3 w-full flex-1 relative items-center">
+						<h3 class="font-bold text-gray-800 sm:line-clamp-2 flex-1">{book?.data.title}</h3>
 						<span
 							set:html={getStars(book?.data.score)}
-							class="flex flex-row w-full items-center justify-center book-grid-rating"
+							class="flex flex-row w-1/5 justify-center book-grid-rating -mt-2 sm:mt-0"
 						/>
 					</div>
 				</a>

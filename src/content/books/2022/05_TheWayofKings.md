@@ -5,7 +5,7 @@ year: '2022'
 month: 'April'
 score: 5
 image: './images/books22/awayofkings.jpg'
-genre: ['Fantasy', 'Epic', 'Adult', 'Found Family']
+genre: ['Fantasy', 'Epic Fantasy', 'Adult', 'Found Family']
 ---
 
 I loved this book.

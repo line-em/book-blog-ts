@@ -14,7 +14,7 @@ genre:
     'Adult',
     'Contemporary',
     'Marriage',
-    'Slice Of Life'
+    'Slice of Life'
   ]
 ---
 

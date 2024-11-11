@@ -5,7 +5,7 @@ year: 2021
 month: 'January'
 score: 5
 image: './images/books21/prideandprejudice.jpg'
-genre: ['Romance', 'HistoricalFiction', 'Humor']
+genre: ['Romance', 'Historical Fiction', 'Humor']
 ---
 
 Read it alongside the audiobook by Rosamund Park. Favorite Scenes - when they see each other again in Darcy's home. The ending was surely sweet too, describing how their future looked like.

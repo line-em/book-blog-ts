@@ -5,7 +5,7 @@ year: '2022'
 month: 'July'
 score: 4
 image: './images/books22/book-lovers-5.jpg'
-genre: ['Romance', 'ChickLit', 'ModernDay']
+genre: ['Romance', 'Chick Lit', 'Contemporary']
 ---
 
 This was cute. I don't really have much to say I guess, but this was a fun light hearted reading. I could do without the family drama at the middle, but the ending was cute and sweet, so it more than made up for it.

@@ -5,7 +5,7 @@ year: '2024'
 month: 'November'
 score: 4.5
 image: './images/oprincipeeacostureira.jpg'
-genre: ['Young Adult', 'LGBT', 'Comic', 'Historical Fiction']
+genre: ['Young Adult', 'Queer', 'Comic', 'Historical Fiction']
 heroimage: ['./images/oprincipeeacostureiraextra.webp', 'full']
 extraimages: ['./images/oprincipeeacostureiraextra2.jpg', './images/oprincipeeacostureiraextra3.jpg']
 ---

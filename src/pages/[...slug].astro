@@ -38,7 +38,7 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
 let auth = true
 ---
 
-<Layout title={title}>
+<Layout title={title} transition:name={`${title} book`}>
 	<BookReview score={score} year={year} month={month} genres={genre} cover={image} title={title}>
 		<main class="wrapper center p-top-base">
 			<nav class="m-center">

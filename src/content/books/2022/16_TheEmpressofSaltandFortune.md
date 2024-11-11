@@ -5,7 +5,7 @@ year: '2022'
 month: 'September'
 score: 4
 image: './images/books22/theempressofsaltandfortune.jpg'
-genre: ['Fantasy', 'Asian', 'Short Stories', 'LGBT', 'Asian Author']
+genre: ['Fantasy', 'Asian', 'Short Stories', 'Queer', 'Asian Author']
 ---
 
 This was so nice a read, specially after my Emma blues! A short story was definitely a cure 🤣 and I’m super excited to read other books by Nghi Vo, this was pretty great, a very solid 4⭐ for me.

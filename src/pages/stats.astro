@@ -1,0 +1,55 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content'
+import Layout from '../layouts/Layout.astro'
+import '../styles/global.css'
+import { validYears } from '../content/config'
+import {
+	getMostReadGenresByYear,
+	getTop5MostReadGenres,
+	getBooksByGenre,
+	getBooksByGenreAndYear
+} from '../utils/genres'
+import BookGrid from '../layouts/BookGrid.astro'
+
+const allBooks: CollectionEntry<'books'>[] = await getCollection('books')
+const genresByYear = getMostReadGenresByYear(allBooks, validYears)
+---
+
+<Layout title="All Books" transition:name={`books`}>
+	<BookGrid>
+		<section class="wrapper p-6 md:p-8 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+			<h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">
+				Top 5 Genres by Year with Book Titles
+			</h2>
+			<ul class="space-y-6 grid grid-cols-2">
+				{
+					validYears.map((year) => (
+						<li key={year} class="flex flex-col gap-4">
+							<h3 class="text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-2">{year}</h3>
+							<ul class="space-y-4 ml-4 border-gray-200 dark:border-gray-700 pl-4">
+								{Object.entries(genresByYear[year] || {}).map(([genre, count]) => (
+									<li
+										key={genre}
+										class="pb-2 border-b border-gray-200 dark:border-gray-700 grid grid-cols-2"
+									>
+										<div class="flex flex-col items-center gap-2 text-lg font-medium text-gray-700 dark:text-gray-300">
+											<strong class="text-purple-600 dark:text-purple-400">{genre}</strong>
+											<span class="text-sm text-gray-500 dark:text-gray-400">({count} reads)</span>
+										</div>
+										<ul class="mt-2 space-y-1 ml-4 text-gray-600 dark:text-gray-400">
+											{getBooksByGenreAndYear(allBooks, genre, year).map((book) => (
+												<li key={book.title} class="pl-4 text-sm list-disc">
+													{book.title}
+												</li>
+											))}
+										</ul>
+									</li>
+								))}
+							</ul>
+						</li>
+					))
+				}
+			</ul>
+		</section>
+	</BookGrid>
+</Layout>

@@ -5,7 +5,7 @@ year: '2022'
 month: 'October'
 score: 5
 image: './images/books22/vicious.jpg'
-genre: ['UrbanFantasy', 'Superhero', 'Urban Fantasy', 'Fantasy', 'Antihero', 'Found Family']
+genre: ['Contemporary', 'Superhero', 'Urban Fantasy', 'Fantasy', 'Antihero', 'Found Family']
 ---
 
 **"Plenty of humans were monstrous, and plenty of monsters knew how to play at being human."**

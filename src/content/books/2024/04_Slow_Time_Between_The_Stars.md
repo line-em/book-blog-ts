@@ -5,7 +5,7 @@ year: '2024'
 month: 'February'
 score: 3.75
 image: './images/slowtime.jpg'
-genre: ['Science Fiction', 'Sci-Fi', 'Short Story', 'Novella', 'AI', 'Space']
+genre: ['Science Fiction', 'Short Story', 'Novella', 'AI', 'Space']
 ---
 
 > There was no hurry. For me, now, there would never be any hurry. I was now on slow time,

@@ -6,7 +6,7 @@ month: 'May'
 score: 3.5
 image: './images/books22/sevenhusbands.jpg'
 heroimage: ['./images/books22/sevenhusbands2.jpg', 'side']
-genre: ['Drama', 'Romance', 'ChickLit', 'LGBT', 'Queer']
+genre: ['Drama', 'Romance', 'Chick Lit', 'Queer']
 ---
 
 I guess not having read too much about the book was a good thing - when I found out that it was, in fact, a very **LGBT book**, I was pleasantly surprised.

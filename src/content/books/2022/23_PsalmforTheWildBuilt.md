@@ -5,7 +5,7 @@ year: '2022'
 month: 'December'
 score: 4
 image: './images/books22/psalmwildbuilt.jpg'
-genre: ['Cozy', 'Sci-Fi', 'Friendship', 'Philosophical', 'Short Story']
+genre: ['Cozy', 'Science Fiction', 'Friendship', 'Philosophical', 'Short Story']
 ---
 
 > “The robot thought. “I have wants and ambitions too, Sibling Dex. But if I fulfill none of them, that’s okay. I wouldn’t—” It nodded at Dex’s cuts and bruises, at the bug bites and dirty clothes. “I wouldn’t beat myself up over it.”

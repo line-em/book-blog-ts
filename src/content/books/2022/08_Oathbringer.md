@@ -5,7 +5,7 @@ year: '2022'
 month: 'May'
 score: 5
 image: './images/books22/oathbringer.jpg'
-genre: ['Fantasy', 'Epic', 'Adult', 'Found Family']
+genre: ['Fantasy', 'Epic Fantasy', 'Adult', 'Found Family']
 ---
 
 Oathbringer was great! I actually enjoyed it even more than Words of Radiance, as this book focused more on Dalinar, and oh boy. His growth and his journey was so compelling and breathtaking. It takes a lot of strength to own up to your failures, to your misdeeds, and to the hurt you caused. It was inspiring and made me feel a lot of things inside.

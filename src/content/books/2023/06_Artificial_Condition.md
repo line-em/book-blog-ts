@@ -5,7 +5,7 @@ year: '2023'
 month: 'February'
 score: 4
 image: ./images/books23/artificialcondition.jpg
-genre: ['Short Story', 'Sci-Fi', 'Fantasy', 'Adult', 'Robots', 'Space']
+genre: ['Short Story', 'Science Fiction', 'Fantasy', 'Adult', 'Robots', 'Space']
 ---
 
 > “Yes, the giant transport bot is going to help the construct SecUnit pretend to be human. This will go well.”

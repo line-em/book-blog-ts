@@ -5,7 +5,7 @@ year: '2022'
 month: 'November'
 score: 3.5
 image: './images/books22/onearthgorgeous.jpg'
-genre: ['Poetry', 'LGBT', 'War', 'Drama', 'Contemporary', 'Queer', 'Unique', 'Asian Author']
+genre: ['Poetry', 'War', 'Drama', 'Contemporary', 'Queer', 'Unique', 'Asian Author']
 ---
 
 _“All freedom is relative—you know too well—and sometimes it’s no freedom at all, but simply the cage widening far away from you, the bars abstracted with distance but still there, as when they “free” wild animals into nature preserves only to contain them yet again by larger borders. But I took it anyway, that widening.”_

@@ -6,8 +6,8 @@ export interface Props {
 const { title } = Astro.props
 
 import '@fontsource-variable/rubik'
-import '@fontsource-variable/yrsa';
-import '@fontsource-variable/yrsa/wght-italic.css';
+import '@fontsource-variable/yrsa'
+import '@fontsource-variable/yrsa/wght-italic.css'
 import '../styles/global.css'
 import '../styles/layout.css'
 ---
@@ -24,7 +24,7 @@ import '../styles/layout.css'
 		<meta name="viewport" content="width=device-width" />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="text-center mx-auto my-0 w-full leading-relaxed min-h-screen md:p-4 md:pb-0">
 		<slot />
 	</body>
 </html>

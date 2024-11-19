@@ -20,23 +20,3 @@
 .review-box > :where(header, aside) {
 	@apply p-4;
 }
-
-/*!* Media Queries for smaller screens *!*/
-/*@media (max-width: 700px) {*/
-/*	.content-box {*/
-/*		@apply grid-cols-1 px-6;*/
-/*	}*/
-/*	:where(.content-box, .review-box) > :where(header, aside) {*/
-/*		@apply relative h-auto top-0 justify-start;*/
-/*	}*/
-/*}*/
-
-/*@media (max-width: 500px) {*/
-/*	.content-box,*/
-/*	.review-box {*/
-/*		@apply grid-cols-1 px-2;*/
-/*	}*/
-/*	.review-box > main {*/
-/*		grid-column: span 1;*/
-/*	}*/
-/*}*/

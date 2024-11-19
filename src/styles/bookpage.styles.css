@@ -8,22 +8,6 @@ h3 {
 	text-align: center;
 }
 
-.pill-flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 5px;
-	margin-block-start: 1rem;
-}
-
-.book-cover-big {
-	width: 100%;
-	height: auto;
-	border-radius: 8px;
-	max-width: 200px;
-}
-
 .image {
 	width: 100%;
 	max-width: 100%;
@@ -58,10 +42,10 @@ h3 {
 	width: 45%;
 }
 
-.book-review {
-	max-width: 82ch;
-	margin: 1.5rem auto;
-}
+/*.book-review {*/
+/*	max-width: 82ch;*/
+/*	margin: 1.5rem auto;*/
+/*}*/
 
 article:last-of-type > p:first-of-type::first-letter {
 	font-family: var(--serif), serif;

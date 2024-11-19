@@ -1,19 +1,8 @@
-body {
-    text-align: center;
-    /* max-width: 140ch; */
-}
-
 .img-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
     align-content: start;
     @apply mt-4 sm:mt-0 rounded-sm shadow-md p-1 sm:p-4 gap-3 sm:gap-6 text-center;
-}
-
-.book-slug {
-    padding-block: 0.3rem;
-    /* padding-block: 0.5rem; */
-    padding-inline: 0.2rem;
 }
 
 .img-grid > a > img {
@@ -26,14 +15,3 @@ body {
         height: 300px;
     }
 }
-
-.book-grid-item {
-    /* border: 1px solid rgba(var(--accent), 5%); */
-    border-radius: 0.4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    /* box-shadow: var(--shadow-elevation-low); */
-}
-

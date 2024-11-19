@@ -40,7 +40,7 @@ let auth = true
 
 <Layout title={title} transition:name={`${title} book`}>
 	<BookReview score={score} year={year} month={month} genres={genre} cover={image} title={title}>
-		<main class="wrapper center p-top-base">
+		<main class="wrapper center px-3 pt-3">
 			<nav class="m-center">
 				{prev && <BookNav slug={prev.slug} type="prev" />}
 				{prev && next && <span> | </span>}
@@ -50,7 +50,7 @@ let auth = true
 				{title}
 			</h1>
 			<h3>by {author}</h3>
-			<section class="book-review px-1 sm:px-4 lg:px-2">
+			<section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 prose max-w-[72ch] prose-teal lg:prose-sm">
 				{
 					heroimage && (
 						<Image

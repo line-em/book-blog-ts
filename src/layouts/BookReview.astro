@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import '../styles/year.styles.css'
-import Sidebar from '../components/Sidebar.astro'
+import Sidebar from '../components/Layout/Sidebar.astro'
 import BookInfo from '../components/BookInfo.astro'
 
 export interface Props {
@@ -30,7 +30,7 @@ const bookInfo = {
 		<Sidebar isReview bookInfo={bookInfo} />
 		<slot />
 		<aside
-			class="book-info sm:ml-4 mt-4 sm:mt-0 bg-slate-50 shadow-md rounded-xl flex gap-4 flex-col sm:hidden lg:flex lg:flex-col lg:gap-4 lg:!px-0 self-start lg:sticky top-10"
+			class="items-center sm:ml-4 mt-4 sm:mt-0 bg-slate-50 shadow-md rounded-xl flex gap-4 flex-col sm:hidden lg:flex lg:flex-col lg:gap-4 lg:!px-0 self-start lg:sticky top-10"
 		>
 			<BookInfo
 				score={score}

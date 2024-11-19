@@ -8,7 +8,7 @@ const { cover, score, year, month, genres, title } = Astro.props
 <Image
 	src={cover}
 	alt={title}
-	class="book-cover-big shadow-md"
+	class="w-full h-auto rounded-lg max-w-52 shadow-md"
 	width={300}
 	height={350}
 	format="webp"
@@ -22,7 +22,7 @@ const { cover, score, year, month, genres, title } = Astro.props
 		<div class="flex gap-2 flex-wrap items-start">
 			{
 				genres?.map((genre: string) => (
-					<span class="bg-purple-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
+					<span class="bg-violet-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
 				))
 			}
 		</div>
@@ -45,7 +45,7 @@ const { cover, score, year, month, genres, title } = Astro.props
 	<div class="flex gap-2 flex-wrap items-start justify-center">
 		{
 			genres?.map((genre: string) => (
-				<span class="bg-purple-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
+				<span class="bg-violet-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
 			))
 		}
 	</div>

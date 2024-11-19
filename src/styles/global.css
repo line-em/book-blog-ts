@@ -31,34 +31,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-body {
-    margin: 0 auto;
-    width: 100%;
-    line-height: 1.5;
-    min-height: 100vh;
-    @apply sm:p-4
-}
-
-p:not(> blockquote) {
-    margin-top: 0.5rem;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 a {
-    text-decoration: underline 2px rgba(var(--accent), 25%);
-    color: teal;
-    transition: all 0.2s ease-in-out;
+    @apply text-teal-600 transition-colors duration-200 underline underline-offset-2;
 }
 
 a:hover {
-    color: rgba(var(--accent), 80%);
+   @apply text-teal-800
 }
 
 strong {
-    @apply text-purple-500
+    @apply text-violet-500
 }
 
 h1 {
@@ -69,10 +51,6 @@ h1 {
     max-width: 27ch;
     text-wrap: balance;
     white-space: unset;
-}
-
-nav > h1 {
-    line-height: 1.2;
 }
 
 h1 .text-gradient {
@@ -99,35 +77,22 @@ h6 {
 
 blockquote::before {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23bda8c8' viewBox='0 0 256 256'%3E%3Cpath d='M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z'/%3E%3C/svg%3E");
-    width: 1.5rem; /* Scales icon to desired size */
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     position: absolute;
     left: 0;
-    top: 0.25rem; /* Adjust for vertical alignment */
+    top: -5px; /* Adjust for vertical alignment */
     display: inline-block;
     transform: scaleX(-1); /* Flips the icon horizontally */
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 blockquote {
     position: relative;
     font-family: var(--serif), serif;
-    font-size: 1.25rem;
     font-style: italic;
-    overflow: auto;
-    padding: 1rem 0 0.5rem 1.5rem;
-    border-radius: 0 8px 8px 0;
-    @apply text-indigo-600;
-    margin-block: 1rem
+    @apply text-violet-500 !pl-6 text-lg leading-snug;
 }
-
-.book-review p + p {
-    margin-top: 0.5rem;
-}
-
-/*.book-review:last-child {*/
-/*    @apply sm:mb-10*/
-/*}*/
 
 .text-gradient {
     background-image: var(--accent-gradient);
@@ -151,20 +116,17 @@ button,
 }
 
 .wrapper.center {
-    margin-inline: auto;
-    overflow-x: hidden;
+    @apply mx-auto overflow-x-hidden;
 }
 
 button,
 .button-style {
     padding: 0.3rem 0.5rem;
     border: 1px solid rgba(var(--accent), 55%);
-    background-color: white;
-    color: teal;
-    cursor: pointer;
     transition: all 0.2s ease-in-out;
     font: inherit;
-    display: block;
+    @apply block cursor-pointer
+    text-teal-400 bg-white
 }
 
 button:hover,
@@ -207,15 +169,8 @@ ul {
 }
 
 li:not(> aside) {
-    padding-left: 1rem;
+    @apply pl-4
 }
-
-/*li::before {*/
-/*	!*content: url('/assets/moon-duotone.svg');*!*/
-/*	margin-inline: 5px;*/
-/*	display: inline;*/
-/*	vertical-align: top;*/
-/*}*/
 
 li {
     @apply flex gap-2 items-center
@@ -223,11 +178,6 @@ li {
 
 li + li:not( > aside) {
     margin-block-start: 1rem;
-}
-
-.p-top-base {
-    padding-block-start: 0.7rem;
-    padding-inline: 0.7rem;
 }
 
 .m-center {
@@ -238,8 +188,4 @@ li + li:not( > aside) {
     margin: 0 auto;
     width: 100%;
     margin-block-end: 1rem;
-}
-
-.book-info {
-    @apply items-center
 }

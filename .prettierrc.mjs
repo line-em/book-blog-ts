@@ -2,11 +2,14 @@
 /** @type {import("prettier").Config} */
 export default {
 	plugins: ['prettier-plugin-astro'],
-	useTabs: true,
-	singleQuote: true,
-	trailingComma: 'none',
-	semi: false,
+	arrowParens: 'avoid',
+	semi: true,
+	tabWidth: 2,
 	printWidth: 100,
+	singleQuote: false,
+	jsxSingleQuote: false,
+	trailingComma: 'es5',
+	bracketSpacing: true,
 	overrides: [
 		{
 			files: '*.astro',

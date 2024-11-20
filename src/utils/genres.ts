@@ -49,7 +49,7 @@ export const getBooksByGenreAndYear = (
 	books: CollectionEntry<'books'>[],
 	genre: string,
 	year?: number
-): { title: string; genre: string[]; year: number }[] => {
+): { title: string; genre: string[]; year: number; slug: string }[] => {
 	return books
 		.filter((book) => book.data.genre.includes(genre) && (!year || book.data.year === year))
 		.map((book) => ({

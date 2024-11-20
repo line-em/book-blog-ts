@@ -22,26 +22,40 @@
     color: white;
 }
 
-html {
-    @apply bg-white;
-    font-family: var(--sans), sans-serif;
-    font-weight: var(--regular);
-    font-size: 16px;
-    min-height: 100vh;
-    text-rendering: optimizeLegibility;
+@layer base {
+    html {
+        @apply bg-white text-base min-h-screen;
+        font-family: var(--sans), sans-serif;
+        font-weight: var(--regular);
+        text-rendering: optimizeLegibility;
+    }
+
+    a {
+         @apply text-teal-600 transition-colors duration-200 underline underline-offset-2;
+    }
+
+    a:hover {
+        @apply text-teal-800
+    }
+
+    strong {
+        @apply text-violet-500
+    }
+
+    blockquote {
+        font-family: var(--serif), serif;
+        @apply text-violet-500 !pl-6 text-lg leading-snug italic relative;
+    }
+
+    li:not(> aside) {
+        @apply pl-4
+    }
+
+    li {
+        @apply flex gap-2 items-center
+    }
 }
 
-a {
-    @apply text-teal-600 transition-colors duration-200 underline underline-offset-2;
-}
-
-a:hover {
-   @apply text-teal-800
-}
-
-strong {
-    @apply text-violet-500
-}
 
 h1 {
     font-size: clamp(2rem, 2vw + 2rem, 3rem);
@@ -85,13 +99,6 @@ blockquote::before {
     display: inline-block;
     transform: scaleX(-1); /* Flips the icon horizontally */
     opacity: 0.7;
-}
-
-blockquote {
-    position: relative;
-    font-family: var(--serif), serif;
-    font-style: italic;
-    @apply text-violet-500 !pl-6 text-lg leading-snug;
 }
 
 .text-gradient {
@@ -166,14 +173,6 @@ nav,
 ul {
     list-style: none;
     padding: 0;
-}
-
-li:not(> aside) {
-    @apply pl-4
-}
-
-li {
-    @apply flex gap-2 items-center
 }
 
 li + li:not( > aside) {

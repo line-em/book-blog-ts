@@ -30,17 +30,17 @@ const genresByYear = getMostReadGenresByYear(allBooks, validYears)
 			<ReadingStats books={allBooks} />
 			<section class="flex flex-col gap-8 mx-auto">
 				{validYears.map((year) => (
-					<div class="flex flex-col lg:flex-row border-b border-slate-200 pb-8 gap-4 justify-between">
+					<div class="flex flex-col lg:flex-row border-b border-slate-200 pb-8 gap-4 items-center lg:items-start w-full justify-between">
 						<DonutChart data={genresByYear[year]} year={year} client:only="react" />
 						<!--<h3 class="text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-2">{year}</h3>-->
-						<ul class="gap-4 pt-8 grid grid-cols-2 xl:grid-cols-3 grid-flow-dense flex-1">
+						<ul class="gap-4 pt-8 grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 grid-flow-dense flex-1">
 							{Object.entries(genresByYear[year] || {}).map(([genre, count]) => (
 								<li
 									class="py-2 flex flex-col text-left items-start"
 								>
 									<strong>{genre}</strong>
 									{getBooksByGenreAndYear(allBooks, genre, year).map((book) => (
-										<a class="pl-4 text-sm border-l border-l-violet-500" href={book.slug}>
+										<a class="pl-4 text-sm border-l border-l-violet-500 max-w-52 lg:max-w-44" href={"/" + book.slug}>
 										{book.title}
 									</a>
 									))}

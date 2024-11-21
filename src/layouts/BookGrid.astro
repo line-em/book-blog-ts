@@ -1,14 +1,10 @@
 ---
-import '../styles/year.styles.css'
-import Layout from './Layout.astro'
-import Sidebar from '../components/Layout/Sidebar.astro'
+import Sidebar from "../components/Layout/Sidebar.astro";
 
-const { year } = Astro.props
+const { year } = Astro.props;
 ---
 
-<Layout title="Book List">
-	<main class="content-box">
-		<Sidebar currentYear={year} />
-		<slot />
-	</main>
-</Layout>
+<main class="content-box">
+  <Sidebar currentYear={year} />
+  <slot />
+</main>

@@ -20,3 +20,11 @@
 .review-box > :where(header, aside) {
 	@apply p-4;
 }
+
+.img-grid {
+	@apply grid grid-cols-[repeat(auto-fill,_minmax(190px,_1fr))] content-start bg-transparent sm:bg-slate-50/75 sm:shadow-md sm:p-4 gap-3 sm:gap-6 text-center;
+}
+
+.img-grid > a > div > img {
+	@apply w-auto mx-auto rounded-lg sm:rounded-t-lg sm:rounded-b-none flex justify-start object-cover sm:w-full mt-4 sm:mt-0 h-80 sm:h-64
+}

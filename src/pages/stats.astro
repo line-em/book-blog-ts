@@ -23,10 +23,6 @@ const genresByYear = getMostReadGenresByYear(allBooks, validYears)
 			<h2 class="text-3xl text-gradient font-bold">
 				Top 5 Genres by Year with Book Titles
 			</h2>
-			<!--<DonutChart data={genresByYear['2021']} year={2021} client:only="react" />-->
-			<!--<DonutChart data={genresByYear['2022']} year={2022} client:only="react" />-->
-			<!--<DonutChart data={genresByYear['2023']} year={2023} client:only="react" />-->
-			<!--<DonutChart data={genresByYear['2024']} year={2024} client:only="react" />-->
 			<ReadingStats books={allBooks} />
 			<section class="flex flex-col gap-8 mx-auto">
 				{validYears.map((year) => (

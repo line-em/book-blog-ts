@@ -3,37 +3,31 @@ title: 'Recursion'
 author: 'Blake Crouch'
 year: '2024'
 month: 'December'
-score: 4.5
+score: 3
 image: './images/recursion.jpg'
 genre: ['Thriller', 'Mystery', 'Time Travel', 'Science Fiction']
 ---
 
-> “Days of death are days when we weigh our relationship with love in our bare hands. Days when we remember what has gone, and fear what is to come. The joy love brings, and the price we pay. When we give thanks but also pray for mercy.” 
+> “Life can only be understood backwards; but it must be lived forwards. —SØREN KIERKEGAARD” 
 
-This book was sweet and sad. As always, I found the mystery to be on the lackluster side (I was suspecting the correct culprits for half the book), but where this book shines is on the characters, their relationships, etc. And this part was very, very good in this entry. ❤️
+Alright... Let's begin by saying I was really excited about this book, and its writer. I believe I will give him a second chance with Dark Matter, however.
 
-I find a lot of joy in the characters, specially Joyce’s POV. It all feels very tender. I also love the community as a whole - they have the “Bob of the computers”, they found a way to celebrate New Years’ Eve in time for a good night’s sleep, and so on. A lot of nice little things like that that put a smile on my face! There are a lot o quips and interactions like those. The brevity and light-hearted interactions, I think, is what makes this truly cozy, and lessens the weight that a book such as this could have. Specially  this one.
+I have a little bit to unpack. This book started out fascinating for me, and I kept talking to people about it. It begins as our detective tries to prevent a woman from killing herself from a tall building. And why was she there? _Well_, there had been an influx of people suffering from the False Memory Syndrome. She remembered a whole life that wasn't real. A kid she didn't have. With a man she _tracked_ and wasn't warm with her like in her memories - but barely remembered her. The pain was unbearable, and she jumped.
 
-> “Everyone who dies is alive. We call people "dead" because we need a word for it, but "dead" just means that time has stopped moving forward for that person? You understand? No one dies, not really.”
-> (...)
-> “We think time travels forward, marches on in a straight line, and so we alongside it to keep up. Hurry, hurry, mustn't fall behind. But it doesn't, you see. Time just swirls around us. Every thing is always present. The things we've done, the people we've loved, the people we've hurt, they're all still here.”
+Later, the detective reads that this woman was in fact _saved_. What was happening, exactly? Thus, he starts to investigate the cause for this syndrome.
 
-This one has darker moments. And I’m glad this wasn’t rushed, wasn’t hand waved, and so on. Spoilers ahead: Stephen dies in this book. And it’s very, very sad. We get a few of his POVs - how he’s handling the Alzheimer, how it impacts his mind, how he and Elizabeth are struggling.... It’s painful. The mortality and death discussions arise here - and of course, with a main cast of elderly people, they have all thought about it, and grieved, a lot.
+On the other POV, we follow a scientist that wants to build some technology that could save her mother's memories, who is developing Alzheimer. From the get-go, despite being from different years, we kinda suspect those two stories will match, eventually. How? Well, I guess it depends on the person!
 
-> “And Stephen had still chosen her? Stephen had made her, that was the truth. Had glued her together. And here she lies. Unmade. Unglued.”
-> (...)
-> “How will life go on now? How is that possible? She hears a car on a distant road. Why on earth is anybody driving? Where is there to go now? Why is the clock in the hall still ticking? Doesn’t it know it stopped days ago?”
+The book is full of its twists and turns, and some of them are really enjoyable. I also like the Epilogue. Ending that way felt like it was both for our imagination to complete, like for a cycle to repeat, and I thought it was fabulous.
 
-This part in particular made me heart clench. It hit me hard. It was very well written, and it makes me remember why I love this series: it’s endearing, sweet, but it also finds a way to speak true about things we usually don’t want to talk about, death, getting older, how to deal with all of this. I felt a lot of sadness throughout the book: there are a lot of funerals , and they hurt.
+The problem for me? The middle of the book, I suppose. It got **very** tiring, and it took me a while to smudge through. _Too much_ happens, and by the end, I don't even know if the solution to their conundrum made sense or not, I just wanted to finish it I guess?
 
-> “Had she really understood then that those were the best of times? That she was in heaven? She thinks she did understand, yes. Understood she had been given a great gift. Doing the crossword in a train carriage, Stephen with a can of beer ("I will only drink beer on trains, nowhere else, don't ask me why"), glasses halfway down his nose, reading out clues. The real secret was that when they looked at each other, they each thought they had the better deal.”
+Well, from here onwards, I will dredge into spoiler territory! This book is, in fact, a time travel book. While researching memories, Helena, our scientist, stumbles upon a time machine: upon imprinting a very strong memory, and having a near-death experience, you can travel to the memory you recorded, while having full control and being able to create another timeline. The first one we experience is from the detective's POV: He goes back to the past and prevents his daughter from dying.
 
-It starts with Stephen’ friend death. Then the little pet fox that everyone on the community took care (and gave different names!), and then, lastly, Stephen. I felt this book was a lot more emotive and filled with sad moments, instead of a pure mystery novel. The mystery is totally on the backseat for me, and could easily be forgotten.
+However, here comes a caveat: when the timelines reach the same "point", people will remember what happened in previous timelines. It can be shocking - in the case of the detective's daughter, after she remembers literally dying, she couldn't cope and killed herself.
 
-Apparently, the book series will continue eventually... To be honest, I’m quite happy with what we’ve got so far, so for me, this seems like a good ending. I wouldn’t mind if the series stopped here, but let’s see what’s in store for the future. However, if I ever pick up any sequels, it will be like meeting old friends again.
+While this was... in a lesser scale, I guess it worked better for me. However, it turned world dangerous real quick - and while it made sense, it felt very draining. I knew the characters wouldn't die - they'd just go back in time. And everytime people would recover their memories to bad and expected consequences, they were conveniently away from the tech that would send them back in time. And they always _knew_ when it would happen, because our main characters spend most of the book in a loop trying to prevent this whole tech to even being created.
 
-> “They say that time softens the pain, but that’s a fairy tale. Who would ever love again if anyone actually told the truth? I’m afraid there are some days when I could still rip out my own heart and weep myself hollow for Gerry. Some days? Every day.”
+So, this felt at the same time like too much, and too repetitive. There were good glimpses and good parts throughout. One instance for me is the whole timeline in which Helena had died. She pain and effort finally catching up to her, and the whole connection and desperation that surrounded them. 
 
-I love these characters. The mysteries, unfortunately, not so much! But still, I think this book as whole lotta of heart, and that’s what always makes me come back to this universe.
-
-> “But, however much life teaches you that nothing lasts, it is still a shock when it disappears. When the man you love with every fibre starts returning to the stars, an atom at a time.”
+But yeah. In a way, this was a bit of a letdown. It mixed a lot of things I enjoy, had a really strong beginning - but ultimately, failed to grip me.

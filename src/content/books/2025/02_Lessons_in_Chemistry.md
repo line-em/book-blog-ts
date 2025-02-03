@@ -4,7 +4,7 @@ author: 'Bonnie Garmus'
 year: '2025'
 month: 'January'
 score: 3.5
-image: './images/lessons in chemistry.jpg'
+image: './images/lessonsinchemistry.jpg'
 genre: ["Fiction", "Feminist", "Historical Fiction", "Contemporary" ]
 ---
 

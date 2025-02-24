@@ -45,11 +45,13 @@ if (books) {
   }
   {
     mini && (
-      <section class="flex -my-8 sm:my-0 flex-row sm:flex-col gap-4 text-sm p-4 text-slate-700 rounded-xl shadow-md bg-slate-50 w-full justify-center items-center">
-        <div class="flex items-center gap-2 border-r pr-4 sm:border-r-0 sm:pr-0 sm:border-b sm:pb-4">
-          <Book color="var(--pink)" weight="duotone" size="19" />
-          Books read:
-          <strong class="text-gradient">{books.length}</strong>
+      <section class="flex -my-8 sm:my-0 flex-row sm:flex-col gap-4 text-sm p-4 text-zinc-700 rounded-xl shadow-md bg-slate-50 w-full justify-center items-center">
+        <div class="flex flex-col items-center gap-2 border-r pr-4 sm:border-r-0 sm:pr-0 sm:border-b sm:pb-4">
+          <div class="flex gap-2">
+            <Book color="var(--pink)" weight="duotone" size="19" />
+            <strong class="text-gradient">{books.length}</strong>
+          </div>
+          <h4 class="font-bold">Books read</h4>
         </div>
         <div class="flex items-center gap-2">
           <PlusCircle color="var(--pink)" weight="duotone" size="19" />

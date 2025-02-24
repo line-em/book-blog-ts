@@ -1,6 +1,6 @@
 .content-box,
 .review-box {
-	@apply bg-indigo-100 shadow-md grid mx-auto rounded-md relative min-h-[calc(100dvh-2rem)] h-full p-3 sm:p-4;
+	@apply bg-violet-100 shadow-md grid mx-auto rounded-md relative min-h-[calc(100dvh)] h-full;
 }
 
 .content-box {
@@ -22,7 +22,7 @@
 }
 
 .img-grid {
-	@apply grid grid-cols-[repeat(auto-fill,_minmax(190px,_1fr))] content-start bg-transparent sm:bg-slate-50/75 sm:shadow-md sm:p-4 gap-3 sm:gap-6 text-center;
+	@apply my-8 grid grid-cols-[repeat(auto-fill,_minmax(190px,_1fr))] content-start bg-transparent sm:bg-slate-50/75 sm:shadow-md sm:p-4 md:p-8 gap-4 sm:gap-8 text-center;
 }
 
 .img-grid > a > div > img {

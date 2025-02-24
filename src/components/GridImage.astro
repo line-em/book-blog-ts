@@ -21,9 +21,9 @@ if (year) allBooks = await getCollection("books", ({ data }) => Number(data.year
       return (
         <a
           href={`/${book?.slug}`}
-          class="flex flex-col bg-white border sm:shadow-sm rounded-xl relative hover:sm:shadow-lg hover:border-purple-300 px-4 sm:px-0"
+          class="flex flex-col bg-white sm:shadow-sm rounded-xl relative hover:sm:shadow-md p-4 sm:p-2"
         >
-          <div class="overflow-hidden">
+          <div class="overflow-hidden rounded-xl">
             <Image
               src={book && book?.data.image}
               alt={book?.data.title}
@@ -32,22 +32,24 @@ if (year) allBooks = await getCollection("books", ({ data }) => Number(data.year
               format="webp"
               quality={"high"}
               loading="lazy"
-              class="w-full h-auto rounded-t-xl"
+              class="w-full h-auto rounded-xl"
             />
           </div>
           <aside class="sm:absolute mt-2 sm:mt-0 justify-center sm:-right-3 top-1 z-20 flex gap-1">
-            <div class="bg-zinc-400 text-xs text-white px-2 py-1 rounded-md shadow-md">
+            <div class="bg-zinc-400 text-xs text-white px-2 py-1 rounded-md shadow-sm">
               {book?.data.year}
             </div>
-            <div class="bg-violet-400 text-xs text-white px-2 py-1 rounded-md shadow-md">
+            <div class="bg-violet-400 text-xs text-white px-2 py-1 rounded-md shadow-sm">
               {book?.data?.genre[0]}
             </div>
           </aside>
-          <div class="p-2 sm:pb-4 flex flex-col sm:gap-3 w-full flex-1 relative items-center">
-            <h3 class="font-bold text-gray-800 sm:line-clamp-2 flex-1">{book?.data.title}</h3>
+          <div class="py-2 items-center sm:pb-4 flex flex-col sm:gap-3 w-full flex-1 relative">
+            <h3 class="font-bold text-zinc-700 sm:line-clamp-2 flex-1 items-center">
+              {book?.data.title}
+            </h3>
             <span
               set:html={getStars(book?.data.score)}
-              class="flex max-w-1/5 justify-center items-center book-grid-rating  sm:mt-0"
+              class="flex max-w-1/5 book-grid-rating sm:mt-0"
             />
           </div>
         </a>

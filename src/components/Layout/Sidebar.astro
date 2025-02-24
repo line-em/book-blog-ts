@@ -18,7 +18,7 @@ const books: CollectionEntry<"books">[] = currentYear
   : await getBooks();
 ---
 
-<aside class="flex flex-col items-start self-start lg:sticky top-10 py-1 sm:!px-6 overflow-y-auto">
+<aside class="flex flex-col items-start self-start lg:sticky top-10 py-1 !px-6 overflow-y-auto">
   <h1 class="text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-8">
     <span class="text-gradient !inline sm:!block">
       {currentYear ? `${currentYear}` : "Yearly"}
@@ -33,7 +33,7 @@ const books: CollectionEntry<"books">[] = currentYear
   <ReadingStats books={books} mini={true} />
   {
     bookInfo && (
-      <aside class="items-center hidden sm:flex sm:flex-col sm:gap-4 lg:hidden mt-4 p-4 bg-slate-50 shadow-md rounded-xl">
+      <aside class="items-center hidden sm:flex sm:flex-col sm:gap-4 lg:hidden mt-4 p-4 bg-slate-50 shadow-sm rounded-xl">
         <BookInfo {...bookInfo} />
       </aside>
     )

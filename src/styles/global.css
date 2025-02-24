@@ -118,7 +118,7 @@ blockquote::before {
 input,
 button,
 .button-style {
-    @apply bg-slate-50 sm:shadow-md rounded-xl;
+    @apply bg-slate-50 sm:shadow-sm rounded-xl;
 }
 
 .wrapper.center {

@@ -4,7 +4,7 @@ author: 'Robert Jackson Bennett'
 year: '2025'
 month: 'March'
 score: 5
-image: './images/taintedcup.jpeg'
+image: './images/taintedcup.jpg'
 genre: ["Fantasy", "Mystery", "Fiction", "Magic", "Adult", "Crime", "Thriller" ]
 heroimage: ['./images/taintedcup2.jpg', 'full']
 ---

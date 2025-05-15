@@ -1,5 +1,4 @@
 ---
----
 title: 'A Drop Of Corruption'
 author: 'Robert Jackson Bennett'
 year: '2025'

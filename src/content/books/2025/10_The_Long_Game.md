@@ -15,3 +15,5 @@ There wasn't much plot - though the idea tha we had an alien species, with a who
 But it turned out to be mostly these discussions throghout the whole short story, and it didn't seem to reach much of a point/conclusion.
 
 I didn't enjoy this much.
+
+Only one story from The Far Reaches Collection to go!

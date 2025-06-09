@@ -4,12 +4,12 @@
 }
 
 .content-box {
-	@apply grid-cols-1 sm:[grid-template-columns:260px_1fr];
+	@apply grid-cols-1 sm:[grid-template-columns:230px_1fr];
 	/*padding-inline-start: 0;*/
 }
 
 .review-box {
-	@apply sm:[grid-template-columns:260px_1fr] lg:[grid-template-columns:260px_1fr_260px] grid-flow-dense;
+	@apply sm:[grid-template-columns:230px_1fr] lg:[grid-template-columns:230px_1fr_260px] grid-flow-dense;
 }
 
 /* Sticky header and aside inside .content-box and .review-box */
@@ -22,7 +22,7 @@
 }
 
 .img-grid {
-	@apply my-8 mx-6 sm:mr-6 grid grid-cols-[repeat(auto-fill,_minmax(260px,_1fr))] content-start bg-transparent sm:bg-slate-50/75 sm:shadow-sm sm:p-4 md:p-8 gap-4 sm:gap-8 text-center;
+	@apply my-8 mx-6 sm:mr-6 grid grid-cols-[repeat(auto-fill,_minmax(230px,_1fr))] content-start bg-transparent sm:bg-slate-50/75 sm:shadow-sm sm:p-4 md:p-8 gap-4 sm:gap-8 text-center;
 }
 
 .img-grid > a > div > img {

@@ -13,14 +13,6 @@ export interface Props {
 }
 
 const { cover, score, year, month, genres, title } = Astro.props;
-const bookInfo = {
-  cover: cover,
-  score: score,
-  year: year,
-  month: month,
-  genres: genres,
-  title: title,
-};
 ---
 
 <Sidebar isReview currentYear={1} />
@@ -29,5 +21,7 @@ const bookInfo = {
   transition:animate={slide({ duration: "0.4s" })}
 >
   <slot />
-  <BookInfo score={score} year={year} month={month} genres={genres} title={title} cover={cover} />
+  <BookInfo
+    {...{ score, year, month, genres, title, cover }}
+  />
 </section>

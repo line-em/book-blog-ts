@@ -3,6 +3,7 @@ import { getStars } from "../utils/rating";
 import { Image } from "astro:assets";
 import { getCollection, type CollectionEntry } from "astro:content";
 import { fade } from "astro:transitions";
+import { compareBookIds } from "../utils/bookId";
 
 export interface Props {
   year?: number;
@@ -14,21 +15,7 @@ let allBooks = await getCollection("books")
 
 if (year) allBooks = await getCollection("books", ({ data }: CollectionEntry<'books'>) => Number(data.year) === year);
 
-allBooks.sort((a, b) => {
-  const parse = str => {
-    const match = str.match(/^(\d{4})\/(\d{1,2})_(.+)$/);
-    if (!match) return [0, 0, '']; // fallback
-    const [, year, number, title] = match;
-    return [parseInt(year), parseInt(number), title];
-  };
-
-  const [yearA, numA, titleA] = parse(a.id);
-  const [yearB, numB, titleB] = parse(b.id);
-
-  if (yearA !== yearB) return yearA - yearB;
-  if (numA !== numB) return numA - numB;
-  return titleA.localeCompare(titleB);
-});
+allBooks.sort((a, b) => compareBookIds(a.id, b.id));
 
 ---
 

@@ -7,6 +7,7 @@ import Layout from "../layouts/Layout.astro";
 import GradientText from "../components/GradientText.astro";
 import { PenNibIcon } from "@phosphor-icons/react";
 import Navigation from "@/components/Navigation.astro";
+import { compareBookIds } from "../utils/bookId";
 
 export interface Props {
   entry: CollectionEntry<"books">;
@@ -16,21 +17,7 @@ export interface Props {
 
 export async function getStaticPaths() {
   const bookEntries: CollectionEntry<"books">[] = await getCollection("books");
-  bookEntries.sort((a, b) => {
-  const parse = str => {
-    const match = str.match(/^(\d{4})\/(\d{1,2})_(.+)$/);
-    if (!match) return [0, 0, '']; // fallback
-    const [, year, number, title] = match;
-    return [parseInt(year), parseInt(number), title];
-  };
-
-  const [yearA, numA, titleA] = parse(a.id);
-  const [yearB, numB, titleB] = parse(b.id);
-
-  if (yearA !== yearB) return yearA - yearB;
-  if (numA !== numB) return numA - numB;
-  return titleA.localeCompare(titleB);
-});
+  bookEntries.sort((a, b) => compareBookIds(a.id, b.id));
   const bookNumber: number = bookEntries.length;
   return bookEntries.map((entry, i: number) => ({
     params: { slug: entry.id },
@@ -68,16 +55,20 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
       <section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal max-w-[75ch]">
         {
           heroimage && (
-            <Image
-              src={heroimage[0]}
-              alt={title}
-              loading="lazy"
-              width={1000}
-              height={300}
-              quality={"mid"}
-              format="webp"
-              class={heroimage[1] === "full" ? "image" : "image right"}
-            />
+            <div class={heroimage[1] === "full"
+              ? "w-full flex justify-center my-6"
+              : "float-left mr-6 max-w-[350px] w-full"}>
+              <Image
+                src={heroimage[0]}
+                alt={title}
+                loading="lazy"
+                width={heroimage[1] === "full" ? 1200 : 350}
+                height={heroimage[1] === "full" ? 400 : 300}
+                quality={"mid"}
+                format="webp"
+                class={"rounded-xl shadow-md w-full object-cover"}
+              />
+            </div>
           )
         }
         <Content />

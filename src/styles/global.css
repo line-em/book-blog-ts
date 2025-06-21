@@ -46,6 +46,8 @@ h6 {
 }
 
 blockquote {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 0.5rem 1rem;
   margin-block: 0.5rem;

@@ -12,25 +12,27 @@ const { extraImage, extraImages, title } = Astro.props;
 
 {
   extraImage && (
-    <Image
-      src={extraImage}
-      alt={title}
-      class="image m-top m-center"
-      loading="lazy"
-      format="webp"
-      quality={"mid"}
-      width={1000}
-      height={400}
-    />
+    <div class="flex justify-center my-6">
+      <Image
+        src={extraImage}
+        alt={title}
+        class="rounded-xl shadow-lg max-w-2xl w-full object-cover"
+        loading="lazy"
+        format="webp"
+        quality={"mid"}
+        width={1000}
+        height={400}
+      />
+    </div>
   )
 }
 {
   extraImages && (
-    <div class="extra-images">
+    <div class="flex flex-row gap-4 justify-center my-6">
       <Image
         src={extraImages[0]}
         alt={title}
-        class="image"
+        class="rounded-xl shadow-md w-[48%] object-cover"
         loading="lazy"
         width={1000}
         height={400}
@@ -40,7 +42,7 @@ const { extraImage, extraImages, title } = Astro.props;
       <Image
         src={extraImages[1]}
         alt={title}
-        class="image"
+        class="rounded-xl shadow-md w-[48%] object-cover"
         width={1000}
         loading="lazy"
         format="webp"

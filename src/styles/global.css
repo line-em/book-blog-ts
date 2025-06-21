@@ -1,84 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/frappe.css";
+@plugin "@tailwindcss/typography";
+
+@config "../../tailwind.config.mjs";
 
 :root {
-    --accent: 124, 58, 237;
-    --pink: #da62c4;
-    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-    --serif: 'Yrsa Variable', 'Georgia', serif;
-    --sans: 'Rubik Variable', 'Helvetica', 'Arial', sans-serif;
-    --regular: 400;
-    --bold: 600;
-    --bolder: 700;
-    --shadow-color: 286deg 36% 56%;
-    --shadow-elevation-low: 0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
+  --accent: 124, 58, 237;
+  --pink: #da62c4;
+  --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
+  --serif: "Yrsa Variable", "Georgia", serif;
+  --font-serif: "Yrsa Variable", "Georgia", serif;
+  --sans: "Rubik Variable", "Helvetica", "Arial", sans-serif;
+  --font-sans: "Rubik Variable", "Helvetica", "Arial", sans-serif;
+  --regular: 400;
+  --bold: 600;
+  --bolder: 700;
+  --shadow-color: 286deg 36% 56%;
+  --shadow-elevation-low:
+    0.4px 0.4px 0.6px hsl(var(--shadow-color) / 0.32),
     0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.32),
     1.4px 1.7px 2.5px -2.5px hsl(var(--shadow-color) / 0.32);
 }
 
 ::selection {
-    background-color: rgba(var(--accent), 70%);
-    color: white;
+  background-color: var(--catppuccin-color-rosewater-400);
+  color: white;
 }
-
-@layer base {
-    html {
-        @apply bg-white text-base min-h-screen;
-        font-family: var(--sans), sans-serif;
-        font-weight: var(--regular);
-        text-rendering: optimizeLegibility;
-    }
-
-    a {
-         @apply text-teal-600 transition-colors duration-200 underline underline-offset-2;
-    }
-
-    a:hover {
-        @apply text-teal-800
-    }
-
-    strong {
-        @apply text-violet-500
-    }
-
-    blockquote {
-        font-family: var(--serif), serif;
-        @apply text-violet-500 !px-6 py-2 text-xl leading-snug italic relative bg-gray-100 rounded-md;
-    }
-
-    li:not(> aside) {
-        @apply pl-4
-    }
-
-    li {
-        @apply flex gap-2 items-center
-    }
-}
-
 
 h1 {
-    font-size: clamp(2rem, 2vw + 2rem, 3rem);
-    font-weight: var(--bold);
-    margin: 0 auto;
-    line-height: 1.4;
-    max-width: 27ch;
-    text-wrap: balance;
-    white-space: unset;
-}
-
-h1 .text-gradient {
-    font-weight: var(--bolder);
-    display: block;
-}
-
-h3 {
-    font-size: clamp(0.8rem, 1vw + 0.8rem, 1.25rem);
-    margin-block-start: 0.2rem;
-}
-
-h4 {
-    font-weight: var(--regular);
+  font-size: clamp(2rem, 2vw + 2rem, 3rem);
+  font-weight: var(--bold);
+  margin: 0 auto;
+  line-height: 1.4;
+  max-width: 27ch;
+  text-wrap: balance;
+  white-space: unset;
 }
 
 h1,
@@ -86,104 +42,114 @@ h2,
 h3,
 h5,
 h6 {
-    font-family: var(--serif);
+  font-family: var(--font-serif);
+}
+
+blockquote {
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin-block: 0.5rem;
+  font-family: var(--font-serif);
+  background-color: var(--catppuccin-color-crust);
+  border-radius: 1rem;
 }
 
 blockquote::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23bda8c8' viewBox='0 0 256 256'%3E%3Cpath d='M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z'/%3E%3C/svg%3E");
-    width: 1.2rem;
-    height: 1.2rem;
-    position: absolute;
-    left: 0;
-    top: -5px; /* Adjust for vertical alignment */
-    display: inline-block;
-    transform: scaleX(-1); /* Flips the icon horizontally */
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23bda8c8' viewBox='0 0 256 256'%3E%3Cpath d='M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z'/%3E%3C/svg%3E");
+  position: absolute;
+  left: -5px;
+  top: -7px;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  transform: scaleX(-1);
 }
 
-.text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 400%;
-    background-position: 0;
+a {
+  text-decoration: none;
+  color: var(--catppuccin-color-rosewater-400);
+  text-underline-offset: 3px;
 }
 
-.book-grid-rating img {
-    height: auto;
-    width: auto;
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--catppuccin-color-teal-400);
 }
 
-.wrapper,
-input,
-button,
-.button-style {
-    @apply bg-slate-50 sm:shadow-sm rounded-xl;
+/* fallback for firefox */
+@keyframes astroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+@keyframes astroFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*button,*/
+/*.button-style {*/
+/*    padding: 0.3rem 0.5rem;*/
+/*    border: 1px solid rgba(var(--accent), 55%);*/
+/*    transition: all 0.2s ease-in-out;*/
+/*    font: inherit;*/
+/*}*/
 
-.wrapper.center {
-    @apply mx-auto overflow-x-hidden;
-}
+/*button:hover,*/
+/*.button-style:not(.inactive):hover {*/
+/*    background-color: lavender;*/
+/*}*/
 
-button,
-.button-style {
-    padding: 0.3rem 0.5rem;
-    border: 1px solid rgba(var(--accent), 55%);
-    transition: all 0.2s ease-in-out;
-    font: inherit;
-    @apply block cursor-pointer
-    text-teal-400 bg-white
-}
+/*.button-style.inactive {*/
+/*    color: rgba(var(--accent), 50%);*/
+/*    cursor: not-allowed;*/
+/*    pointer-events: none;*/
+/*    opacity: 0.5;*/
+/*    border: rgb(var(--accent), 0%);*/
+/*}*/
 
-button:hover,
-.button-style:not(.inactive):hover {
-    background-color: lavender;
-}
+/*button:active {*/
+/*    background-color: rgb(var(--accent), 35%);*/
+/*    transform: translateY(-2px);*/
+/*}*/
 
-.button-style.inactive {
-    color: rgba(var(--accent), 50%);
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: 0.5;
-    border: rgb(var(--accent), 0%);
-}
+/*hr {*/
+/*    color: rgba(var(--accent), 20%);*/
+/*    width: 80%;*/
+/*}*/
 
-button:active {
-    background-color: rgb(var(--accent), 35%);
-    transform: translateY(-2px);
-}
+/*nav,*/
+/*.nav-buttons {*/
+/*    margin: 0 auto;*/
+/*    display: grid;*/
+/*    gap: 1rem;*/
+/*}*/
 
-hr {
-    color: rgba(var(--accent), 20%);
-    width: 80%;
-}
+/*.nav-buttons {*/
+/*    width: 10ch;*/
+/*}*/
 
-nav,
-.nav-buttons {
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-}
+/*ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
 
-.nav-buttons {
-    width: 10ch;
-}
+/*li + li:not( > aside) {*/
+/*    margin-block-start: 1rem;*/
+/*}*/
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li + li:not( > aside) {
-    margin-block-start: 1rem;
-}
-
-.m-center {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    margin-block-end: 1rem;
-}
+/*.m-center {*/
+/*    display: flex;*/
+/*    text-align: center;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin: 0 auto;*/
+/*    width: 100%;*/
+/*    margin-block-end: 1rem;*/
+/*}*/

@@ -1,13 +1,13 @@
 ---
-title: 'Words of Radiance'
-author: 'Brandon Sanderson'
-year: '2022'
-month: 'April'
+title: "Words of Radiance"
+author: "Brandon Sanderson"
+year: "2022"
+month: "April"
 score: 5
-image: './images/books22/wordsofradiance.jpg'
-heroimage: ['./images/books22/wordsofradiance3.jpg', 'full']
-extraimage: './images/books22/wordsofradiance2.jpg'
-genre: ['Fantasy', 'Epic Fantasy', 'Adult', 'Found Family']
+image: "./images/books22/wordsofradiance.jpg"
+heroimage: ["./images/books22/wordsofradiance3.jpg", "full"]
+extraimage: "./images/books22/wordsofradiance2.jpg"
+genre: ["Fantasy", "Epic Fantasy", "Adult", "Found Family"]
 ---
 
 I loved this book, same as I loved the previous one. I inhaled it after reading WoK (Way of Kings), and read it within a week! A thousand-pages book! I guess I was really into it.

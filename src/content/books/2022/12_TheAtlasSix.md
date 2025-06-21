@@ -1,11 +1,11 @@
 ---
-title: 'The Atlas Six'
-author: 'Olivie Blake'
-year: '2022'
-month: 'June'
+title: "The Atlas Six"
+author: "Olivie Blake"
+year: "2022"
+month: "June"
 score: 1.5
-image: './images/books22/atlassix.jpg'
-genre: ['New Adult', 'Fantasy', 'Urban Fantasy', 'Dark Academia']
+image: "./images/books22/atlassix.jpg"
+genre: ["New Adult", "Fantasy", "Urban Fantasy", "Dark Academia"]
 ---
 
 I don't know. I was curious about this book - I heard a lot about it, the synopsis sounded like there were cool characters, I saw a lot of great art... and well, I never read anything related to Dark Academia. It didn't sound like a bad place to find out about this new "genre". From what I can gather, it revolved on mostly magical schools, libraries, but darker, with higher stakes, and a somewhat classic and gothic feel, which all sounded very cool. Like Harry Potter (the books) on steroids XD. On paper, at least with this book.

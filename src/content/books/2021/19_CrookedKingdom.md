@@ -1,11 +1,11 @@
 ---
-title: 'Crooked Kingdom'
-author: 'Leigh Bardugo'
+title: "Crooked Kingdom"
+author: "Leigh Bardugo"
 year: 2021
-month: 'November'
+month: "November"
 score: 3
-image: './images/books21/crookedkingdom.jpg'
-genre: ['Young Adult', 'Found Family', 'Heist', 'Fantasy']
+image: "./images/books21/crookedkingdom.jpg"
+genre: ["Young Adult", "Found Family", "Heist", "Fantasy"]
 ---
 
 Livro 2 de Six of Crows. Tem definitivamente momentos ótimos, mas não chega aos pés do primeiro, na minha opinião. Tudo aqui, a impressão é que foi aumentado e exagerado, o que pode até ser legal se eu não pensar muito. Mas pra mim algumas coisas ficaram meio mal resolvidas, mal explicadas, ou mal desenvolvidas.

@@ -1,11 +1,11 @@
 ---
-title: 'How It Unfolds'
-author: 'James S. A. Corey'
-year: '2023'
-month: 'November'
+title: "How It Unfolds"
+author: "James S. A. Corey"
+year: "2023"
+month: "November"
 score: 3.5
-image: './images/books23/howitunfolds.jpg'
-genre: ['Science Fiction', 'Space', 'Short Stories', 'Novella', 'Philosophy']
+image: "./images/books23/howitunfolds.jpg"
+genre: ["Science Fiction", "Space", "Short Stories", "Novella", "Philosophy"]
 ---
 
 Part of the Far Reaches collection.

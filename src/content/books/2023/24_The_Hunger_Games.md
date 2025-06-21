@@ -1,11 +1,11 @@
 ---
-title: 'The Hunger Games'
-author: 'Suzanne Collins'
-year: '2023'
-month: 'December'
+title: "The Hunger Games"
+author: "Suzanne Collins"
+year: "2023"
+month: "December"
 score: 3.75
-image: './images/books23/hungergames.jpg'
-genre: ['Dystopia', 'Young Adult', 'Post Apocalyptic', 'Fiction', 'Romance', 'Teen']
+image: "./images/books23/hungergames.jpg"
+genre: ["Dystopia", "Young Adult", "Post Apocalyptic", "Fiction", "Romance", "Teen"]
 ---
 
 > “You don’t forget the face of the person who was your last hope.”

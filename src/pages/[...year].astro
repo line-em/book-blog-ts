@@ -1,19 +1,20 @@
 ---
-import GridImage from '../components/GridImage.astro'
-import BookGrid from '../layouts/BookGrid.astro'
-import { validYears } from '../content/config'
-import Layout from '../layouts/Layout.astro'
+import GridImage from "../components/GridImage.astro";
+import { validYears } from "../content/config";
+import Layout from "../layouts/Layout.astro";
+import Sidebar from "../components/Layout/Sidebar.astro";
 
 export async function getStaticPaths() {
-	return validYears.map((year) => ({
-		params: { year: year }
-	}))
+  return validYears.map(year => ({
+    params: { year: year },
+  }));
 }
-const { year } = Astro.params
+const { year } = Astro.params;
+console.log(Astro.params);
 ---
 
-<Layout title={`Books from ${Number(year)}`} transition:name={`${year} books`}>
-	<BookGrid year={Number(year)}>
-		<GridImage year={Number(year)} />
-	</BookGrid>
+<Layout title={`Books from ${Number(year)}`}>
+  <Sidebar currentYear={Number(year)} />
+
+  <GridImage year={Number(year)} />
 </Layout>

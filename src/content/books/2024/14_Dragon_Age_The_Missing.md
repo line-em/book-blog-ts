@@ -1,11 +1,11 @@
 ---
-title: 'Dragon Age: The Missing'
-author: 'George Mann, Kieran McKeown and more'
-year: '2024'
-month: 'August'
+title: "Dragon Age: The Missing"
+author: "George Mann, Kieran McKeown and more"
+year: "2024"
+month: "August"
 score: 2.5
-image: './images/themissing.jpg'
-genre: ["Video Games", 'Fantasy', 'Comic', "Magic"]
+image: "./images/themissing.jpg"
+genre: ["Video Games", "Fantasy", "Comic", "Magic"]
 ---
 
 Maybe this is officially a **Dragon Age Summer**? 🤣

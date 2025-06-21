@@ -1,13 +1,13 @@
 ---
-title: 'Carmilla'
-author: 'J. Sheridan Le Fanu'
-year: '2023'
-month: 'May'
+title: "Carmilla"
+author: "J. Sheridan Le Fanu"
+year: "2023"
+month: "May"
 score: 3.5
-image: './images/books23/carmilla.jpg'
-heroimage: ['./images/books23/carmilla2.jpg', 'full']
+image: "./images/books23/carmilla.jpg"
+heroimage: ["./images/books23/carmilla2.jpg", "full"]
 genre:
-  ['Vampire', 'Gothic', 'Fiction', 'Fantasy', 'Queer', 'Horror', 'Historical Fiction', 'Classic']
+  ["Vampire", "Gothic", "Fiction", "Fantasy", "Queer", "Horror", "Historical Fiction", "Classic"]
 ---
 
 > “You will think me cruel, very selfish, but love is always selfish; the more ardent the more selfish. How jealous I am you cannot know. You must come with me, loving me, to death; or else hate me, and still come with me, and hating me through death and after. There is no such word as indifference in my apathetic nature.”

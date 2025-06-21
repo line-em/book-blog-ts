@@ -1,12 +1,12 @@
 ---
-title: 'The Tainted Cup'
-author: 'Robert Jackson Bennett'
-year: '2025'
-month: 'March'
+title: "The Tainted Cup"
+author: "Robert Jackson Bennett"
+year: "2025"
+month: "March"
 score: 5
-image: './images/taintedcup.jpg'
-genre: ["Fantasy", "Mystery", "Fiction", "Magic", "Adult", "Crime", "Thriller" ]
-heroimage: ['./images/taintedcup2.jpg', 'full']
+image: "./images/taintedcup.jpg"
+genre: ["Fantasy", "Mystery", "Fiction", "Magic", "Adult", "Crime", "Thriller"]
+heroimage: ["./images/taintedcup2.jpg", "full"]
 ---
 
 > “And when the Empire is weak, it is often because a powerful few have denied us the abundance of our people.”
@@ -19,7 +19,7 @@ And so, The Tainted Cup appeared on my radar. Fantasy, check. Murder Mystery, ch
 
 > “Oh, people love the Legion, with their swords and their walls and their bombards. But though they receive no worship, it’s the maintenance folk who keep the Empire going. Someone, after all, must do the undignified labor to keep the grand works of our era from tumbling down.”
 
-There's no romance between the leads - which, good God, is refreshing! And they're both interesting in their own right. Their quirks, personalities - but also the bond they share, the secrets shared (and not), it was delightful. 
+There's no romance between the leads - which, good God, is refreshing! And they're both interesting in their own right. Their quirks, personalities - but also the bond they share, the secrets shared (and not), it was delightful.
 
 And the world? The world in pretty cool and creepy, always on edge. It made me think of Attack on Titan, maybe because The Empire resides between walls - and the further in, the more prestigious life is supposed to be. The wet season comes - and it always comes - and the walls have a real risk of falling apart.
 
@@ -35,4 +35,4 @@ Being a murder mystery book, I think it's best to leave it at that! But it was r
 
 I can't wait to follow up with A Drop of Corruption, which I'm saving for my trip! But yeah. For lovers of fantasy and mysteries, this is definitively a must read.
 
-> “Civilization is often a task that is only barely managed. But harden your heart and slow your blood. The towers of justice are built one brick at a time. We have more to build yet.” 
+> “Civilization is often a task that is only barely managed. But harden your heart and slow your blood. The towers of justice are built one brick at a time. We have more to build yet.”

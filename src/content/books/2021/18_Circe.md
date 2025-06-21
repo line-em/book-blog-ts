@@ -1,11 +1,11 @@
 ---
-title: 'Circe'
-author: 'Madeline Miller'
+title: "Circe"
+author: "Madeline Miller"
 year: 2021
-month: 'October'
+month: "October"
 score: 5
-image: './images/books21/circe.jpg'
-genre: ['Mythology', 'Greek', 'Retelling', 'Fantasy', 'Fiction']
+image: "./images/books21/circe.jpg"
+genre: ["Mythology", "Greek", "Retelling", "Fantasy", "Fiction"]
 ---
 
 > “But in a solitary life, there are rare moments when another soul dips near yours, as stars once a year brush the earth. Such a constellation was he to me.”

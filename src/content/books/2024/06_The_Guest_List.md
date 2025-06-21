@@ -1,11 +1,11 @@
 ---
-title: 'The Guest List'
-author: 'Lucy Fowley'
-year: '2024'
-month: 'March'
+title: "The Guest List"
+author: "Lucy Fowley"
+year: "2024"
+month: "March"
 score: 3
-image: './images/guestlist.jpg'
-genre: ['Mystery', 'Thriller', 'Suspense', 'Crime', 'Contemporary']
+image: "./images/guestlist.jpg"
+genre: ["Mystery", "Thriller", "Suspense", "Crime", "Contemporary"]
 ---
 
 > “And I'm not worried about it being haunted. I have my own ghosts. I carry them with me wherever I go.”

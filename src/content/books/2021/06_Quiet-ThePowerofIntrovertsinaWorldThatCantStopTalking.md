@@ -1,11 +1,11 @@
 ---
 title: "Quiet: The Power of Introverts in a World That Can't Stop Talking"
-author: 'Susan Cain'
+author: "Susan Cain"
 year: 2021
-month: 'March'
+month: "March"
 score: 4
-image: './images/books21/quiet.jpg'
-genre: ['Non Fiction', 'Personality']
+image: "./images/books21/quiet.jpg"
+genre: ["Non Fiction", "Personality"]
 ---
 
 > “Introversion- along with its cousins sensitivity, seriousness, and shyness- is now a second-class personality trait, somewhere between a disappointment and a pathology. Introverts living in the Extrovert Ideal are like women in a man's world, discounted because of a trait that goes to the core of who they are. Extroversion is an enormously appealing personality style, but we've turned it into an oppressive standard to which most of us feel we must conform.”

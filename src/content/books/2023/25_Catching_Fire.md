@@ -1,11 +1,11 @@
 ---
-title: 'Catching Fire'
-author: 'Suzanne Collins'
-year: '2023'
-month: 'December'
+title: "Catching Fire"
+author: "Suzanne Collins"
+year: "2023"
+month: "December"
 score: 3.75
-image: './images/books23/catchingfire.jpg'
-genre: ['Dystopia', 'Young Adult', 'Post Apocalyptic', 'Fiction', 'Romance', 'Teen']
+image: "./images/books23/catchingfire.jpg"
+genre: ["Dystopia", "Young Adult", "Post Apocalyptic", "Fiction", "Romance", "Teen"]
 ---
 
 > “So it's you and a syringe against the Capitol? See, this is why no one lets you make the plans.”

@@ -1,20 +1,20 @@
 ---
-title: 'You Deserve Each Other'
-author: 'Sarah Hogle'
-year: '2022'
-month: 'December'
+title: "You Deserve Each Other"
+author: "Sarah Hogle"
+year: "2022"
+month: "December"
 score: 4
-image: './images/books22/youdeserveeachother.jpg'
+image: "./images/books22/youdeserveeachother.jpg"
 genre:
   [
-    'Romance',
-    'ChickLit',
-    'Enemies to Lovers',
-    'Humor',
-    'Adult',
-    'Contemporary',
-    'Marriage',
-    'Slice of Life'
+    "Romance",
+    "ChickLit",
+    "Enemies to Lovers",
+    "Humor",
+    "Adult",
+    "Contemporary",
+    "Marriage",
+    "Slice of Life",
   ]
 ---
 

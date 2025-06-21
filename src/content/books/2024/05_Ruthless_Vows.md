@@ -1,11 +1,11 @@
 ---
-title: 'Ruthless Vows'
-author: 'Rebecca Ross'
-year: '2024'
-month: 'February'
+title: "Ruthless Vows"
+author: "Rebecca Ross"
+year: "2024"
+month: "February"
 score: 3.75
-image: './images/ruthlessvows.jpg'
-genre: ['Young Adult', 'New Adult', 'Fantasy', 'Romance']
+image: "./images/ruthlessvows.jpg"
+genre: ["Young Adult", "New Adult", "Fantasy", "Romance"]
 ---
 
 > “Write me a story where there is no ending, Kitt. Write to me and fill my empty spaces.”

@@ -1,11 +1,11 @@
 ---
-title: 'Uprooted'
-author: 'Naomi Novak'
+title: "Uprooted"
+author: "Naomi Novak"
 year: 2021
-month: 'July'
+month: "July"
 score: 1
-image: './images/books21/uprooted.jpg'
-genre: ['Fantasy', 'Young Adult']
+image: "./images/books21/uprooted.jpg"
+genre: ["Fantasy", "Young Adult"]
 ---
 
 **Disappointing.**

@@ -1,11 +1,11 @@
 ---
-title: 'Fourth Wing'
-author: 'Rebecca Yarros'
-year: '2023'
-month: 'June'
+title: "Fourth Wing"
+author: "Rebecca Yarros"
+year: "2023"
+month: "June"
 score: 3
-image: './images/books23/fourthwing.jpg'
-genre: ['Dragons', 'Young Adult', 'New Adult', 'Fantasy', 'Romance']
+image: "./images/books23/fourthwing.jpg"
+genre: ["Dragons", "Young Adult", "New Adult", "Fantasy", "Romance"]
 ---
 
 This was a different experience than many of the previous entries at this blog, and maybe that's why it's rated so high, despite a lot of pet peeves I had: I buddy read with a friend! And, honestly, everything turns out better when doing it together... even if you're complaining and stuff 🤣

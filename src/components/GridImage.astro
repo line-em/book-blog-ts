@@ -3,6 +3,7 @@ import { getStars } from "../utils/rating";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import { listAllGenres } from "../utils/genres";
+import { fade, slide } from "astro:transitions";
 
 export interface Props {
   year?: number;
@@ -15,45 +16,44 @@ let allBooks = await getCollection("books");
 if (year) allBooks = await getCollection("books", ({ data }) => Number(data.year) === year);
 ---
 
-<section class="wrapper img-grid">
+<main
+  class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 justify-center p-6 mx-6 lg:mx-12"
+>
   {
     allBooks.map(book => {
       return (
         <a
+          transition:animate={fade({ duration: "0.4s" })}
+          transition:name={`book-${book?.data.title}`}
           href={`/${book?.slug}`}
-          class="flex flex-col bg-white sm:shadow-sm rounded-xl relative hover:sm:shadow-md p-4 sm:p-2"
+          class="flex flex-col bg-slate-50 sm:shadow-sm rounded-xl relative duration-300 hover:sm:shadow-md p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
         >
-          <div class="overflow-hidden rounded-xl">
+          <div class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-sm">
             <Image
               src={book && book?.data.image}
               alt={book?.data.title}
-              width={300}
-              height={350}
+              width={200}
+              height={250}
               format="webp"
               quality={"high"}
               loading="lazy"
-              class="w-full h-auto rounded-xl"
+              class="h-auto rounded-xl w-[200px] object-cover"
             />
           </div>
           <aside class="sm:absolute mt-2 sm:mt-0 justify-center sm:-right-3 top-1 z-20 flex gap-1">
-            <div class="bg-zinc-400 text-xs text-white px-2 py-1 rounded-md shadow-sm">
+            <div class="bg-ctp-teal-100 text-xs text-white px-2 py-1 rounded-md shadow-sm">
               {book?.data.year}
             </div>
-            <div class="bg-violet-400 text-xs text-white px-2 py-1 rounded-md shadow-sm">
+            <div class="bg-ctp-rosewater-400 text-xs text-white px-2 py-1 rounded-md shadow-sm">
               {book?.data?.genre[0]}
             </div>
           </aside>
-          <div class="py-2 items-center sm:pb-4 flex flex-col sm:gap-3 w-full flex-1 relative">
-            <h3 class="font-bold text-zinc-700 sm:line-clamp-2 flex-1 items-center">
-              {book?.data.title}
-            </h3>
-            <span
-              set:html={getStars(book?.data.score)}
-              class="flex max-w-1/5 book-grid-rating sm:mt-0"
-            />
-          </div>
+          <h3 class="text-xl my-2 sm:line-clamp-2 items-center whitespace-normal">
+            {book?.data.title}
+          </h3>
+          <span set:html={getStars(book?.data.score)} class="flex mt-auto" />
         </a>
       );
     })
   }
-</section>
+</main>

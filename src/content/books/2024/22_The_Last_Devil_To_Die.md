@@ -1,18 +1,18 @@
 ---
-title: 'The Last Devil To Die'
-author: 'Richard Osman'
-year: '2024'
-month: 'November'
+title: "The Last Devil To Die"
+author: "Richard Osman"
+year: "2024"
+month: "November"
 score: 4.5
-image: './images/thelastdeviltodie.jpg'
-genre: ['Thriller', 'Mystery', 'Detective', 'Cozy Mystery', 'Cozy', 'Found Family', 'Humor']
+image: "./images/thelastdeviltodie.jpg"
+genre: ["Thriller", "Mystery", "Detective", "Cozy Mystery", "Cozy", "Found Family", "Humor"]
 ---
 
-> “Days of death are days when we weigh our relationship with love in our bare hands. Days when we remember what has gone, and fear what is to come. The joy love brings, and the price we pay. When we give thanks but also pray for mercy.” 
+> “Days of death are days when we weigh our relationship with love in our bare hands. Days when we remember what has gone, and fear what is to come. The joy love brings, and the price we pay. When we give thanks but also pray for mercy.”
 
 This book was sweet and sad. As always, I found the mystery to be on the lackluster side (I was suspecting the correct culprits for half the book), but where this book shines is on the characters, their relationships, etc. And this part was very, very good in this entry. ❤️
 
-I find a lot of joy in the characters, specially Joyce’s POV. It all feels very tender. I also love the community as a whole - they have the “Bob of the computers”, they found a way to celebrate New Years’ Eve in time for a good night’s sleep, and so on. A lot of nice little things like that that put a smile on my face! There are a lot o quips and interactions like those. The brevity and light-hearted interactions, I think, is what makes this truly cozy, and lessens the weight that a book such as this could have. Specially  this one.
+I find a lot of joy in the characters, specially Joyce’s POV. It all feels very tender. I also love the community as a whole - they have the “Bob of the computers”, they found a way to celebrate New Years’ Eve in time for a good night’s sleep, and so on. A lot of nice little things like that that put a smile on my face! There are a lot o quips and interactions like those. The brevity and light-hearted interactions, I think, is what makes this truly cozy, and lessens the weight that a book such as this could have. Specially this one.
 
 > “Everyone who dies is alive. We call people "dead" because we need a word for it, but "dead" just means that time has stopped moving forward for that person? You understand? No one dies, not really.”
 > (...)

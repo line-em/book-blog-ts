@@ -1,11 +1,11 @@
 ---
-title: 'Void'
-author: 'Veronica Roth'
-year: '2023'
-month: 'November'
+title: "Void"
+author: "Veronica Roth"
+year: "2023"
+month: "November"
 score: 4
-image: './images/books23/void.jpg'
-genre: ['Science Fiction', 'Space', 'Short Stories', 'Novella', 'Murder Mystery']
+image: "./images/books23/void.jpg"
+genre: ["Science Fiction", "Space", "Short Stories", "Novella", "Murder Mystery"]
 ---
 
 Part of the Far Reaches collection.

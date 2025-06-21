@@ -1,11 +1,11 @@
 ---
-title: 'Starter Villain'
-author: 'John Scalzi'
-year: '2024'
-month: 'April'
+title: "Starter Villain"
+author: "John Scalzi"
+year: "2024"
+month: "April"
 score: 3.75
-image: './images/startervillain.jpg'
-genre: ['Science Fiction', 'Humor', 'Cats', 'Fantasy', 'Contemporary', 'Comedy']
+image: "./images/startervillain.jpg"
+genre: ["Science Fiction", "Humor", "Cats", "Fantasy", "Contemporary", "Comedy"]
 ---
 
 > “I expected the members of Earth’s leading society of villains to be smarter,” I said.

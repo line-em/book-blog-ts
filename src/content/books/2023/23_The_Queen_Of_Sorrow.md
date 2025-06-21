@@ -1,11 +1,11 @@
 ---
-title: 'The Queen of Sorrow'
-author: 'Sarah Beth Durst'
-year: '2023'
-month: 'November'
+title: "The Queen of Sorrow"
+author: "Sarah Beth Durst"
+year: "2023"
+month: "November"
 score: 3.5
-image: './images/books23/queenofsorrow.jpg'
-genre: ['Fantasy', 'Young Adult', 'Adult Fantasy', 'Adventure', 'Magic', 'Nature']
+image: "./images/books23/queenofsorrow.jpg"
+genre: ["Fantasy", "Young Adult", "Adult Fantasy", "Adventure", "Magic", "Nature"]
 ---
 
 So, I did it! I finished this trilogy. All in all, it was plenty fun! 😊

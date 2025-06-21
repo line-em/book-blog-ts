@@ -1,11 +1,11 @@
 ---
-title: 'Gone Girl'
-author: 'Gillian Flynn'
-year: '2024'
-month: 'March'
+title: "Gone Girl"
+author: "Gillian Flynn"
+year: "2024"
+month: "March"
 score: 3.75
-image: './images/gonegirl.jpg'
-genre: ['Fiction', 'Mystery', 'Thriller', 'Crime', 'Suspense', 'Contemporary']
+image: "./images/gonegirl.jpg"
+genre: ["Fiction", "Mystery", "Thriller", "Crime", "Suspense", "Contemporary"]
 ---
 
 > “My gosh, Nick, why are you so wonderful to me?'

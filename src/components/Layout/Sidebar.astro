@@ -1,9 +1,12 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import ReadingStats from "../../layouts/ReadingStats.astro";
-import YearButtons from "../YearButtons";
 import { getBooks } from "../../utils/getBooks";
-import BookInfo from "../BookInfo.astro";
+import GradientText from "../GradientText.astro";
+import Link from "../Link.astro";
+import { validYears } from "@/content/config";
+import { BookOpenTextIcon } from "@phosphor-icons/react/dist/ssr/BookOpenText";
+import { BooksIcon } from "@phosphor-icons/react";
 
 export interface Props {
   currentYear?: number;
@@ -11,33 +14,40 @@ export interface Props {
   bookInfo?: any;
 }
 
-const { currentYear, isReview, bookInfo } = Astro.props;
+const { currentYear, isReview } = Astro.props;
 
 const books: CollectionEntry<"books">[] = currentYear
   ? await getBooks(currentYear)
   : await getBooks();
+console.log(currentYear);
 ---
 
 <aside
-  class="flex flex-col items-start self-start lg:sticky top-10 py-1 mx-6 sm:mx-0 sm:!pl-6 overflow-y-auto"
+  class="p-6 flex gap-6 bg-ctp-rosewater-50/20 rounded-t-xl mb-12 flex-wrap space-between shadow-md"
 >
-  <h1 class="text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-8">
-    <span class="text-gradient !inline sm:!block">
-      {currentYear ? `${currentYear}` : "Yearly"}
-    </span>{" "}
+  <h1 class="text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-8 flex text-center gap-2 items-center">
+    <BooksIcon
+    size={32}
+    color="var(--catppuccin-color-teal-300)"
+    weight="duotone"
+  />
+    <GradientText text={isReview ? "Review" : currentYear ? `${currentYear}` : "Yearly"} />
     Books
   </h1>
-  <nav
-    class="flex sm:flex-col items-stretch justify-between w-full sm:gap-4 mb-4 sm:mb-8 flex-wrap"
-  >
-    <YearButtons currentYear={currentYear} isReview={isReview} />
-  </nav>
-  <ReadingStats books={books} mini={true} />
-  {
-    bookInfo && (
-      <aside class="items-center hidden sm:flex sm:flex-col sm:gap-4 lg:hidden mt-4 p-4 bg-slate-50 shadow-sm rounded-xl">
-        <BookInfo {...bookInfo} />
-      </aside>
-    )
-  }
+  <div class={"flex gap-2 sm:gap-6 mx-auto flex-wrap"}>
+    <Link disabled={currentYear === 0} url={`/index.html`} text={"All Books"} />
+    {
+      validYears.map((curr: number) => (
+        <Link disabled={currentYear === curr} url={`/${Number(curr)}`} text={curr.toString()}>
+          <BookOpenTextIcon
+            size={24}
+            color="var(--catppuccin-color-teal-300)"
+            weight="duotone"
+            className="hidden sm:flex"
+          />
+        </Link>
+      ))
+    }
+  </div>
+  {!isReview && <ReadingStats books={books} mini={true} />}
 </aside>

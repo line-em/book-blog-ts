@@ -1,11 +1,11 @@
 ---
-title: 'The Thief'
-author: 'Megan Whalen Turner'
+title: "The Thief"
+author: "Megan Whalen Turner"
 year: 2021
-month: 'February'
+month: "February"
 score: 4
-image: './images/books21/thethief.jpg'
-genre: ['Young Adult', 'Fantasy', 'Adventure']
+image: "./images/books21/thethief.jpg"
+genre: ["Young Adult", "Fantasy", "Adventure"]
 ---
 
 Page turning for sure, and I loved the twists and how it all made a lot of sense in the end! Can't wait to read the next one in the series.

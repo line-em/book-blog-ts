@@ -1,11 +1,11 @@
 ---
-title: 'The Daughter of Doctor Moreau'
-author: 'Silvia Moreno Garcia'
-year: '2024'
-month: 'February'
+title: "The Daughter of Doctor Moreau"
+author: "Silvia Moreno Garcia"
+year: "2024"
+month: "February"
 score: 3.5
-image: './images/daughtermoreau.jpg'
-genre: ['Gothic', 'Historical Fiction', 'Retelling', 'Fantasy', 'Magical Realism']
+image: "./images/daughtermoreau.jpg"
+genre: ["Gothic", "Historical Fiction", "Retelling", "Fantasy", "Magical Realism"]
 ---
 
 > “Everywhere Montgomery had been he’d spied the same misery under a different guise. In England it was in the factories, in Latin America it was in the fields. There was always someone with a little more money, a little more power, and he owned you.”

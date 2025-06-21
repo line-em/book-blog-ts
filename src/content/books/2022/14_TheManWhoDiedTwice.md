@@ -1,11 +1,11 @@
 ---
-title: 'The Man Who Died Twice'
-author: 'Richard Osman'
-year: '2022'
-month: 'July'
+title: "The Man Who Died Twice"
+author: "Richard Osman"
+year: "2022"
+month: "July"
 score: 5
-image: './images/books22/themanwhodiedtwice.jpg'
-genre: ['Thriller', 'Mystery', 'Detective', 'Cozy Mystery', 'Cozy', 'Found Family', 'Humor']
+image: "./images/books22/themanwhodiedtwice.jpg"
+genre: ["Thriller", "Mystery", "Detective", "Cozy Mystery", "Cozy", "Found Family", "Humor"]
 ---
 
 > _“More women are murdering people these days,” says Joyce. “If you ignore the context, it is a real sign of progress.”_

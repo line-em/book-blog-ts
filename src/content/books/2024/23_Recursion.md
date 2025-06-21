@@ -1,14 +1,14 @@
 ---
-title: 'Recursion'
-author: 'Blake Crouch'
-year: '2024'
-month: 'December'
+title: "Recursion"
+author: "Blake Crouch"
+year: "2024"
+month: "December"
 score: 3
-image: './images/recursion.jpg'
-genre: ['Thriller', 'Mystery', 'Time Travel', 'Science Fiction']
+image: "./images/recursion.jpg"
+genre: ["Thriller", "Mystery", "Time Travel", "Science Fiction"]
 ---
 
-> “Life can only be understood backwards; but it must be lived forwards. —SØREN KIERKEGAARD” 
+> “Life can only be understood backwards; but it must be lived forwards. —SØREN KIERKEGAARD”
 
 Alright... Let's begin by saying I was really excited about this book, and its writer. I believe I will give him a second chance with Dark Matter, however.
 
@@ -28,6 +28,6 @@ However, here comes a caveat: when the timelines reach the same "point", people 
 
 While this was... in a lesser scale, I guess it worked better for me. However, it turned world dangerous real quick - and while it made sense, it felt very draining. I knew the characters wouldn't die - they'd just go back in time. And everytime people would recover their memories to bad and expected consequences, they were conveniently away from the tech that would send them back in time. And they always _knew_ when it would happen, because our main characters spend most of the book in a loop trying to prevent this whole tech to even being created.
 
-So, this felt at the same time like too much, and too repetitive. There were good glimpses and good parts throughout. One instance for me is the whole timeline in which Helena had died. She pain and effort finally catching up to her, and the whole connection and desperation that surrounded them. 
+So, this felt at the same time like too much, and too repetitive. There were good glimpses and good parts throughout. One instance for me is the whole timeline in which Helena had died. She pain and effort finally catching up to her, and the whole connection and desperation that surrounded them.
 
 But yeah. In a way, this was a bit of a letdown. It mixed a lot of things I enjoy, had a really strong beginning - but ultimately, failed to grip me.

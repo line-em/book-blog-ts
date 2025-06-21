@@ -1,11 +1,11 @@
 ---
-title: 'The Housemaid'
-author: 'Freida McFadden'
-year: '2024'
-month: 'August'
+title: "The Housemaid"
+author: "Freida McFadden"
+year: "2024"
+month: "August"
 score: 3
-image: './images/thehousemaid.jpg'
-genre: ['Thriller', "Mystery", "Suspense"]
+image: "./images/thehousemaid.jpg"
+genre: ["Thriller", "Mystery", "Suspense"]
 ---
 
 I read a review that mentioned this was a **popcorn thriller**, and I guess this summarizes my feelings a little bit! This is not exactly complex or profound - but somehow it keeps you glued to the screen/book.

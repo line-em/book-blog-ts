@@ -1,11 +1,11 @@
 ---
-title: 'Sense and Sensibility'
-author: 'Jane Austen'
+title: "Sense and Sensibility"
+author: "Jane Austen"
 year: 2021
-month: 'April'
+month: "April"
 score: 4
-image: './images/books21/senseandsensibility.jpg'
-genre: ['Romance', 'Historical Fiction']
+image: "./images/books21/senseandsensibility.jpg"
+genre: ["Romance", "Historical Fiction"]
 ---
 
 Beautiful writing like every novel written by Austen, and the Dashwoods are so precious - I love their family and sisterly bond, and other characters like Mrs Jennings are a gem.

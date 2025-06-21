@@ -1,14 +1,15 @@
 ---
-title: 'Truthwitch'
-author: 'Susan Dennard'
-year: '2024'
-month: 'September'
+title: "Truthwitch"
+author: "Susan Dennard"
+year: "2024"
+month: "September"
 score: 3
-image: './images/truthwitch.jpg'
-genre: ['Young Adult', 'New Adult', 'Fantasy', 'Romance']
+image: "./images/truthwitch.jpg"
+genre: ["Young Adult", "New Adult", "Fantasy", "Romance"]
 ---
 
 This book is actually a re-read - and one I slightly struggle to remember _why_ exactly I made a re-read, as it was sort of a impulse decision. I can gather 3 thoughts that breezed on my mind on and off in the meanwhile:
+
 - I heard some comments about the ball scene (that I barely remembered), and I wanted to see what I missed the first time around.
 - There's two characters I'm curious about their whereabouts and shenaningans, but I needed context to get there.
 - I wanted a light book that wouldn't stress me out too much.

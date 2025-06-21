@@ -1,11 +1,11 @@
 ---
 title: "The Traitor's Kiss"
-author: 'Erin Beaty'
-year: '2023'
-month: 'September'
+author: "Erin Beaty"
+year: "2023"
+month: "September"
 score: 3
-image: './images/books23/traitorskiss.jpg'
-genre: ['Fantasy', 'Young Adult', 'Romance', 'Adventure', 'Spy? Sorta?']
+image: "./images/books23/traitorskiss.jpg"
+genre: ["Fantasy", "Young Adult", "Romance", "Adventure", "Spy? Sorta?"]
 ---
 
 I kinda marathoned this book in one day - which was fun, I admit. I was so slow while trying to read The Assassin's Apprentice by Robin Hobb - which I guess I will DNF for now, at least - that it was _nice_ to actually read something intensely, like, I still got it, in a way!

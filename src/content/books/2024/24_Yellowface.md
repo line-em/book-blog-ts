@@ -1,11 +1,11 @@
 ---
-title: 'Yellowface'
-author: 'R. F. Kuang'
-year: '2024'
-month: 'December'
+title: "Yellowface"
+author: "R. F. Kuang"
+year: "2024"
+month: "December"
 score: 4.5
-image: './images/yellowface.jpg'
-genre: ['Thriller', 'Fiction', 'Contemporary', 'Satire']
+image: "./images/yellowface.jpg"
+genre: ["Thriller", "Fiction", "Contemporary", "Satire"]
 ---
 
 > “The truth is fluid, there is always another way to spin the story.”
@@ -20,7 +20,7 @@ The book starts with our protagonist, June, meeting with Athena, her successful 
 
 > "The hardest part is keeping track of all the characters. We change almost a dozen names to reduce confusion. Two different characters have the last name Zhang, and four have the last name Li. Athena differentiates them by giving them different first names, which she only occasionally uses, and other names that I assume are nicknames (A Geng, A Zhu; unless A is a last name and I’m missing something), or Da Liu and Xiao Liu, which throws me for a loop because I thought Liu was a last name, so what are Da and Xiao doing there? Why are so many of the female characters named Xiao as well? And if they’re family names, does that mean everyone is related? Is this a novel about incest? But the easy fix is to give them all distinct monikers, and I spend hours scrolling through pages on Chinese history and baby name sites to find names that will be culturally appropriate."
 
-It's a story of plagiarism, but it isn't so simple. June is a complex character, as is Athena. For as though she dies in the first pages in the book, her presence lingers. The book that June stole? It is _success_. A haunting, huge success. June is not the same afterwards - and the ghost of Athena will follow her to the end. The book is so successful, it raises the fear of being discovered, as well as shining light in dozens of critiques here and there - about racism, the industry, the solitude, and so on. For instance, June, our protagonist, signed her first book as June _Hayward_. However, now that she is on a new "chapter" of her career, writing stories about the Chinese - well, why not call her Juniper _Song_? "We can always say it's a new name for a new era". 
+It's a story of plagiarism, but it isn't so simple. June is a complex character, as is Athena. For as though she dies in the first pages in the book, her presence lingers. The book that June stole? It is _success_. A haunting, huge success. June is not the same afterwards - and the ghost of Athena will follow her to the end. The book is so successful, it raises the fear of being discovered, as well as shining light in dozens of critiques here and there - about racism, the industry, the solitude, and so on. For instance, June, our protagonist, signed her first book as June _Hayward_. However, now that she is on a new "chapter" of her career, writing stories about the Chinese - well, why not call her Juniper _Song_? "We can always say it's a new name for a new era".
 
 > If publishing is rigged, you might as well make sure it’s rigged in your favor.
 
@@ -30,7 +30,7 @@ June and Athena friendship/rivalry is very well written.
 
 > “Every time she tried to branch out to new projects, they kept insisting that Asian was her brand, was what her audience expected. They never let her talk about anything other than being an immigrant, other than the fact that half her family died in Cambodia, that her dad killed himself on the twentieth anniversary of Tiananmen. Racial trauma sells, right? They treated her like a museum”
 
-My main criticism with this book, however, is with its ending. Though you could say it's like a circle, karma, and so on, it felt a little _lacking_, missing, or something like that. (Spoilers) June is a bit mad by the end, so it makes some sorta sense for her to be so careless in that situation, and reveal her secrets. But it feels a little fast by the end. We hear she is writing a rebuttal with her _own_ version of the facts, and she is sure it _will_ sell. But we _don't_ see it. 
+My main criticism with this book, however, is with its ending. Though you could say it's like a circle, karma, and so on, it felt a little _lacking_, missing, or something like that. (Spoilers) June is a bit mad by the end, so it makes some sorta sense for her to be so careless in that situation, and reveal her secrets. But it feels a little fast by the end. We hear she is writing a rebuttal with her _own_ version of the facts, and she is sure it _will_ sell. But we _don't_ see it.
 
 It's meant to be punchy and fast, and it is (quite literally). But I felt some emptiness, I don't know how to explain? I wish we got a few more pages right there. It doesn't ruin the book, though, even being _fast_, it still got meaning and all that jazz. I just felt it wasn't as good as the rest of the book for me, or at least it wasn't as satisfying. (Note: I'm not saying that June should have a good ending nor anything like that).
 

@@ -1,52 +1,58 @@
 ---
+import type { div } from "framer-motion/client";
 import { getStars } from "../utils/rating";
 import { Image } from "astro:assets";
 
 const { cover, score, year, month, genres, title } = Astro.props;
 ---
 
-<Image
-  src={cover}
-  alt={title}
-  class="w-full h-auto rounded-lg max-w-44 shadow-sm"
-  width={250}
-  height={350}
-  format="webp"
-  loading="lazy"
-  quality={"mid"}
-/>
-<span set:html={getStars(score)} class="flex" />
-<div class="grid grid-cols-2 sm:hidden">
-  <div>
-    <h3 class="mb-2 font-bold">Genres</h3>
-    <div class="flex gap-2 flex-wrap items-start">
-      {
-        genres?.map((genre: string) => (
-          <span class="bg-violet-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
-        ))
-      }
+<div
+  transition:name={`book-${title}`}
+  class="bg-slate-50 p-6 max-w-64 rounded-xl shadow flex flex-col items-center sticky top-2"
+>
+  <Image
+    src={cover}
+    alt={title}
+    class="w-full h-auto rounded-lg max-w-44 shadow-sm"
+    width={250}
+    height={350}
+    format="webp"
+    loading="lazy"
+    quality={"mid"}
+  />
+  <span set:html={getStars(score)} class="flex mt-3" />
+  <div class="grid grid-cols-2 sm:hidden">
+    <div>
+      <h3 class="mb-2 font-bold">Genres</h3>
+      <div class="flex gap-2 flex-wrap items-start">
+        {
+          genres?.map((genre: string) => (
+            <span class="bg-ctp-peach-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
+          ))
+        }
+      </div>
+    </div>
+    <div class="mx-auto">
+      <h3 class="mb-2 font-bold">Read on</h3>
+      <p>
+        {month}, {year}
+      </p>
     </div>
   </div>
-  <div class="mx-auto">
-    <h3 class="mb-2 font-bold">Read on</h3>
+
+  <div class="hidden sm:flex sm:flex-col gap-2 items-center">
+    <h3 class="font-bold">Read on</h3>
     <p>
       {month}, {year}
     </p>
-  </div>
-</div>
-
-<div class="hidden sm:flex sm:flex-col gap-2 items-center">
-  <h3 class="font-bold">Read on</h3>
-  <p>
-    {month}, {year}
-  </p>
-  <hr class="border border-b-zinc-400" />
-  <h3 class="font-bold">Genres</h3>
-  <div class="flex gap-2 flex-wrap items-start justify-center">
-    {
-      genres?.map((genre: string) => (
-        <span class="bg-violet-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
-      ))
-    }
+    <hr class="border border-b-zinc-400" />
+    <h3 class="font-bold">Genres</h3>
+    <div class="flex gap-2 flex-wrap items-start justify-center">
+      {
+        genres?.map((genre: string) => (
+          <span class="bg-ctp-peach-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
+        ))
+      }
+    </div>
   </div>
 </div>

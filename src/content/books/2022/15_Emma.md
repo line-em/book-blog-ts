@@ -1,11 +1,11 @@
 ---
-title: 'Emma'
-author: 'Jane Austen'
-year: '2022'
-month: 'September'
+title: "Emma"
+author: "Jane Austen"
+year: "2022"
+month: "September"
 score: 4
-image: './images/books22/emma.jpg'
-genre: ['Romance', 'Historical Fiction', 'Humor']
+image: "./images/books22/emma.jpg"
+genre: ["Romance", "Historical Fiction", "Humor"]
 ---
 
 This book… took me a while. Maybe I wasn’t particularly in the mood for this, maybe I needed to read a more upbeat modern book, or something… I don’t know. It is still Jane Austen, so it’s beautifully written. It provided more details that I hadn’t seen in the BBC series or the movies. It is delightful.

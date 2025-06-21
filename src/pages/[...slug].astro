@@ -1,12 +1,12 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
 import BookReview from "../layouts/BookReview.astro";
-import "../styles/bookpage.styles.css";
-import BookNav from "../components/BookNav.astro";
 import ExtraImages from "../components/ExtraImages.astro";
-import Lorem from "../components/Lorem.astro";
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import GradientText from "../components/GradientText.astro";
+import { PenNibIcon } from "@phosphor-icons/react";
+import Navigation from "@/components/Navigation.astro";
 
 export interface Props {
   entry: CollectionEntry<"books">;
@@ -38,19 +38,21 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
 let auth = true;
 ---
 
-<Layout title={title} transition:name={`${title} book`}>
+<Layout title={title}>
   <BookReview score={score} year={year} month={month} genres={genre} cover={image} title={title}>
-    <main class="wrapper center px-3 pt-3 my-8">
-      <nav class="m-center">
-        {prev && <BookNav slug={prev.slug} type="prev" />}
-        {prev && next && <span> | </span>}
-        {next && <BookNav slug={next.slug} type="next" />}
+    <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow">
+      <nav class="mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]">
+        {prev && <Navigation slug={prev.slug} type="prev" />}
+        {next && <Navigation slug={next.slug} type="next" />}
       </nav>
-      <h1 class="text-gradient leading-none">
-        {title}
-      </h1>
-      <h3>by {author}</h3>
-      <section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 prose max-w-[72ch] prose-teal">
+      <h1><GradientText text={title} /></h1>
+      <h3
+        class="text-lg font-bold text-ctp-rosewater-500 mx-auto flex gap-2 items-center justify-center max-w-[75ch]"
+      >
+        by {author}
+        <PenNibIcon size={24} color="var(--catppuccin-color-teal-300)" weight="duotone" />
+      </h3>
+      <section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal max-w-[75ch]">
         {
           heroimage && (
             <Image
@@ -65,7 +67,7 @@ let auth = true;
             />
           )
         }
-        {auth ? <Content /> : <Lorem />}
+        <Content />
         <ExtraImages
           extraImages={extraimages?.map(image => image)}
           extraImage={extraimage}

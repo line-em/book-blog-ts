@@ -1,11 +1,11 @@
 ---
-title: 'The Reluctant Queen'
-author: 'Sarah Beth Durst'
-year: '2023'
-month: 'November'
+title: "The Reluctant Queen"
+author: "Sarah Beth Durst"
+year: "2023"
+month: "November"
 score: 4.5
-image: './images/books23/reluctantqueen.jpg'
-genre: ['Fantasy', 'Young Adult', 'Adult Fantasy', 'Adventure', 'Magic', 'Nature']
+image: "./images/books23/reluctantqueen.jpg"
+genre: ["Fantasy", "Young Adult", "Adult Fantasy", "Adventure", "Magic", "Nature"]
 ---
 
 > “Don't confuse mercy for forgiveness.”

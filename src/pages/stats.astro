@@ -1,7 +1,6 @@
 ---
 import { CollectionEntry, getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
-import '../styles/global.css'
 import { validYears } from '../content/config'
 import {
 	getMostReadGenresByYear,
@@ -9,16 +8,18 @@ import {
 	getBooksByGenre,
 	getBooksByGenreAndYear
 } from '../utils/genres'
-import BookGrid from '../layouts/BookGrid.astro'
 import DonutChart from '../components/DonutChart'
 import ReadingStats from "../layouts/ReadingStats.astro";
+import Sidebar from "../components/Layout/Sidebar.astro";
+const { year } = Astro.props;
 
 const allBooks: CollectionEntry<'books'>[] = await getCollection('books')
 const genresByYear = getMostReadGenresByYear(allBooks, validYears)
 ---
 
 <Layout title="All Books" transition:name={`books`}>
-	<BookGrid>
+  <Sidebar currentYear={year} />
+
 		<section class="wrapper p-6 md:p-8 bg-gray-50 rounded-lg shadow-lg m-6">
 			<h2 class="text-3xl text-gradient font-bold">
 				Top 5 Genres by Year with Book Titles
@@ -47,7 +48,6 @@ const genresByYear = getMostReadGenresByYear(allBooks, validYears)
 				))}
 			</section>
 		</section>
-	</BookGrid>
 </Layout>
 <!--<div class="flex flex-col items-center gap-2 text-lg font-medium text-gray-700 dark:text-gray-300">-->
 <!--	<strong class="text-violet-600 dark:text-violet-400">{genre}</strong>-->

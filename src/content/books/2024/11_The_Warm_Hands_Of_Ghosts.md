@@ -1,11 +1,11 @@
 ---
-title: 'The Warm Hands Of Ghosts'
-author: 'Katherine Arden'
-year: '2024'
-month: 'June'
+title: "The Warm Hands Of Ghosts"
+author: "Katherine Arden"
+year: "2024"
+month: "June"
 score: 4
-image: './images/warmhands.jpg'
-genre: ['Young Adult', 'New Adult', 'Fantasy', 'Romance']
+image: "./images/warmhands.jpg"
+genre: ["Young Adult", "New Adult", "Fantasy", "Romance"]
 ---
 
 > “Armageddon was a fire in the harbor, a box delivered on a cold day. It wasn't one great tragedy,

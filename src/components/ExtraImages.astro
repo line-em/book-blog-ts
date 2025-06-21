@@ -1,52 +1,52 @@
 ---
-import { Image } from 'astro:assets'
+import { Image } from "astro:assets";
 
 export interface Props {
-	extraImage?: ImageMetadata | null
-	extraImages?: ImageMetadata[] | null
-	title: string
+  extraImage?: ImageMetadata | null;
+  extraImages?: ImageMetadata[] | null;
+  title: string;
 }
 
-const { extraImage, extraImages, title } = Astro.props
+const { extraImage, extraImages, title } = Astro.props;
 ---
 
 {
-	extraImage && (
-		<Image
-			src={extraImage}
-			alt={title}
-			class="image m-top m-center"
-			loading="lazy"
-			format="webp"
-			quality={'mid'}
-			width={1000}
-			height={400}
-		/>
-	)
+  extraImage && (
+    <Image
+      src={extraImage}
+      alt={title}
+      class="image m-top m-center"
+      loading="lazy"
+      format="webp"
+      quality={"mid"}
+      width={1000}
+      height={400}
+    />
+  )
 }
 {
-	extraImages && (
-		<div class="extra-images">
-			<Image
-				src={extraImages[0]}
-				alt={title}
-				class="image"
-				loading="lazy"
-				width={1000}
-				height={400}
-				format="webp"
-				quality={'mid'}
-			/>
-			<Image
-				src={extraImages[1]}
-				alt={title}
-				class="image"
-				width={1000}
-				loading="lazy"
-				format="webp"
-				height={400}
-				quality={'low'}
-			/>
-		</div>
-	)
+  extraImages && (
+    <div class="extra-images">
+      <Image
+        src={extraImages[0]}
+        alt={title}
+        class="image"
+        loading="lazy"
+        width={1000}
+        height={400}
+        format="webp"
+        quality={"mid"}
+      />
+      <Image
+        src={extraImages[1]}
+        alt={title}
+        class="image"
+        width={1000}
+        loading="lazy"
+        format="webp"
+        height={400}
+        quality={"low"}
+      />
+    </div>
+  )
 }

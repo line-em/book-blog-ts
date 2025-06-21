@@ -1,11 +1,11 @@
 ---
-title: 'Northanger Abbey'
-author: 'Jane Austen'
+title: "Northanger Abbey"
+author: "Jane Austen"
 year: 2021
-month: 'March'
+month: "March"
 score: 5
-image: './images/books21/northangerabbey.jpg'
-genre: ['Romance', 'Historical Fiction', 'Humor']
+image: "./images/books21/northangerabbey.jpg"
+genre: ["Romance", "Historical Fiction", "Humor"]
 ---
 
 > “There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature.” ― Jane Austen, Northanger Abbey

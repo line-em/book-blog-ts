@@ -1,11 +1,11 @@
 ---
-title: 'Bringing Down the Duke'
-author: 'Evie Dunmore'
-year: '2022'
-month: 'January'
+title: "Bringing Down the Duke"
+author: "Evie Dunmore"
+year: "2022"
+month: "January"
 score: 2
-image: './images/books22/bringingdowntheduke.jpg'
-genre: ['Romance', 'Historical Fiction']
+image: "./images/books22/bringingdowntheduke.jpg"
+genre: ["Romance", "Historical Fiction"]
 ---
 
 Sometimes I dunno why I bother with romance. I generally like the beginning of stories like this one. The differing personalities, the witty dialogue and tension. And then.... the whole drama that makes them forget their personalities (usually the women), and all... Ugh. There were fun moments though. Being very generous with 2 ⭐.

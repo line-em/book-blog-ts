@@ -1,11 +1,11 @@
 ---
-title: 'Iron Flame'
-author: 'Rebecca Yarros'
-year: '2024'
-month: 'February'
+title: "Iron Flame"
+author: "Rebecca Yarros"
+year: "2024"
+month: "February"
 score: 3
-image: './images/ironflame.jpg'
-genre: ['Dragons', 'Young Adult', 'New Adult', 'Fantasy', 'Romance']
+image: "./images/ironflame.jpg"
+genre: ["Dragons", "Young Adult", "New Adult", "Fantasy", "Romance"]
 ---
 
 So...... disappointing. I honestly believe that this one could be shorter. It's hard to justify it being 600 pages long.

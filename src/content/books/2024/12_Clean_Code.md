@@ -1,11 +1,11 @@
 ---
-title: 'Clean Code'
-author: 'Robert Cecil Martin'
-year: '2024'
-month: 'June'
+title: "Clean Code"
+author: "Robert Cecil Martin"
+year: "2024"
+month: "June"
 score: 4
-image: './images/cleancode.jpg'
-genre: [ 'Coding',  'Non Fiction', 'Fundamentals' ]
+image: "./images/cleancode.jpg"
+genre: ["Coding", "Non Fiction", "Fundamentals"]
 ---
 
 # What is Clean Code
@@ -16,7 +16,7 @@ SOLID.
 
 ## General Quality / Improvements
 
-*Boy Scout Rule: Leave it better than when you started.*
+_Boy Scout Rule: Leave it better than when you started._
 
 **Code that “works” is not always “done.”** If a coder’s job is to
 produce a product that solves a problem, should it matter how it
@@ -27,18 +27,19 @@ returns.
 
 > I could list all of the qualities that I notice in clean code, but
 > there is one overarching quality that leads to all of them. **Clean
-code always looks like it was written by someone who cares.** There is
+> code always looks like it was written by someone who cares.** There is
 > nothing obvious that you can do to make it better. All of those things
 > were thought about by the code’s author, and if you try to imagine
 > improvements, you’re led back to where you are, sitting in
 > appreciation of the code someone left for you—code left by someone who
 > cares deeply about the craft.
+>
 > - Michael Feathers, on Clean Code.
 
 ### Improvements > SRP
 
 > **The problem is that too many of us think that we are done once the
-program works.** We fail to switch to the other concern of
+> program works.** We fail to switch to the other concern of
 > organization and cleanliness. We move on to the next problem rather
 > than going back and breaking the overstuffed classes into decoupled
 > units with single responsibilities.
@@ -57,7 +58,7 @@ program works.** We fail to switch to the other concern of
 > module should have one, and only one, reason to change. This principle
 > gives us both a definition of responsibility, and a guidelines for
 > class size. **Classes should have one responsibility—one reason to
-change.**
+> change.**
 
 ## Open Close Principle / Isolating from Change
 
@@ -67,10 +68,9 @@ change.**
 > making modifications to existing code.
 > Needs will change, therefore code will change. We learned in OO 101
 > that there are concrete classes, which contain implementation
-> details (code), and abstract classes, which represent concepts only. *
-*A client class depending upon concrete details is at risk when those
-details change. We can introduce interfaces and abstract classes to
-help isolate the impact of those details.**
+> details (code), and abstract classes, which represent concepts only. \* > \*A client class depending upon concrete details is at risk when those
+> details change. We can introduce interfaces and abstract classes to
+> help isolate the impact of those details.\*\*
 
 ## Cohesion
 
@@ -118,9 +118,10 @@ help isolate the impact of those details.**
 > “Functions should do one thing. Error handing is one thing. Thus, a
 > function that handles errors should do nothing else.”
 
-
 > Links
+>
 > - https://archive.ph/bFbD4
 > - https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
 > - Resumo do
+
     Moco: https://www.evernote.com/shard/s614/client/snv?isnewsnv=true&noteGuid=98723302-0e8d-513a-14b7-73d64907a0e2&noteKey=BzQ0nUwCwsQABUwyNof-ZQAo6ru4oYxUBr9ZKHP1OBrS9_-gEW2my35a1Q&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs614%2Fsh%2F98723302-0e8d-513a-14b7-73d64907a0e2%2FBzQ0nUwCwsQABUwyNof-ZQAo6ru4oYxUBr9ZKHP1OBrS9_-gEW2my35a1Q&title=Clean%2BCode%2BBook

@@ -1,13 +1,13 @@
 ---
-title: 'Secret Identity'
-author: 'Alex Segura'
-year: '2023'
-month: 'January'
+title: "Secret Identity"
+author: "Alex Segura"
+year: "2023"
+month: "January"
 score: 4
 image: ./images/books23/secretidentity.jpg
-heroimage: ['./images/books23/secretidentity2.jpg', 'side']
-extraimages: ['./images/books23/secretidentity3.webp', './images/books23/secretidentity4.jpg']
-genre: ['Mystery', 'Unique', 'Noir', 'Comic', 'Historical Books', 'Queer']
+heroimage: ["./images/books23/secretidentity2.jpg", "side"]
+extraimages: ["./images/books23/secretidentity3.webp", "./images/books23/secretidentity4.jpg"]
+genre: ["Mystery", "Unique", "Noir", "Comic", "Historical Books", "Queer"]
 ---
 
 > “The Lynx,” Carmen said, choosing her words carefully, “was complicated. I love her. In the way you love someone you gave your heart to, but who didn’t return the favor. She was important to me. She still is. But I’ve had to keep her at arm’s length. Because it hurt too much.”

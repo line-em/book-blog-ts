@@ -1,11 +1,11 @@
 ---
-title: '21 Lessons for the 21 Century'
-author: 'Yuval Noah Harari'
-year: '2022'
-month: 'February'
+title: "21 Lessons for the 21 Century"
+author: "Yuval Noah Harari"
+year: "2022"
+month: "February"
 score: 5
-image: './images/books22/21Lessons.jpg'
-genre: ['Non Fiction', 'History']
+image: "./images/books22/21Lessons.jpg"
+genre: ["Non Fiction", "History"]
 ---
 
 Harari's books are always intriguing and illuminating, and this one is not an exception! I feel like a learned a lot. Also, I picked up this book right when the Ukraine War started, and I feel like it was the right book, at the right time. It helped me cope. Harari made a lot of reflection about Putin’s Russia, and to see it come to “life” again, even though it is completely horrifying, it was not surprising, seeing everything else he has done. Hope Ukraine can hold on to their country. #StandwithUcraine!

@@ -1,11 +1,11 @@
 ---
-title: 'Dear Ijeawele, a Feminist Manifesto'
-author: 'Chimamanda Ngozi Adichie'
+title: "Dear Ijeawele, a Feminist Manifesto"
+author: "Chimamanda Ngozi Adichie"
 year: 2021
-month: 'August'
+month: "August"
 score: 4
-image: './images/books21/dearijeawele.jpg'
-genre: ['Feminism', 'Non Fiction']
+image: "./images/books21/dearijeawele.jpg"
+genre: ["Feminism", "Non Fiction"]
 ---
 
 > Your feminist premise should be: I matter. I matter equally. Not “if only.” Not “as long as.” I matter equally. Full stop.

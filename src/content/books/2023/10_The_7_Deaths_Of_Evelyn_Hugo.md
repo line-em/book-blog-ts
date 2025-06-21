@@ -1,11 +1,11 @@
 ---
-title: 'The Seven Deaths of Evelyn Hardcastle'
-author: 'Stuart Turton'
-year: '2023'
-month: 'May'
+title: "The Seven Deaths of Evelyn Hardcastle"
+author: "Stuart Turton"
+year: "2023"
+month: "May"
 score: 2.5
-image: './images/books23/evelynhardcastle.jpg'
-genre: ['Mystery', 'Thriller', 'Fiction', 'Fantasy', 'Crime', 'Time Travel', 'Historical Fiction']
+image: "./images/books23/evelynhardcastle.jpg"
+genre: ["Mystery", "Thriller", "Fiction", "Fantasy", "Crime", "Time Travel", "Historical Fiction"]
 ---
 
 > Too little information and you're blind, too much and you're blinded.

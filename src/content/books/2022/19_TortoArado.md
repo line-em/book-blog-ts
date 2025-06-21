@@ -1,19 +1,19 @@
 ---
-title: 'Torto Arado'
-author: 'Itamar Vieira Junior'
-year: '2022'
-month: 'October'
+title: "Torto Arado"
+author: "Itamar Vieira Junior"
+year: "2022"
+month: "October"
 score: 5
-image: './images/books22/tortoarado.jpg'
+image: "./images/books22/tortoarado.jpg"
 genre:
   [
-    'Brasil',
-    'Literatura Brasileira',
-    'Black Author',
-    'Slavery',
-    'Drama',
-    'Contemporary',
-    'Historical Fiction'
+    "Brasil",
+    "Literatura Brasileira",
+    "Black Author",
+    "Slavery",
+    "Drama",
+    "Contemporary",
+    "Historical Fiction",
   ]
 ---
 

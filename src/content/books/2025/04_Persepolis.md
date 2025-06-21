@@ -1,11 +1,11 @@
 ---
-title: 'Persepolis'
-author: 'Marjane Satrapi'
-year: '2025'
-month: 'February'
+title: "Persepolis"
+author: "Marjane Satrapi"
+year: "2025"
+month: "February"
 score: 5
-image: './images/persepolis.jpeg'
-genre: ["Graphic Novel", "Memoir", "Nonfiction", "Iran", "Feminism", "Coming of Age" ]
+image: "./images/persepolis.jpeg"
+genre: ["Graphic Novel", "Memoir", "Nonfiction", "Iran", "Feminism", "Coming of Age"]
 heroimage: ["./images/persepolishero.jpg", "full"]
 extraimage: "./images/persepolis-3.webp"
 ---
@@ -14,16 +14,16 @@ This was a **fantastic** reading. It's been a while since I last read a graphic 
 This is a memoir, telling the coming of age of the author, Marjane, during the Islamic Revolution on Iran. Her childhood, teenage years, and so on. And there's so much to talk about, to _reflect_ about!
 
 > “The regime had understood that one person leaving her house while asking herself:
-Are my trousers long enough?
-Is my veil in place?
-Can my make-up be seen?
-Are they going to whip me?
+> Are my trousers long enough?
+> Is my veil in place?
+> Can my make-up be seen?
+> Are they going to whip me?
 >
 > No longer asks herself:
-Where is my freedom of thought?
-Where is my freedom of speech?
-My life, is it liveable?
-What's going on in the political prisons?” 
+> Where is my freedom of thought?
+> Where is my freedom of speech?
+> My life, is it liveable?
+> What's going on in the political prisons?”
 
 There's a lot of pain. I remember how sad I felt when her uncle was persecuted and died, after so many warm feelings between them. I felt my heart clench when the little girl that thought she was a prophet, started to understand the cruel ways the world around her was taking roots and expanding. The way the women were loosing rights, and how disconnected she felt sometimes.
 
@@ -38,5 +38,5 @@ This was fantastic, and I fear what I write here won't reflect my feelings on th
 > “Don't let it get to you, mom! The Western media also fights against us. That's where our reputation as fundamentalists and terrorists comes from."
 >
 > "You're right. Between one's fanaticism and the other's disdain, it's hard to know which side to choose. Personally, I hate Saddam and I have no sympathy for the Kuwaitism but I hate just as much the cynicism of the allies who call themselves "liberators" while they're there for the oil."
-> 
+>
 > "Exactly. Just look at Afghanistan! They fought there for ten years. There were 900,000 dead and today the country is still in chaos. No one lifted a finger! Because Afghanistan is poor! The worst is that the intervention in Kuwait is done in the name of the human rights! Which rights? Which humans?"

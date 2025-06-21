@@ -1,11 +1,11 @@
 ---
-title: 'Well Met'
-author: 'Jen DeLuca'
-year: '2023'
-month: 'January'
+title: "Well Met"
+author: "Jen DeLuca"
+year: "2023"
+month: "January"
 score: 2.5
 image: ./images/books23/wellmet.jpg
-genre: ['Romance', 'Small Town', 'Slice of Life', 'Contemporary', 'Enemies to Lovers', 'Chick Lit']
+genre: ["Romance", "Small Town", "Slice of Life", "Contemporary", "Enemies to Lovers", "Chick Lit"]
 ---
 
 I mean, **this is a renaissance faire romance, with pirates**. What's not to like about this? That seemed the perfect set-up and I had to read it! I have enjoyed myself, but on recollecting my journey with it... I have mixed feelings about it?

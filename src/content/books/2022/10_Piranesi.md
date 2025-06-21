@@ -1,11 +1,11 @@
 ---
-title: 'Piranesi'
-author: 'Susana Clarke'
-year: '2022'
-month: 'May'
+title: "Piranesi"
+author: "Susana Clarke"
+year: "2022"
+month: "May"
 score: 4
-image: './images/books22/piranesi.jpg'
-genre: ['Fantasy', 'Mythology', 'Magical Realism', 'Unique']
+image: "./images/books22/piranesi.jpg"
+genre: ["Fantasy", "Mythology", "Magical Realism", "Unique"]
 ---
 
 This is a rather unique book, so it's kind of hard to talk about it. I'm yet to decompress what I feel about it. First, it's not a book for most readers. Lest I be misinterpreted by being demeaning, I should first say that the narrative is slow and very very descriptive, not to mention the fact that the first half of the book is about the Narrator fishing, talking to birds, describing a lot of halls, making seaweed objects, and randomly treading in what he calls the House.

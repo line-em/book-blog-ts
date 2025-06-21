@@ -1,15 +1,15 @@
 ---
-title: 'A Hora da Estrela'
-author: 'Clarice Lispector'
-year: '2025'
-month: 'January'
+title: "A Hora da Estrela"
+author: "Clarice Lispector"
+year: "2025"
+month: "January"
 score: 3.75
-image: './images/ahora.jpg'
-genre: ["Brasil", "Literatura Brasileira", "Fiction", "Novella" ]
+image: "./images/ahora.jpg"
+genre: ["Brasil", "Literatura Brasileira", "Fiction", "Novella"]
 ---
 
 > “Porque há direito ao grito.
-Então eu grito.”
+> Então eu grito.”
 
 It took me a while to write about this one - it was even _hard_ for me to organize my feelings on it. I've never read Clarice Lispector before - I've heard her writing was a little different, how important she was and all, but that's all I knew.
 
@@ -31,4 +31,4 @@ I'm still not sure, but I decided for a middle ground. I might like this book mo
 
 I will leave a goodreads review [here](https://www.goodreads.com/review/show/3215269892), that I think talks better than I do!
 
-> Quem não é um acaso na vida?  
+> Quem não é um acaso na vida?

@@ -1,11 +1,11 @@
 ---
-title: 'Sejamos Todos Feministas'
-author: 'Chimamanda Ngozi Adichie'
+title: "Sejamos Todos Feministas"
+author: "Chimamanda Ngozi Adichie"
 year: 2021
-month: 'March'
+month: "March"
 score: 3
-image: './images/books21/weshouldallbefeminist.jpg'
-genre: ['Non Fiction', 'Feminism']
+image: "./images/books21/weshouldallbefeminist.jpg"
+genre: ["Non Fiction", "Feminism"]
 ---
 
 Short and Sweet.

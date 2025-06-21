@@ -1,11 +1,11 @@
 ---
-title: 'A Court Of Thorns and Roses'
-author: 'Sarah J. Maas'
-year: '2024'
-month: 'October'
+title: "A Court Of Thorns and Roses"
+author: "Sarah J. Maas"
+year: "2024"
+month: "October"
 score: 2.5
-image: './images/acotar.jpg'
-genre: ['Young Adult', 'New Adult', 'Fantasy', 'Romance']
+image: "./images/acotar.jpg"
+genre: ["Young Adult", "New Adult", "Fantasy", "Romance"]
 ---
 
 So... I've finally read it, I guess?

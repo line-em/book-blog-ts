@@ -1,5 +1,5 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
 import BookReview from "../layouts/BookReview.astro";
 import ExtraImages from "../components/ExtraImages.astro";
 import { Image } from "astro:assets";
@@ -16,10 +16,24 @@ export interface Props {
 
 export async function getStaticPaths() {
   const bookEntries: CollectionEntry<"books">[] = await getCollection("books");
-  const bookNumber: number = bookEntries.length;
+  bookEntries.sort((a, b) => {
+  const parse = str => {
+    const match = str.match(/^(\d{4})\/(\d{1,2})_(.+)$/);
+    if (!match) return [0, 0, '']; // fallback
+    const [, year, number, title] = match;
+    return [parseInt(year), parseInt(number), title];
+  };
 
+  const [yearA, numA, titleA] = parse(a.id);
+  const [yearB, numB, titleB] = parse(b.id);
+
+  if (yearA !== yearB) return yearA - yearB;
+  if (numA !== numB) return numA - numB;
+  return titleA.localeCompare(titleB);
+});
+  const bookNumber: number = bookEntries.length;
   return bookEntries.map((entry, i: number) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: {
       entry,
       next: i + 1 === bookNumber ? null : bookEntries[i + 1],
@@ -30,20 +44,19 @@ export async function getStaticPaths() {
 
 let { entry, prev, next } = Astro.props;
 
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 let { title, author, month, score, image, heroimage, extraimage, extraimages, year, genre } =
   entry.data;
 
-let auth = true;
 ---
 
 <Layout title={title}>
   <BookReview score={score} year={year} month={month} genres={genre} cover={image} title={title}>
     <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow">
-      <nav class="mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]">
-        {prev && <Navigation slug={prev.slug} type="prev" />}
-        {next && <Navigation slug={next.slug} type="next" />}
+      <nav class:list={["mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]", !prev && "justify-end"]}>
+        {prev && <Navigation slug={prev.id} type="prev" />}
+        {next && <Navigation slug={next.id} type="next" />}
       </nav>
       <h1><GradientText text={title} /></h1>
       <h3

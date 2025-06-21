@@ -19,7 +19,6 @@ const { currentYear, isReview } = Astro.props;
 const books: CollectionEntry<"books">[] = currentYear
   ? await getBooks(currentYear)
   : await getBooks();
-console.log(currentYear);
 ---
 
 <aside

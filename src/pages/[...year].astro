@@ -10,7 +10,6 @@ export async function getStaticPaths() {
   }));
 }
 const { year } = Astro.params;
-console.log(Astro.params);
 ---
 
 <Layout title={`Books from ${Number(year)}`}>

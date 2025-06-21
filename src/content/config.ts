@@ -1,9 +1,11 @@
+import { glob } from "astro/loaders";
 import { z, defineCollection } from "astro:content";
 
 export const validYears = [2021, 2022, 2023, 2024, 2025];
 
 const bookCollection = defineCollection({
-  type: "content", // v2.5.0 and later
+  // type: "content", // v2.5.0 and later
+  loader: glob({ pattern: "**\/*.md", base: "./src/content/books/" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),

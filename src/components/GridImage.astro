@@ -1,9 +1,8 @@
 ---
 import { getStars } from "../utils/rating";
 import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
-import { listAllGenres } from "../utils/genres";
-import { fade, slide } from "astro:transitions";
+import { getCollection, type CollectionEntry } from "astro:content";
+import { fade } from "astro:transitions";
 
 export interface Props {
   year?: number;
@@ -11,9 +10,26 @@ export interface Props {
 
 const { year } = Astro.props;
 
-let allBooks = await getCollection("books");
+let allBooks = await getCollection("books")
 
-if (year) allBooks = await getCollection("books", ({ data }) => Number(data.year) === year);
+if (year) allBooks = await getCollection("books", ({ data }: CollectionEntry<'books'>) => Number(data.year) === year);
+
+allBooks.sort((a, b) => {
+  const parse = str => {
+    const match = str.match(/^(\d{4})\/(\d{1,2})_(.+)$/);
+    if (!match) return [0, 0, '']; // fallback
+    const [, year, number, title] = match;
+    return [parseInt(year), parseInt(number), title];
+  };
+
+  const [yearA, numA, titleA] = parse(a.id);
+  const [yearB, numB, titleB] = parse(b.id);
+
+  if (yearA !== yearB) return yearA - yearB;
+  if (numA !== numB) return numA - numB;
+  return titleA.localeCompare(titleB);
+});
+
 ---
 
 <main
@@ -25,7 +41,7 @@ if (year) allBooks = await getCollection("books", ({ data }) => Number(data.year
         <a
           transition:animate={fade({ duration: "0.4s" })}
           transition:name={`book-${book?.data.title}`}
-          href={`/${book?.slug}`}
+          href={`/${book?.id}`}
           class="flex flex-col bg-slate-50 sm:shadow-sm rounded-xl relative duration-300 hover:sm:shadow-md p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
         >
           <div class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-sm">

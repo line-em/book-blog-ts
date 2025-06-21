@@ -10,7 +10,6 @@ export const getGenres = (books: CollectionEntry<"books">[]): Record<string, num
 
 export const listAllGenres = (books: CollectionEntry<"books">[]): string[] => {
   const genres = getGenres(books);
-  console.log(genres);
   return Object.keys(genres);
 };
 

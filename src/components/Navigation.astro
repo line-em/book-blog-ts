@@ -1,0 +1,31 @@
+---
+import { ArrowCircleLeftIcon, ArrowCircleRightIcon } from "@phosphor-icons/react";
+import Link from "./Link.astro";
+
+export interface Props {
+  slug: string;
+  type: "prev" | "next";
+}
+
+const { slug, type } = Astro.props;
+---
+
+<Link url={`../../${slug}/index.html`} text={type === "next" ? "Next" : "Previous"}>
+  {
+    type === "next" ? (
+      <ArrowCircleRightIcon
+        size={24}
+        color="var(--catppuccin-color-teal-300)"
+        weight="duotone"
+        className="hidden sm:flex"
+      />
+    ) : (
+      <ArrowCircleLeftIcon
+        size={24}
+        color="var(--catppuccin-color-teal-300)"
+        weight="duotone"
+        className="hidden sm:flex"
+      />
+    )
+  }
+</Link>

@@ -55,7 +55,7 @@ export const getBooksByGenreAndYear = (
       title: book.data.title,
       genre: book.data.genre,
       year: book.data.year,
-      slug: book.slug,
+      slug: book.id,
     }));
 };
 

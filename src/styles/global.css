@@ -8,8 +8,8 @@
   --accent: 124, 58, 237;
   --pink: #da62c4;
   --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), var(--pink) 30%, white 60%);
-  --serif: "Yrsa Variable", "Georgia", serif;
-  --font-serif: "Yrsa Variable", "Georgia", serif;
+  --serif: "Fraunces Variable", "Georgia", serif;
+  --font-serif: "Fraunces Variable", "Georgia", serif;
   --sans: "Rubik Variable", "Helvetica", "Arial", sans-serif;
   --font-sans: "Rubik Variable", "Helvetica", "Arial", sans-serif;
   --regular: 400;
@@ -54,6 +54,7 @@ blockquote {
   font-family: var(--font-serif);
   background-color: var(--catppuccin-color-crust);
   border-radius: 1rem;
+  font-size: 1.1rem;
 }
 
 blockquote::before {

@@ -5,7 +5,7 @@ year: "2025"
 month: "October"
 score: 3.5
 image: "./images/eternalreturn.png"
-genre: ["Fantasy", "Mystery", "Fiction", "Thriller", "Adult", "Science Fiction", "Crime", "Queer"]
+genre: ["Young Adult", "Fiction", "Science Fiction" "Time Travel", "Contemporary", "Mental Health"]
 ---
 
 > Consequences. We have to live with ourselves no matter what. Crack after crack at this day, but I'm always me at the end. That's the tragedy.

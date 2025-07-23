@@ -1,6 +1,6 @@
 ---
 title: "Sunbringer"
-author: "Robert Jackson Bennett"
+author: "Hannah Kaner"
 year: "2025"
 month: "October"
 score: 3.5

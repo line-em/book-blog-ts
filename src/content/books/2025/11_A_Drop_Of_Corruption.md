@@ -7,3 +7,5 @@ score: 3.5
 image: "./images/adropofcorruption.jpg"
 genre: ["Fantasy", "Mystery", "Fiction", "Thriller", "Adult", "Science Fiction", "Crime", "Queer"]
 ---
+
+Oh god, this one was fantastic!

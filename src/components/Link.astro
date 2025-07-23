@@ -11,8 +11,10 @@ export interface Props {
 <a
   class={`${!disabled ? "" : "inactive pointer-events-none opacity-50"} 
 flex items-center px-2 py-2 border border-transparent hover:border-ctp-rosewater-200 rounded-xl shadow-sm bg-slate-50 gap-4 w-fit self-center hover:text-ctp-rosewater-400 whitespace-nowrap`}
-  href={url}
+  href={disabled ? undefined : url}
   rel="noopener noreferrer"
+  aria-disabled={disabled ? "true" : "false"}
+  tabindex={disabled ? -1 : 0}
 >
   <slot />
   {text}

@@ -1,5 +1,5 @@
 ---
-import Sidebar from "../components/Layout/Sidebar.astro";
+import Sidebar from "./Sidebar.astro";
 import BookInfo from "../components/BookInfo.astro";
 import { slide } from "astro:transitions";
 
@@ -21,7 +21,5 @@ const { cover, score, year, month, genres, title } = Astro.props;
   transition:animate={slide({ duration: "0.4s" })}
 >
   <slot />
-  <BookInfo
-    {...{ score, year, month, genres, title, cover }}
-  />
+  <BookInfo {...{ score, year, month, genres, title, cover }} />
 </section>

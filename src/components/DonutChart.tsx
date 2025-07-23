@@ -1,8 +1,13 @@
 import React from "react";
 import { Pie, PieChart, ResponsiveContainer, Cell, Label, Legend } from "recharts";
 
-const DonutChart = ({ data, year }) => {
-  const pieData = Object.entries(data).map(([genre, count], index) => ({
+interface DonutChartProps {
+  data: Record<string, number>;
+  year: number;
+}
+
+const DonutChart: React.FC<DonutChartProps> = ({ data, year }) => {
+  const pieData = Object.entries(data).map(([genre, count]) => ({
     name: genre,
     value: count,
   }));
@@ -37,22 +42,24 @@ const DonutChart = ({ data, year }) => {
             <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
           ))}
           {/* Add a central label to display the year */}
-          <Label
-            content={<CustomLabel value1={year} viewBox={["50%", "50%"]} />}
-            width={100}
-            position="center"
-          />
+          <Label content={<CustomLabel value1={year} />} width={100} position="center" />
         </Pie>
       </PieChart>
     </ResponsiveContainer>
   );
 };
 
-const renderColorfulLegendText = (value: string, entry: any) => {
+const renderColorfulLegendText = (value: string) => {
   return <span className={"text-sm sm:text-base font-medium px-2 text-slate-600"}>{value}</span>;
 };
 
-function CustomLabel({ viewBox, value1 }) {
+interface CustomLabelProps {
+  viewBox?: { cx: number; cy: number };
+  value1: number;
+}
+
+function CustomLabel({ viewBox, value1 }: CustomLabelProps) {
+  if (!viewBox) return null;
   const { cx, cy } = viewBox;
   return (
     <text x={cx} y={cy} fill="#3d405c" textAnchor="middle" dominantBaseline="central">

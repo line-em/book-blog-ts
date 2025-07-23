@@ -10,7 +10,7 @@ import {
 } from '../utils/genres'
 import DonutChart from '../components/DonutChart'
 import ReadingStats from "../layouts/ReadingStats.astro";
-import Sidebar from "../components/Layout/Sidebar.astro";
+import Sidebar from "../layouts/Sidebar.astro";
 const { year } = Astro.props;
 
 const allBooks: CollectionEntry<'books'>[] = await getCollection('books')

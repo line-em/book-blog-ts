@@ -22,6 +22,7 @@ const { extraImage, extraImages, title } = Astro.props;
         quality={"mid"}
         width={1000}
         height={400}
+        layout="constrained"
       />
     </div>
   )
@@ -38,6 +39,7 @@ const { extraImage, extraImages, title } = Astro.props;
         height={400}
         format="webp"
         quality={"mid"}
+              layout="constrained"
       />
       <Image
         src={extraImages[1]}
@@ -48,6 +50,7 @@ const { extraImage, extraImages, title } = Astro.props;
         format="webp"
         height={400}
         quality={"low"}
+              layout="constrained"
       />
     </div>
   )

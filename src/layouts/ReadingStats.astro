@@ -4,6 +4,11 @@ import { getAverageStars } from "../utils/rating";
 import { BookIcon, PlusCircleIcon } from "@phosphor-icons/react";
 import GradientText from "../components/GradientText.astro";
 import Link from "@/components/Link.astro";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  books: CollectionEntry<"books">[];
+}
 
 const { books } = Astro.props;
 
@@ -12,9 +17,7 @@ let averageStars;
 
 if (books) {
   mostReadGenres = getMostReadGenres(books);
-  averageStars = getAverageStars(
-    books.map((book: { data: { score: number } }) => book?.data.score)
-  );
+  averageStars = getAverageStars(books.map(book => book?.data.score));
 }
 ---
 
@@ -26,5 +29,4 @@ if (books) {
 </section>
 <Link url={"/stats"} text={"More stats"}>
   <PlusCircleIcon color="var(--catppuccin-color-teal-300)" weight="duotone" size="19" />
-
 </Link>

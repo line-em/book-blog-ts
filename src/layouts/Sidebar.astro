@@ -1,9 +1,9 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import ReadingStats from "../../layouts/ReadingStats.astro";
-import { getBooks } from "../../utils/getBooks";
-import GradientText from "../GradientText.astro";
-import Link from "../Link.astro";
+import ReadingStats from "./ReadingStats.astro";
+import { getBooks } from "../utils/getBooks";
+import GradientText from "../components/GradientText.astro";
+import Link from "../components/Link.astro";
 import { validYears } from "@/content/config";
 import { BookOpenTextIcon } from "@phosphor-icons/react/dist/ssr/BookOpenText";
 import { BooksIcon } from "@phosphor-icons/react";
@@ -25,11 +25,7 @@ const books: CollectionEntry<"books">[] = currentYear
   class="p-6 flex gap-6 bg-ctp-rosewater-50/20 rounded-t-xl mb-12 flex-wrap space-between shadow-md"
 >
   <h1 class="text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-8 flex text-center gap-2 items-center">
-    <BooksIcon
-    size={32}
-    color="var(--catppuccin-color-teal-300)"
-    weight="duotone"
-  />
+    <BooksIcon size={32} color="var(--catppuccin-color-teal-300)" weight="duotone" />
     <GradientText text={isReview ? "Review" : currentYear ? `${currentYear}` : "Yearly"} />
     Books
   </h1>

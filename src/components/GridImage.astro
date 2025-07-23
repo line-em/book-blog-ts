@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import { getCollection, type CollectionEntry } from "astro:content";
 import { fade } from "astro:transitions";
 import { compareBookIds } from "../utils/bookId";
+import { getSortedBooks } from "../utils/getBooks";
 
 export interface Props {
   year?: number;
@@ -11,12 +12,7 @@ export interface Props {
 
 const { year } = Astro.props;
 
-let allBooks = await getCollection("books")
-
-if (year) allBooks = await getCollection("books", ({ data }: CollectionEntry<'books'>) => Number(data.year) === year);
-
-allBooks.sort((a, b) => compareBookIds(a.id, b.id));
-
+let allBooks = await getSortedBooks(year);
 ---
 
 <main
@@ -40,6 +36,7 @@ allBooks.sort((a, b) => compareBookIds(a.id, b.id));
               format="webp"
               quality={"high"}
               loading="lazy"
+              layout="constrained"
               class="h-auto rounded-xl w-[200px] object-cover"
             />
           </div>

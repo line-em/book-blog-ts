@@ -2,7 +2,7 @@
 import GridImage from "../components/GridImage.astro";
 import { validYears } from "../content/config";
 import Layout from "../layouts/Layout.astro";
-import Sidebar from "../components/Layout/Sidebar.astro";
+import Sidebar from "../layouts/Sidebar.astro";
 
 export async function getStaticPaths() {
   return validYears.map(year => ({

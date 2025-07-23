@@ -1,0 +1,67 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import { GENRE_LIST, type Genre } from "../../utils/genreList";
+import Layout from "../../layouts/Layout.astro";
+import Sidebar from "../../layouts/Sidebar.astro";
+
+export async function getStaticPaths() {
+  const allBooks: CollectionEntry<"books">[] = await getCollection("books");
+  const genreSet = new Set<string>();
+  allBooks.forEach(book => {
+    (book.data.genre as string[]).forEach(g => genreSet.add(g));
+  });
+  // Only allow genres that are in GENRE_LIST
+  return Array.from(genreSet)
+    .filter(g => GENRE_LIST.includes(g as Genre))
+    .map(genre => ({
+      params: { genre },
+    }));
+}
+
+const { genre } = Astro.params;
+const allBooks: CollectionEntry<"books">[] = await getCollection("books");
+
+// Validate genre param
+const isValidGenre = GENRE_LIST.includes(genre);
+const booksWithGenre = isValidGenre
+  ? allBooks.filter(book => (book.data.genre as string[]).includes(genre))
+  : [];
+---
+
+<Layout title={`Books in ${genre}`} transition:name={`books`}>
+  <Sidebar currentYear={0} />
+  <section class="p-6 mx-6 lg:mx-12">
+    <h2 class="text-3xl font-bold mb-6">
+      Books in <span class="text-ctp-rosewater-500">{genre}</span>
+    </h2>
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 justify-center">
+      {
+        !isValidGenre ? (
+          <p>Invalid genre: {genre}</p>
+        ) : booksWithGenre.length === 0 ? (
+          <p>No books found for this genre.</p>
+        ) : (
+          booksWithGenre.map(book => (
+            <a
+              href={`/${book.id}`}
+              class="flex flex-col bg-slate-50 sm:shadow-sm rounded-xl relative duration-300 hover:sm:shadow-md p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
+            >
+              <img
+                src={book?.data.image.src}
+                alt={book.data.title}
+                class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-sm object-cover"
+                width={200}
+                height={250}
+                loading="lazy"
+              />
+              <h3 class="text-xl my-2 sm:line-clamp-2 items-center whitespace-normal">
+                {book.data.title}
+              </h3>
+              <span class="text-xs text-gray-500 mb-2">{book.data.year}</span>
+            </a>
+          ))
+        )
+      }
+    </div>
+  </section>
+</Layout>

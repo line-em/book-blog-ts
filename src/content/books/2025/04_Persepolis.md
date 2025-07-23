@@ -5,7 +5,7 @@ year: "2025"
 month: "February"
 score: 5
 image: "./images/persepolis.jpeg"
-genre: ["Graphic Novel", "Memoir", "Nonfiction", "Iran", "Feminism", "Coming of Age"]
+genre: ["Graphic Novel", "Memoir", "Non Fiction", "Iran", "Feminism", "Coming of Age"]
 heroimage: ["./images/persepolishero.jpg", "full"]
 extraimage: "./images/persepolis-3.webp"
 ---

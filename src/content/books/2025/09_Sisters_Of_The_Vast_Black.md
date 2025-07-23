@@ -5,7 +5,7 @@ year: "2025"
 month: "May"
 score: 4
 image: "./images/sistersofthevastblack.jpg"
-genre: ["Sci-Fi", "Romance", "Queer", "Fiction", "Fantasy", "Time Travel", "Letters"]
+genre: ["Science Fiction", "Romance", "Queer", "Fiction", "Fantasy", "Time Travel", "Letters"]
 ---
 
 > “Wars were fought in hearts and minds as much as they were fought in blood and bullets.”

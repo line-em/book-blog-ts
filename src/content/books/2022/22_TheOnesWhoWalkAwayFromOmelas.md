@@ -9,9 +9,8 @@ genre:
   [
     "Science Fiction",
     "Fantasy",
-    "Philosophical",
-    "Short Stories",
-    "Dark",
+    "Philosophy",
+    "Short Story",
     "Unique",
     "Dystopia",
     "Classic",

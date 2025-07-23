@@ -1,71 +1,72 @@
 import { type CollectionEntry } from "astro:content";
+import { GENRE_LIST, type Genre } from "./genreList";
 
-export const getGenres = (books: CollectionEntry<"books">[]): Record<string, number> =>
-  books.reduce((genreCounter: { [key: string]: number }, currentBook) => {
-    for (const genre of currentBook.data.genre) {
-      genreCounter.hasOwnProperty(genre) ? genreCounter[genre]++ : (genreCounter[genre] = 1);
+export const getGenres = (books: CollectionEntry<"books">[]): Record<Genre, number> => {
+  const genreCounter = books.reduce((counter: { [key in Genre]?: number }, currentBook) => {
+    for (const genre of currentBook.data.genre as Genre[]) {
+      counter[genre] = (counter[genre] ?? 0) + 1;
     }
-    return genreCounter;
+    return counter;
   }, {});
-
-export const listAllGenres = (books: CollectionEntry<"books">[]): string[] => {
-  const genres = getGenres(books);
-  return Object.keys(genres);
+  // Ensure all genres are present with at least 0
+  const allGenres: Genre[] = [...GENRE_LIST];
+  const result: Record<Genre, number> = Object.fromEntries(
+    allGenres.map(g => [g, genreCounter[g] ?? 0])
+  ) as Record<Genre, number>;
+  return result;
 };
 
-export const getTop5MostReadGenres = (
-  books: CollectionEntry<"books">[]
-): Record<string, number> => {
+export const listAllGenres = (books: CollectionEntry<"books">[]): Genre[] => {
   const genres = getGenres(books);
+  return Object.keys(genres) as Genre[];
+};
 
-  // Sort genres by count in descending order and take the top five
+export const getTop5MostReadGenres = (books: CollectionEntry<"books">[]): Record<Genre, number> => {
+  const genres = getGenres(books);
   const topGenres = Object.entries(genres)
-    .sort(([, countA], [, countB]) => countB - countA)
+    .sort(([, countA], [, countB]) => (countB ?? 0) - (countA ?? 0))
     .slice(0, 5);
-
-  // Convert back to an object with genre names as keys and counts as values
-  return Object.fromEntries(topGenres);
+  return Object.fromEntries(topGenres) as Record<Genre, number>;
 };
 
 export const getMostReadGenresByYear = (allBooks: CollectionEntry<"books">[], years: number[]) => {
-  const genresByYear: Record<number, Record<string, number>> = {};
-
+  const genresByYear: Record<number, Record<Genre, number>> = {};
   for (const year of years) {
     const booksForYear = allBooks.filter(book => book.data.year === year);
     genresByYear[year] = getTop5MostReadGenres(booksForYear);
   }
-
   return genresByYear;
 };
 
-export const getBooksByGenre = (books: CollectionEntry<"books">[], genre: string): string[] => {
+export const getBooksByGenre = (books: CollectionEntry<"books">[], genre: Genre): string[] => {
   return books
-    .filter(book => book.data.genre.includes(genre)) // Filter books that include the specified genre
-    .map(book => book.data.title); // Extract book titles
+    .filter(book => (book.data.genre as Genre[]).includes(genre))
+    .map(book => book.data.title);
 };
 
 export const getBooksByGenreAndYear = (
   books: CollectionEntry<"books">[],
-  genre: string,
+  genre: Genre,
   year?: number
-): { title: string; genre: string[]; year: number; slug: string }[] => {
+): { title: string; genre: Genre[]; year: number; slug: string }[] => {
   return books
-    .filter(book => book.data.genre.includes(genre) && (!year || book.data.year === year))
+    .filter(
+      book => (book.data.genre as Genre[]).includes(genre) && (!year || book.data.year === year)
+    )
     .map(book => ({
       title: book.data.title,
-      genre: book.data.genre,
+      genre: book.data.genre as Genre[],
       year: book.data.year,
       slug: book.id,
     }));
 };
 
-export const getMostReadGenres = (books: CollectionEntry<"books">[]): string[] => {
+export const getMostReadGenres = (books: CollectionEntry<"books">[]): Genre[] => {
   const genres = getGenres(books);
-  return Object.keys(genres).reduce((mostReadGenres: string[], currentGenre: string) => {
-    if (genres[currentGenre] > genres[mostReadGenres[0]]) {
+  return (Object.keys(genres) as Genre[]).reduce((mostReadGenres: Genre[], currentGenre: Genre) => {
+    if (genres[currentGenre]! > genres[mostReadGenres[0]]!) {
       mostReadGenres.length = 0;
     }
-
     if (mostReadGenres.length === 0 || genres[currentGenre] === genres[mostReadGenres[0]]) {
       mostReadGenres.push(currentGenre);
     }

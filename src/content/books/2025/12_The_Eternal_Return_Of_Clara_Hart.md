@@ -1,5 +1,5 @@
 ---
-title: "A Drop Of Corruption"
+title: "The Eternal Return of Clara Hart"
 author: "Louise Finch"
 year: "2025"
 month: "October"

@@ -5,7 +5,7 @@ year: "2023"
 month: "November"
 score: 3.5
 image: "./images/books23/howitunfolds.jpg"
-genre: ["Science Fiction", "Space", "Short Stories", "Novella", "Philosophy"]
+genre: ["Science Fiction", "Space", "Short Story", "Novella", "Philosophy"]
 ---
 
 Part of the Far Reaches collection.

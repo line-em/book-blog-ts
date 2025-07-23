@@ -5,7 +5,7 @@ year: "2023"
 month: "November"
 score: 4
 image: "./images/books23/void.jpg"
-genre: ["Science Fiction", "Space", "Short Stories", "Novella", "Murder Mystery"]
+genre: ["Science Fiction", "Space", "Short Story", "Novella", "Murder Mystery"]
 ---
 
 Part of the Far Reaches collection.

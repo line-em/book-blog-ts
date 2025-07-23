@@ -1,10 +1,11 @@
 ---
+import type { Genre } from "../utils/genreList";
 export interface Props {
   cover: string;
   score: number;
   year: number;
   month: string;
-  genres: string[];
+  genres: Genre[];
   title: string;
 }
 
@@ -27,7 +28,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
     format="webp"
     loading="lazy"
     quality={"mid"}
-      layout="constrained"
+    layout="constrained"
   />
   <span set:html={getStars(score)} class="flex mt-3" />
   <div class="grid grid-cols-2 sm:hidden">
@@ -35,9 +36,15 @@ const { cover, score, year, month, genres, title } = Astro.props;
       <h3 class="mb-2 font-bold">Genres</h3>
       <div class="flex gap-2 flex-wrap items-start">
         {
-          genres?.map((genre: string) => (
-            <span class="bg-ctp-peach-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
-          ))
+          genres &&
+            genres.map(genre => (
+              <a
+                href={`/genre/${genre}`}
+                class="bg-ctp-peach-400/50 px-2 py-1 rounded-full text-xs hover:underline"
+              >
+                {genre}
+              </a>
+            ))
         }
       </div>
     </div>
@@ -58,9 +65,15 @@ const { cover, score, year, month, genres, title } = Astro.props;
     <h3 class="font-bold">Genres</h3>
     <div class="flex gap-2 flex-wrap items-start justify-center">
       {
-        genres?.map((genre: string) => (
-          <span class="bg-ctp-peach-400/50 px-2 py-1 rounded-full text-xs">{genre}</span>
-        ))
+        genres &&
+          genres.map(genre => (
+            <a
+              href={`/genre/${encodeURIComponent(genre)}`}
+              class="bg-ctp-peach-400/50 px-2 py-1 rounded-full text-xs hover:underline"
+            >
+              {genre}
+            </a>
+          ))
       }
     </div>
   </div>

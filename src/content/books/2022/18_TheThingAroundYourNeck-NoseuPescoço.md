@@ -5,7 +5,7 @@ year: "2022"
 month: "October"
 score: 4
 image: "./images/books22/noseupescoco.jpg"
-genre: ["Black Author", "Short Stories", "Pessimist", "Immigrants", "African"]
+genre: ["Black Author", "Short Story", "Pessimist", "Immigrants", "African"]
 ---
 
 This one was a very good read - Chimamanda is indeed a great author, and I loved reading her short stories. This is a collection of 12 of them, all dealing with similar themes, loneliness, immigration and/or the disconnect between two different cultures (most of the time, between nigerians/africans and USA), and overall they’re more sad and pessimist in tone.

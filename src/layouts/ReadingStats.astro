@@ -5,6 +5,7 @@ import { BookIcon, PlusCircleIcon } from "@phosphor-icons/react";
 import GradientText from "../components/GradientText.astro";
 import Link from "@/components/Link.astro";
 import type { CollectionEntry } from "astro:content";
+import type { Genre } from "../utils/genreList";
 
 export interface Props {
   books: CollectionEntry<"books">[];
@@ -12,7 +13,7 @@ export interface Props {
 
 const { books } = Astro.props;
 
-let mostReadGenres;
+let mostReadGenres: Genre[];
 let averageStars;
 
 if (books) {

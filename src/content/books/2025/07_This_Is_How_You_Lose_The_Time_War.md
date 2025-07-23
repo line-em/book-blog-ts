@@ -5,7 +5,7 @@ year: "2025"
 month: "April"
 score: 3.5
 image: "./images/thisishowyoulose.jpg"
-genre: ["Sci-Fi", "Romance", "Queer", "Fiction", "Fantasy", "Time Travel", "Letters"]
+genre: ["Science Fiction", "Romance", "Queer", "Fiction", "Fantasy", "Time Travel", "Letters"]
 ---
 
 > “Books are letters in bottles, cast into the waves of time, from one person trying to save the world to another.”

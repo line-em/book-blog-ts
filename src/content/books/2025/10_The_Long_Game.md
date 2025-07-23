@@ -5,7 +5,7 @@ year: "2025"
 month: "June"
 score: 1.5
 image: "./images/thelonggame.jpg"
-genre: ["Sci-Fi", "Short Story", "Fantasy", "Philosophical", "Adventure", "Space", "Alien"]
+genre: ["Science Fiction", "Short Story", "Fantasy", "Philosophy", "Adventure", "Space", "Alien"]
 ---
 
 This one... I felt at the beginning that it could turn out interesting... But it became rather boring.

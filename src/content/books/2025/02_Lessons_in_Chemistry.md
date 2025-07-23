@@ -5,7 +5,7 @@ year: "2025"
 month: "January"
 score: 3.5
 image: "./images/lessonsinchemistry.jpg"
-genre: ["Fiction", "Feminist", "Historical Fiction", "Contemporary", "Chick Lit"]
+genre: ["Fiction", "Feminism", "Historical Fiction", "Contemporary", "Chick Lit"]
 ---
 
 > “Whenever you feel afraid, just remember. Courage is the root of change - and change is what we're chemically designed to do. So when you wake up tomorrow, make this pledge. No more holding yourself back. No more subscribing to others' opinions of what you can and cannot achieve. And no more allowing anyone to pigeonhole you into useless categories of sex, race, economic status, and religion. Do not allow your talents to lie dormant, ladies. Design your own future. When you go home today, ask yourself what YOU will change. And then get started.”

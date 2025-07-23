@@ -8,6 +8,7 @@ import GradientText from "../components/GradientText.astro";
 import { PenNibIcon } from "@phosphor-icons/react";
 import Navigation from "@/components/Navigation.astro";
 import { compareBookIds } from "../utils/bookId";
+import type { Genre } from "../utils/genreList";
 
 export interface Props {
   entry: CollectionEntry<"books">;
@@ -35,11 +36,17 @@ const { Content } = await render(entry);
 
 let { title, author, month, score, image, heroimage, extraimage, extraimages, year, genre } =
   entry.data;
-
 ---
 
 <Layout title={title}>
-  <BookReview score={score} year={year} month={month} genres={genre} cover={image} title={title}>
+  <BookReview
+    score={score}
+    year={year}
+    month={month}
+    genres={genre as Genre[]}
+    cover={image}
+    title={title}
+  >
     <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow">
       <nav class:list={["mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]", !prev && "justify-end"]}>
         {prev && <Navigation slug={prev.id} type="prev" />}

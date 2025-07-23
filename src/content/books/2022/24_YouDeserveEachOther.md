@@ -8,7 +8,7 @@ image: "./images/books22/youdeserveeachother.jpg"
 genre:
   [
     "Romance",
-    "ChickLit",
+    "Chick Lit",
     "Enemies to Lovers",
     "Humor",
     "Adult",

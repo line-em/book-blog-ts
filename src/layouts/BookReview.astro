@@ -2,13 +2,14 @@
 import Sidebar from "./Sidebar.astro";
 import BookInfo from "../components/BookInfo.astro";
 import { slide } from "astro:transitions";
+import type { Genre } from "../utils/genreList";
 
 export interface Props {
   cover: ImageMetadata;
   score: number;
   year: number;
   month: string;
-  genres: string[];
+  genres: Genre[];
   title: string;
 }
 

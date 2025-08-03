@@ -1,6 +1,5 @@
 import { glob } from "astro/loaders";
 import { z, defineCollection } from "astro:content";
-import type { Genre } from "../utils/genreList";
 import { GENRE_LIST } from "../utils/genreList";
 
 export const validYears = [2021, 2022, 2023, 2024, 2025];

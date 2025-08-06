@@ -2,7 +2,7 @@
 title: "The Eternal Return of Clara Hart"
 author: "Louise Finch"
 year: "2025"
-month: "October"
+month: "July"
 score: 3.5
 image: "./images/eternalreturn.png"
 genre: ["Young Adult", "Fiction", "Science Fiction", "Time Travel", "Contemporary", "Mental Health"]

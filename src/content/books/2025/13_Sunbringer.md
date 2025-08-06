@@ -2,7 +2,7 @@
 title: "Sunbringer"
 author: "Hannah Kaner"
 year: "2025"
-month: "October"
+month: "July"
 score: 3.5
 image: "./images/sunbringer.jpg"
 genre: ["Mythology", "Queer", "Fantasy", "Romance", "Found Family"]

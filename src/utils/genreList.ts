@@ -77,6 +77,7 @@ export const GENRE_LIST = [
   "Poetry",
   "Post Apocalyptic",
   "Queer",
+  "Race",
   "Retelling",
   "Robots",
   "Romance",

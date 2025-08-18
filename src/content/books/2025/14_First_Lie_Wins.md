@@ -22,3 +22,5 @@ So! I actually liked that the protagonist had various identities and so on, but 
 The ending was the worst, for me, though. The romance going on, was, alright, easy to spot. But the ending, the interactions between them, and the Ms. Smith shtick didn't work for me, not that way though. 
 
 To sum it up. Entertaining at times, but not a very memorable ride. 
+
+> “There’s an old saying: The first lie wins. It’s not referring to the little white kind that tumble out with no thought; it refers to the big one. The one that changes the game. The one that is deliberate. The lie that sets the stage for everything that comes after it. And once the lie is told, it’s what most people believe to be true. The first lie has to be the strongest. The most important. The one that has to be told.” 

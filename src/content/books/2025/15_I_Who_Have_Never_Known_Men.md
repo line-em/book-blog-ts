@@ -4,7 +4,7 @@ author: Jacqueline Harpman
 year: "2025"
 month: August
 score: 4
-image: ./images/iwhohaveneverknownmen.jpg
+image: ./images/iwhohaveneverknownmen.JPG
 genre:
   - Fiction
   - Dystopia

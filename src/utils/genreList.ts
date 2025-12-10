@@ -25,6 +25,7 @@ export const GENRE_LIST = [
   "Crime",
   "Dark Academia",
   "Detective",
+  "Depression",
   "Disability",
   "Dragons",
   "Drama",

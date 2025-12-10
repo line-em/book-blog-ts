@@ -36,6 +36,7 @@ export const GENRE_LIST = [
   "Epic Fantasy",
   "Essays",
   "Fantasy",
+  "Fairytale",
   "Feminism",
   "Fiction",
   "Found Family",
@@ -104,6 +105,7 @@ export const GENRE_LIST = [
   "Vampire",
   "Video Games",
   "War",
+  "Witches",
   "Young Adult",
 ] as const;
 

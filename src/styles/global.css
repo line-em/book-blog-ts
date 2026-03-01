@@ -79,6 +79,18 @@ a:hover {
   text-decoration-color: var(--catppuccin-color-teal-400);
 }
 
+.link-tilt {
+  transition: transform 150ms ease-out;
+}
+
+.link-tilt:hover {
+  transform: rotate(-2deg);
+}
+
+.link-tilt-stronger:hover {
+  transform: rotate(-4deg);
+}
+
 /* fallback for firefox */
 @keyframes astroFadeIn {
   from {

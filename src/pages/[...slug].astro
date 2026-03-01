@@ -39,61 +39,54 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
 ---
 
 <Layout title={title}>
-  <BookReview
-    score={score}
-    year={year}
-    month={month}
-    genres={genre as Genre[]}
-    cover={image}
-    title={title}
-  >
-    <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow mx-auto">
-      <nav
-        class:list={[
-          "mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]",
-          !prev && "justify-end",
-        ]}
-      >
-        {prev && <Navigation slug={prev.id} type="prev" />}
-        {next && <Navigation slug={next.id} type="next" />}
-      </nav>
-      <h1><GradientText text={title} /></h1>
-      <h3
-        class="text-lg font-bold text-ctp-rosewater-500 mx-auto flex gap-2 items-center justify-center max-w-[75ch]"
-      >
-        by {author}
-        <PenNibIcon size={24} color="var(--catppuccin-color-teal-300)" weight="duotone" />
-      </h3>
-      <section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal max-w-[75ch]">
-        {
-          heroimage && (
-            <div
-              class={
-                heroimage[1] === "full"
-                  ? "w-full flex justify-center my-6"
-                  : "float-left mr-6 max-w-[350px] w-full"
-              }
-            >
-              <Image
-                src={heroimage[0]}
-                alt={title}
-                loading="lazy"
-                width={heroimage[1] === "full" ? 1200 : 350}
-                height={heroimage[1] === "full" ? 400 : 300}
-                quality={"mid"}
-                format="webp"
-                class={"rounded-xl shadow-md w-full object-cover"}
-              />
-            </div>
-          )
-        }
-        <Content />
-        <ExtraImages
-          extraImages={extraimages?.map(image => image)}
-          extraImage={extraimage}
-          title={title}
-        />
-      </section>
-    </main>
-  </BookReview>
+  <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow">
+    <nav
+      class:list={[
+        "mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]",
+        !prev && "justify-end",
+      ]}
+    >
+      {prev && <Navigation slug={prev.id} type="prev" />}
+      {next && <Navigation slug={next.id} type="next" />}
+    </nav>
+    <h1><GradientText text={title} /></h1>
+    <h3
+      class="text-lg font-bold text-ctp-rosewater-500 mx-auto flex gap-2 items-center justify-center max-w-[75ch]"
+    >
+      by {author}
+      <PenNibIcon size={24} color="var(--catppuccin-color-teal-300)" weight="duotone" />
+    </h3>
+    <section
+      class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal prose-lg max-w-[75ch]"
+    >
+      {
+        heroimage && (
+          <div
+            class={
+              heroimage[1] === "full"
+                ? "w-full flex justify-center my-6"
+                : "float-left mr-6 max-w-[350px] w-full"
+            }
+          >
+            <Image
+              src={heroimage[0]}
+              alt={title}
+              loading="lazy"
+              width={heroimage[1] === "full" ? 1200 : 350}
+              height={heroimage[1] === "full" ? 400 : 300}
+              quality={"mid"}
+              format="webp"
+              class={"rounded-xl shadow-md w-full object-cover"}
+            />
+          </div>
+        )
+      }
+      <Content />
+      <ExtraImages
+        extraImages={extraimages?.map(image => image)}
+        extraImage={extraimage}
+        title={title}
+      />
+    </section>
+  </main>
 </Layout>

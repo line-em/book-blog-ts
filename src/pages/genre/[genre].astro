@@ -1,6 +1,9 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
 import { GENRE_LIST, type Genre } from "../../utils/genreList";
+import { compareBookIds } from "../../utils/bookId";
+import { getStars } from "../../utils/rating";
 import Layout from "../../layouts/Layout.astro";
 import Sidebar from "../../layouts/Sidebar.astro";
 
@@ -10,7 +13,6 @@ export async function getStaticPaths() {
   allBooks.forEach(book => {
     (book.data.genre as string[]).forEach(g => genreSet.add(g));
   });
-  // Only allow genres that are in GENRE_LIST
   return Array.from(genreSet)
     .filter(g => GENRE_LIST.includes(g as Genre))
     .map(genre => ({
@@ -21,10 +23,11 @@ export async function getStaticPaths() {
 const { genre } = Astro.params;
 const allBooks: CollectionEntry<"books">[] = await getCollection("books");
 
-// Validate genre param
-const isValidGenre = GENRE_LIST.includes(genre);
+const isValidGenre = genre != null && GENRE_LIST.includes(genre as Genre);
 const booksWithGenre = isValidGenre
-  ? allBooks.filter(book => (book.data.genre as string[]).includes(genre))
+  ? allBooks
+      .filter(book => (book.data.genre as string[]).includes(genre))
+      .sort((a, b) => compareBookIds(a.id, b.id))
   : [];
 ---
 
@@ -46,18 +49,31 @@ const booksWithGenre = isValidGenre
               href={`/${book.id}`}
               class="flex flex-col bg-slate-50 sm:shadow-sm rounded-xl relative duration-300 hover:sm:shadow-md p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
             >
-              <img
-                src={book?.data.image.src}
-                alt={book.data.title}
-                class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-sm object-cover"
-                width={200}
-                height={250}
-                loading="lazy"
-              />
+              <div class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-sm">
+                <Image
+                  src={book?.data.image}
+                  alt={book?.data.title}
+                  width={200}
+                  height={250}
+                  format="webp"
+                  quality={"high"}
+                  loading="lazy"
+                  layout="constrained"
+                  class="h-auto rounded-xl w-[200px] object-cover"
+                />
+              </div>
+              <aside class="sm:absolute mt-2 sm:mt-0 justify-center sm:-right-3 top-1 z-20 flex gap-1">
+                <div class="bg-ctp-teal-100 text-xs text-white px-2 py-1 rounded-md shadow-sm">
+                  {book?.data.year}
+                </div>
+                <div class="bg-ctp-rosewater-400 text-xs text-white px-2 py-1 rounded-md shadow-sm">
+                  {book?.data?.genre?.[0]}
+                </div>
+              </aside>
               <h3 class="text-xl my-2 sm:line-clamp-2 items-center whitespace-normal">
-                {book.data.title}
+                {book?.data.title}
               </h3>
-              <span class="text-xs text-gray-500 mb-2">{book.data.year}</span>
+              <span set:html={getStars(book?.data.score)} class="flex mt-auto" />
             </a>
           ))
         )

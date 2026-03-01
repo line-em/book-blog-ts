@@ -13,41 +13,42 @@ const { year } = Astro.props;
 let allBooks = await getSortedBooks(year);
 
 import { validYears } from "@/content/config";
-import { HouseLineIcon } from "@phosphor-icons/react";
-import { nav } from "framer-motion/client";
 
 const pathname = Astro.url.pathname;
 const isRoot = pathname === "/" || pathname === "/index.html";
 ---
 
 <nav class="px-6 mb-2 flex justify-center">
-  {
-    (
-      <div class="flex gap-2 flex-wrap items-center justify-center">
+  <div class="flex gap-2 flex-wrap items-center justify-center">
+    <a
+      href="/index.html"
+      aria-current={isRoot ? "page" : undefined}
+      class:list={[
+        "flex gap-1 text-base items-center hover:underline transition-colors duration-300 bg-slate-50 rounded-lg px-2 py-1",
+        isRoot && "pointer-events-none opacity-50",
+      ]}
+    >
+      <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
+      All Books
+    </a>
+    {
+      validYears.map((currentYear: number) => (
         <a
-          href="/index.html"
-          disabled={isRoot}
-          class="flex gap-1 text-sm hover:underline transition-colors duration-300"
+          href={`/${Number(currentYear)}`}
+          aria-current={currentYear === year ? "page" : undefined}
+          class:list={[
+            "flex gap-1 text-base items-center hover:underline transition-colors duration-300 bg-slate-50 rounded-lg px-2 py-1",
+            currentYear === year && "pointer-events-none opacity-50",
+          ]}
         >
           <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
-          All Books
+          {currentYear}
         </a>
-        {validYears.map((currentYear: number) => (
-          <a
-            href={`/${Number(currentYear)}`}
-            class="flex gap-1 text-sm hover:underline transition-colors duration-300 " + currentYear === year ? "pointer-events-none opacity-50" : ""
-          >
-            <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
-            {currentYear}
-          </a>
-        ))}
-      </div>
-    )
-  }
+      ))
+    }
+  </div>
 </nav>
-<main
-  class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 justify-center p-6 mx-6 lg:mx-12"
->
+<main class="flex flex-wrap mx-auto gap-8 justify-center p-6 sm:p-8">
   {
     allBooks.map(book => {
       return (
@@ -55,7 +56,7 @@ const isRoot = pathname === "/" || pathname === "/index.html";
           transition:animate={fade({ duration: "0.4s" })}
           transition:name={`book-${book?.data.title}`}
           href={`/${book?.id}`}
-          class="flex flex-col bg-slate-50 sm:shadow-sm rounded-xl relative duration-300 hover:sm:shadow-md p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
+          class="flex flex-col max-w-60 bg-slate-50 sm:shadow-sm rounded-xl relative duration-300 hover:sm:shadow-md p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
         >
           <div class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-sm">
             <Image

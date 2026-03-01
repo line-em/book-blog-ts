@@ -12,7 +12,7 @@
   --font-serif: "Fraunces Variable", "Georgia", serif;
   --sans: "Rubik Variable", "Helvetica", "Arial", sans-serif;
   --font-sans: "Rubik Variable", "Helvetica", "Arial", sans-serif;
-  --regular: 400;
+  --regular: 500;
   --bold: 600;
   --bolder: 700;
   --shadow-color: 286deg 36% 56%;
@@ -29,7 +29,7 @@
 
 h1 {
   font-size: clamp(2rem, 2vw + 2rem, 3rem);
-  font-weight: var(--bold);
+  font-weight: var(--bolder);
   margin: 0 auto;
   line-height: 1.4;
   max-width: 27ch;
@@ -69,7 +69,7 @@ blockquote::before {
 
 a {
   text-decoration: none;
-  color: var(--catppuccin-color-rosewater-400);
+  color: var(--catppuccin-color-flamingo-400);
   text-underline-offset: 3px;
 }
 

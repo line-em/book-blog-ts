@@ -18,7 +18,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
 
 <div
   transition:name={`book-${title}`}
-  class="bg-slate-50/50 p-6 max-w-64 rounded-xl shadow flex flex-col items-center sticky top-2"
+  class="bg-slate-50/50 p-6 w-full sm:max-w-64 rounded-xl shadow flex flex-col items-center sticky top-2"
 >
   <Image
     src={cover}
@@ -42,12 +42,12 @@ const { cover, score, year, month, genres, title } = Astro.props;
               <a
                 href={`/genre/${genre}`}
                 class="flex gap-1 text-xs hover:underline transition-colors duration-300"
-            >
-              <HashStraightIcon
-                size={16}
-                color="var(--catppuccin-color-teal-300)"
-                weight="duotone"
-              />
+              >
+                <HashStraightIcon
+                  size={16}
+                  color="var(--catppuccin-color-teal-300)"
+                  weight="duotone"
+                />
                 {genre}
               </a>
             ))

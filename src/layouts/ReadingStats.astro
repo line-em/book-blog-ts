@@ -23,11 +23,11 @@ if (books) {
 ---
 
 <section
-  class="flex items-center px-2 py-2 border border-transparent rounded-xl shadow-sm bg-slate-50 gap-4 w-fit self-center hover:text-ctp-rosewater-400 whitespace-nowrap"
+  class="absolute top-9 right-5 flex items-center px-2 py-2 border border-transparent rounded-xl shadow-sm bg-slate-50 gap-4 w-fit self-center hover:text-ctp-rosewater-400 whitespace-nowrap"
 >
   <BookIcon color="var(--catppuccin-color-teal-300)" weight="duotone" size="19" />
-  <GradientText text={books.length + " books read"} />
+  <GradientText text={books.length} />
 </section>
-<Link url={"/stats"} text={"More stats"}>
+<!-- <Link url={"/stats"} text={"More stats"}>
   <PlusCircleIcon color="var(--catppuccin-color-teal-300)" weight="duotone" size="19" />
-</Link>
+</Link> -->

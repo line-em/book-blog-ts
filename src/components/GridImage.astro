@@ -1,11 +1,9 @@
 ---
 import { getStars } from "../utils/rating";
 import { Image } from "astro:assets";
-import { getCollection, type CollectionEntry } from "astro:content";
 import { fade } from "astro:transitions";
-import { compareBookIds } from "../utils/bookId";
 import { getSortedBooks } from "../utils/getBooks";
-
+import { HashStraightIcon } from "@phosphor-icons/react";
 export interface Props {
   year?: number;
 }
@@ -13,8 +11,40 @@ export interface Props {
 const { year } = Astro.props;
 
 let allBooks = await getSortedBooks(year);
+
+import { validYears } from "@/content/config";
+import { HouseLineIcon } from "@phosphor-icons/react";
+import { nav } from "framer-motion/client";
+
+const pathname = Astro.url.pathname;
+const isRoot = pathname === "/" || pathname === "/index.html";
 ---
 
+<nav class="px-6 mb-2 flex justify-center">
+  {
+    (
+      <div class="flex gap-2 flex-wrap items-center justify-center">
+        <a
+          href="/index.html"
+          disabled={isRoot}
+          class="flex gap-1 text-sm hover:underline transition-colors duration-300"
+        >
+          <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
+          All Books
+        </a>
+        {validYears.map((currentYear: number) => (
+          <a
+            href={`/${Number(currentYear)}`}
+            class="flex gap-1 text-sm hover:underline transition-colors duration-300 " + currentYear === year ? "pointer-events-none opacity-50" : ""
+          >
+            <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
+            {currentYear}
+          </a>
+        ))}
+      </div>
+    )
+  }
+</nav>
 <main
   class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 justify-center p-6 mx-6 lg:mx-12"
 >

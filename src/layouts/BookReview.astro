@@ -18,7 +18,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
 
 <Sidebar isReview currentYear={1} />
 <section
-  class="flex mx-6 my-8 gap-6 items-start justify-between"
+  class="flex mx-6 my-8 gap-6 items-start justify-between flex-col mx-auto"
   transition:animate={slide({ duration: "0.4s" })}
 >
   <slot />

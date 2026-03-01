@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import ReadingStats from "./ReadingStats.astro";
-import { getBooks } from "../utils/getBooks";
+import { getSortedBooks } from "../utils/getBooks";
 import GradientText from "../components/GradientText.astro";
 import Link from "../components/Link.astro";
 import { validYears } from "@/content/config";
@@ -17,8 +17,8 @@ export interface Props {
 const { currentYear, isReview } = Astro.props;
 
 const books: CollectionEntry<"books">[] = currentYear
-  ? await getBooks(currentYear)
-  : await getBooks();
+  ? await getSortedBooks(currentYear)
+  : await getSortedBooks();
 ---
 
 <aside
@@ -29,7 +29,7 @@ const books: CollectionEntry<"books">[] = currentYear
     <GradientText text={isReview ? "Review" : currentYear ? `${currentYear}` : "Yearly"} />
     Books
   </h1>
-  <div class={"flex gap-2 sm:gap-6 mx-auto flex-wrap"}>
+  <div class={"flex gap-2 sm:gap-6 flex-wrap mx-auto"}>
     <Link disabled={currentYear === 0} url={`/index.html`} text={"All Books"} />
     {
       validYears.map((curr: number) => (

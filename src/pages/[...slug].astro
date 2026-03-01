@@ -17,8 +17,8 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-  const bookEntries: CollectionEntry<"books">[] = await getCollection("books");
-  bookEntries.sort((a, b) => compareBookIds(a.id, b.id));
+  const raw = await getCollection("books");
+  const bookEntries = [...raw].sort((a, b) => compareBookIds(a.id, b.id));
   const bookNumber: number = bookEntries.length;
   return bookEntries.map((entry, i: number) => ({
     params: { slug: entry.id },
@@ -47,8 +47,13 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
     cover={image}
     title={title}
   >
-    <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow">
-      <nav class:list={["mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]", !prev && "justify-end"]}>
+    <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow mx-auto">
+      <nav
+        class:list={[
+          "mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]",
+          !prev && "justify-end",
+        ]}
+      >
         {prev && <Navigation slug={prev.id} type="prev" />}
         {next && <Navigation slug={next.id} type="next" />}
       </nav>
@@ -59,12 +64,16 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
         by {author}
         <PenNibIcon size={24} color="var(--catppuccin-color-teal-300)" weight="duotone" />
       </h3>
-      <section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal prose-lg max-w-[75ch]">
+      <section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal max-w-[75ch]">
         {
           heroimage && (
-            <div class={heroimage[1] === "full"
-              ? "w-full flex justify-center my-6"
-              : "float-left mr-6 max-w-[350px] w-full"}>
+            <div
+              class={
+                heroimage[1] === "full"
+                  ? "w-full flex justify-center my-6"
+                  : "float-left mr-6 max-w-[350px] w-full"
+              }
+            >
               <Image
                 src={heroimage[0]}
                 alt={title}

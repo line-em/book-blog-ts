@@ -14,5 +14,5 @@ export const getBooks = async (year?: number): Promise<CollectionEntry<"books">[
 
 export const getSortedBooks = async (year?: number): Promise<CollectionEntry<"books">[]> => {
   const books = await getBooks(year);
-  return books.sort((a, b) => compareBookIds(a.id, b.id));
+  return [...books].sort((a, b) => compareBookIds(a.id, b.id));
 };

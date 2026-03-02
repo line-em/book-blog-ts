@@ -7,14 +7,12 @@ export interface Props {
 
 const { href, variant = "default" } = Astro.props;
 const shadowClass =
-  variant === "elevated"
-    ? "sm:shadow-sm hover:sm:shadow-md"
-    : "sm:shadow-xs hover:sm:shadow-sm";
+  variant === "elevated" ? "sm:shadow-sm hover:sm:shadow-md" : "sm:shadow-xs hover:sm:shadow-sm";
 ---
 
 <a
   href={href}
-  class={`link-tilt flex flex-col max-w-60 bg-slate-50 rounded-xl relative p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200 ${shadowClass}`}
+  class={`link-tilt flex flex-col max-w-60 bg-slate-50/50 border border-white/50 rounded-xl relative p-4 flex-1 items-center hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200 ${shadowClass}`}
 >
   <slot />
 </a>

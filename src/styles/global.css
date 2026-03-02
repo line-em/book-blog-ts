@@ -87,8 +87,46 @@ a:hover {
   transform: rotate(-2deg);
 }
 
+.link-tilt-stronger {
+  transition: transform 150ms ease-out;
+}
+
 .link-tilt-stronger:hover {
   transform: rotate(-4deg);
+}
+
+.link-tilt-stronger.inverse:hover {
+  transform: rotate(4deg);
+}
+
+@keyframes bg-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+.shell-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.shell-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: conic-gradient(
+    from 180deg,
+    var(--catppuccin-color-teal-300),
+    var(--catppuccin-color-rosewater-400),
+    var(--catppuccin-color-peach-300),
+    var(--catppuccin-color-teal-300)
+  );
+  opacity: 0.35;
+  filter: blur(12px);
+  z-index: -1;
 }
 
 /* fallback for firefox */

@@ -50,7 +50,7 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
     <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow">
       <nav
         class:list={[
-          "mx-auto flex justify-between gap-6 mt-4 mb-6 items-center max-w-[75ch]",
+          "mx-auto flex justify-between gap-6 mb-2 items-center",
           !prev && "justify-end",
         ]}
       >
@@ -64,9 +64,7 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
         by {author}
         <PenNibIcon size={24} color="var(--catppuccin-color-teal-300)" weight="duotone" />
       </h3>
-      <section
-        class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal max-w-[75ch]"
-      >
+      <section class="mx-auto my-6 px-1 sm:px-4 lg:px-2 text-justify prose prose-teal max-w-[75ch]">
         {
           heroimage && (
             <div

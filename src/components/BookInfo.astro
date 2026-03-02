@@ -41,7 +41,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
             genres.map(genre => (
               <a
                 href={`/genre/${genre}`}
-                class="flex gap-1 text-xs hover:underline transition-colors duration-300"
+                class="flex gap-1 link-tilt text-xs hover:underline transition-colors duration-300"
               >
                 <HashStraightIcon
                   size={16}
@@ -75,7 +75,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
           genres.map(genre => (
             <a
               href={`/genre/${encodeURIComponent(genre)}`}
-              class="flex gap-1 text-xs hover:underline transition-colors duration-300"
+              class="flex link-tilt gap-1 text-xs hover:underline transition-colors duration-300"
             >
               <HashStraightIcon
                 size={16}

@@ -22,10 +22,10 @@ const isGenre = Astro.url.pathname?.includes("genre");
 ---
 
 <aside
-  class="p-6 flex gap-6 bg-ctp-sapphire-50/30 rounded-t-xl flex-wrap justify-between shadow-xs"
+  class="p-6 flex gap-6 bg-ctp-flamingo-100 rounded-t-xl justify-between items-center w-full shadow-xs"
 >
   <h1
-    class="!text-2xl mb-4 sm:mb-8 flex text-center gap-2 items-center px-2 border border-transparent rounded-xl shadow-xs bg-slate-50/50 w-fit self-start"
+    class="!text-2xl flex text-center gap-2 items-center px-2 rounded-xl shadow-xs bg-slate-50/80 py-1 w-fit !mx-0"
   >
     <BookOpenTextIcon size={32} color="var(--catppuccin-color-rosewater-400)" weight="duotone" />
     <GradientText text={isReview ? "Review" : currentYear ? `${currentYear}` : "Yearly"} />
@@ -37,9 +37,9 @@ const isGenre = Astro.url.pathname?.includes("genre");
       <a
         href="/"
         aria-label="Back to homepage"
-        class="flex items-center px-2 py-2 border border-transparent rounded-xl shadow-sm bg-slate-50 gap-4 w-fit self-center text-ctp-teal-400 hover:!text-ctp-rosewater-400 whitespace-nowrap"
+        class="flex items-center px-2 py-2 border border-transparent rounded-xl shadow-xs bg-slate-50 gap-4 w-fit text-ctp-teal-400 hover:!text-ctp-rosewater-400 whitespace-nowrap"
       >
-        <HouseLineIcon size={24} weight="duotone" />
+        <HouseLineIcon size={20} weight="duotone" />
       </a>
     )
   }

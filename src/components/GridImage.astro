@@ -23,7 +23,7 @@ const isRoot = pathname === "/" || pathname === "/index.html";
     <a
       href="/index.html"
       aria-current={isRoot ? "page" : undefined}
-      class={"link-tilt-stronger flex gap-1 text-base items-center hover:underline bg-slate-50 rounded-lg px-2 py-1 shadow border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200" +
+      class={"link-tilt-stronger flex gap-1 text-base items-center hover:underline bg-slate-50 rounded-lg px-2 py-1 shadow-xs border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200" +
         (isRoot ? " pointer-events-none opacity-50" : "")}
     >
       <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
@@ -35,7 +35,7 @@ const isRoot = pathname === "/" || pathname === "/index.html";
           href={`/${Number(currentYear)}`}
           aria-current={currentYear === year ? "page" : undefined}
           class={
-            "link-tilt-stronger flex gap-1 text-base items-center hover:underline bg-slate-50 rounded-lg px-2 py-1 shadow border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200" +
+            "link-tilt-stronger flex gap-1 text-base items-center hover:underline bg-slate-50 rounded-lg px-2 py-1 shadow-xs border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200" +
             (currentYear === year ? " pointer-events-none opacity-50" : "")
           }
         >
@@ -54,9 +54,9 @@ const isRoot = pathname === "/" || pathname === "/index.html";
           transition:animate={fade({ duration: "0.4s" })}
           transition:name={`book-${book?.data.title}`}
           href={`/${book?.id}`}
-          class="link-tilt flex flex-col max-w-60 bg-slate-50 sm:shadow-sm rounded-xl relative hover:sm:shadow-md p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
+          class="link-tilt flex flex-col max-w-60 bg-slate-50 sm:shadow-xs rounded-xl relative hover:sm:shadow-sm p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
         >
-          <div class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-sm">
+          <div class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-xs">
             <Image
               src={book && book?.data.image}
               alt={book?.data.title}

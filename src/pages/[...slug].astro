@@ -47,7 +47,7 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
     cover={image}
     title={title}
   >
-    <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow">
+    <main class="p-6 min-h-screen flex-1 bg-slate-50/50 rounded-xl shadow-xs">
       <nav
         class:list={[
           "mx-auto flex justify-between gap-6 mb-2 items-center",
@@ -82,7 +82,7 @@ let { title, author, month, score, image, heroimage, extraimage, extraimages, ye
                 height={heroimage[1] === "full" ? 400 : 300}
                 quality={"mid"}
                 format="webp"
-                class={"rounded-xl shadow-md w-full object-cover"}
+                class={"rounded-xl shadow-sm w-full object-cover"}
               />
             </div>
           )

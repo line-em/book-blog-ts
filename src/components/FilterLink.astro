@@ -1,0 +1,19 @@
+---
+export interface Props {
+  href: string;
+  active?: boolean;
+}
+
+const { href, active = false } = Astro.props;
+const baseClass =
+  "link-tilt-stronger flex gap-1 text-base items-center hover:underline bg-slate-50 rounded-lg px-2 py-1 shadow-xs border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200";
+const activeClass = active ? " pointer-events-none opacity-50" : "";
+---
+
+<a
+  href={href}
+  aria-current={active ? "page" : undefined}
+  class={baseClass + activeClass}
+>
+  <slot />
+</a>

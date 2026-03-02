@@ -1,0 +1,22 @@
+---
+import { HashStraightIcon } from "@phosphor-icons/react";
+
+export interface Props {
+  genre: string;
+}
+
+const { genre } = Astro.props;
+const href = `/genre/${encodeURIComponent(genre)}`;
+---
+
+<a
+  href={href}
+  class="flex gap-1 link-tilt text-xs hover:underline transition-colors duration-300"
+>
+  <HashStraightIcon
+    size={16}
+    color="var(--catppuccin-color-teal-300)"
+    weight="duotone"
+  />
+  {genre}
+</a>

@@ -4,61 +4,48 @@ import { Image } from "astro:assets";
 import { fade } from "astro:transitions";
 import { getSortedBooks } from "../utils/getBooks";
 import { HashStraightIcon } from "@phosphor-icons/react";
+import FilterLink from "./FilterLink.astro";
+import BookCardLink from "./BookCardLink.astro";
+import { validYears } from "@/content/config";
+
 export interface Props {
   year?: number;
 }
 
 const { year } = Astro.props;
-
-let allBooks = await getSortedBooks(year);
-
-import { validYears } from "@/content/config";
-
+const allBooks = await getSortedBooks(year);
 const pathname = Astro.url.pathname;
 const isRoot = pathname === "/" || pathname === "/index.html";
 ---
 
 <nav class="px-6 mb-2 mt-10 flex justify-center">
   <div class="flex gap-2 flex-wrap items-center justify-center">
-    <a
-      href="/index.html"
-      aria-current={isRoot ? "page" : undefined}
-      class={"link-tilt-stronger flex gap-1 text-base items-center hover:underline bg-slate-50 rounded-lg px-2 py-1 shadow-xs border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200" +
-        (isRoot ? " pointer-events-none opacity-50" : "")}
-    >
+    <FilterLink href="/index.html" active={isRoot}>
       <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
       All Books
-    </a>
+    </FilterLink>
     {
       validYears.map((currentYear: number) => (
-        <a
-          href={`/${Number(currentYear)}`}
-          aria-current={currentYear === year ? "page" : undefined}
-          class={
-            "link-tilt-stronger flex gap-1 text-base items-center hover:underline bg-slate-50 rounded-lg px-2 py-1 shadow-xs border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200" +
-            (currentYear === year ? " pointer-events-none opacity-50" : "")
-          }
-        >
+        <FilterLink href={`/${Number(currentYear)}`} active={currentYear === year}>
           <HashStraightIcon size={16} color="var(--catppuccin-color-teal-300)" weight="duotone" />
           {currentYear}
-        </a>
+        </FilterLink>
       ))
     }
   </div>
 </nav>
 <main class="flex flex-wrap mx-auto gap-8 justify-center p-6 sm:p-8">
   {
-    allBooks.map(book => {
-      return (
-        <a
+    allBooks.map((book) => (
+      <BookCardLink href={`/${book?.id}`}>
+        <div
           transition:animate={fade({ duration: "0.4s" })}
           transition:name={`book-${book?.data.title}`}
-          href={`/${book?.id}`}
-          class="link-tilt flex flex-col max-w-60 bg-slate-50 sm:shadow-xs rounded-xl relative hover:sm:shadow-sm p-4 flex-1 items-center border border-transparent hover:text-ctp-rosewater-300 hover:border-ctp-rosewater-200"
+          class="flex flex-col flex-1 items-center w-full"
         >
           <div class="overflow-hidden rounded-xl w-[200px] h-[250px] shadow-xs">
             <Image
-              src={book && book?.data.image}
+              src={book?.data.image}
               alt={book?.data.title}
               width={200}
               height={250}
@@ -81,8 +68,8 @@ const isRoot = pathname === "/" || pathname === "/index.html";
             {book?.data.title}
           </h3>
           <span set:html={getStars(book?.data.score)} class="flex mt-auto" />
-        </a>
-      );
-    })
+        </div>
+      </BookCardLink>
+    ))
   }
 </main>

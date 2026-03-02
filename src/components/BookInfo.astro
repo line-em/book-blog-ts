@@ -1,6 +1,9 @@
 ---
-import { HashStraightIcon } from "@phosphor-icons/react";
 import type { Genre } from "../utils/genreList";
+import GenreLink from "./GenreLink.astro";
+import { getStars } from "../utils/rating";
+import { Image } from "astro:assets";
+
 export interface Props {
   cover: string;
   score: number;
@@ -9,9 +12,6 @@ export interface Props {
   genres: Genre[];
   title: string;
 }
-
-import { getStars } from "../utils/rating";
-import { Image } from "astro:assets";
 
 const { cover, score, year, month, genres, title } = Astro.props;
 ---
@@ -36,22 +36,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
     <div>
       <h3 class="mb-2 font-bold">Genres</h3>
       <div class="flex gap-2 flex-wrap items-start">
-        {
-          genres &&
-            genres.map(genre => (
-              <a
-                href={`/genre/${genre}`}
-                class="flex gap-1 link-tilt text-xs hover:underline transition-colors duration-300"
-              >
-                <HashStraightIcon
-                  size={16}
-                  color="var(--catppuccin-color-teal-300)"
-                  weight="duotone"
-                />
-                {genre}
-              </a>
-            ))
-        }
+        {genres?.map((genre) => <GenreLink genre={genre} />)}
       </div>
     </div>
     <div class="mx-auto">
@@ -70,22 +55,7 @@ const { cover, score, year, month, genres, title } = Astro.props;
     <hr class="border border-b-zinc-400" />
     <h3 class="font-bold">Genres</h3>
     <div class="flex gap-2 flex-wrap items-start justify-center">
-      {
-        genres &&
-          genres.map(genre => (
-            <a
-              href={`/genre/${encodeURIComponent(genre)}`}
-              class="flex link-tilt gap-1 text-xs hover:underline transition-colors duration-300"
-            >
-              <HashStraightIcon
-                size={16}
-                color="var(--catppuccin-color-teal-300)"
-                weight="duotone"
-              />
-              {genre}
-            </a>
-          ))
-      }
+      {genres?.map((genre) => <GenreLink genre={genre} />)}
     </div>
   </div>
 </div>
